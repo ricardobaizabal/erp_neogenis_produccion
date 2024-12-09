@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://cfdi.ws2.facturehoy.certus.com/" targetNamespace="http://cfdi.ws2.facturehoy.certus.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AceptarRechazarCancelacion" type="tns:AceptarRechazarCancelacion" />
+  <xs:element name="AceptarRechazarCancelacionCA" type="tns:AceptarRechazarCancelacionCA" />
+  <xs:element name="AceptarRechazarCancelacionCAResponse" type="tns:AceptarRechazarCancelacionCAResponse" />
+  <xs:element name="AceptarRechazarCancelacionResponse" type="tns:AceptarRechazarCancelacionResponse" />
+  <xs:element name="CancelarCFDI" type="tns:CancelarCFDI" />
+  <xs:element name="CancelarCFDICA" type="tns:CancelarCFDICA" />
+  <xs:element name="CancelarCFDICAResponse" type="tns:CancelarCFDICAResponse" />
+  <xs:element name="CancelarCFDIResponse" type="tns:CancelarCFDIResponse" />
+  <xs:element name="ObtienePeticionesPendientes" type="tns:ObtienePeticionesPendientes" />
+  <xs:element name="ObtienePeticionesPendientesResponse" type="tns:ObtienePeticionesPendientesResponse" />
+  <xs:element name="ObtieneRelacionadosCFDI" type="tns:ObtieneRelacionadosCFDI" />
+  <xs:element name="ObtieneRelacionadosCFDICA" type="tns:ObtieneRelacionadosCFDICA" />
+  <xs:element name="ObtieneRelacionadosCFDICAResponse" type="tns:ObtieneRelacionadosCFDICAResponse" />
+  <xs:element name="ObtieneRelacionadosCFDIResponse" type="tns:ObtieneRelacionadosCFDIResponse" />
+  <xs:element name="ObtieneStatusCFDI" type="tns:ObtieneStatusCFDI" />
+  <xs:element name="ObtieneStatusCFDIResponse" type="tns:ObtieneStatusCFDIResponse" />
+  <xs:complexType name="CancelarCFDI">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element name="idServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="xml" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="certificado" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="RSAPK" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelarCFDIResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wsResponseCancelacionBO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="wsResponseCancelacionBO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="acuse" type="xs:base64Binary" />
+      <xs:element name="codigoError" type="xs:int" />
+      <xs:element minOccurs="0" name="esCancelable" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element minOccurs="0" name="estatusCancelacion" type="xs:string" />
+      <xs:element minOccurs="0" name="isError" type="xs:boolean" />
+      <xs:element minOccurs="0" name="mensaje" type="xs:string" />
+      <xs:element minOccurs="0" name="rutaDescargaAcuse" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelarCFDICA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element name="idServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="xml" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelarCFDICAResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wsResponseCancelacionBO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtieneStatusCFDI">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element name="idServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="xml" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtieneStatusCFDIResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wsResponseStatusBO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="wsResponseStatusBO">
+    <xs:sequence>
+      <xs:element name="codigoError" type="xs:int" />
+      <xs:element name="isError" type="xs:boolean" />
+      <xs:element minOccurs="0" name="mensaje" type="xs:string" />
+      <xs:element minOccurs="0" name="respuesta" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtieneRelacionadosCFDICA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element name="idServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="RfcReceptor" type="xs:string" />
+      <xs:element minOccurs="0" name="UUID" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtieneRelacionadosCFDICAResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wsResponseRelacionadosBO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="wsResponseRelacionadosBO">
+    <xs:sequence>
+      <xs:element name="codigoError" type="xs:int" />
+      <xs:element name="isError" type="xs:boolean" />
+      <xs:element minOccurs="0" name="mensaje" type="xs:string" />
+      <xs:element minOccurs="0" name="respuesta" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtienePeticionesPendientes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element name="idServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="RfcReceptor" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtienePeticionesPendientesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wsResponsePendientesBO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="wsResponsePendientesBO">
+    <xs:sequence>
+      <xs:element name="codigoError" type="xs:int" />
+      <xs:element name="isError" type="xs:boolean" />
+      <xs:element minOccurs="0" name="mensaje" type="xs:string" />
+      <xs:element minOccurs="0" name="pendientes" type="xs:base64Binary" />
+      <xs:element name="status" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AceptarRechazarCancelacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element name="idServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="RfcReceptor" type="xs:string" />
+      <xs:element minOccurs="0" name="certificado" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="RSAPK" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UUID" nillable="true" type="tns:uuid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uuid">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="respuesta" type="xs:string" />
+      <xs:element minOccurs="0" name="uuid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AceptarRechazarCancelacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wsResponseAceptaRechazoBO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="wsResponseAceptaRechazoBO">
+    <xs:sequence>
+      <xs:element name="codigoError" type="xs:int" />
+      <xs:element name="isError" type="xs:boolean" />
+      <xs:element minOccurs="0" name="mensaje" type="xs:string" />
+      <xs:element minOccurs="0" name="respuesta" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtieneRelacionadosCFDI">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element name="idServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="RfcReceptor" type="xs:string" />
+      <xs:element minOccurs="0" name="UUID" type="xs:string" />
+      <xs:element minOccurs="0" name="certificado" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="RSAPK" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ObtieneRelacionadosCFDIResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wsResponseRelacionadosBO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AceptarRechazarCancelacionCA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element name="idServicio" type="xs:int" />
+      <xs:element minOccurs="0" name="RfcReceptor" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UUID" nillable="true" type="tns:uuid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AceptarRechazarCancelacionCAResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wsResponseAceptaRechazoBO" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

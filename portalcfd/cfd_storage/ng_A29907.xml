@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="A" Folio="29907" Fecha="2023-05-18T09:25:01" Sello="q+DcBt2BpV7D1alsRp7r2rWTtNXXrt2PYsoE7QyqaZAjh6nemxF3ZX1MtOYfrf3D/FZzu4pkKtLA0ukmO/KQ6vltw39i3OH2lqGi55OXnIa9fwBh7Xt3y1ollJQEXbfmjJ4QFmOs5RVQU8EpL4he0hAfEYAvACCA3MSMVjOxkR3mRmU5FTFPbNF2NMdQpvsTxfDr5uIubOKkB/ZmDaMHZ8LvD9QcudZFzWDuW3G3tgGSF80fZWZQeTSpWGyhR9Ur2JtlI+Glo/kQ5HsnByG58b2dUCeGwiZRJ/XyzexT4K9lrsIw8800ld0tHgnceeIUUm2z4PsYLWx9kzmmHCxFoQ==" FormaPago="99" NoCertificado="00001000000505848840" Certificado="MIIF7TCCA9WgAwIBAgIUMDAwMDEwMDAwMDA1MDU4NDg4NDAwDQYJKoZIhvcNAQELBQAwggGEMSAwHgYDVQQDDBdBVVRPUklEQUQgQ0VSVElGSUNBRE9SQTEuMCwGA1UECgwlU0VSVklDSU8gREUgQURNSU5JU1RSQUNJT04gVFJJQlVUQVJJQTEaMBgGA1UECwwRU0FULUlFUyBBdXRob3JpdHkxKjAoBgkqhkiG9w0BCQEWG2NvbnRhY3RvLnRlY25pY29Ac2F0LmdvYi5teDEmMCQGA1UECQwdQVYuIEhJREFMR08gNzcsIENPTC4gR1VFUlJFUk8xDjAMBgNVBBEMBTA2MzAwMQswCQYDVQQGEwJNWDEZMBcGA1UECAwQQ0lVREFEIERFIE1FWElDTzETMBEGA1UEBwwKQ1VBVUhURU1PQzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMVwwWgYJKoZIhvcNAQkCE01yZXNwb25zYWJsZTogQURNSU5JU1RSQUNJT04gQ0VOVFJBTCBERSBTRVJWSUNJT1MgVFJJQlVUQVJJT1MgQUwgQ09OVFJJQlVZRU5URTAeFw0yMDExMjgxNTUxMTlaFw0yNDExMjgxNTUxMTlaMIG7MRswGQYDVQQDExJORyBTVVBQTFkgU0EgREUgQ1YxGzAZBgNVBCkTEk5HIFNVUFBMWSBTQSBERSBDVjEbMBkGA1UEChMSTkcgU1VQUExZIFNBIERFIENWMSUwIwYDVQQtExxOU1UxMzA2MDZQSTIgLyBNT1JTNjMwNzAyVUgyMR4wHAYDVQQFExUgLyBNT1JTNjMwNzAySE5MTERSMDQxGzAZBgNVBAsTEk5HIFNVUFBMWSBTQSBERSBDVjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANxSRxApPIhEgDYCEICMa9VdXFwuf5i5oO4rmbyTQXQMVsQ9C31CxOYcy5al+CmWfISxC7rIs5aDnv0fOQsBByUhsfo8RPvO44zeQrjf+U58SfUYFnY70Vy4uMClpD0pyNG7rJ8CQd8SXE7jdd2SDhPR3vq4JW+blMSUT1U7QcUalgQse8cpgpd+AAe5er4u5UJCyNwvSYxn2fTBasxVbHG9EqvMH8aCnZd+Cwj3QPTKYIlz3xXGEDWIm//1oyUclrixKfJGOD8vPR2fvb+CakeYC1raZsR4CHaElwpaRqV3EwJETYTk8CuTwiVyk75oUgI9sk6ftLwhDFI+1qMXxSkCAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQELBQADggIBAHUvRj4DiGZX3VcBLXBFtAxy3uAhr/7EMPdNIzEpJhJR+IgSehzyieffdytf1LlP3CiNRPbIW4E/NtAYK/yl6I1Lg2qhi+HQAm24od8PbWigmbenkDGz59hsw6vrGX5ppyGWHODrMyFnzis0CvIrMKXWDr3p2UCLj3ETQzsXKUH4WGeKUGY1STXKSvMopsdE/h0w26dNFf9tYi6MP+Pci2bsbWu04JdBLzivkmbs75l0fXD9D7wunaEzO0dwobONUsrOGfkdlPzGZJS1Cjzii/53UQSz2J8hVtCA4nFxJiXnWPGECqrwPf0wBzB/VVjzn1QtxlT6uqL3ZCY1LjNthHZFRZDyXW4mIht9PPFQNVEl2QIePJIoFmYmdtcuQC61KIVWaLypPUwiRj/aV2uwUrswIRHxVeo0wqlLXnNLOWH7W2ac0gfeBnAgdY/oDcpsF2/rsC0SxX0naTnjU8S9VepfdUM2+1IQYwI92r7UEBgzvqUb7nDfmCmpgRa0cLlSdlJD8RNTeQYpuhkF9Qf+J9RPck061e3DhCh94E/UQ5nB6mg/KAuYVXwmQ/S2zmP/EjXND5aOtDC8YVvwF5TGm+mOJWUl5l7xiErB7IbtClHXXFsiXBV2gKbr/XkhyRRv8/Vx4hwkeKOXG2QkkvTcBl1emR1gNOS39KRglYzvw1un" CondicionesDePago="60 días" SubTotal="30751.17" Moneda="MXN" Total="35671.35" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="66368" Exportacion="01">
+  <cfdi:Emisor Nombre="NG SUPPLY" Rfc="NSU130606PI2" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="COP920428Q20" Nombre="COPPEL" RegimenFiscalReceptor="601" DomicilioFiscalReceptor="80105" UsoCFDI="G03" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="847681" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="W BONDI 8 BLACK / BLACK" ObjetoImp="02" ValorUnitario="2365.47" Importe="2365.47">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2365.4700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="378.48" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="847681" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="W BONDI 8 BLACK / BLACK" ObjetoImp="02" ValorUnitario="2365.47" Importe="4730.95">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4730.9500" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="756.95" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="847681" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="W BONDI 8 BLACK / BLACK" ObjetoImp="02" ValorUnitario="2365.47" Importe="4730.95">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4730.9500" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="756.95" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="847681" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="W BONDI 8 BLACK / BLACK" ObjetoImp="02" ValorUnitario="2365.47" Importe="4730.95">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4730.9500" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="756.95" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="847681" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="W BONDI 8 BLACK / BLACK" ObjetoImp="02" ValorUnitario="2365.47" Importe="4730.95">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4730.9500" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="756.95" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="847681" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="W BONDI 8 BLACK / BLACK" ObjetoImp="02" ValorUnitario="2365.47" Importe="4730.95">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4730.9500" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="756.95" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="847681" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="W BONDI 8 BLACK / BLACK" ObjetoImp="02" ValorUnitario="2365.47" Importe="4730.95">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4730.9500" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="756.95" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="4920.18">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="4920.18" Base="30751.17" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

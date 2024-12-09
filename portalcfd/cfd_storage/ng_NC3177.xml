@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="NC" Folio="3177" Fecha="2024-10-24T01:09:41" Sello="XylUu9mz2KB9tSfQIxxeoZXBRqdMWBF9dVG/ZPyNhulWIZgIS+snwKIOULyDHlaDzwnm4y5d9U9KG5E16emTuQ42M84VKAsVMmKzrP3y6VEjJw2+DOMScUZq2jq/ZI2pJ33oAEbaKuSzqWjm28rnqQh/Lt2FQuQbefwPQtJR9npdNxKPpxyqerQHPPMAusnhJvRDQ+kYKK18q1HXd+lL+7DETOWz0uWIbGm8kS7B5dRxfe4Ge6zVsMThsojiwIom8snWHuMr7SL0IJ5tP1lMxz5cG2k8vsAQm3eaUh5bdXSJyq/iOl73fBkxKlvqqLBfGANmdxN4hzsbW3IXj8WNUA==" FormaPago="17" NoCertificado="00001000000505848840" Certificado="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" CondicionesDePago="Contado" SubTotal="4865.51" Moneda="MXN" Total="5643.99" TipoDeComprobante="E" MetodoPago="PPD" LugarExpedicion="66368" Exportacion="01">
+  <cfdi:CfdiRelacionados TipoRelacion="02">
+    <cfdi:CfdiRelacionado UUID="9013764E-D13A-48BA-94F2-EFEA7D4F9DFA" />
+  </cfdi:CfdiRelacionados>
+  <cfdi:Emisor Nombre="NG SUPPLY" Rfc="NSU130606PI2" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="XAXX010101000" Nombre="PUBLICO EN GENERAL" RegimenFiscalReceptor="616" DomicilioFiscalReceptor="66368" UsoCFDI="G02" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="54111501" NoIdentificacion="RELOJ MM" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="RELOJ MARK MADDOX " ObjetoImp="02" ValorUnitario="874.140000" Importe="2622.420000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2622.420000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="419.587200" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53102402" NoIdentificacion="E5525801" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="S-Elite Ultra Light No Show Tab Move Aside Mint" ObjetoImp="02" ValorUnitario="343.960000" Importe="343.960000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="343.960000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="55.033600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="49221510" NoIdentificacion="CLFSTVDSC-A24-BK001" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="FSTVisor Dual SC - Athletics - Whitaker" ObjetoImp="02" ValorUnitario="904.300000" Importe="904.300000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="904.300000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="144.688000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="54111501" NoIdentificacion="50088M-42-1BLT" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="Playzoom Niño Batman" ObjetoImp="02" ValorUnitario="994.830000" Importe="994.830000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="994.830000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="159.172800" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="778.48">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="778.48" Base="4865.51" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

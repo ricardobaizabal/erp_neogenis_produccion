@@ -1,0 +1,9 @@
+﻿<connectionStrings>
+  <!--<add connectionString="Data Source=LINKIUMSERVER2; Initial Catalog=erp_neogenis; User ID=sa; Password=Jupiter10;" name="conn"/>-->
+	<add connectionString="Data Source=25.4.30.102; Initial Catalog=erp_neogenis; User ID=sa; Password=DMLb9QBi#DHECbM;" name="conn"/>
+	<!--<add connectionString="Data Source=25.4.30.102; Initial Catalog=erp_neogenis; User ID=sa; Password=DMLb9QBi#DHECbM;" name="conn"/>-->
+  <!--<add connectionString="Data Source=LINKIUMSERVER2; Initial Catalog=erp_neogenis_developer; User ID=sa; Password=Jupiter10;" name="conn"/>-->
+	<!--<add name="conn" connectionString="Data Source=DESKTOP-R2Q8S1T\SQLEXPRESS; Initial Catalog=erp_neogenis; Persist Security Info=False; Integrated Security=SSPI;" />-->
+  <!--<add name="conn" connectionString="Data Source=localhost; Initial Catalog=erp_neogenis_developer; Persist Security Info=False; Integrated Security=SSPI;" />-->
+
+</connectionStrings>

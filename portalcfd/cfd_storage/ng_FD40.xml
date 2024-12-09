@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="FD" Folio="40" Fecha="2024-11-01T05:52:34" Sello="Pqn6SSkf+1o7fbnJlQ7KYp4hVYXqX7aMkuPPLzZ9wI2GlLhqarzRHf7K7EL9O4N+yKrtFvmBxiP3Ha4EXV28Xe/tqmQZLz511GABhXWWBf+klyeM00WO87WD7nhEPP/NSLQvZD+2ILimwmIdtvev9md/FmQY+z4xbQJo7/ulEKsHFDtoajFFBUHywxXJ8DdffedFzsH/QYEL3g+cUUNZdB/yH0uxX6o+Ep3T+/hTYvGZbdjmtdJTUnq6X/4FbY3H5o4h/reMxz08PY3+KmB3hNMxK3UpRMkJExwt9ZPmwnUFSEFokKAOUh5apjcR8IiTHA9dlWp1Pp2AUErOY47NeQ==" FormaPago="03" NoCertificado="00001000000505848840" Certificado="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" CondicionesDePago="30 días" SubTotal="12.50" Moneda="MXN" Total="12.50" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="66368" Exportacion="01">
+  <cfdi:Emisor Nombre="NG SUPPLY" Rfc="NSU130606PI2" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="XEXX010101000" Nombre="MACROPORT DISTRIBUIDORA LTDA (TAX ID 12-4001690001) " RegimenFiscalReceptor="616" DomicilioFiscalReceptor="66368" NumRegIdTrib="124001690001" ResidenciaFiscal="BRA" UsoCFDI="S01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="MUESTRA BROOKS PAR" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="MUESTRA BROOKS PAR" ObjetoImp="01" ValorUnitario="12.500000" Importe="12.500000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="12.500000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="0.00">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00" Base="12.50" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

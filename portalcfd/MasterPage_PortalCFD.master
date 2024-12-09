@@ -1,0 +1,51 @@
+﻿<%@ Master Language="VB" Inherits="erp_neogenis.portalcfd_MasterPage_PortalCFD" CodeBehind="MasterPage_PortalCFD.master.vb" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<%@ Register Src="UserControls_PortalCFD/Menu_PortalCFD.ascx" TagName="Menu_PortalCFD" TagPrefix="PortalCFDControls" %>
+<%@ Register Src="UserControls_PortalCFD/SystemHeader_PortalCFD.ascx" TagName="SystemHeader_PortalCFD" TagPrefix="PortalCFDControls" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="Styles/Styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <script type="text/javascript">
+            //Put your JavaScript code here.
+        </script>
+        <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
+        </telerik:RadAjaxManager>
+        <div>
+            <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
+                <tr>
+                    <td>
+                        <PortalCFDControls:SystemHeader_PortalCFD ID="mainSystemHeader" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <PortalCFDControls:Menu_PortalCFD ID="mainMenu" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

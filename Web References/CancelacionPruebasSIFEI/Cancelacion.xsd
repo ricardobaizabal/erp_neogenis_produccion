@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://service.sifei.cancelacion/" targetNamespace="http://service.sifei.cancelacion/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SifeiException" nillable="true" type="tns:sifeiServiceFault" />
+  <xs:element name="cancelaCFDI" type="tns:cancelaCFDI" />
+  <xs:element name="cancelaCFDIResponse" type="tns:cancelaCFDIResponse" />
+  <xs:element name="cfdiRelacionado" type="tns:cfdiRelacionado" />
+  <xs:element name="cfdiRelacionadoResponse" type="tns:cfdiRelacionadoResponse" />
+  <xs:element name="consultaSATCFDI" type="tns:consultaSATCFDI" />
+  <xs:element name="consultaSATCFDIResponse" type="tns:consultaSATCFDIResponse" />
+  <xs:element name="peticionesPendientes" type="tns:peticionesPendientes" />
+  <xs:element name="peticionesPendientesResponse" type="tns:peticionesPendientesResponse" />
+  <xs:element name="procesarRespuesta" type="tns:procesarRespuesta" />
+  <xs:element name="procesarRespuestaResponse" type="tns:procesarRespuestaResponse" />
+  <xs:complexType name="procesarRespuesta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuarioSIFEI" type="xs:string" />
+      <xs:element minOccurs="0" name="passwordSIFEI" type="xs:string" />
+      <xs:element minOccurs="0" name="rfcReceptor" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="folios" nillable="true" type="tns:folios" />
+      <xs:element minOccurs="0" name="pfx" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="passwordPfx" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="folios">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="respuesta" type="tns:respuesta" />
+      <xs:element minOccurs="0" name="uuid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="procesarRespuestaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sifeiServiceFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigo" type="xs:string" />
+      <xs:element minOccurs="0" name="detalle" type="xs:string" />
+      <xs:element minOccurs="0" name="error" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="consultaSATCFDI">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuarioSIFEI" type="xs:string" />
+      <xs:element minOccurs="0" name="passwordSIFEI" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:string" />
+      <xs:element minOccurs="0" name="re" type="xs:string" />
+      <xs:element minOccurs="0" name="rr" type="xs:string" />
+      <xs:element minOccurs="0" name="tt" type="xs:string" />
+      <xs:element minOccurs="0" name="fe" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="consultaSATCFDIResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="peticionesPendientes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuarioSIFEI" type="xs:string" />
+      <xs:element minOccurs="0" name="passwordSIFEI" type="xs:string" />
+      <xs:element minOccurs="0" name="rfcReceptor" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="peticionesPendientesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancelaCFDI">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuarioSIFEI" type="xs:string" />
+      <xs:element minOccurs="0" name="passwordSifei" type="xs:string" />
+      <xs:element minOccurs="0" name="rfcEmisor" type="xs:string" />
+      <xs:element minOccurs="0" name="pfx" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="passwordPfx" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="uuids" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancelaCFDIResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cfdiRelacionado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuarioSIFEI" type="xs:string" />
+      <xs:element minOccurs="0" name="passwordSIFEI" type="xs:string" />
+      <xs:element minOccurs="0" name="rfcReceptor" type="xs:string" />
+      <xs:element minOccurs="0" name="uuid" type="xs:string" />
+      <xs:element minOccurs="0" name="pfx" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="passwordPfx" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cfdiRelacionadoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="respuesta">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Aceptacion" />
+      <xs:enumeration value="Rechazo" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

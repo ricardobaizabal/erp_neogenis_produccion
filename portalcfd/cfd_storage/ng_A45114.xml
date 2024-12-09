@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="A" Folio="45114" Fecha="2024-03-06T12:12:28" Sello="dE6i70Q5+mmjCRgJG/BF9NRF8N28yJt3uPSf7ObVaDSei3ceKvF1kOpbRmkLh/tjtiYDMyWeuG/BxqsSRSTy+1cYshPJJ67rpcBtEG+g/aU7r9ZeIT99vdjeg9dYT3huhkvO6ZTYPqVVh2ISAYidfZRAt955kFbhpiu9H+BMV773IqR5wOF1SdhLTH5UV36PG5mwP+JN9qwmJVvlajNfRvVOBVp1ZbcDk5QWae+u6VVin2vPYM9uOb52UbCExLRwQNGuFfWZw+ESbMk7cZTYaIT7Z8/ttRwdX7uI/r3z276WmrvwVLgUSSK6Ssirx+0sLX7ML31Jywe2dikNrez6Rg==" FormaPago="99" NoCertificado="30001000000500003430" Certificado="MIIFszCCA5ugAwIBAgIUMzAwMDEwMDAwMDA1MDAwMDM0MzAwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWxpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMjMwNTE4MTI0MDI2WhcNMjcwNTE4MTI0MDI2WjCB2jEoMCYGA1UEAxMfRVNDVUVMQSBXSUxTT04gRVNRVUlWRUwgUyBERSBDVjEoMCYGA1UEKRMfRVNDVUVMQSBXSUxTT04gRVNRVUlWRUwgUyBERSBDVjEoMCYGA1UEChMfRVNDVUVMQSBXSUxTT04gRVNRVUlWRUwgUyBERSBDVjElMCMGA1UELRMcRVdFMTcwOTA0NVUwIC8gVkFEQTgwMDkyN0RKMzEeMBwGA1UEBRMVIC8gVkFEQTgwMDkyN0hTUlNSTDA1MRMwEQYDVQQLEwpTdWN1cnNhbCAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5V00mF+ucoj8mItceE086i12hPoyH3fK6BGQCPU1vGx3K8etHev7GASu3dYF3TA4X5ypTRAKaCzyI7v53uLZpQAWhmvTIMhYBtGDhQ7RR5GyWzaUDIhtNpO55xrmb2+O4FzkuYbOvnSOPZ6qZRySI168+N/aZCcEPaZVsFbCOnp6FHe9GhqLD1ZwsIRUdLEC7ml4WbG1+jfmCxx/c/+JtcLL9nUBIvMFu1px6ZoYRV/LhrwxtJ7D4BPss/WfBxMpId19hYfzAULYBYRWVP1l+4JTC0fHnyaflBQXH8yvCYXsEIX++lKGTmvL4QESIUdzGLSj7pXt3cdk5mHK2FHHxQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQsFAAOCAgEAjTvAc61X98kmDGSfH7RfTnMb6QdDujISjPM2/rZ6Fde0NeQrshDvOffkXLq8f2n6D1m5GpHkwYvq0GUAyBmBoSLuJPPbLp87i/Dj64nqHKIVIQCTK2867MEbxe7ToAMlaIfJ6f1gR1kNANoc/i204PESIuPrUkNgK7pjsDURfsVK8XF7w2dxo2Vn5J+KSTykEjSZce7EvTFtjYHhASq61wziommRn4BSmMl+7WYv/FFBl53pJLaJG0Hsog7s8+V9QtPhcq6Cua7D+oOnjnuhDDIXs1UhIkqMPli9jdVjhbthjIP5CDUvb8jO8VJbLWjHgcBXxrGRZzzlajQkRQ+QbgqDU56ePIFZY02BQsjjE1DYBXeM3pwz5ZWKS+HioAu1quDUt92B9skfqNHzvelZMIuEz2lg10pdJiF5TbhS4mtxF77QK0UaGWOOsVuQ6zfI9eJ9j9bZnMfxj6wLChXcY07L5ckN/1A1o0CVMo5vYcEwz9X7lESjwZgiaNQQwApBEOGHyClU/FyNGFVgH1wFhql+z9Fe7EXnDLCPeu8t8SOENBgINVh4WLsOgY9ll/rOvwEpZ0jVMOwaz2vX4kW9hE/s1q9QuIsBRaDpwz+H6ONPBxkfENiAWWIFn4oM7kZjW3h9VMVirK+YAMjIPbcSEsYLMh9WNVcZmionA3ZHSjY=" CondicionesDePago="Contado" SubTotal="257.76" Moneda="MXN" Total="299.00" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="01210" Exportacion="01">
+  <cfdi:InformacionGlobal Periodicidad="04" Meses="03" Año="2024" />
+  <cfdi:Emisor Nombre="ESCUELA WILSON ESQUIVEL" Rfc="EWE1709045U0" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="XAXX010101000" Nombre="PUBLICO EN GENERAL" RegimenFiscalReceptor="616" DomicilioFiscalReceptor="01211" UsoCFDI="S01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="53102402" NoIdentificacion="E5525783" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="ELITE ULTRA LIGHT NO SHOW TAB - L / Push-thru Pink" ObjetoImp="02" ValorUnitario="257.758600" Importe="257.758600">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="257.758600" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="41.241376" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="41.24">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="41.24" Base="257.76" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ClientsDeleteConfirmationMessage" xml:space="preserve">
+    <value>¿Está seguro que desea borrar a este cliente de la base de datos?</value>
+  </data>
+  <data name="ClientsEmptyGridMessage" xml:space="preserve">
+    <value>No existen clientes registrados</value>
+  </data>
+  <data name="gridColumnNameContact" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="gridColumnNameContactPhone" xml:space="preserve">
+    <value>Teléfono del Contacto</value>
+  </data>
+  <data name="gridColumnNameRFC" xml:space="preserve">
+    <value>RFC</value>
+  </data>
+  <data name="gridColumnNameSocialReason" xml:space="preserve">
+    <value>Razón Social</value>
+  </data>
+  <data name="lblClientsListLegend" xml:space="preserve">
+    <value>Listado de Clientes</value>
+  </data>
+  <data name="WindowsTitle" xml:space="preserve">
+    <value>Sistema ERP Neogenis</value>
+  </data>
+  <data name="lblProductsListLegend" xml:space="preserve">
+    <value>Listado de Productos</value>
+  </data>
+  <data name="ProductsEmptyGridMessage" xml:space="preserve">
+    <value>No existen productos registrados</value>
+  </data>
+  <data name="ProductsDeleteConfirmationMessage" xml:space="preserve">
+    <value>¿Está seguro que desea borrar este producto de la base de datos?</value>
+  </data>
+  <data name="gridColumnNameCode" xml:space="preserve">
+    <value>Código-Sku</value>
+  </data>
+  <data name="gridColumnNameDescription" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="gridColumnNameUnitaryPrice" xml:space="preserve">
+    <value>Precio Unit. 1</value>
+  </data>
+  <data name="gridColumnNameMeasureUnit" xml:space="preserve">
+    <value>Unidad</value>
+  </data>
+  <data name="btnAddItem" xml:space="preserve">
+    <value>Agregar Concepto</value>
+  </data>
+  <data name="cmbEmptyMessage" xml:space="preserve">
+    <value>-- Seleccione --</value>
+  </data>
+  <data name="gridColumnNameAmount" xml:space="preserve">
+    <value>Importe</value>
+  </data>
+  <data name="lblUnit" xml:space="preserve">
+    <value>Unidad de Medida:</value>
+  </data>
+  <data name="lblClientData" xml:space="preserve">
+    <value>Datos del Cliente</value>
+  </data>
+  <data name="lblClientItems" xml:space="preserve">
+    <value>Agregar Conceptos</value>
+  </data>
+  <data name="lblClientsSelectionLegend" xml:space="preserve">
+    <value>Datos del comprobante</value>
+  </data>
+  <data name="lblCode" xml:space="preserve">
+    <value>Código-Sku:</value>
+  </data>
+  <data name="lblContact" xml:space="preserve">
+    <value>Contacto:</value>
+  </data>
+  <data name="lblContactPhone" xml:space="preserve">
+    <value>Teléfono del Contacto:</value>
+  </data>
+  <data name="lblDescription" xml:space="preserve">
+    <value>Descripción:</value>
+  </data>
+  <data name="lblItems" xml:space="preserve">
+    <value>Conceptos</value>
+  </data>
+  <data name="lblQuantity" xml:space="preserve">
+    <value>Cantidad:</value>
+  </data>
+  <data name="lblRFC" xml:space="preserve">
+    <value>RFC:</value>
+  </data>
+  <data name="lblSocialReason" xml:space="preserve">
+    <value>Razón Social:</value>
+  </data>
+  <data name="lblUnitaryPrice" xml:space="preserve">
+    <value>Precio Unitario:</value>
+  </data>
+  <data name="validatorMessage" xml:space="preserve">
+    <value>Requerido</value>
+  </data>
+  <data name="gridColumnNameQuantity" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="ItemsEmptyGridMessage" xml:space="preserve">
+    <value>No existen conceptos registrados</value>
+  </data>
+  <data name="lblIVA" xml:space="preserve">
+    <value>IVA = </value>
+  </data>
+  <data name="lblResume" xml:space="preserve">
+    <value>Resumen</value>
+  </data>
+  <data name="lblSubTotal" xml:space="preserve">
+    <value>Sub Total = </value>
+  </data>
+  <data name="lblTotal" xml:space="preserve">
+    <value>Total =</value>
+  </data>
+  <data name="btnCreateInvoice" xml:space="preserve">
+    <value>Generar CFDI</value>
+  </data>
+  <data name="ItemsDeleteConfirmationMessage" xml:space="preserve">
+    <value>¿Está seguro que desea borrar este concepto?</value>
+  </data>
+  <data name="btnAddClient" xml:space="preserve">
+    <value>Agregar Cliente</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="lblClientEditLegend" xml:space="preserve">
+    <value>Agregar/Editar Cliente</value>
+  </data>
+  <data name="lblColony" xml:space="preserve">
+    <value>Colonia:</value>
+  </data>
+  <data name="lblContactEmail" xml:space="preserve">
+    <value>Email del Contacto:</value>
+  </data>
+  <data name="lblState" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="lblStreet" xml:space="preserve">
+    <value>Calle:</value>
+  </data>
+  <data name="lblTownship" xml:space="preserve">
+    <value>Municipio:</value>
+  </data>
+  <data name="lblZipCode" xml:space="preserve">
+    <value>Código Postal:</value>
+  </data>
+  <data name="validatorMessageEmail" xml:space="preserve">
+    <value>Formato Inválido</value>
+  </data>
+  <data name="btnAddProduct" xml:space="preserve">
+    <value>Agregar Producto</value>
+  </data>
+  <data name="lblProductEditLegend" xml:space="preserve">
+    <value>Agregar/Editar Producto</value>
+  </data>
+  <data name="lblExtNumber" xml:space="preserve">
+    <value>No. Ext.</value>
+  </data>
+  <data name="lblIntNumber" xml:space="preserve">
+    <value>No. Int.</value>
+  </data>
+  <data name="lblCountry" xml:space="preserve">
+    <value>País:</value>
+  </data>
+  <data name="certificatesEmptyGridMessage" xml:space="preserve">
+    <value>No existen Certificados registrados</value>
+  </data>
+  <data name="gridColumnNameActive" xml:space="preserve">
+    <value>Activo</value>
+  </data>
+  <data name="gridColumnNameCertificate" xml:space="preserve">
+    <value>Certificado</value>
+  </data>
+  <data name="gridColumnNameDelete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="gridColumnNameDownload" xml:space="preserve">
+    <value>Descargar</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Extensión Inválida</value>
+  </data>
+  <data name="lblActivate" xml:space="preserve">
+    <value>Activo:</value>
+  </data>
+  <data name="lblCertificate" xml:space="preserve">
+    <value>Certificado:</value>
+  </data>
+  <data name="lblCertificateLegend" xml:space="preserve">
+    <value>Configuración de Certificados</value>
+  </data>
+  <data name="lblCertificatesListLegend" xml:space="preserve">
+    <value>Lista de Certificados</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Contraseña:</value>
+  </data>
+  <data name="lblPrivateKey" xml:space="preserve">
+    <value>Llave Privada:</value>
+  </data>
+  <data name="lblPrivateKeyLegend" xml:space="preserve">
+    <value>Configuración de Llave Privada &amp; Contraseña</value>
+  </data>
+  <data name="lblPrivateKeyDownload" xml:space="preserve">
+    <value>Llave Privada Descargable:</value>
+  </data>
+  <data name="CertificateDeleteConfirmationMessage" xml:space="preserve">
+    <value>¿Está seguro que desea borrar este certificado?</value>
+  </data>
+  <data name="lblDataLegend" xml:space="preserve">
+    <value>Configuración de Datos de la Empresa</value>
+  </data>
+  <data name="lblLogo" xml:space="preserve">
+    <value>Logo para portal:</value>
+  </data>
+  <data name="lblLogoActual" xml:space="preserve">
+    <value>Logo Actual:</value>
+  </data>
+  <data name="lblReportsLegend" xml:space="preserve">
+    <value>Reportes</value>
+  </data>
+  <data name="AppBanner" xml:space="preserve">
+    <value>logo_union.jpg</value>
+  </data>
+  <data name="gridColumnNameUnitaryPrice3" xml:space="preserve">
+    <value>Precio Unit. 3</value>
+  </data>
+  <data name="gridColumnNameUnitaryPrice2" xml:space="preserve">
+    <value>Precio Unit. 2</value>
+  </data>
+  <data name="lblRegimen" xml:space="preserve">
+    <value>Régimen fiscal:</value>
+  </data>
+  <data name="lblMetodoPago" xml:space="preserve">
+    <value>Método de pago:</value>
+  </data>
+  <data name="validatorMessageRfc" xml:space="preserve">
+    <value>R.F.C. no válido</value>
+  </data>
+  <data name="lblImporteTasaCero" xml:space="preserve">
+    <value>Importe Tasa 0%:</value>
+  </data>
+  <data name="lblEnviarA" xml:space="preserve">
+    <value>Enviar a:</value>
+  </data>
+  <data name="lblLugarExpedicion" xml:space="preserve">
+    <value>Lugar de expedición:</value>
+  </data>
+  <data name="lblNumCtaPago" xml:space="preserve">
+    <value>Número de cuenta: (opcional)</value>
+  </data>
+  <data name="lblNumCtaPagoTooltip" xml:space="preserve">
+    <value>Número de la cuenta con la cual se pagará esta factura (al menos los 4 últimos dígitos de la cuenta)</value>
+  </data>
+  <data name="btnCancelInvoice" xml:space="preserve">
+    <value>Cancelar operación</value>
+  </data>
+  <data name="lblDatosEnvioLegend" xml:space="preserve">
+    <value>Agregar / Editar Datos de Envío</value>
+  </data>
+  <data name="lblEnvioCalle" xml:space="preserve">
+    <value>Calle:</value>
+  </data>
+  <data name="lblEnvioColonia" xml:space="preserve">
+    <value>Colonia:</value>
+  </data>
+  <data name="lblEnvioCP" xml:space="preserve">
+    <value>Código Postal:</value>
+  </data>
+  <data name="lblEnvioEmail" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lblEnvioEstado" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="lblEnvioMunicipio" xml:space="preserve">
+    <value>Municipio:</value>
+  </data>
+  <data name="lblEnvioNoExt" xml:space="preserve">
+    <value>No. Ext.:</value>
+  </data>
+  <data name="lblEnvioNoInt" xml:space="preserve">
+    <value>No. Int.:</value>
+  </data>
+  <data name="lblEnvioNombre" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
+  <data name="lblEnvioPais" xml:space="preserve">
+    <value>País:</value>
+  </data>
+  <data name="lblEnvioTelefono" xml:space="preserve">
+    <value>Teléfono:</value>
+  </data>
+  <data name="btnEnvCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnEnvSaveClient" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="gridColumnNameUnitaryPrice4" xml:space="preserve">
+    <value>Precio Unit. 4</value>
+  </data>
+  <data name="ProviderDeleteConfirmationMessage" xml:space="preserve">
+    <value>Va a borrar un proveedor de la Base de Datos. ¿Desea continuar?</value>
+  </data>
+  <data name="gridColumnNameComercialName" xml:space="preserve">
+    <value>Nombre Comercial</value>
+  </data>
+</root>

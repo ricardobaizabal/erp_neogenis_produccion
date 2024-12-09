@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="A" Folio="33742" Fecha="2023-09-21T12:02:41" Sello="f7cNAma4W3ev/cszO92SHwPk7XlskWM8Q8mitKb4Dje7KFodXlUiTmcoIHNJLacEIdQC/U/VaqbYTOLJoqqKz/Ady6CD4oJ1qo1thhuAuD5pjlgaYCgxRYAdBvNGbIbtVHYVKsfh0yHbyQpFthgCEA3/hb5a4xjqGMhS74nWGXtBoMO+6K1DNSYVlEunuCV/PYh4jEPKXrNHtYN0l8GuhPhoqugJP/TRKYLaGiKkCLCb/cDSocVq1hF7yjzJXGan22SOcmOFvH6lmfvxcP3wcU6f3THHZTbGj68pGfaWdnay8sRKCL/kgIwK4W2DKWsA9tE95BBUO8ySO/sEiWio0A==" FormaPago="99" NoCertificado="30001000000500003416" Certificado="MIIFsDCCA5igAwIBAgIUMzAwMDEwMDAwMDA1MDAwMDM0MTYwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWxpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMjMwNTE4MTE0MzUxWhcNMjcwNTE4MTE0MzUxWjCB1zEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gVkFEQTgwMDkyN0RKMzEeMBwGA1UEBRMVIC8gVkFEQTgwMDkyN0hTUlNSTDA1MRMwEQYDVQQLEwpTdWN1cnNhbCAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtmecO6n2GS0zL025gbHGQVxznPDICoXzR2uUngz4DqxVUC/w9cE6FxSiXm2ap8Gcjg7wmcZfm85EBaxCx/0J2u5CqnhzIoGCdhBPuhWQnIh5TLgj/X6uNquwZkKChbNe9aeFirU/JbyN7Egia9oKH9KZUsodiM/pWAH00PCtoKJ9OBcSHMq8Rqa3KKoBcfkg1ZrgueffwRLws9yOcRWLb02sDOPzGIm/jEFicVYt2Hw1qdRE5xmTZ7AGG0UHs+unkGjpCVeJ+BEBn0JPLWVvDKHZAQMj6s5Bku35+d/MyATkpOPsGT/VTnsouxekDfikJD1f7A1ZpJbqDpkJnss3vQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQsFAAOCAgEAFaUgj5PqgvJigNMgtrdXZnbPfVBbukAbW4OGnUhNrA7SRAAfv2BSGk16PI0nBOr7qF2mItmBnjgEwk+DTv8Zr7w5qp7vleC6dIsZFNJoa6ZndrE/f7KO1CYruLXr5gwEkIyGfJ9NwyIagvHHMszzyHiSZIA850fWtbqtythpAliJ2jF35M5pNS+YTkRB+T6L/c6m00ymN3q9lT1rB03YywxrLreRSFZOSrbwWfg34EJbHfbFXpCSVYdJRfiVdvHnewN0r5fUlPtR9stQHyuqewzdkyb5jTTw02D2cUfL57vlPStBj7SEi3uOWvLrsiDnnCIxRMYJ2UA2ktDKHk+zWnsDmaeleSzonv2CHW42yXYPCvWi88oE1DJNYLNkIjua7MxAnkNZbScNw01A6zbLsZ3y8G6eEYnxSTRfwjd8EP4kdiHNJftm7Z4iRU7HOVh79/lRWB+gd171s3d/mI9kte3MRy6V8MMEMCAnMboGpaooYwgAmwclI2XZCczNWXfhaWe0ZS5PmytD/GDpXzkX0oEgY9K/uYo5V77NdZbGAjmyi8cE2B2ogvyaN2XfIInrZPgEffJ4AB7kFA2mwesdLOCh0BLD9itmCve3A1FGR4+stO2ANUoiI3w3Tv2yQSg4bjeDlJ08lXaaFCLW2peEXMXjQUk7fmpb5MNuOUTW6BE=" CondicionesDePago="Contado" SubTotal="9254.31" Moneda="MXN" Total="10735.00" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="66368" Exportacion="01">
+  <cfdi:InformacionGlobal Periodicidad="04" Meses="09" Año="2023" />
+  <cfdi:Emisor Nombre="ESCUELA KEMPER URGATE SA DE CV" Rfc="EKU9003173C9" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="XAXX010101000" Nombre="PUBLICO EN GENERAL" RegimenFiscalReceptor="616" DomicilioFiscalReceptor="66368" UsoCFDI="S01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="1119396BKPNK-085" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="Tenis Hoka Rincon 3 de mujer para Elite running" ObjetoImp="02" ValorUnitario="3438.790000" Importe="3438.790000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3438.790000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="550.206400" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="1106512BGBGL-080" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="Tenis Hoka Challenger ATR 6 de mujer" ObjetoImp="02" ValorUnitario="2154.310000" Importe="2154.310000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2154.310000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="344.689600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="49221510" NoIdentificacion="CLGCAS-WH003-23D1" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="Gorra con visera plana Ciele ALZCap adulto" ObjetoImp="02" ValorUnitario="904.310000" Importe="904.310000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="904.310000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="144.689600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111602" NoIdentificacion="09POPPY78L-BKA-060" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="Tenis Alexis Bendell para mujer" ObjetoImp="02" ValorUnitario="602.590000" Importe="602.590000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="602.590000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="96.414400" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="1106512BGBGL-075" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="Tenis Hoka Challenger ATR 6 de mujer" ObjetoImp="02" ValorUnitario="2154.310000" Importe="2154.310000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2154.310000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="344.689600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="1480.69">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1480.69" Base="9254.31" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+<cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="32758FDC-6BA3-469E-9033-FD9C52C230D5" FechaTimbrado="2023-09-21T12:02:43" RfcProvCertif="SPR190613I52" SelloCFD="f7cNAma4W3ev/cszO92SHwPk7XlskWM8Q8mitKb4Dje7KFodXlUiTmcoIHNJLacEIdQC/U/VaqbYTOLJoqqKz/Ady6CD4oJ1qo1thhuAuD5pjlgaYCgxRYAdBvNGbIbtVHYVKsfh0yHbyQpFthgCEA3/hb5a4xjqGMhS74nWGXtBoMO+6K1DNSYVlEunuCV/PYh4jEPKXrNHtYN0l8GuhPhoqugJP/TRKYLaGiKkCLCb/cDSocVq1hF7yjzJXGan22SOcmOFvH6lmfvxcP3wcU6f3THHZTbGj68pGfaWdnay8sRKCL/kgIwK4W2DKWsA9tE95BBUO8ySO/sEiWio0A==" NoCertificadoSAT="30001000000500003456" SelloSAT="ZoGtJ+QI6l5i9h32y/S5/mUF8LbDKRu9tae+vMutclrw4Ka69evmjbqPOd96e/j133aFJ/SeDwPwl5c/LSrTZ/p6OmvOoRiHbCE6M58N9DcNirxxx2juLILofg+8p7ACuIhlYvYzLPdhGZ3Y29z2I5cpzBY9NIdJe5X8p9Xqh1doYXM7Q4tTgRrQ+yXFxpz8kOcV4FWSndYkiwGUUmI0hUvj4n1737VQMfTfLgjPEoBwtgw7jiEuODnoKMZh2dVWYb6VCmZVL1zWtMtZk/KKOZHKFnt/6DiFeRf9E504H4nnHV99wRRpcfYRmooaXE5yfH9FSrNkUna7KNH0/ybHWg==" /></cfdi:Complemento></cfdi:Comprobante>

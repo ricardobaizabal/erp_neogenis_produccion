@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://cfdi.ws2.facturehoy.certus.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WsEmisionTimbradoService" targetNamespace="http://cfdi.ws2.facturehoy.certus.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://wsprod1.facturehoy.com:80/CFDI/WsEmisionTimbrado?xsd=1" namespace="http://cfdi.ws2.facturehoy.certus.com/" />
+    </xsd:schema>
+  </types>
+  <message name="EmitirTimbrar">
+    <part name="parameters" element="tns:EmitirTimbrar" />
+  </message>
+  <message name="EmitirTimbrarResponse">
+    <part name="parameters" element="tns:EmitirTimbrarResponse" />
+  </message>
+  <message name="EmitirTimbrarPersonalizado">
+    <part name="parameters" element="tns:EmitirTimbrarPersonalizado" />
+  </message>
+  <message name="EmitirTimbrarPersonalizadoResponse">
+    <part name="parameters" element="tns:EmitirTimbrarPersonalizadoResponse" />
+  </message>
+  <message name="EmitirTimbrarTest">
+    <part name="parameters" element="tns:EmitirTimbrarTest" />
+  </message>
+  <message name="EmitirTimbrarTestResponse">
+    <part name="parameters" element="tns:EmitirTimbrarTestResponse" />
+  </message>
+  <message name="Cancelar">
+    <part name="parameters" element="tns:Cancelar" />
+  </message>
+  <message name="CancelarResponse">
+    <part name="parameters" element="tns:CancelarResponse" />
+  </message>
+  <message name="CancelarCFDI">
+    <part name="parameters" element="tns:CancelarCFDI" />
+  </message>
+  <message name="CancelarCFDIResponse">
+    <part name="parameters" element="tns:CancelarCFDIResponse" />
+  </message>
+  <message name="RecuperarAcuse">
+    <part name="parameters" element="tns:RecuperarAcuse" />
+  </message>
+  <message name="RecuperarAcuseResponse">
+    <part name="parameters" element="tns:RecuperarAcuseResponse" />
+  </message>
+  <message name="RecuperarAcuseCancelacion">
+    <part name="parameters" element="tns:RecuperarAcuseCancelacion" />
+  </message>
+  <message name="RecuperarAcuseCancelacionResponse">
+    <part name="parameters" element="tns:RecuperarAcuseCancelacionResponse" />
+  </message>
+  <message name="CancelaOtroPAC">
+    <part name="parameters" element="tns:CancelaOtroPAC" />
+  </message>
+  <message name="CancelaOtroPACResponse">
+    <part name="parameters" element="tns:CancelaOtroPACResponse" />
+  </message>
+  <portType name="WsEmisionTimbrado">
+    <operation name="EmitirTimbrar">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/EmitirTimbrarRequest" message="tns:EmitirTimbrar" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/EmitirTimbrarResponse" message="tns:EmitirTimbrarResponse" />
+    </operation>
+    <operation name="EmitirTimbrarPersonalizado">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/EmitirTimbrarPersonalizadoRequest" message="tns:EmitirTimbrarPersonalizado" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/EmitirTimbrarPersonalizadoResponse" message="tns:EmitirTimbrarPersonalizadoResponse" />
+    </operation>
+    <operation name="EmitirTimbrarTest">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/EmitirTimbrarTestRequest" message="tns:EmitirTimbrarTest" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/EmitirTimbrarTestResponse" message="tns:EmitirTimbrarTestResponse" />
+    </operation>
+    <operation name="Cancelar">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/CancelarRequest" message="tns:Cancelar" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/CancelarResponse" message="tns:CancelarResponse" />
+    </operation>
+    <operation name="CancelarCFDI">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/CancelarCFDIRequest" message="tns:CancelarCFDI" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/CancelarCFDIResponse" message="tns:CancelarCFDIResponse" />
+    </operation>
+    <operation name="RecuperarAcuse">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/RecuperarAcuseRequest" message="tns:RecuperarAcuse" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/RecuperarAcuseResponse" message="tns:RecuperarAcuseResponse" />
+    </operation>
+    <operation name="RecuperarAcuseCancelacion">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/RecuperarAcuseCancelacionRequest" message="tns:RecuperarAcuseCancelacion" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/RecuperarAcuseCancelacionResponse" message="tns:RecuperarAcuseCancelacionResponse" />
+    </operation>
+    <operation name="CancelaOtroPAC">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/CancelaOtroPACRequest" message="tns:CancelaOtroPAC" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsEmisionTimbrado/CancelaOtroPACResponse" message="tns:CancelaOtroPACResponse" />
+    </operation>
+  </portType>
+  <binding name="WsEmisionTimbradoPortBinding" type="tns:WsEmisionTimbrado">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="EmitirTimbrar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="EmitirTimbrarPersonalizado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="EmitirTimbrarTest">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Cancelar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CancelarCFDI">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RecuperarAcuse">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RecuperarAcuseCancelacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CancelaOtroPAC">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WsEmisionTimbradoService">
+    <port name="WsEmisionTimbradoPort" binding="tns:WsEmisionTimbradoPortBinding">
+      <soap:address location="http://wsprod1.facturehoy.com:80/CFDI/WsEmisionTimbrado" />
+    </port>
+  </service>
+</definitions>

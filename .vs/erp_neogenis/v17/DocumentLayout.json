@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DT - ACTECK\\Documents\\erp_neogenis(naturalgs_Produccion)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1680F509-362A-432F-896B-5E0511F4E693}|erp_neogenis.vbproj|d:\\dt - acteck\\documents\\erp_neogenis(naturalgs_produccion)\\portalcfd\\almacen\\ajustes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{1680F509-362A-432F-896B-5E0511F4E693}|erp_neogenis.vbproj|solutionrelative:portalcfd\\almacen\\ajustes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1680F509-362A-432F-896B-5E0511F4E693}|erp_neogenis.vbproj|D:\\DT - ACTECK\\Documents\\erp_neogenis(naturalgs_Produccion)\\portalcfd\\pedidos\\pedidos.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1680F509-362A-432F-896B-5E0511F4E693}|erp_neogenis.vbproj|solutionrelative:portalcfd\\pedidos\\pedidos.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 163,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ajustes.aspx",
+              "DocumentMoniker": "D:\\DT - ACTECK\\Documents\\erp_neogenis(naturalgs_Produccion)\\portalcfd\\almacen\\ajustes.aspx",
+              "RelativeDocumentMoniker": "portalcfd\\almacen\\ajustes.aspx",
+              "ToolTip": "D:\\DT - ACTECK\\Documents\\erp_neogenis(naturalgs_Produccion)\\portalcfd\\almacen\\ajustes.aspx",
+              "RelativeToolTip": "portalcfd\\almacen\\ajustes.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-08T15:11:43.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "pedidos.aspx.vb",
+              "DocumentMoniker": "D:\\DT - ACTECK\\Documents\\erp_neogenis(naturalgs_Produccion)\\portalcfd\\pedidos\\pedidos.aspx.vb",
+              "RelativeDocumentMoniker": "portalcfd\\pedidos\\pedidos.aspx.vb",
+              "ToolTip": "D:\\DT - ACTECK\\Documents\\erp_neogenis(naturalgs_Produccion)\\portalcfd\\pedidos\\pedidos.aspx.vb",
+              "RelativeToolTip": "portalcfd\\pedidos\\pedidos.aspx.vb",
+              "ViewState": "AgIAAKIBAAAAAAAAAIAwwLIBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-08T15:10:18.158Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

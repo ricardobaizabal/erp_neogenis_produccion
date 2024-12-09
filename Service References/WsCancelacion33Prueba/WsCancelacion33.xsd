@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://cfdi.ws2.facturehoy.certus.com/" targetNamespace="http://cfdi.ws2.facturehoy.certus.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CancelarEncodeCSD" type="tns:CancelarEncodeCSD" />
+  <xs:element name="CancelarEncodeCSDResponse" type="tns:CancelarEncodeCSDResponse" />
+  <xs:element name="CancelarPFX" type="tns:CancelarPFX" />
+  <xs:element name="CancelarPFXResponse" type="tns:CancelarPFXResponse" />
+  <xs:element name="CancelarXMLFirmado" type="tns:CancelarXMLFirmado" />
+  <xs:element name="CancelarXMLFirmadoResponse" type="tns:CancelarXMLFirmadoResponse" />
+  <xs:element name="EmisionTimbradoException" type="tns:EmisionTimbradoException" />
+  <xs:complexType name="CancelarPFX">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element minOccurs="0" name="RFC" type="xs:string" />
+      <xs:element minOccurs="0" name="UUID" type="xs:string" />
+      <xs:element minOccurs="0" name="PFXPassword" type="xs:string" />
+      <xs:element minOccurs="0" name="PFX" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelarPFXResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wsResponseCancela33BO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="wsResponseCancela33BO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="acuse" type="xs:base64Binary" />
+      <xs:element name="codigoError" type="xs:int" />
+      <xs:element minOccurs="0" name="folioUDDI" type="xs:string" />
+      <xs:element minOccurs="0" name="isError" type="xs:boolean" />
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EmisionTimbradoException">
+    <xs:sequence>
+      <xs:element name="codeException" type="xs:int" />
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelarXMLFirmado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element minOccurs="0" name="xml" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelarXMLFirmadoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wsResponseCancela33BO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelarEncodeCSD">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element minOccurs="0" name="UUID" type="xs:string" />
+      <xs:element minOccurs="0" name="keyEncode" type="xs:string" />
+      <xs:element minOccurs="0" name="certificado" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelarEncodeCSDResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wsResponseCancela33BO" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

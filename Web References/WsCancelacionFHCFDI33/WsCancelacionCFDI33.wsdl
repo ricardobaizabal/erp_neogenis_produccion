@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://cfdi.ws2.facturehoy.certus.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WsCancelacionCFDI33" targetNamespace="http://cfdi.ws2.facturehoy.certus.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://cancelacion.facturehoy.com:80/CancelacionCFDI33/WsCancelacionCFDI33?xsd=1" namespace="http://cfdi.ws2.facturehoy.certus.com/" />
+    </xsd:schema>
+  </types>
+  <message name="ObtienePeticionesPendientes">
+    <part name="parameters" element="tns:ObtienePeticionesPendientes" />
+  </message>
+  <message name="ObtienePeticionesPendientesResponse">
+    <part name="parameters" element="tns:ObtienePeticionesPendientesResponse" />
+  </message>
+  <message name="ObtieneStatusCFDI">
+    <part name="parameters" element="tns:ObtieneStatusCFDI" />
+  </message>
+  <message name="ObtieneStatusCFDIResponse">
+    <part name="parameters" element="tns:ObtieneStatusCFDIResponse" />
+  </message>
+  <message name="ObtieneRelacionadosCFDI">
+    <part name="parameters" element="tns:ObtieneRelacionadosCFDI" />
+  </message>
+  <message name="ObtieneRelacionadosCFDIResponse">
+    <part name="parameters" element="tns:ObtieneRelacionadosCFDIResponse" />
+  </message>
+  <message name="ObtieneRelacionadosCFDICA">
+    <part name="parameters" element="tns:ObtieneRelacionadosCFDICA" />
+  </message>
+  <message name="ObtieneRelacionadosCFDICAResponse">
+    <part name="parameters" element="tns:ObtieneRelacionadosCFDICAResponse" />
+  </message>
+  <message name="CancelarCFDI">
+    <part name="parameters" element="tns:CancelarCFDI" />
+  </message>
+  <message name="CancelarCFDIResponse">
+    <part name="parameters" element="tns:CancelarCFDIResponse" />
+  </message>
+  <message name="AceptarRechazarCancelacionCA">
+    <part name="parameters" element="tns:AceptarRechazarCancelacionCA" />
+  </message>
+  <message name="AceptarRechazarCancelacionCAResponse">
+    <part name="parameters" element="tns:AceptarRechazarCancelacionCAResponse" />
+  </message>
+  <message name="CancelarCFDICA">
+    <part name="parameters" element="tns:CancelarCFDICA" />
+  </message>
+  <message name="CancelarCFDICAResponse">
+    <part name="parameters" element="tns:CancelarCFDICAResponse" />
+  </message>
+  <message name="AceptarRechazarCancelacion">
+    <part name="parameters" element="tns:AceptarRechazarCancelacion" />
+  </message>
+  <message name="AceptarRechazarCancelacionResponse">
+    <part name="parameters" element="tns:AceptarRechazarCancelacionResponse" />
+  </message>
+  <portType name="WsCancelacionCFDI33">
+    <operation name="ObtienePeticionesPendientes">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/ObtienePeticionesPendientesRequest" message="tns:ObtienePeticionesPendientes" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/ObtienePeticionesPendientesResponse" message="tns:ObtienePeticionesPendientesResponse" />
+    </operation>
+    <operation name="ObtieneStatusCFDI">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/ObtieneStatusCFDIRequest" message="tns:ObtieneStatusCFDI" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/ObtieneStatusCFDIResponse" message="tns:ObtieneStatusCFDIResponse" />
+    </operation>
+    <operation name="ObtieneRelacionadosCFDI">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/ObtieneRelacionadosCFDIRequest" message="tns:ObtieneRelacionadosCFDI" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/ObtieneRelacionadosCFDIResponse" message="tns:ObtieneRelacionadosCFDIResponse" />
+    </operation>
+    <operation name="ObtieneRelacionadosCFDICA">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/ObtieneRelacionadosCFDICARequest" message="tns:ObtieneRelacionadosCFDICA" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/ObtieneRelacionadosCFDICAResponse" message="tns:ObtieneRelacionadosCFDICAResponse" />
+    </operation>
+    <operation name="CancelarCFDI">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/CancelarCFDIRequest" message="tns:CancelarCFDI" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/CancelarCFDIResponse" message="tns:CancelarCFDIResponse" />
+    </operation>
+    <operation name="AceptarRechazarCancelacionCA">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/AceptarRechazarCancelacionCARequest" message="tns:AceptarRechazarCancelacionCA" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/AceptarRechazarCancelacionCAResponse" message="tns:AceptarRechazarCancelacionCAResponse" />
+    </operation>
+    <operation name="CancelarCFDICA">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/CancelarCFDICARequest" message="tns:CancelarCFDICA" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/CancelarCFDICAResponse" message="tns:CancelarCFDICAResponse" />
+    </operation>
+    <operation name="AceptarRechazarCancelacion">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/AceptarRechazarCancelacionRequest" message="tns:AceptarRechazarCancelacion" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsCancelacionCFDI33/AceptarRechazarCancelacionResponse" message="tns:AceptarRechazarCancelacionResponse" />
+    </operation>
+  </portType>
+  <binding name="WsCancelacionCFDI33PortBinding" type="tns:WsCancelacionCFDI33">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="ObtienePeticionesPendientes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ObtieneStatusCFDI">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ObtieneRelacionadosCFDI">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ObtieneRelacionadosCFDICA">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CancelarCFDI">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AceptarRechazarCancelacionCA">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CancelarCFDICA">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AceptarRechazarCancelacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WsCancelacionCFDI33">
+    <port name="WsCancelacionCFDI33Port" binding="tns:WsCancelacionCFDI33PortBinding">
+      <soap:address location="http://cancelacion.facturehoy.com:80/CancelacionCFDI33/WsCancelacionCFDI33" />
+    </port>
+  </service>
+</definitions>

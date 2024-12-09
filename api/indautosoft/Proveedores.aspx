@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Proveedores.aspx.vb" Inherits="erp_neogenis.Etiquetas2" %>

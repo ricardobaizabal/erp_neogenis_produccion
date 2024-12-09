@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="A" Folio="36655" Fecha="2023-10-05T08:56:38" Sello="ceGqQ+PMRDVA2lWow8ZlrDfZ27ug7/QWDfsGNZ/uQ5tG2SNNtd1RYDVMWh0yKMIkyajm5vEY4abYGeTMcALuVvBMVebxlTuMIc48F38yBulwwJ3P13nTpel5ZfghZ3x3QlEUZhrVZjMArNeukQ6v+o5Ddiw9FwzsddmyHFxAv46J2SPJPEDZfKiQEj3E9U6fRM9HoZt1Hy8/9jPGpmVH+MCS2zyq7uOwTP3X/pIOunoE6wNvcJKqrqVPZTI8lkoTRIUSK+EsOE/fo4yadv9dO3tK2C/8kR9UFVx93cM8oinktdaRJwRIbpNxwEUAnxmbIJemsSOR4iOqBGChvZbcRA==" FormaPago="99" NoCertificado="00001000000505848840" Certificado="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" CondicionesDePago="60 días" SubTotal="155075.00" Descuento="4652.25" Moneda="MXN" Total="174490.39" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="66368" Exportacion="01">
+  <cfdi:Emisor Nombre="NG SUPPLY" Rfc="NSU130606PI2" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="RUN210714F23" Nombre="RUN24.MX" RegimenFiscalReceptor="601" DomicilioFiscalReceptor="64900" UsoCFDI="G01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-080" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 08D" ObjetoImp="02" Descuento="147.300000" ValorUnitario="2455.000000" Importe="4910.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4762.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="762.032000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-085" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 08.5D" ObjetoImp="02" Descuento="220.950000" ValorUnitario="2455.000000" Importe="7365.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7144.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1143.048000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-090" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 09D" ObjetoImp="02" Descuento="220.950000" ValorUnitario="2455.000000" Importe="7365.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7144.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1143.048000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-095" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 09.5D" ObjetoImp="02" Descuento="220.950000" ValorUnitario="2455.000000" Importe="7365.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7144.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1143.048000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-100" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 10D" ObjetoImp="02" Descuento="220.950000" ValorUnitario="2455.000000" Importe="7365.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7144.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1143.048000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-105" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 10.5D" ObjetoImp="02" Descuento="220.950000" ValorUnitario="2455.000000" Importe="7365.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7144.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1143.048000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-110" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 11D" ObjetoImp="02" Descuento="220.950000" ValorUnitario="2455.000000" Importe="7365.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7144.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1143.048000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-115" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 11.5D" ObjetoImp="02" Descuento="220.950000" ValorUnitario="2455.000000" Importe="7365.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7144.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1143.048000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-120" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 12D" ObjetoImp="02" Descuento="147.300000" ValorUnitario="2455.000000" Importe="4910.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4762.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="762.032000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-085" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 08.5D" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-090" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 09D" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-095" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 09.5D" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-100" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 10D" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-105" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 10.5D" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-110" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 11D" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-115" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 11.5D" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-120" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 12D" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1132210BWHT-085" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 WIDE BLACK / WHITE" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1132210BWHT-090" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 WIDE BLACK / WHITE" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1132210BWHT-095" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 WIDE BLACK / WHITE" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1132210BWHT-100" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 WIDE BLACK / WHITE" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1132210BWHT-105" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 WIDE BLACK / WHITE" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1132210BWHT-110" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 WIDE BLACK / WHITE" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1132210BWHT-115" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 WIDE BLACK / WHITE" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1132210BWHT-120" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 WIDE BLACK / WHITE" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1132210BWHT-130" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 WIDE BLACK / WHITE" ObjetoImp="02" Descuento="113.100000" ValorUnitario="1885.000000" Importe="3770.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3656.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="585.104000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1106534BBLC-080" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M HOPARA BLACK / BLACK" ObjetoImp="02" Descuento="98.700000" ValorUnitario="1645.000000" Importe="3290.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3191.300000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="510.608000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1106534BBLC-085" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M HOPARA BLACK / BLACK" ObjetoImp="02" Descuento="98.700000" ValorUnitario="1645.000000" Importe="3290.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3191.300000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="510.608000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1106534BBLC-090" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M HOPARA BLACK / BLACK" ObjetoImp="02" Descuento="98.700000" ValorUnitario="1645.000000" Importe="3290.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3191.300000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="510.608000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1106534BBLC-095" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M HOPARA BLACK / BLACK" ObjetoImp="02" Descuento="98.700000" ValorUnitario="1645.000000" Importe="3290.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3191.300000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="510.608000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1106534BBLC-100" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M HOPARA BLACK / BLACK" ObjetoImp="02" Descuento="98.700000" ValorUnitario="1645.000000" Importe="3290.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3191.300000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="510.608000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1106534BBLC-105" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M HOPARA BLACK / BLACK" ObjetoImp="02" Descuento="98.700000" ValorUnitario="1645.000000" Importe="3290.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3191.300000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="510.608000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1106534BBLC-110" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M HOPARA BLACK / BLACK" ObjetoImp="02" Descuento="98.700000" ValorUnitario="1645.000000" Importe="3290.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3191.300000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="510.608000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1106534BBLC-115" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M HOPARA BLACK / BLACK" ObjetoImp="02" Descuento="98.700000" ValorUnitario="1645.000000" Importe="3290.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3191.300000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="510.608000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1106534BBLC-120" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M HOPARA BLACK / BLACK" ObjetoImp="02" Descuento="98.700000" ValorUnitario="1645.000000" Importe="3290.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3191.300000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="510.608000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="24067.64">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="24067.64" Base="150422.75" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+<cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="F41EA1EE-3A68-4709-8D1E-D59C5CB2AD15" FechaTimbrado="2023-10-05T08:56:40" RfcProvCertif="SIF0403229F9" SelloCFD="ceGqQ+PMRDVA2lWow8ZlrDfZ27ug7/QWDfsGNZ/uQ5tG2SNNtd1RYDVMWh0yKMIkyajm5vEY4abYGeTMcALuVvBMVebxlTuMIc48F38yBulwwJ3P13nTpel5ZfghZ3x3QlEUZhrVZjMArNeukQ6v+o5Ddiw9FwzsddmyHFxAv46J2SPJPEDZfKiQEj3E9U6fRM9HoZt1Hy8/9jPGpmVH+MCS2zyq7uOwTP3X/pIOunoE6wNvcJKqrqVPZTI8lkoTRIUSK+EsOE/fo4yadv9dO3tK2C/8kR9UFVx93cM8oinktdaRJwRIbpNxwEUAnxmbIJemsSOR4iOqBGChvZbcRA==" NoCertificadoSAT="00001000000508768672" SelloSAT="UYHLOmANbwTvNX+LinFbqsF51tTpy26O6c2v4weI350lwXRQTLN7JNL6/Pmflk83Tla4iWzJRsSPAroU8nkoQZLhCNkxhU9c3EaJlbMZ8Glt6TWiVJtsHSnvrHUbg4AaEhO36evP0/Ab72vOBtXdCvTGRKlKG3gCAsrxUQwj9L+iTU2hGrFDAwPcyx9y9VbOW+YEBClFHKvlIc9IFw+/Dy2fndcAHWP2gFvsr2H1W3yAoRcH9+R62bEX0TjRMwlqWlRcRnQbNFkDqltt7UJHw5wo0ZBCQi37aZrxtjI2NmJxwca8N2MPEvikXW3hBfh+wXzufAcdCJDE/GQLHT0i3Q==" /></cfdi:Complemento></cfdi:Comprobante>

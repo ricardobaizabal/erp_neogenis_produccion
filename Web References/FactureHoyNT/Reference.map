@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://wsprod1.facturehoy.com/CFDI/WsEmisionTimbrado?wsdl" filename="WsEmisionTimbradoService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://wsprod1.facturehoy.com/CFDI/WsEmisionTimbrado?xsd=1" filename="WsEmisionTimbrado.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

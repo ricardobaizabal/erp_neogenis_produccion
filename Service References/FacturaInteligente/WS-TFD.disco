@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://www.appfacturainteligente.com/WS-FI/WS-TFD.asmx?wsdl" docRef="http://www.appfacturainteligente.com/WS-FI/WS-TFD.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://www.appfacturainteligente.com/WS-FI/WS-TFD.asmx" xmlns:q1="https://www.appfacturainteligente.com/WS-FI" binding="q1:FI_TFDSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://www.appfacturainteligente.com/WS-FI/WS-TFD.asmx" xmlns:q2="https://www.appfacturainteligente.com/WS-FI" binding="q2:FI_TFDSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

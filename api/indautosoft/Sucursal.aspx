@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Sucursal.aspx.vb" Inherits="erp_neogenis.Sucursal" %>

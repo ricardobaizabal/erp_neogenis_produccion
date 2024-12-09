@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.facturaxion.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.facturaxion.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web Service que contiene los métodos necesarios para realizar la operaciones realizadas al CFDI</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.facturaxion.com/">
+      <s:element name="GenerarTimbre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarTimbreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GenerarTimbreResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarTimbreLote">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlZip" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarTimbreLoteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GenerarTimbreLoteResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultadoZip" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReportarCancelacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReportarCancelacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReportarCancelacionResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarCFDI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarCFDIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GenerarCFDIResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcuseRecepcion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcuseRecepcionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAcuseRecepcionResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcuseCancelacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcuseCancelacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAcuseCancelacionResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIdSucursal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIdSucursalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetIdSucursalResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarTimbrePrueba">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarTimbrePruebaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GenerarTimbrePruebaResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarTimbreLotePrueba">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlZip" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarTimbreLotePruebaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GenerarTimbreLotePruebaResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultadoZip" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReportarCancelacionPrueba">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReportarCancelacionPruebaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReportarCancelacionPruebaResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarCFDIPrueba">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerarCFDIPruebaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GenerarCFDIPruebaResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcuseRecepcionPrueba">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcuseRecepcionPruebaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAcuseRecepcionPruebaResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcuseCancelacionPrueba">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAcuseCancelacionPruebaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAcuseCancelacionPruebaResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIdSucursalPrueba">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parametros" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIdSucursalPruebaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetIdSucursalPruebaResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GenerarTimbreSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerarTimbre" />
+  </wsdl:message>
+  <wsdl:message name="GenerarTimbreSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerarTimbreResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerarTimbreLoteSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerarTimbreLote" />
+  </wsdl:message>
+  <wsdl:message name="GenerarTimbreLoteSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerarTimbreLoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReportarCancelacionSoapIn">
+    <wsdl:part name="parameters" element="tns:ReportarCancelacion" />
+  </wsdl:message>
+  <wsdl:message name="ReportarCancelacionSoapOut">
+    <wsdl:part name="parameters" element="tns:ReportarCancelacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerarCFDISoapIn">
+    <wsdl:part name="parameters" element="tns:GenerarCFDI" />
+  </wsdl:message>
+  <wsdl:message name="GenerarCFDISoapOut">
+    <wsdl:part name="parameters" element="tns:GenerarCFDIResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAcuseRecepcionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAcuseRecepcion" />
+  </wsdl:message>
+  <wsdl:message name="GetAcuseRecepcionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAcuseRecepcionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAcuseCancelacionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAcuseCancelacion" />
+  </wsdl:message>
+  <wsdl:message name="GetAcuseCancelacionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAcuseCancelacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIdSucursalSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIdSucursal" />
+  </wsdl:message>
+  <wsdl:message name="GetIdSucursalSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIdSucursalResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerarTimbrePruebaSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerarTimbrePrueba" />
+  </wsdl:message>
+  <wsdl:message name="GenerarTimbrePruebaSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerarTimbrePruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerarTimbreLotePruebaSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerarTimbreLotePrueba" />
+  </wsdl:message>
+  <wsdl:message name="GenerarTimbreLotePruebaSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerarTimbreLotePruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReportarCancelacionPruebaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReportarCancelacionPrueba" />
+  </wsdl:message>
+  <wsdl:message name="ReportarCancelacionPruebaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReportarCancelacionPruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerarCFDIPruebaSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerarCFDIPrueba" />
+  </wsdl:message>
+  <wsdl:message name="GenerarCFDIPruebaSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerarCFDIPruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAcuseRecepcionPruebaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAcuseRecepcionPrueba" />
+  </wsdl:message>
+  <wsdl:message name="GetAcuseRecepcionPruebaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAcuseRecepcionPruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAcuseCancelacionPruebaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAcuseCancelacionPrueba" />
+  </wsdl:message>
+  <wsdl:message name="GetAcuseCancelacionPruebaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAcuseCancelacionPruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIdSucursalPruebaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIdSucursalPrueba" />
+  </wsdl:message>
+  <wsdl:message name="GetIdSucursalPruebaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIdSucursalPruebaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TimbreFiscalDigitalSoap">
+    <wsdl:operation name="GenerarTimbre">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite la generación del timbre de un CFDI</wsdl:documentation>
+      <wsdl:input message="tns:GenerarTimbreSoapIn" />
+      <wsdl:output message="tns:GenerarTimbreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarTimbreLote">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite la generación del timbre de un grupo de CFDI</wsdl:documentation>
+      <wsdl:input message="tns:GenerarTimbreLoteSoapIn" />
+      <wsdl:output message="tns:GenerarTimbreLoteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportarCancelacion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite realizar el envío del archivo de cancelación de CFDI al SAT</wsdl:documentation>
+      <wsdl:input message="tns:ReportarCancelacionSoapIn" />
+      <wsdl:output message="tns:ReportarCancelacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarCFDI">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite realizar la generación de un CFDI, su representacion impresa y el envio de la misma a un correo electrónico</wsdl:documentation>
+      <wsdl:input message="tns:GenerarCFDISoapIn" />
+      <wsdl:output message="tns:GenerarCFDISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseRecepcion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite obtener el acuse de recepción expedido por el SAT cuando reicbe un CFDI.</wsdl:documentation>
+      <wsdl:input message="tns:GetAcuseRecepcionSoapIn" />
+      <wsdl:output message="tns:GetAcuseRecepcionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseCancelacion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite obtener el acuse de cancelación expedido por el SAT.</wsdl:documentation>
+      <wsdl:input message="tns:GetAcuseCancelacionSoapIn" />
+      <wsdl:output message="tns:GetAcuseCancelacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIdSucursal">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite obtener el Id de la sucusarsal.</wsdl:documentation>
+      <wsdl:input message="tns:GetIdSucursalSoapIn" />
+      <wsdl:output message="tns:GetIdSucursalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarTimbrePrueba">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite la generación del timbre de un CFDI</wsdl:documentation>
+      <wsdl:input message="tns:GenerarTimbrePruebaSoapIn" />
+      <wsdl:output message="tns:GenerarTimbrePruebaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarTimbreLotePrueba">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite la generación del timbre de un grupo de CFDI</wsdl:documentation>
+      <wsdl:input message="tns:GenerarTimbreLotePruebaSoapIn" />
+      <wsdl:output message="tns:GenerarTimbreLotePruebaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportarCancelacionPrueba">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite realizar el envío del archivo de cancelación de CFDI al SAT</wsdl:documentation>
+      <wsdl:input message="tns:ReportarCancelacionPruebaSoapIn" />
+      <wsdl:output message="tns:ReportarCancelacionPruebaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarCFDIPrueba">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite realizar la generación de un CFDI, su representacion impresa y el envio de la misma a un correo electrónico</wsdl:documentation>
+      <wsdl:input message="tns:GenerarCFDIPruebaSoapIn" />
+      <wsdl:output message="tns:GenerarCFDIPruebaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseRecepcionPrueba">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite obtener el acuse de recepción expedido por el SAT cuando reicbe un CFDI.</wsdl:documentation>
+      <wsdl:input message="tns:GetAcuseRecepcionPruebaSoapIn" />
+      <wsdl:output message="tns:GetAcuseRecepcionPruebaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseCancelacionPrueba">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite obtener el acuse de cancelación expedido por el SAT.</wsdl:documentation>
+      <wsdl:input message="tns:GetAcuseCancelacionPruebaSoapIn" />
+      <wsdl:output message="tns:GetAcuseCancelacionPruebaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIdSucursalPrueba">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que permite obtener el Id de la sucursal.</wsdl:documentation>
+      <wsdl:input message="tns:GetIdSucursalPruebaSoapIn" />
+      <wsdl:output message="tns:GetIdSucursalPruebaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TimbreFiscalDigitalSoap" type="tns:TimbreFiscalDigitalSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerarTimbre">
+      <soap:operation soapAction="http://www.facturaxion.com/GenerarTimbre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarTimbreLote">
+      <soap:operation soapAction="http://www.facturaxion.com/GenerarTimbreLote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportarCancelacion">
+      <soap:operation soapAction="http://www.facturaxion.com/ReportarCancelacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarCFDI">
+      <soap:operation soapAction="http://www.facturaxion.com/GenerarCFDI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseRecepcion">
+      <soap:operation soapAction="http://www.facturaxion.com/GetAcuseRecepcion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseCancelacion">
+      <soap:operation soapAction="http://www.facturaxion.com/GetAcuseCancelacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIdSucursal">
+      <soap:operation soapAction="http://www.facturaxion.com/GetIdSucursal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarTimbrePrueba">
+      <soap:operation soapAction="http://www.facturaxion.com/GenerarTimbrePrueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarTimbreLotePrueba">
+      <soap:operation soapAction="http://www.facturaxion.com/GenerarTimbreLotePrueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportarCancelacionPrueba">
+      <soap:operation soapAction="http://www.facturaxion.com/ReportarCancelacionPrueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarCFDIPrueba">
+      <soap:operation soapAction="http://www.facturaxion.com/GenerarCFDIPrueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseRecepcionPrueba">
+      <soap:operation soapAction="http://www.facturaxion.com/GetAcuseRecepcionPrueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseCancelacionPrueba">
+      <soap:operation soapAction="http://www.facturaxion.com/GetAcuseCancelacionPrueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIdSucursalPrueba">
+      <soap:operation soapAction="http://www.facturaxion.com/GetIdSucursalPrueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TimbreFiscalDigitalSoap12" type="tns:TimbreFiscalDigitalSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerarTimbre">
+      <soap12:operation soapAction="http://www.facturaxion.com/GenerarTimbre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarTimbreLote">
+      <soap12:operation soapAction="http://www.facturaxion.com/GenerarTimbreLote" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportarCancelacion">
+      <soap12:operation soapAction="http://www.facturaxion.com/ReportarCancelacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarCFDI">
+      <soap12:operation soapAction="http://www.facturaxion.com/GenerarCFDI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseRecepcion">
+      <soap12:operation soapAction="http://www.facturaxion.com/GetAcuseRecepcion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseCancelacion">
+      <soap12:operation soapAction="http://www.facturaxion.com/GetAcuseCancelacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIdSucursal">
+      <soap12:operation soapAction="http://www.facturaxion.com/GetIdSucursal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarTimbrePrueba">
+      <soap12:operation soapAction="http://www.facturaxion.com/GenerarTimbrePrueba" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarTimbreLotePrueba">
+      <soap12:operation soapAction="http://www.facturaxion.com/GenerarTimbreLotePrueba" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportarCancelacionPrueba">
+      <soap12:operation soapAction="http://www.facturaxion.com/ReportarCancelacionPrueba" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarCFDIPrueba">
+      <soap12:operation soapAction="http://www.facturaxion.com/GenerarCFDIPrueba" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseRecepcionPrueba">
+      <soap12:operation soapAction="http://www.facturaxion.com/GetAcuseRecepcionPrueba" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcuseCancelacionPrueba">
+      <soap12:operation soapAction="http://www.facturaxion.com/GetAcuseCancelacionPrueba" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIdSucursalPrueba">
+      <soap12:operation soapAction="http://www.facturaxion.com/GetIdSucursalPrueba" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TimbreFiscalDigital">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web Service que contiene los métodos necesarios para realizar la operaciones realizadas al CFDI</wsdl:documentation>
+    <wsdl:port name="TimbreFiscalDigitalSoap" binding="tns:TimbreFiscalDigitalSoap">
+      <soap:address location="https://timbre02.facturaxion.net/CFDI.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TimbreFiscalDigitalSoap12" binding="tns:TimbreFiscalDigitalSoap12">
+      <soap12:address location="https://timbre02.facturaxion.net/CFDI.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,33 @@
+﻿<appSettings>
+  <add key="PrivateKeyStoragePath" value="C:\inetpub\wwwroot\erp\naturalgs\portalcfd\llave\" />
+  <add key="CertificatesStoragePath" value="C:\inetpub\wwwroot\erp\naturalgs\portalcfd\certificados\" />
+  <add key="informacionaduanera" value="0" />
+  <add key="retencion4" value="0" />
+  <add key="fx_pruebas" value="0" />
+  <add key="fx_codigousuarioproveedor" value="N#@Mo!)#oh>)BYOdX=q_ZUCsLxqpv?" />
+  <add key="fx_codigousuario" value="1763AAB0593430490B3B3EE5457A9A2580F9D7DE" />
+  <add key="fx_idSucursal" value="33928" />
+  <add key="fx_codigousuarioproveedor_prod" value="NSU130606PI2" />
+  <add key="fx_codigousuario_prod" value="5FDBB1AC4D0AFABA3F85DAAEFBB301F2892E32CB" />
+  <add key="fx_idSucursal_prod" value="294057" />
+  <add key="divisas" value="1" />
+  <add key="proveedores" value="1" />
+  <add key="inventarios" value="1" />
+  <add key="usuarios" value="1" />
+  <add key="Telerik.ScriptManager.TelerikCdn" value="Disabled" />
+  <add key="Telerik.StyleSheetManager.TelerikCdn" value="Disabled" />
+  <add key="FactureHoyUsuario" value="LST101206985" />
+  <add key="FactureHoyContrasena" value="Acceso$1LINK" />
+  <add key="FactureHoyProceso" value="118369036" />
+  <add key="FactureFacilUsuario" value="PEGL721030PN5" />
+  <!--<add key="SIFEIUsuario" value="LST101206985" />
+  <add key="SIFEIContrasena" value="d77ab121" />
+  <add key="SIFEIIdEquipo" value="NDE0OTFlOTEtOGQxYi1mODM3LWRlOWMtNWE3YTJlNWE0ZTgy" />-->
+  
+  <add key="email_pedidos" value="admin@natural.gs" />
+  
+  <add key="SIFEIUsuario" value="MUMR6604247X9" />
+  <add key="SIFEIContrasena" value="650976ba" />
+  <add key="SIFEIIdEquipo" value="ZDZmMzVlZjgtOWNlYi0xNjE3LWY3ZGUtNTJkODQ1MjIyMWFi" />
+  
+</appSettings>

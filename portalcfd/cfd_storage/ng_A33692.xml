@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="A" Folio="33692" Fecha="2023-08-15T06:12:42" Sello="tKzkR1qq8uwJFxTj+9aPfJ3e84lKd1tsQrWbwMtppc5wjiRVgTDEJrdfSsjDYXnDg7DqYGjdlioJFyKpq4orWnUDHyrcdiz66D/woOXTZGLNBx23rkbInROmQOESFGlVTQ6ymlYuIm7575Dl4XIkVN9n5UrcXTySM5pDW6HoLgzCcYbAj5tq1w/XGfTa/prVGpxqW9kATSpFmkz8bVL/B7DMMREjT/UwhxGd76WGYFBF1exqkc1F2J81AjuvtrXdneKyQt5K0aLoPz/3ykCdTAMhtnTAtr+vDhOGrblwdBx9F0nNwAD+FQ74WeZJ3NZJwQJuPSF7w6CMHTGMutfgdQ==" FormaPago="99" NoCertificado="30001000000500003416" Certificado="MIIFsDCCA5igAwIBAgIUMzAwMDEwMDAwMDA1MDAwMDM0MTYwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWxpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMjMwNTE4MTE0MzUxWhcNMjcwNTE4MTE0MzUxWjCB1zEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gVkFEQTgwMDkyN0RKMzEeMBwGA1UEBRMVIC8gVkFEQTgwMDkyN0hTUlNSTDA1MRMwEQYDVQQLEwpTdWN1cnNhbCAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtmecO6n2GS0zL025gbHGQVxznPDICoXzR2uUngz4DqxVUC/w9cE6FxSiXm2ap8Gcjg7wmcZfm85EBaxCx/0J2u5CqnhzIoGCdhBPuhWQnIh5TLgj/X6uNquwZkKChbNe9aeFirU/JbyN7Egia9oKH9KZUsodiM/pWAH00PCtoKJ9OBcSHMq8Rqa3KKoBcfkg1ZrgueffwRLws9yOcRWLb02sDOPzGIm/jEFicVYt2Hw1qdRE5xmTZ7AGG0UHs+unkGjpCVeJ+BEBn0JPLWVvDKHZAQMj6s5Bku35+d/MyATkpOPsGT/VTnsouxekDfikJD1f7A1ZpJbqDpkJnss3vQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQsFAAOCAgEAFaUgj5PqgvJigNMgtrdXZnbPfVBbukAbW4OGnUhNrA7SRAAfv2BSGk16PI0nBOr7qF2mItmBnjgEwk+DTv8Zr7w5qp7vleC6dIsZFNJoa6ZndrE/f7KO1CYruLXr5gwEkIyGfJ9NwyIagvHHMszzyHiSZIA850fWtbqtythpAliJ2jF35M5pNS+YTkRB+T6L/c6m00ymN3q9lT1rB03YywxrLreRSFZOSrbwWfg34EJbHfbFXpCSVYdJRfiVdvHnewN0r5fUlPtR9stQHyuqewzdkyb5jTTw02D2cUfL57vlPStBj7SEi3uOWvLrsiDnnCIxRMYJ2UA2ktDKHk+zWnsDmaeleSzonv2CHW42yXYPCvWi88oE1DJNYLNkIjua7MxAnkNZbScNw01A6zbLsZ3y8G6eEYnxSTRfwjd8EP4kdiHNJftm7Z4iRU7HOVh79/lRWB+gd171s3d/mI9kte3MRy6V8MMEMCAnMboGpaooYwgAmwclI2XZCczNWXfhaWe0ZS5PmytD/GDpXzkX0oEgY9K/uYo5V77NdZbGAjmyi8cE2B2ogvyaN2XfIInrZPgEffJ4AB7kFA2mwesdLOCh0BLD9itmCve3A1FGR4+stO2ANUoiI3w3Tv2yQSg4bjeDlJ08lXaaFCLW2peEXMXjQUk7fmpb5MNuOUTW6BE=" CondicionesDePago="90 días" SubTotal="347213.29" Descuento="156245.96" Moneda="MXN" Total="221522.10" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="66368" Exportacion="01">
+  <cfdi:Emisor Nombre="ESCUELA KEMPER URGATE SA DE CV" Rfc="EKU9003173C9" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="TLA171010MA7" Nombre="TLAKATI" RegimenFiscalReceptor="601" DomicilioFiscalReceptor="11550" UsoCFDI="G03" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="78141504" NoIdentificacion="10002" Cantidad="83" ClaveUnidad="E48" Unidad="Serv" Descripcion="GASTOS ENVIO HOKA  X PAR" ObjetoImp="02" Descuento="2203.65" ValorUnitario="59.00" Importe="4897.00">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2693.3500" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="430.936000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="1127919BBCML-060" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="W SPEEDGOAT 5 MID GTX BELLWETHER BLUE / CAMELLIA" ObjetoImp="02" Descuento="4956.98" ValorUnitario="5507.76" Importe="11015.52">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6058.5400" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="969.365800" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="1127919BBCML-065" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="W SPEEDGOAT 5 MID GTX BELLWETHER BLUE / CAMELLIA" ObjetoImp="02" Descuento="4956.98" ValorUnitario="5507.76" Importe="11015.52">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6058.5400" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="969.365800" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="1127919BBCML-070" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="W SPEEDGOAT 5 MID GTX BELLWETHER BLUE / CAMELLIA" ObjetoImp="02" Descuento="4956.98" ValorUnitario="5507.76" Importe="11015.52">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6058.5400" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="969.365800" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111902" NoIdentificacion="1127919BBCML-075" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="W SPEEDGOAT 5 MID GTX BELLWETHER BLUE / CAMELLIA" ObjetoImp="02" Descuento="4956.98" ValorUnitario="5507.76" Importe="11015.52">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6058.5400" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="969.365800" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127893WFM-080" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MACH 5 WHITE / FLAME 08D" ObjetoImp="02" Descuento="1780.22" ValorUnitario="3956.04" Importe="3956.04">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2175.8200" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="348.131500" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127893WFM-085" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MACH 5 WHITE / FLAME 08.5D" ObjetoImp="02" Descuento="3560.44" ValorUnitario="3956.04" Importe="7912.08">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4351.6400" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="696.263000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127893WFM-090" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MACH 5 WHITE / FLAME 09D" ObjetoImp="02" Descuento="5340.65" ValorUnitario="3956.04" Importe="11868.12">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6527.4700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1044.394600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127893WFM-095" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MACH 5 WHITE / FLAME 09.5D" ObjetoImp="02" Descuento="5340.65" ValorUnitario="3956.04" Importe="11868.12">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6527.4700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1044.394600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127893WFM-100" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MACH 5 WHITE / FLAME 10D" ObjetoImp="02" Descuento="3560.44" ValorUnitario="3956.04" Importe="7912.08">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4351.6400" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="696.263000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127893WFM-105" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MACH 5 WHITE / FLAME 10.5D" ObjetoImp="02" Descuento="1780.22" ValorUnitario="3956.04" Importe="3956.04">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2175.8200" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="348.131500" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395BDGB-080" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 BLACK / DAZZLING BLUE" ObjetoImp="02" Descuento="3094.91" ValorUnitario="3438.79" Importe="6877.58">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3782.6700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="605.227000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395BDGB-085" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 BLACK / DAZZLING BLUE" ObjetoImp="02" Descuento="1547.46" ValorUnitario="3438.79" Importe="3438.79">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1891.3300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="302.613500" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395BDGB-090" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 BLACK / DAZZLING BLUE" ObjetoImp="02" Descuento="6189.82" ValorUnitario="3438.79" Importe="13755.16">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7565.3400" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1210.454100" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395BDGB-095" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 BLACK / DAZZLING BLUE" ObjetoImp="02" Descuento="4642.37" ValorUnitario="3438.79" Importe="10316.37">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5674.0000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="907.840600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395BDGB-100" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 BLACK / DAZZLING BLUE" ObjetoImp="02" Descuento="3094.91" ValorUnitario="3438.79" Importe="6877.58">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3782.6700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="605.227000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395BDGB-105" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 BLACK / DAZZLING BLUE" ObjetoImp="02" Descuento="3094.91" ValorUnitario="3438.79" Importe="6877.58">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3782.6700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="605.227000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395BDGB-110" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 BLACK / DAZZLING BLUE" ObjetoImp="02" Descuento="3094.91" ValorUnitario="3438.79" Importe="6877.58">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3782.6700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="605.227000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395CEPR-075" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 CERAMIC / EVENING PRIMROSE" ObjetoImp="02" Descuento="1547.46" ValorUnitario="3438.79" Importe="3438.79">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1891.3300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="302.613500" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395CEPR-080" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 CERAMIC / EVENING PRIMROSE" ObjetoImp="02" Descuento="3094.91" ValorUnitario="3438.79" Importe="6877.58">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3782.6700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="605.227000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395CEPR-085" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 CERAMIC / EVENING PRIMROSE" ObjetoImp="02" Descuento="1547.46" ValorUnitario="3438.79" Importe="3438.79">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1891.3300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="302.613500" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395CEPR-090" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 CERAMIC / EVENING PRIMROSE" ObjetoImp="02" Descuento="6189.82" ValorUnitario="3438.79" Importe="13755.16">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7565.3400" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1210.454100" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395CEPR-095" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 CERAMIC / EVENING PRIMROSE" ObjetoImp="02" Descuento="4642.37" ValorUnitario="3438.79" Importe="10316.37">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5674.0000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="907.840600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395CEPR-100" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 CERAMIC / EVENING PRIMROSE" ObjetoImp="02" Descuento="3094.91" ValorUnitario="3438.79" Importe="6877.58">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3782.6700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="605.227000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395CEPR-105" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 CERAMIC / EVENING PRIMROSE" ObjetoImp="02" Descuento="3094.91" ValorUnitario="3438.79" Importe="6877.58">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3782.6700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="605.227000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395CEPR-110" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 CERAMIC / EVENING PRIMROSE" ObjetoImp="02" Descuento="3094.91" ValorUnitario="3438.79" Importe="6877.58">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3782.6700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="605.227000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1122018DELM-080" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M ANACAPA MID GTX DUNE / ELMWOOD" ObjetoImp="02" Descuento="2478.49" ValorUnitario="5507.76" Importe="5507.76">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3029.2700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="484.682900" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1122018DELM-085" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M ANACAPA MID GTX DUNE / ELMWOOD" ObjetoImp="02" Descuento="4956.98" ValorUnitario="5507.76" Importe="11015.52">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6058.5400" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="969.365800" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1122018DELM-090" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M ANACAPA MID GTX DUNE / ELMWOOD" ObjetoImp="02" Descuento="7435.48" ValorUnitario="5507.76" Importe="16523.28">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9087.8000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1454.048600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1122018DELM-095" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M ANACAPA MID GTX DUNE / ELMWOOD" ObjetoImp="02" Descuento="4956.98" ValorUnitario="5507.76" Importe="11015.52">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6058.5400" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="969.365800" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1122018DELM-100" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M ANACAPA MID GTX DUNE / ELMWOOD" ObjetoImp="02" Descuento="4956.98" ValorUnitario="5507.76" Importe="11015.52">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6058.5400" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="969.365800" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1122018DELM-105" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M ANACAPA MID GTX DUNE / ELMWOOD" ObjetoImp="02" Descuento="2478.49" ValorUnitario="5507.76" Importe="5507.76">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3029.2700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="484.682900" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1122018DELM-110" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M ANACAPA MID GTX DUNE / ELMWOOD" ObjetoImp="02" Descuento="2478.49" ValorUnitario="5507.76" Importe="5507.76">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3029.2700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="484.682900" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123163BLRK-075" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M KAWANA BLACK / LUNAR ROCK" ObjetoImp="02" Descuento="1780.21" ValorUnitario="3956.03" Importe="3956.03">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2175.8200" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="348.130600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123163BLRK-080" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M KAWANA BLACK / LUNAR ROCK" ObjetoImp="02" Descuento="5340.64" ValorUnitario="3956.03" Importe="11868.09">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6527.4500" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1044.391900" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123163BLRK-085" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M KAWANA BLACK / LUNAR ROCK" ObjetoImp="02" Descuento="3560.43" ValorUnitario="3956.03" Importe="7912.06">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4351.6300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="696.261300" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123163BLRK-090" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M KAWANA BLACK / LUNAR ROCK" ObjetoImp="02" Descuento="7120.85" ValorUnitario="3956.03" Importe="15824.12">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8703.2700" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1392.522600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123163BLRK-095" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M KAWANA BLACK / LUNAR ROCK" ObjetoImp="02" Descuento="5340.64" ValorUnitario="3956.03" Importe="11868.09">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6527.4500" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1044.391900" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123163BLRK-100" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M KAWANA BLACK / LUNAR ROCK" ObjetoImp="02" Descuento="5340.64" ValorUnitario="3956.03" Importe="11868.09">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6527.4500" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1044.391900" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123163BLRK-105" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M KAWANA BLACK / LUNAR ROCK" ObjetoImp="02" Descuento="3560.43" ValorUnitario="3956.03" Importe="7912.06">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4351.6300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="696.261300" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="30554.770000">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="30554.77" Base="190967.33" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

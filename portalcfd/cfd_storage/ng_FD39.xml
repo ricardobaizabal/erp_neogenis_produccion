@@ -1,0 +1,1072 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/ComercioExterior20 http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior11/ComercioExterior20.xsd" Version="4.0" Serie="FD" Folio="39" Fecha="2024-07-26T04:49:41" Sello="n5R1XYOSHZgKRe8HsD1rANpslNX0sz0Bf5hiX3Vqx4pJYbWb7AaTsG1tw7h4GmYuRhPHeB+iQFHOm4nBFXPVKlXn0Az0H/3Uk4k3XStgJFmr11JS9UJFKTPok92KXEz8bhsuqzz8f9LwGeBhba/YIlnI1zXioACwRYiXi/ZSZOkF1nHK0GkEAuJVhDOyLb3aLJuOLWxDUamLjM0LgpfB1wTtmcH3XeyozSaOOWGlLi03HqmL7GzkOAm3CalCZCG67+i9zYMQkaZPd84mlqdQZEwBuAYZhXb5mSI5KdjlQUdBD0WbS0ulQEdzEYulAYOYesk/7p+HAYDihNUUOfFuaA==" FormaPago="03" NoCertificado="30001000000500003416" Certificado="MIIFsDCCA5igAwIBAgIUMzAwMDEwMDAwMDA1MDAwMDM0MTYwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWxpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMjMwNTE4MTE0MzUxWhcNMjcwNTE4MTE0MzUxWjCB1zEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gVkFEQTgwMDkyN0RKMzEeMBwGA1UEBRMVIC8gVkFEQTgwMDkyN0hTUlNSTDA1MRMwEQYDVQQLEwpTdWN1cnNhbCAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtmecO6n2GS0zL025gbHGQVxznPDICoXzR2uUngz4DqxVUC/w9cE6FxSiXm2ap8Gcjg7wmcZfm85EBaxCx/0J2u5CqnhzIoGCdhBPuhWQnIh5TLgj/X6uNquwZkKChbNe9aeFirU/JbyN7Egia9oKH9KZUsodiM/pWAH00PCtoKJ9OBcSHMq8Rqa3KKoBcfkg1ZrgueffwRLws9yOcRWLb02sDOPzGIm/jEFicVYt2Hw1qdRE5xmTZ7AGG0UHs+unkGjpCVeJ+BEBn0JPLWVvDKHZAQMj6s5Bku35+d/MyATkpOPsGT/VTnsouxekDfikJD1f7A1ZpJbqDpkJnss3vQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQsFAAOCAgEAFaUgj5PqgvJigNMgtrdXZnbPfVBbukAbW4OGnUhNrA7SRAAfv2BSGk16PI0nBOr7qF2mItmBnjgEwk+DTv8Zr7w5qp7vleC6dIsZFNJoa6ZndrE/f7KO1CYruLXr5gwEkIyGfJ9NwyIagvHHMszzyHiSZIA850fWtbqtythpAliJ2jF35M5pNS+YTkRB+T6L/c6m00ymN3q9lT1rB03YywxrLreRSFZOSrbwWfg34EJbHfbFXpCSVYdJRfiVdvHnewN0r5fUlPtR9stQHyuqewzdkyb5jTTw02D2cUfL57vlPStBj7SEi3uOWvLrsiDnnCIxRMYJ2UA2ktDKHk+zWnsDmaeleSzonv2CHW42yXYPCvWi88oE1DJNYLNkIjua7MxAnkNZbScNw01A6zbLsZ3y8G6eEYnxSTRfwjd8EP4kdiHNJftm7Z4iRU7HOVh79/lRWB+gd171s3d/mI9kte3MRy6V8MMEMCAnMboGpaooYwgAmwclI2XZCczNWXfhaWe0ZS5PmytD/GDpXzkX0oEgY9K/uYo5V77NdZbGAjmyi8cE2B2ogvyaN2XfIInrZPgEffJ4AB7kFA2mwesdLOCh0BLD9itmCve3A1FGR4+stO2ANUoiI3w3Tv2yQSg4bjeDlJ08lXaaFCLW2peEXMXjQUk7fmpb5MNuOUTW6BE=" CondicionesDePago="30 días" SubTotal="56954.90" Moneda="USD" TipoCambio="19" Total="56954.90" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="66368" Exportacion="01">
+  <cfdi:Emisor Nombre="NG SUPPLY" Rfc="NSU130606PI2" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="XEXX010101000" Nombre="REPRESENTACIONES YAGO LLC (TAX ID 84-179155100)" RegimenFiscalReceptor="616" DomicilioFiscalReceptor="66368" NumRegIdTrib="841791551" ResidenciaFiscal="USA" UsoCFDI="S01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202BBLC-075" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M BONDI 8 BLACK / BLACK" ObjetoImp="02" ValorUnitario="75.900000" Importe="227.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="227.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202BBLC-085" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M BONDI 8 BLACK / BLACK" ObjetoImp="02" ValorUnitario="75.900000" Importe="75.900000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="75.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202BBLC-095" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M BONDI 8 BLACK / BLACK" ObjetoImp="02" ValorUnitario="75.900000" Importe="75.900000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="75.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202GBMS-085" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M BONDI 8 GOBLIN BLUE / MOUNTAIN SPRING" ObjetoImp="02" ValorUnitario="75.900000" Importe="75.900000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="75.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202GBMS-090" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M BONDI 8 GOBLIN BLUE / MOUNTAIN SPRING" ObjetoImp="02" ValorUnitario="75.900000" Importe="75.900000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="75.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202GBMS-105" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M BONDI 8 GOBLIN BLUE / MOUNTAIN SPRING" ObjetoImp="02" ValorUnitario="75.900000" Importe="75.900000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="75.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127918BBLC-080" Cantidad="11" ClaveUnidad="H87" Unidad="Pza" Descripcion="M SPEEDGOAT 5 MID GTX BLACK / BLACK 08D" ObjetoImp="02" ValorUnitario="82.800000" Importe="910.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="910.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127918BBLC-085" Cantidad="15" ClaveUnidad="H87" Unidad="Pza" Descripcion="M SPEEDGOAT 5 MID GTX BLACK / BLACK 08.5D" ObjetoImp="02" ValorUnitario="82.800000" Importe="1242.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1242.000000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127918BBLC-090" Cantidad="32" ClaveUnidad="H87" Unidad="Pza" Descripcion="M SPEEDGOAT 5 MID GTX BLACK / BLACK 09D" ObjetoImp="02" ValorUnitario="82.800000" Importe="2649.600000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2649.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127918BBLC-095" Cantidad="31" ClaveUnidad="H87" Unidad="Pza" Descripcion="M SPEEDGOAT 5 MID GTX BLACK / BLACK 09.5D" ObjetoImp="02" ValorUnitario="82.800000" Importe="2566.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2566.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127918BBLC-100" Cantidad="30" ClaveUnidad="H87" Unidad="Pza" Descripcion="M SPEEDGOAT 5 MID GTX BLACK / BLACK 10D" ObjetoImp="02" ValorUnitario="82.800000" Importe="2484.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2484.000000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127918BBLC-105" Cantidad="27" ClaveUnidad="H87" Unidad="Pza" Descripcion="M SPEEDGOAT 5 MID GTX BLACK / BLACK 10.5D" ObjetoImp="02" ValorUnitario="82.800000" Importe="2235.600000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2235.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127918BBLC-110" Cantidad="14" ClaveUnidad="H87" Unidad="Pza" Descripcion="M SPEEDGOAT 5 MID GTX BLACK / BLACK 11D" ObjetoImp="02" ValorUnitario="82.800000" Importe="1159.200000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1159.200000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127918BBLC-115" Cantidad="6" ClaveUnidad="H87" Unidad="Pza" Descripcion="M SPEEDGOAT 5 MID GTX BLACK / BLACK 11.5D" ObjetoImp="02" ValorUnitario="82.800000" Importe="496.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="496.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127918BBLC-120" Cantidad="5" ClaveUnidad="H87" Unidad="Pza" Descripcion="M SPEEDGOAT 5 MID GTX BLACK / BLACK 12D" ObjetoImp="02" ValorUnitario="82.800000" Importe="414.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="414.000000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-080" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 08D" ObjetoImp="02" ValorUnitario="85.100000" Importe="340.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="340.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-085" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 08.5D" ObjetoImp="02" ValorUnitario="85.100000" Importe="340.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="340.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-090" Cantidad="9" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 09D" ObjetoImp="02" ValorUnitario="85.100000" Importe="765.900000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="765.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-095" Cantidad="8" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 09.5D" ObjetoImp="02" ValorUnitario="85.100000" Importe="680.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="680.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-100" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 10D" ObjetoImp="02" ValorUnitario="85.100000" Importe="340.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="340.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-105" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 10.5D" ObjetoImp="02" ValorUnitario="85.100000" Importe="340.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="340.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-110" Cantidad="6" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 11D" ObjetoImp="02" ValorUnitario="85.100000" Importe="510.600000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="510.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-115" Cantidad="5" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 11.5D" ObjetoImp="02" ValorUnitario="85.100000" Importe="425.500000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="425.500000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-120" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 12D" ObjetoImp="02" ValorUnitario="85.100000" Importe="170.200000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="170.200000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930CKBC-130" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 CASTLEROCK / BLACK 13D" ObjetoImp="02" ValorUnitario="85.100000" Importe="85.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="85.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202BWHT-085" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M BONDI 8 BLACK / WHITE 08.5D" ObjetoImp="02" ValorUnitario="75.900000" Importe="151.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="151.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202BWHT-090" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M BONDI 8 BLACK / WHITE 09D" ObjetoImp="02" ValorUnitario="75.900000" Importe="151.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="151.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202BWHT-095" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M BONDI 8 BLACK / WHITE 09.5D" ObjetoImp="02" ValorUnitario="75.900000" Importe="75.900000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="75.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202BWHT-100" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M BONDI 8 BLACK / WHITE 10D" ObjetoImp="02" ValorUnitario="75.900000" Importe="75.900000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="75.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202BWHT-105" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M BONDI 8 BLACK / WHITE 10.5D" ObjetoImp="02" ValorUnitario="75.900000" Importe="75.900000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="75.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1134497DBEPR-090" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CHALLENGER ATR 7 DIVA BLUE / EVENING PRIMROSE 09D" ObjetoImp="02" ValorUnitario="66.700000" Importe="266.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="266.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1134497DBEPR-095" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CHALLENGER ATR 7 DIVA BLUE / EVENING PRIMROSE 09.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1134497DBEPR-105" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CHALLENGER ATR 7 DIVA BLUE / EVENING PRIMROSE 10.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="266.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="266.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1134497DBEPR-115" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CHALLENGER ATR 7 DIVA BLUE / EVENING PRIMROSE 11.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="266.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="266.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1134501BBLC-075" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CHALLENGER ATR 7 GTX BLACK / BLACK 07.5D" ObjetoImp="02" ValorUnitario="73.600000" Importe="147.200000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="147.200000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1134501BBLC-080" Cantidad="6" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CHALLENGER ATR 7 GTX BLACK / BLACK 08D" ObjetoImp="02" ValorUnitario="73.600000" Importe="441.600000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="441.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1134501BBLC-085" Cantidad="5" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CHALLENGER ATR 7 GTX BLACK / BLACK 08.5D" ObjetoImp="02" ValorUnitario="73.600000" Importe="368.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="368.000000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1134501BBLC-090" Cantidad="12" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CHALLENGER ATR 7 GTX BLACK / BLACK 09D" ObjetoImp="02" ValorUnitario="73.600000" Importe="883.200000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="883.200000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1134501BBLC-095" Cantidad="8" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CHALLENGER ATR 7 GTX BLACK / BLACK 09.5D" ObjetoImp="02" ValorUnitario="73.600000" Importe="588.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="588.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1134501BBLC-100" Cantidad="12" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CHALLENGER ATR 7 GTX BLACK / BLACK 10D" ObjetoImp="02" ValorUnitario="73.600000" Importe="883.200000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="883.200000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1134501BBLC-110" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CHALLENGER ATR 7 GTX BLACK / BLACK 11D" ObjetoImp="02" ValorUnitario="73.600000" Importe="73.600000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="73.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895BBLC-075" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 BLACK / BLACK 07.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="266.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="266.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895BBLC-080" Cantidad="7" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 BLACK / BLACK 08D" ObjetoImp="02" ValorUnitario="66.700000" Importe="466.900000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="466.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895BBLC-085" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 BLACK / BLACK 08.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="266.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="266.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895BBLC-090" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 BLACK / BLACK 09D" ObjetoImp="02" ValorUnitario="66.700000" Importe="133.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="133.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895BBLC-095" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 BLACK / BLACK 09.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="200.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="200.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895BBLC-100" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 BLACK / BLACK 10D" ObjetoImp="02" ValorUnitario="66.700000" Importe="200.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="200.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895BBLC-105" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 BLACK / BLACK 10.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895BBLC-120" Cantidad="5" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 BLACK / BLACK 12D" ObjetoImp="02" ValorUnitario="66.700000" Importe="333.500000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="333.500000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895BBLC-130" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 BLACK / BLACK 13D" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895BWHT-090" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 BLACK / WHITE 09D" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-080" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 08D" ObjetoImp="02" ValorUnitario="66.700000" Importe="133.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="133.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-085" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 08.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="133.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="133.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-090" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 09D" ObjetoImp="02" ValorUnitario="66.700000" Importe="200.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="200.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-095" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 09.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="200.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="200.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-100" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 10D" ObjetoImp="02" ValorUnitario="66.700000" Importe="133.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="133.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-105" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 10.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="133.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="133.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-110" Cantidad="6" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 11D" ObjetoImp="02" ValorUnitario="66.700000" Importe="400.200000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="400.200000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-115" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 11.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="200.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="200.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-120" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 12D" ObjetoImp="02" ValorUnitario="66.700000" Importe="200.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="200.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895IWEP-095" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 ICE WATER / EVENING PRIMROSE 09.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="200.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="200.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895IWEP-105" Cantidad="12" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 ICE WATER / EVENING PRIMROSE 10.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="800.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="800.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895IWEP-115" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 ICE WATER / EVENING PRIMROSE 11.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895NCSW-080" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 NIMBUS CLOUD / STEEL WOOL 08D" ObjetoImp="02" ValorUnitario="66.700000" Importe="200.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="200.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895NCSW-115" Cantidad="7" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 NIMBUS CLOUD / STEEL WOOL 11.5D" ObjetoImp="02" ValorUnitario="66.700000" Importe="466.900000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="466.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895NCSW-120" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 NIMBUS CLOUD / STEEL WOOL 12D" ObjetoImp="02" ValorUnitario="66.700000" Importe="266.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="266.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127929BSNBL-080" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M GAVIOTA 5 BLUESTEEL / STONE BLUE" ObjetoImp="02" ValorUnitario="80.500000" Importe="80.500000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="80.500000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127929BSNBL-115" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M GAVIOTA 5 BLUESTEEL / STONE BLUE" ObjetoImp="02" ValorUnitario="80.500000" Importe="80.500000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="80.500000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930DLCR-080" Cantidad="6" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 DEEP LAKE / CERAMIC" ObjetoImp="02" ValorUnitario="85.100000" Importe="510.600000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="510.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930DLCR-085" Cantidad="11" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 DEEP LAKE / CERAMIC" ObjetoImp="02" ValorUnitario="85.100000" Importe="936.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="936.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930DLCR-100" Cantidad="17" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 DEEP LAKE / CERAMIC" ObjetoImp="02" ValorUnitario="85.100000" Importe="1446.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1446.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1129930DLCR-115" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M MAFATE SPEED 4 DEEP LAKE / CERAMIC" ObjetoImp="02" ValorUnitario="85.100000" Importe="255.300000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="255.300000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395RAFL-075" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 RED ALERT / FLAME" ObjetoImp="02" ValorUnitario="57.500000" Importe="172.500000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="172.500000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395RAFL-080" Cantidad="8" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 RED ALERT / FLAME" ObjetoImp="02" ValorUnitario="57.500000" Importe="460.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="460.000000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395RAFL-085" Cantidad="7" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 RED ALERT / FLAME" ObjetoImp="02" ValorUnitario="57.500000" Importe="402.500000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="402.500000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395RAFL-090" Cantidad="17" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 RED ALERT / FLAME" ObjetoImp="02" ValorUnitario="57.500000" Importe="977.500000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="977.500000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395RAFL-095" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 RED ALERT / FLAME" ObjetoImp="02" ValorUnitario="57.500000" Importe="230.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="230.000000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395RAFL-100" Cantidad="14" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 RED ALERT / FLAME" ObjetoImp="02" ValorUnitario="57.500000" Importe="805.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="805.000000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202SHMS-090" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="M BONDI 8 SHARKSKIN / HARBOR MIST" ObjetoImp="02" ValorUnitario="75.900000" Importe="151.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="151.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895CSAA-085" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 COASTAL SKY / ALL ABOARD" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895FVOR-085" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 FLAME / VIBRANT ORANGE" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895FVOR-090" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 FLAME / VIBRANT ORANGE" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895FVOR-115" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 FLAME / VIBRANT ORANGE" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895WWH-115" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 WHITE / WHITE" ObjetoImp="02" ValorUnitario="66.700000" Importe="266.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="266.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895WWH-130" Cantidad="4" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 WHITE / WHITE" ObjetoImp="02" ValorUnitario="66.700000" Importe="266.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="266.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895ZLGL-075" Cantidad="3" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 ZEST / LIME GLOW" ObjetoImp="02" ValorUnitario="66.700000" Importe="200.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="200.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895ZLGL-105" Cantidad="9" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 ZEST / LIME GLOW" ObjetoImp="02" ValorUnitario="66.700000" Importe="600.300000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="600.300000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895ZLGL-115" Cantidad="13" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 ZEST / LIME GLOW" ObjetoImp="02" ValorUnitario="66.700000" Importe="867.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="867.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850VRTL-080" Cantidad="15" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 VIRTUAL BLUE / CERISE" ObjetoImp="02" ValorUnitario="66.700000" Importe="1000.500000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1000.500000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850VRTL-085" Cantidad="12" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 VIRTUAL BLUE / CERISE" ObjetoImp="02" ValorUnitario="66.700000" Importe="800.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="800.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850VRTL-090" Cantidad="28" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 VIRTUAL BLUE / CERISE" ObjetoImp="02" ValorUnitario="66.700000" Importe="1867.600000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1867.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850VRTL-095" Cantidad="21" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 VIRTUAL BLUE / CERISE" ObjetoImp="02" ValorUnitario="66.700000" Importe="1400.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1400.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850VRTL-100" Cantidad="23" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 VIRTUAL BLUE / CERISE" ObjetoImp="02" ValorUnitario="66.700000" Importe="1534.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1534.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850VRTL-105" Cantidad="16" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 VIRTUAL BLUE / CERISE" ObjetoImp="02" ValorUnitario="66.700000" Importe="1067.200000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1067.200000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850VRTL-110" Cantidad="10" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 VIRTUAL BLUE / CERISE" ObjetoImp="02" ValorUnitario="66.700000" Importe="667.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="667.000000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850VRTL-115" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 VIRTUAL BLUE / CERISE" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850VRTL-130" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 VIRTUAL BLUE / CERISE" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BDBSW-075" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLANC DE BLANC / STEEL WOOL" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BDBSW-080" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLANC DE BLANC / STEEL WOOL" ObjetoImp="02" ValorUnitario="66.700000" Importe="133.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="133.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BDBSW-085" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLANC DE BLANC / STEEL WOOL" ObjetoImp="02" ValorUnitario="66.700000" Importe="133.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="133.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BDBSW-090" Cantidad="7" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLANC DE BLANC / STEEL WOOL" ObjetoImp="02" ValorUnitario="66.700000" Importe="466.900000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="466.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BDBSW-095" Cantidad="4" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLANC DE BLANC / STEEL WOOL" ObjetoImp="02" ValorUnitario="66.700000" Importe="266.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="266.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BDBSW-100" Cantidad="5" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLANC DE BLANC / STEEL WOOL" ObjetoImp="02" ValorUnitario="66.700000" Importe="333.500000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="333.500000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BDBSW-105" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLANC DE BLANC / STEEL WOOL" ObjetoImp="02" ValorUnitario="66.700000" Importe="133.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="133.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BDBSW-110" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLANC DE BLANC / STEEL WOOL" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BDBSW-115" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLANC DE BLANC / STEEL WOOL" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202CRSCL-085" Cantidad="3" ClaveUnidad="PR" Unidad="Par" Descripcion="M BONDI 8 CERISE / CLOUDLESS" ObjetoImp="02" ValorUnitario="75.900000" Importe="227.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="227.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202CRSCL-090" Cantidad="9" ClaveUnidad="PR" Unidad="Par" Descripcion="M BONDI 8 CERISE / CLOUDLESS" ObjetoImp="02" ValorUnitario="75.900000" Importe="683.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="683.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202CRSCL-095" Cantidad="18" ClaveUnidad="PR" Unidad="Par" Descripcion="M BONDI 8 CERISE / CLOUDLESS" ObjetoImp="02" ValorUnitario="75.900000" Importe="1366.200000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1366.200000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202CRSCL-100" Cantidad="19" ClaveUnidad="PR" Unidad="Par" Descripcion="M BONDI 8 CERISE / CLOUDLESS" ObjetoImp="02" ValorUnitario="75.900000" Importe="1442.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1442.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202CRSCL-110" Cantidad="9" ClaveUnidad="PR" Unidad="Par" Descripcion="M BONDI 8 CERISE / CLOUDLESS" ObjetoImp="02" ValorUnitario="75.900000" Importe="683.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="683.100000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123202CRSCL-120" Cantidad="5" ClaveUnidad="PR" Unidad="Par" Descripcion="M BONDI 8 CERISE / CLOUDLESS" ObjetoImp="02" ValorUnitario="75.900000" Importe="379.500000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="379.500000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895OKB-095" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="M CLIFTON 9 OAT MILK / BARLEY" ObjetoImp="02" ValorUnitario="66.700000" Importe="133.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="133.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895OKB-100" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="M CLIFTON 9 OAT MILK / BARLEY" ObjetoImp="02" ValorUnitario="66.700000" Importe="133.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="133.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BWHT-075" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLACK / WHITE" ObjetoImp="02" ValorUnitario="66.700000" Importe="133.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="133.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BWHT-080" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLACK / WHITE" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BWHT-090" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLACK / WHITE" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BWHT-095" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLACK / WHITE" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BWHT-100" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLACK / WHITE" ObjetoImp="02" ValorUnitario="66.700000" Importe="133.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="133.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BWHT-105" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLACK / WHITE" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BWHT-110" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLACK / WHITE" ObjetoImp="02" ValorUnitario="66.700000" Importe="133.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="133.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147850BWHT-130" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="M ARAHI 7 BLACK / WHITE" ObjetoImp="02" ValorUnitario="66.700000" Importe="66.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="66.700000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147790BWHT-075" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="M MACH 6 BLACK / WHITE" ObjetoImp="02" ValorUnitario="64.400000" Importe="64.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="64.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147790BWHT-080" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="M MACH 6 BLACK / WHITE" ObjetoImp="02" ValorUnitario="64.400000" Importe="128.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="128.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147790BWHT-085" Cantidad="4" ClaveUnidad="PR" Unidad="Par" Descripcion="M MACH 6 BLACK / WHITE" ObjetoImp="02" ValorUnitario="64.400000" Importe="257.600000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="257.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147790BWHT-090" Cantidad="8" ClaveUnidad="PR" Unidad="Par" Descripcion="M MACH 6 BLACK / WHITE" ObjetoImp="02" ValorUnitario="64.400000" Importe="515.200000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="515.200000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147790BWHT-095" Cantidad="8" ClaveUnidad="PR" Unidad="Par" Descripcion="M MACH 6 BLACK / WHITE" ObjetoImp="02" ValorUnitario="64.400000" Importe="515.200000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="515.200000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147790BWHT-100" Cantidad="8" ClaveUnidad="PR" Unidad="Par" Descripcion="M MACH 6 BLACK / WHITE" ObjetoImp="02" ValorUnitario="64.400000" Importe="515.200000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="515.200000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147790BWHT-105" Cantidad="6" ClaveUnidad="PR" Unidad="Par" Descripcion="M MACH 6 BLACK / WHITE" ObjetoImp="02" ValorUnitario="64.400000" Importe="386.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="386.400000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147790BWHT-110" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="M MACH 6 BLACK / WHITE" ObjetoImp="02" ValorUnitario="64.400000" Importe="128.800000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="128.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1147790BWHT-115" Cantidad="3" ClaveUnidad="PR" Unidad="Par" Descripcion="M MACH 6 BLACK / WHITE" ObjetoImp="02" ValorUnitario="64.400000" Importe="193.200000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="193.200000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.000000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="0.00">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00" Base="56954.90" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <cce20:ComercioExterior Version="1.1" TipoOperacion="2" ClaveDePedimento="A1" CertificadoOrigen="0" Incoterm="DAT" Subdivision="0" TipoCambioUSD="19.00" TotalUSD="56954.90" xmlns:cce20="http://www.sat.gob.mx/ComercioExterior20">
+      <cce20:Emisor>
+        <cce20:Domicilio Calle="LAS PALMAS" NumeroExterior="94" NumeroInterior="." Colonia="2917" Municipio="048" Estado="NLE" Pais="MEX" CodigoPostal="66368" />
+      </cce20:Emisor>
+      <cce20:Receptor>
+        <cce20:Domicilio Calle="1ST STREET" NumeroExterior="2245 EAST " Municipio="BROOKLYN " Estado="NY" Pais="USA" CodigoPostal="66368" />
+      </cce20:Receptor>
+      <cce20:Mercancias>
+        <cce20:Mercancia NoIdentificacion="1123202BBLC-075" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="6075.00" />
+        <cce20:Mercancia NoIdentificacion="1123202BBLC-085" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="2025.00" />
+        <cce20:Mercancia NoIdentificacion="1123202BBLC-095" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="2025.00" />
+        <cce20:Mercancia NoIdentificacion="1123202GBMS-085" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="2025.00" />
+        <cce20:Mercancia NoIdentificacion="1123202GBMS-090" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="2025.00" />
+        <cce20:Mercancia NoIdentificacion="1123202GBMS-105" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="2025.00" />
+        <cce20:Mercancia NoIdentificacion="1127918BBLC-080" FraccionArancelaria="64041117" CantidadAduana="11.00" UnidadAduana="09" ValorUnitarioAduana="2785.00" ValorDolares="30635.00" />
+        <cce20:Mercancia NoIdentificacion="1127918BBLC-085" FraccionArancelaria="64041117" CantidadAduana="15.00" UnidadAduana="09" ValorUnitarioAduana="2785.00" ValorDolares="41775.00" />
+        <cce20:Mercancia NoIdentificacion="1127918BBLC-090" FraccionArancelaria="64041117" CantidadAduana="32.00" UnidadAduana="09" ValorUnitarioAduana="2785.00" ValorDolares="89120.00" />
+        <cce20:Mercancia NoIdentificacion="1127918BBLC-095" FraccionArancelaria="64041117" CantidadAduana="31.00" UnidadAduana="09" ValorUnitarioAduana="2785.00" ValorDolares="86335.00" />
+        <cce20:Mercancia NoIdentificacion="1127918BBLC-100" FraccionArancelaria="64041117" CantidadAduana="30.00" UnidadAduana="09" ValorUnitarioAduana="2785.00" ValorDolares="83550.00" />
+        <cce20:Mercancia NoIdentificacion="1127918BBLC-105" FraccionArancelaria="64041117" CantidadAduana="27.00" UnidadAduana="09" ValorUnitarioAduana="2785.00" ValorDolares="75195.00" />
+        <cce20:Mercancia NoIdentificacion="1127918BBLC-110" FraccionArancelaria="64041117" CantidadAduana="14.00" UnidadAduana="09" ValorUnitarioAduana="2785.00" ValorDolares="38990.00" />
+        <cce20:Mercancia NoIdentificacion="1127918BBLC-115" FraccionArancelaria="64041117" CantidadAduana="6.00" UnidadAduana="09" ValorUnitarioAduana="2785.00" ValorDolares="16710.00" />
+        <cce20:Mercancia NoIdentificacion="1127918BBLC-120" FraccionArancelaria="64041117" CantidadAduana="5.00" UnidadAduana="09" ValorUnitarioAduana="2785.00" ValorDolares="13925.00" />
+        <cce20:Mercancia NoIdentificacion="1129930CKBC-080" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="9820.00" />
+        <cce20:Mercancia NoIdentificacion="1129930CKBC-085" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="9820.00" />
+        <cce20:Mercancia NoIdentificacion="1129930CKBC-090" FraccionArancelaria="64041117" CantidadAduana="9.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="22095.00" />
+        <cce20:Mercancia NoIdentificacion="1129930CKBC-095" FraccionArancelaria="64041117" CantidadAduana="8.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="19640.00" />
+        <cce20:Mercancia NoIdentificacion="1129930CKBC-100" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="9820.00" />
+        <cce20:Mercancia NoIdentificacion="1129930CKBC-105" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="9820.00" />
+        <cce20:Mercancia NoIdentificacion="1129930CKBC-110" FraccionArancelaria="64041117" CantidadAduana="6.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="14730.00" />
+        <cce20:Mercancia NoIdentificacion="1129930CKBC-115" FraccionArancelaria="64041117" CantidadAduana="5.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="12275.00" />
+        <cce20:Mercancia NoIdentificacion="1129930CKBC-120" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="4910.00" />
+        <cce20:Mercancia NoIdentificacion="1129930CKBC-130" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="2455.00" />
+        <cce20:Mercancia NoIdentificacion="1123202BWHT-085" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="4050.00" />
+        <cce20:Mercancia NoIdentificacion="1123202BWHT-090" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="4050.00" />
+        <cce20:Mercancia NoIdentificacion="1123202BWHT-095" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="2025.00" />
+        <cce20:Mercancia NoIdentificacion="1123202BWHT-100" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="2025.00" />
+        <cce20:Mercancia NoIdentificacion="1123202BWHT-105" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="2025.00" />
+        <cce20:Mercancia NoIdentificacion="1134497DBEPR-090" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="7540.00" />
+        <cce20:Mercancia NoIdentificacion="1134497DBEPR-095" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1134497DBEPR-105" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="7540.00" />
+        <cce20:Mercancia NoIdentificacion="1134497DBEPR-115" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="7540.00" />
+        <cce20:Mercancia NoIdentificacion="1134501BBLC-075" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="4050.00" />
+        <cce20:Mercancia NoIdentificacion="1134501BBLC-080" FraccionArancelaria="64041117" CantidadAduana="6.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="12150.00" />
+        <cce20:Mercancia NoIdentificacion="1134501BBLC-085" FraccionArancelaria="64041117" CantidadAduana="5.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="10125.00" />
+        <cce20:Mercancia NoIdentificacion="1134501BBLC-090" FraccionArancelaria="64041117" CantidadAduana="12.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="24300.00" />
+        <cce20:Mercancia NoIdentificacion="1134501BBLC-095" FraccionArancelaria="64041117" CantidadAduana="8.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="16200.00" />
+        <cce20:Mercancia NoIdentificacion="1134501BBLC-100" FraccionArancelaria="64041117" CantidadAduana="12.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="24300.00" />
+        <cce20:Mercancia NoIdentificacion="1134501BBLC-110" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="2025.00" />
+        <cce20:Mercancia NoIdentificacion="1127895BBLC-075" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="7540.00" />
+        <cce20:Mercancia NoIdentificacion="1127895BBLC-080" FraccionArancelaria="64041117" CantidadAduana="7.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="13195.00" />
+        <cce20:Mercancia NoIdentificacion="1127895BBLC-085" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="7540.00" />
+        <cce20:Mercancia NoIdentificacion="1127895BBLC-090" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1127895BBLC-095" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="5655.00" />
+        <cce20:Mercancia NoIdentificacion="1127895BBLC-100" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="5655.00" />
+        <cce20:Mercancia NoIdentificacion="1127895BBLC-105" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1127895BBLC-120" FraccionArancelaria="64041117" CantidadAduana="5.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="9425.00" />
+        <cce20:Mercancia NoIdentificacion="1127895BBLC-130" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1127895BWHT-090" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1127895HMBC-080" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1127895HMBC-085" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1127895HMBC-090" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="5655.00" />
+        <cce20:Mercancia NoIdentificacion="1127895HMBC-095" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="5655.00" />
+        <cce20:Mercancia NoIdentificacion="1127895HMBC-100" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1127895HMBC-105" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1127895HMBC-110" FraccionArancelaria="64041117" CantidadAduana="6.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="11310.00" />
+        <cce20:Mercancia NoIdentificacion="1127895HMBC-115" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="5655.00" />
+        <cce20:Mercancia NoIdentificacion="1127895HMBC-120" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="5655.00" />
+        <cce20:Mercancia NoIdentificacion="1127895IWEP-095" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="5655.00" />
+        <cce20:Mercancia NoIdentificacion="1127895IWEP-105" FraccionArancelaria="64041117" CantidadAduana="12.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="22620.00" />
+        <cce20:Mercancia NoIdentificacion="1127895IWEP-115" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1127895NCSW-080" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="5655.00" />
+        <cce20:Mercancia NoIdentificacion="1127895NCSW-115" FraccionArancelaria="64041117" CantidadAduana="7.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="13195.00" />
+        <cce20:Mercancia NoIdentificacion="1127895NCSW-120" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="7540.00" />
+        <cce20:Mercancia NoIdentificacion="1127929BSNBL-080" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="2125.00" ValorDolares="2125.00" />
+        <cce20:Mercancia NoIdentificacion="1127929BSNBL-115" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="2125.00" ValorDolares="2125.00" />
+        <cce20:Mercancia NoIdentificacion="1129930DLCR-080" FraccionArancelaria="64041117" CantidadAduana="6.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="14730.00" />
+        <cce20:Mercancia NoIdentificacion="1129930DLCR-085" FraccionArancelaria="64041117" CantidadAduana="11.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="27005.00" />
+        <cce20:Mercancia NoIdentificacion="1129930DLCR-100" FraccionArancelaria="64041117" CantidadAduana="17.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="41735.00" />
+        <cce20:Mercancia NoIdentificacion="1129930DLCR-115" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="2455.00" ValorDolares="7365.00" />
+        <cce20:Mercancia NoIdentificacion="1119395RAFL-075" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="1645.00" ValorDolares="4935.00" />
+        <cce20:Mercancia NoIdentificacion="1119395RAFL-080" FraccionArancelaria="64041117" CantidadAduana="8.00" UnidadAduana="09" ValorUnitarioAduana="1645.00" ValorDolares="13160.00" />
+        <cce20:Mercancia NoIdentificacion="1119395RAFL-085" FraccionArancelaria="64041117" CantidadAduana="7.00" UnidadAduana="09" ValorUnitarioAduana="1645.00" ValorDolares="11515.00" />
+        <cce20:Mercancia NoIdentificacion="1119395RAFL-090" FraccionArancelaria="64041117" CantidadAduana="17.00" UnidadAduana="09" ValorUnitarioAduana="1645.00" ValorDolares="27965.00" />
+        <cce20:Mercancia NoIdentificacion="1119395RAFL-095" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="1645.00" ValorDolares="6580.00" />
+        <cce20:Mercancia NoIdentificacion="1119395RAFL-100" FraccionArancelaria="64041117" CantidadAduana="14.00" UnidadAduana="09" ValorUnitarioAduana="1645.00" ValorDolares="23030.00" />
+        <cce20:Mercancia NoIdentificacion="1123202SHMS-090" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="4050.00" />
+        <cce20:Mercancia NoIdentificacion="1127895CSAA-085" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1127895FVOR-085" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1127895FVOR-090" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1127895FVOR-115" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1127895WWH-115" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="7540.00" />
+        <cce20:Mercancia NoIdentificacion="1127895WWH-130" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="7540.00" />
+        <cce20:Mercancia NoIdentificacion="1127895ZLGL-075" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="5655.00" />
+        <cce20:Mercancia NoIdentificacion="1127895ZLGL-105" FraccionArancelaria="64041117" CantidadAduana="9.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="16965.00" />
+        <cce20:Mercancia NoIdentificacion="1127895ZLGL-115" FraccionArancelaria="64041117" CantidadAduana="13.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="24505.00" />
+        <cce20:Mercancia NoIdentificacion="1147850VRTL-080" FraccionArancelaria="64041117" CantidadAduana="15.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="28275.00" />
+        <cce20:Mercancia NoIdentificacion="1147850VRTL-085" FraccionArancelaria="64041117" CantidadAduana="12.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="22620.00" />
+        <cce20:Mercancia NoIdentificacion="1147850VRTL-090" FraccionArancelaria="64041117" CantidadAduana="28.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="52780.00" />
+        <cce20:Mercancia NoIdentificacion="1147850VRTL-095" FraccionArancelaria="64041117" CantidadAduana="21.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="39585.00" />
+        <cce20:Mercancia NoIdentificacion="1147850VRTL-100" FraccionArancelaria="64041117" CantidadAduana="23.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="43355.00" />
+        <cce20:Mercancia NoIdentificacion="1147850VRTL-105" FraccionArancelaria="64041117" CantidadAduana="16.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="30160.00" />
+        <cce20:Mercancia NoIdentificacion="1147850VRTL-110" FraccionArancelaria="64041117" CantidadAduana="10.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="18850.00" />
+        <cce20:Mercancia NoIdentificacion="1147850VRTL-115" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1147850VRTL-130" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BDBSW-075" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BDBSW-080" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BDBSW-085" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BDBSW-090" FraccionArancelaria="64041117" CantidadAduana="7.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="13195.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BDBSW-095" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="7540.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BDBSW-100" FraccionArancelaria="64041117" CantidadAduana="5.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="9425.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BDBSW-105" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BDBSW-110" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BDBSW-115" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1123202CRSCL-085" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="6075.00" />
+        <cce20:Mercancia NoIdentificacion="1123202CRSCL-090" FraccionArancelaria="64041117" CantidadAduana="9.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="18225.00" />
+        <cce20:Mercancia NoIdentificacion="1123202CRSCL-095" FraccionArancelaria="64041117" CantidadAduana="18.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="36450.00" />
+        <cce20:Mercancia NoIdentificacion="1123202CRSCL-100" FraccionArancelaria="64041117" CantidadAduana="19.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="38475.00" />
+        <cce20:Mercancia NoIdentificacion="1123202CRSCL-110" FraccionArancelaria="64041117" CantidadAduana="9.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="18225.00" />
+        <cce20:Mercancia NoIdentificacion="1123202CRSCL-120" FraccionArancelaria="64041117" CantidadAduana="5.00" UnidadAduana="09" ValorUnitarioAduana="2025.00" ValorDolares="10125.00" />
+        <cce20:Mercancia NoIdentificacion="1127895OKB-095" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1127895OKB-100" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BWHT-075" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BWHT-080" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BWHT-090" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BWHT-095" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BWHT-100" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BWHT-105" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BWHT-110" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1147850BWHT-130" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1147790BWHT-075" FraccionArancelaria="64041117" CantidadAduana="1.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="1885.00" />
+        <cce20:Mercancia NoIdentificacion="1147790BWHT-080" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1147790BWHT-085" FraccionArancelaria="64041117" CantidadAduana="4.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="7540.00" />
+        <cce20:Mercancia NoIdentificacion="1147790BWHT-090" FraccionArancelaria="64041117" CantidadAduana="8.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="15080.00" />
+        <cce20:Mercancia NoIdentificacion="1147790BWHT-095" FraccionArancelaria="64041117" CantidadAduana="8.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="15080.00" />
+        <cce20:Mercancia NoIdentificacion="1147790BWHT-100" FraccionArancelaria="64041117" CantidadAduana="8.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="15080.00" />
+        <cce20:Mercancia NoIdentificacion="1147790BWHT-105" FraccionArancelaria="64041117" CantidadAduana="6.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="11310.00" />
+        <cce20:Mercancia NoIdentificacion="1147790BWHT-110" FraccionArancelaria="64041117" CantidadAduana="2.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="3770.00" />
+        <cce20:Mercancia NoIdentificacion="1147790BWHT-115" FraccionArancelaria="64041117" CantidadAduana="3.00" UnidadAduana="09" ValorUnitarioAduana="1885.00" ValorDolares="5655.00" />
+      </cce20:Mercancias>
+    </cce20:ComercioExterior>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

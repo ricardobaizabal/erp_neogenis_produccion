@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://timbre02.facturaxion.net/CFDI.asmx?wsdl" docRef="https://timbre02.facturaxion.net/CFDI.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://timbre02.facturaxion.net/CFDI.asmx" xmlns:q1="http://www.facturaxion.com/" binding="q1:TimbreFiscalDigitalSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://timbre02.facturaxion.net/CFDI.asmx" xmlns:q2="http://www.facturaxion.com/" binding="q2:TimbreFiscalDigitalSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

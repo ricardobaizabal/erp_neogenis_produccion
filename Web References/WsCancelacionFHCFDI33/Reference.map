@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://cancelacion.facturehoy.com/CancelacionCFDI33/WsCancelacionCFDI33?wsdl" filename="WsCancelacionCFDI33.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://cancelacion.facturehoy.com/CancelacionCFDI33/WsCancelacionCFDI33?xsd=1" filename="WsCancelacionCFDI33.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

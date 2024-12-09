@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://cfdi.ws2.facturehoy.certus.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WsServiciosService" targetNamespace="http://cfdi.ws2.facturehoy.certus.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://wsprod1.facturehoy.com:80/CFDI/WsServicios?xsd=1" namespace="http://cfdi.ws2.facturehoy.certus.com/" />
+    </xsd:schema>
+  </types>
+  <message name="obtenerServicios">
+    <part name="parameters" element="tns:obtenerServicios" />
+  </message>
+  <message name="obtenerServiciosResponse">
+    <part name="parameters" element="tns:obtenerServiciosResponse" />
+  </message>
+  <message name="obtenerServiciosCanalCliente">
+    <part name="parameters" element="tns:obtenerServiciosCanalCliente" />
+  </message>
+  <message name="obtenerServiciosCanalClienteResponse">
+    <part name="parameters" element="tns:obtenerServiciosCanalClienteResponse" />
+  </message>
+  <portType name="WsServicios">
+    <operation name="obtenerServicios">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsServicios/obtenerServiciosRequest" message="tns:obtenerServicios" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsServicios/obtenerServiciosResponse" message="tns:obtenerServiciosResponse" />
+    </operation>
+    <operation name="obtenerServiciosCanalCliente">
+      <input wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsServicios/obtenerServiciosCanalClienteRequest" message="tns:obtenerServiciosCanalCliente" />
+      <output wsam:Action="http://cfdi.ws2.facturehoy.certus.com/WsServicios/obtenerServiciosCanalClienteResponse" message="tns:obtenerServiciosCanalClienteResponse" />
+    </operation>
+  </portType>
+  <binding name="WsServiciosPortBinding" type="tns:WsServicios">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="obtenerServicios">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerServiciosCanalCliente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WsServiciosService">
+    <port name="WsServiciosPort" binding="tns:WsServiciosPortBinding">
+      <soap:address location="http://wsprod1.facturehoy.com:80/CFDI/WsServicios" />
+    </port>
+  </service>
+</definitions>

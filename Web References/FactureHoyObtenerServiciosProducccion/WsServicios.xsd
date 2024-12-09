@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://cfdi.ws2.facturehoy.certus.com/" targetNamespace="http://cfdi.ws2.facturehoy.certus.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="obtenerServicios" type="tns:obtenerServicios" />
+  <xs:element name="obtenerServiciosCanalCliente" type="tns:obtenerServiciosCanalCliente" />
+  <xs:element name="obtenerServiciosCanalClienteResponse" type="tns:obtenerServiciosCanalClienteResponse" />
+  <xs:element name="obtenerServiciosResponse" type="tns:obtenerServiciosResponse" />
+  <xs:complexType name="obtenerServiciosCanalCliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+      <xs:element minOccurs="0" name="rfc" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerServiciosCanalClienteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wsServicioBO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="wsServicioBO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="array" nillable="true" type="tns:wsServicioBO" />
+      <xs:element name="cantidadCFDI" type="xs:int" />
+      <xs:element name="folioFinal" type="xs:int" />
+      <xs:element name="folioInicial" type="xs:int" />
+      <xs:element name="idProcess" type="xs:int" />
+      <xs:element minOccurs="0" name="mensaje" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreServicio" type="xs:string" />
+      <xs:element minOccurs="0" name="serie" type="xs:string" />
+      <xs:element name="ultimoFolioUsado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerServicios">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenia" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerServiciosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:wsServicioBO" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

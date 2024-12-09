@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="A" Folio="42895" Fecha="2024-01-17T12:11:05" Sello="kqF+aVDdrSiBRGGKPXkzsz7J0DLYu0HtQdWOKGbrRC5XgnvzwPaVG7xlYCrBVZjg8RJnyk5WuX6M6F8XEkifqTcNw9jxk+QKaiSe2nZ2xK++6Bo6lQvhPAvcLvkeOXgA5rHe+WCy8skfRo1R+LsehvWMJziQFc8twWelMGQNw4ISZNith9rfLtbDsyJTwGdEWtPOugvtfOFBQWOshhl0XwQ2sml6O9fB6C6slFMIsID+sFtcn8pAlTu+in0+8tcAD73r/3p4sV0lOeC9oc18L64E81g1uqiXQgA+bU2na6qZz9JYtogMVNXJGUYGuEjLeTZbZaluP61TSEEoLDXjoQ==" FormaPago="99" NoCertificado="00001000000505848840" Certificado="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" CondicionesDePago="15 días" SubTotal="48671.00" Descuento="4867.10" Moneda="MXN" Total="50812.52" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="66368" Exportacion="01">
+  <cfdi:Emisor Nombre="NG SUPPLY" Rfc="NSU130606PI2" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="VABJ640412ST5" Nombre="JOSE JULIO VAZQUEZ BRISEÑO" RegimenFiscalReceptor="612" DomicilioFiscalReceptor="09760" UsoCFDI="G01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395BWHT-105" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="MRINCON3 BLACK / WHITE" ObjetoImp="02" Descuento="215.100000" ValorUnitario="2151.000000" Importe="2151.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1935.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="309.744000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395BWHT-120" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="MRINCON3 BLACK / WHITE" ObjetoImp="02" Descuento="215.100000" ValorUnitario="2151.000000" Importe="2151.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1935.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="309.744000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123192BWHT-090" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CARBON X 3 BLACK / WHITE" ObjetoImp="02" Descuento="323.100000" ValorUnitario="3231.000000" Importe="3231.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2907.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="465.264000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123192EPSB-085" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CARBON X 3 EVENING PRIMROSE / SCUBA BLUE" ObjetoImp="02" Descuento="280.100000" ValorUnitario="2801.000000" Importe="2801.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2520.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="403.344000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123192EPSB-100" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CARBON X 3 EVENING PRIMROSE / SCUBA BLUE" ObjetoImp="02" Descuento="323.100000" ValorUnitario="3231.000000" Importe="3231.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2907.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="465.264000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1123192EPSB-105" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CARBON X 3 EVENING PRIMROSE / SCUBA BLUE" ObjetoImp="02" Descuento="323.100000" ValorUnitario="3231.000000" Importe="3231.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2907.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="465.264000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395MSSS-075" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 MOUNTAIN SPRING / SUMMER SONG" ObjetoImp="02" Descuento="215.100000" ValorUnitario="2151.000000" Importe="2151.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1935.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="309.744000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395MSSS-085" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 MOUNTAIN SPRING / SUMMER SONG" ObjetoImp="02" Descuento="188.100000" ValorUnitario="1881.000000" Importe="1881.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1692.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="270.864000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119395MSSS-090" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M RINCON 3 MOUNTAIN SPRING / SUMMER SONG" ObjetoImp="02" Descuento="188.100000" ValorUnitario="1881.000000" Importe="1881.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1692.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="270.864000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127895HMBC-085" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="M CLIFTON 9 HARBOR MIST / BLACK 08.5D" ObjetoImp="02" Descuento="247.100000" ValorUnitario="2471.000000" Importe="2471.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2223.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="355.824000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127896BCPPR-060" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="W CLIFTON 9 BLACK / COPPER" ObjetoImp="02" Descuento="247.100000" ValorUnitario="2471.000000" Importe="2471.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2223.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="355.824000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1127896CSLC-080" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="W CLIFTON 9 CYCLAMEN / SWEET LILAC" ObjetoImp="02" Descuento="247.100000" ValorUnitario="2471.000000" Importe="2471.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2223.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="355.824000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119396BBCRM-070" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="W RINCON 3 BELLWETHER BLUE / CERAMIC" ObjetoImp="02" Descuento="188.100000" ValorUnitario="1881.000000" Importe="1881.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1692.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="270.864000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119396BBCRM-080" Cantidad="2" ClaveUnidad="H87" Unidad="Pza" Descripcion="W RINCON 3 BELLWETHER BLUE / CERAMIC" ObjetoImp="02" Descuento="430.200000" ValorUnitario="2151.000000" Importe="4302.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3871.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="619.488000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119396BBCRM-085" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="W RINCON 3 BELLWETHER BLUE / CERAMIC" ObjetoImp="02" Descuento="215.100000" ValorUnitario="2151.000000" Importe="2151.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1935.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="309.744000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119396MOCY-065" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="W RINCON 3 MOCK ORANGE / CYCLAMEN" ObjetoImp="02" Descuento="215.100000" ValorUnitario="2151.000000" Importe="2151.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1935.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="309.744000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119396MOCY-075" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="W RINCON 3 MOCK ORANGE / CYCLAMEN" ObjetoImp="02" Descuento="188.100000" ValorUnitario="1881.000000" Importe="1881.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1692.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="270.864000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119396MOCY-080" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="W RINCON 3 MOCK ORANGE / CYCLAMEN" ObjetoImp="02" Descuento="188.100000" ValorUnitario="1881.000000" Importe="1881.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1692.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="270.864000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119396MOCY-085" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="W RINCON 3 MOCK ORANGE / CYCLAMEN" ObjetoImp="02" Descuento="215.100000" ValorUnitario="2151.000000" Importe="2151.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1935.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="309.744000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1119396MOCY-090" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="W RINCON 3 MOCK ORANGE / CYCLAMEN" ObjetoImp="02" Descuento="215.100000" ValorUnitario="2151.000000" Importe="2151.000000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1935.900000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="309.744000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="7008.62">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="7008.62" Base="43803.90" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+<cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="4B9C5B4E-FC5F-44ED-A714-F40063C5C54D" FechaTimbrado="2024-01-17T12:11:11" RfcProvCertif="SIF0403229F9" SelloCFD="kqF+aVDdrSiBRGGKPXkzsz7J0DLYu0HtQdWOKGbrRC5XgnvzwPaVG7xlYCrBVZjg8RJnyk5WuX6M6F8XEkifqTcNw9jxk+QKaiSe2nZ2xK++6Bo6lQvhPAvcLvkeOXgA5rHe+WCy8skfRo1R+LsehvWMJziQFc8twWelMGQNw4ISZNith9rfLtbDsyJTwGdEWtPOugvtfOFBQWOshhl0XwQ2sml6O9fB6C6slFMIsID+sFtcn8pAlTu+in0+8tcAD73r/3p4sV0lOeC9oc18L64E81g1uqiXQgA+bU2na6qZz9JYtogMVNXJGUYGuEjLeTZbZaluP61TSEEoLDXjoQ==" NoCertificadoSAT="00001000000508768672" SelloSAT="q+SvKSMZa+Mr/RHkElKRfquMajHe0BGLtGikBIIvj4VgjI6xUuzxUX52lSvsq8Dyrxinklowe2EQdW6jj1cpMn+QGrMfEoDMIJdOVDiG7AjNnLTv0UrgNHqHljlYjfRGV1DIZ92P/wh6Wc/JJGb+IkZoILlOHn/1NoXW61VIhKBLbLDMgjTZoK0J6DZ2AYiS1K4qhjCnDoQTFf87s6NK55yjMm4zDEAPnJZriMxDenVj5YXL9qFZoyS+MI94S7pzd14DPoaVYm1yo2j4I8y/LsXFYoarMB40N8Ec2C1jtcSvNLq+vts//N/UsKZS398w0rFpINXLA2x1RsrGeVXUkA==" /></cfdi:Complemento></cfdi:Comprobante>

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="A" Folio="33691" Fecha="2023-08-10T01:51:02" Sello="lgsEotRpkoE7pJCGmO7gTiRz7lzj+z58p1mSK9ca0HRdeu2wPwWYQ4smysW9EgtJJvcpjOqM/mxJEWuundWEimlkquc7I/07tF4pBTFHvZaXfMPGt+0UDSwXEyErrGb70paSFq+Z0NwF0AObqWvN6JdkXCB4DwWiPtTJ0QJ8LgbGj+S7qfEzBlPO6odsq4Sy91U6U3DX2mS3l/KQspejx+1M12cUko+XfBYb0fSAE1kap4JBfu300Q7LNyHHM0fuGiqItdu4Km14w+S8ymkJHBARLYf5Rf9KU95l4zsYxvXgxBiesZBOA+ZySnJ8llmllGBtasCUXeN6p3Mm8KA26A==" FormaPago="99" NoCertificado="30001000000500003416" Certificado="MIIFsDCCA5igAwIBAgIUMzAwMDEwMDAwMDA1MDAwMDM0MTYwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWxpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMjMwNTE4MTE0MzUxWhcNMjcwNTE4MTE0MzUxWjCB1zEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gVkFEQTgwMDkyN0RKMzEeMBwGA1UEBRMVIC8gVkFEQTgwMDkyN0hTUlNSTDA1MRMwEQYDVQQLEwpTdWN1cnNhbCAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtmecO6n2GS0zL025gbHGQVxznPDICoXzR2uUngz4DqxVUC/w9cE6FxSiXm2ap8Gcjg7wmcZfm85EBaxCx/0J2u5CqnhzIoGCdhBPuhWQnIh5TLgj/X6uNquwZkKChbNe9aeFirU/JbyN7Egia9oKH9KZUsodiM/pWAH00PCtoKJ9OBcSHMq8Rqa3KKoBcfkg1ZrgueffwRLws9yOcRWLb02sDOPzGIm/jEFicVYt2Hw1qdRE5xmTZ7AGG0UHs+unkGjpCVeJ+BEBn0JPLWVvDKHZAQMj6s5Bku35+d/MyATkpOPsGT/VTnsouxekDfikJD1f7A1ZpJbqDpkJnss3vQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQsFAAOCAgEAFaUgj5PqgvJigNMgtrdXZnbPfVBbukAbW4OGnUhNrA7SRAAfv2BSGk16PI0nBOr7qF2mItmBnjgEwk+DTv8Zr7w5qp7vleC6dIsZFNJoa6ZndrE/f7KO1CYruLXr5gwEkIyGfJ9NwyIagvHHMszzyHiSZIA850fWtbqtythpAliJ2jF35M5pNS+YTkRB+T6L/c6m00ymN3q9lT1rB03YywxrLreRSFZOSrbwWfg34EJbHfbFXpCSVYdJRfiVdvHnewN0r5fUlPtR9stQHyuqewzdkyb5jTTw02D2cUfL57vlPStBj7SEi3uOWvLrsiDnnCIxRMYJ2UA2ktDKHk+zWnsDmaeleSzonv2CHW42yXYPCvWi88oE1DJNYLNkIjua7MxAnkNZbScNw01A6zbLsZ3y8G6eEYnxSTRfwjd8EP4kdiHNJftm7Z4iRU7HOVh79/lRWB+gd171s3d/mI9kte3MRy6V8MMEMCAnMboGpaooYwgAmwclI2XZCczNWXfhaWe0ZS5PmytD/GDpXzkX0oEgY9K/uYo5V77NdZbGAjmyi8cE2B2ogvyaN2XfIInrZPgEffJ4AB7kFA2mwesdLOCh0BLD9itmCve3A1FGR4+stO2ANUoiI3w3Tv2yQSg4bjeDlJ08lXaaFCLW2peEXMXjQUk7fmpb5MNuOUTW6BE=" CondicionesDePago="90 días" SubTotal="37065.17" Moneda="MXN" Total="42995.60" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="66368" Exportacion="01">
+  <cfdi:Emisor Nombre="ESCUELA KEMPER URGATE SA DE CV" Rfc="EKU9003173C9" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="TLA171010MA7" Nombre="TLAKATI" RegimenFiscalReceptor="601" DomicilioFiscalReceptor="11550" UsoCFDI="G03" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000NVYM4W6" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Thong Navy M4/W6" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000NVYM6W8" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Thong Navy M6/W8" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000NVYM7W9" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Thong Navy M7/W9" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000NVYM8W10" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Thong Navy M8/W10" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000NVYM9W11" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Thong Navy M9/W11" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000NVYM10W12" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Thong Navy M10/W12" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000NVYM11W13" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Thong Navy M11/W13" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000NOMADM6W8" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Nomad M6W8" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000NOMADM7W9" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Nomad M7W9" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1100BLKM5W7" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="OOahh Black M5/W7" ObjetoImp="02" ValorUnitario="848.23" Importe="1696.46">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1696.4600" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="271.43" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1100BLKM6W8" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="OOahh Black M6/W8" ObjetoImp="02" ValorUnitario="848.23" Importe="1696.46">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1696.4600" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="271.43" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1100BLKM7W9" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="OOahh Black M7/W9" ObjetoImp="02" ValorUnitario="848.23" Importe="1696.46">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1696.4600" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="271.43" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1100BLKM8W10" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="OOahh Black M8/W10" ObjetoImp="02" ValorUnitario="848.23" Importe="1696.46">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1696.4600" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="271.43" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1100BLKM9W11" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="OOahh Black M9/W11" ObjetoImp="02" ValorUnitario="848.23" Importe="1696.46">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1696.4600" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="271.43" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1100BLKM10W12" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="OOahh Black M10/W12" ObjetoImp="02" ValorUnitario="848.23" Importe="1696.46">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1696.4600" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="271.43" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1100SLATEM4W6" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOahh Slate M4/W6" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1100SLATEM8W10" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOahh Slate M8/W10" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1100SLATEM9W11" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOahh Slate M9/W11" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1100SLATEM10W12" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOahh Slate M10/W12" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000BLKM4W6" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Thong Black M4/W6" ObjetoImp="02" ValorUnitario="848.23" Importe="848.23">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="848.2300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="135.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000BLKM7W9" Cantidad="3" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Thong Black M7/W9" ObjetoImp="02" ValorUnitario="848.23" Importe="2544.70">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2544.7000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="407.15" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000BLKM8W10" Cantidad="3" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Thong Black M8/W10" ObjetoImp="02" ValorUnitario="848.23" Importe="2544.70">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2544.7000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="407.15" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000BLKM9W11" Cantidad="3" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Thong Black M9/W11" ObjetoImp="02" ValorUnitario="848.23" Importe="2544.70">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2544.7000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="407.15" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1000BLKM10W12" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="OOriginal Thong Black M10/W12" ObjetoImp="02" ValorUnitario="848.23" Importe="1696.46">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1696.4600" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="271.43" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1100NVYM8W10" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="OOahh Navy M8/W10" ObjetoImp="02" ValorUnitario="848.23" Importe="1696.46">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1696.4600" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="271.43" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1100NVYM9W11" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="OOahh Navy M9/W11" ObjetoImp="02" ValorUnitario="848.23" Importe="1696.46">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1696.4600" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="271.43" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111800" NoIdentificacion="1100NVYM10W12" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="OOahh Navy M10/W12" ObjetoImp="02" ValorUnitario="848.23" Importe="1696.46">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1696.4600" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="271.43" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="78141504" NoIdentificacion="10006" Cantidad="43" ClaveUnidad="PR" Unidad="Par" Descripcion="GASTOS ENVIO SANDALIAS  X PAR" ObjetoImp="02" ValorUnitario="13.75" Importe="591.25">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="591.2500" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="94.60" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="5930.43">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="5930.43" Base="37065.17" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

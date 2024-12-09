@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="A" Folio="33723" Fecha="2023-08-16T05:57:02" Sello="Sd+nbOndyMk+0SEwBt+cP0fRu0VJNCTR2UZdd6VMSdCnEMWdLli60bc7bgVdcA0kUlPtSot5ntDXp86tp8CwJtNH7Kw7bkWcZUdXPZSnWzFw9bTH8KI6wnwd3xSItD4sIDBnFNDqGv1H8HSsSOJhdCR9GS5f0+qBi/AWka1zvmB4W2R06NtUj7q0TdWfllT30ZHIjMjX371RkjqSvVZz8i4qgUoCjy3VByHSaj5CwXBuEFtpjiYgKm0spoGejTvfRChH3xNXPwotjNcmpLBf3+Ik4TfjElUEAgq2aJKblRb5rmHS1igDRpgspAYJcGgyYHJGmvN3JbbbeoYn6hPdDw==" FormaPago="99" NoCertificado="30001000000500003416" Certificado="MIIFsDCCA5igAwIBAgIUMzAwMDEwMDAwMDA1MDAwMDM0MTYwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWxpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMjMwNTE4MTE0MzUxWhcNMjcwNTE4MTE0MzUxWjCB1zEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gVkFEQTgwMDkyN0RKMzEeMBwGA1UEBRMVIC8gVkFEQTgwMDkyN0hTUlNSTDA1MRMwEQYDVQQLEwpTdWN1cnNhbCAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtmecO6n2GS0zL025gbHGQVxznPDICoXzR2uUngz4DqxVUC/w9cE6FxSiXm2ap8Gcjg7wmcZfm85EBaxCx/0J2u5CqnhzIoGCdhBPuhWQnIh5TLgj/X6uNquwZkKChbNe9aeFirU/JbyN7Egia9oKH9KZUsodiM/pWAH00PCtoKJ9OBcSHMq8Rqa3KKoBcfkg1ZrgueffwRLws9yOcRWLb02sDOPzGIm/jEFicVYt2Hw1qdRE5xmTZ7AGG0UHs+unkGjpCVeJ+BEBn0JPLWVvDKHZAQMj6s5Bku35+d/MyATkpOPsGT/VTnsouxekDfikJD1f7A1ZpJbqDpkJnss3vQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQsFAAOCAgEAFaUgj5PqgvJigNMgtrdXZnbPfVBbukAbW4OGnUhNrA7SRAAfv2BSGk16PI0nBOr7qF2mItmBnjgEwk+DTv8Zr7w5qp7vleC6dIsZFNJoa6ZndrE/f7KO1CYruLXr5gwEkIyGfJ9NwyIagvHHMszzyHiSZIA850fWtbqtythpAliJ2jF35M5pNS+YTkRB+T6L/c6m00ymN3q9lT1rB03YywxrLreRSFZOSrbwWfg34EJbHfbFXpCSVYdJRfiVdvHnewN0r5fUlPtR9stQHyuqewzdkyb5jTTw02D2cUfL57vlPStBj7SEi3uOWvLrsiDnnCIxRMYJ2UA2ktDKHk+zWnsDmaeleSzonv2CHW42yXYPCvWi88oE1DJNYLNkIjua7MxAnkNZbScNw01A6zbLsZ3y8G6eEYnxSTRfwjd8EP4kdiHNJftm7Z4iRU7HOVh79/lRWB+gd171s3d/mI9kte3MRy6V8MMEMCAnMboGpaooYwgAmwclI2XZCczNWXfhaWe0ZS5PmytD/GDpXzkX0oEgY9K/uYo5V77NdZbGAjmyi8cE2B2ogvyaN2XfIInrZPgEffJ4AB7kFA2mwesdLOCh0BLD9itmCve3A1FGR4+stO2ANUoiI3w3Tv2yQSg4bjeDlJ08lXaaFCLW2peEXMXjQUk7fmpb5MNuOUTW6BE=" CondicionesDePago="90 días" SubTotal="41386.09" Descuento="20693.10" Moneda="MXN" Total="24003.88" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="66368" Exportacion="01">
+  <cfdi:Emisor Nombre="ESCUELA KEMPER URGATE SA DE CV" Rfc="EKU9003173C9" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="ISP831021NV9" Nombre="INNOVA SPORT" RegimenFiscalReceptor="601" DomicilioFiscalReceptor="66220" UsoCFDI="G03" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="680168540695" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="BFG-BK-AM2-RF - BFG BEELZEBUB`S BOURBON BURPEES" ObjetoImp="02" Descuento="538.360000" ValorUnitario="1076.720000" Importe="1076.720000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="538.360000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="86.137600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="672299500693" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="BFG-BK-BK1-NR - BFG HOOKED ON ONYX" ObjetoImp="02" Descuento="538.360000" ValorUnitario="1076.720000" Importe="1076.720000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="538.360000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="86.137600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="680168540794" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="CG-BK-BL2-RF - CG MIDNIGHT RAMBLE AT CIRCLE BAR" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075310214" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="CG-CH4-RF - CG They Were Out of Black" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="672299769984" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="CG-CL-CLBM-PC - CG Stop, Drop, and Scroll" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="680168540817" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="CG-CL-PR2-RF - CG STRANGE THINGS ARE A FOOT AT T" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075310207" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="CG-LTG2-RF - CG Thanks, They’re Vintage" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="680168540763" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="CG-OR-LLB1-RF - CG FRESHLY BAKED MAN BUNS" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="680168540787" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="CG-PK-PK1-RF - CG INFLUENCERS PAY DOUBLE" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="680168540800" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="CG-TR-BR1-NR - CG NINE DOLLAR POUR OVER" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="680168540176" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="FBFG-WD-CP1-RF - BFG JUST KNOCK IT ON!" ObjetoImp="02" Descuento="538.360000" ValorUnitario="1076.720000" Importe="1076.720000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="538.360000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="86.137600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075312645" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="LFG-BK1-NR - LFG Get On My Level" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075312690" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="LFG-BR1-NR - LFG Smaller Is Boler" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075312652" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="LFG-LB1-RF - LFG Middle Seat Advantage" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075314007" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="MG-AM3-RF - MG Call Me Tarmac Daddy" ObjetoImp="02" Descuento="581.470000" ValorUnitario="1162.930000" Importe="1162.930000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="581.460000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="93.034400" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="672299955929" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="MG-BK-BK1-NR - MG Operation: Blackout" ObjetoImp="02" Descuento="581.470000" ValorUnitario="1162.930000" Importe="1162.930000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="581.460000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="93.034400" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="672299842823" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="MG-BL-GRYL1-GR - MG Frequent SkyMall Shoppers" ObjetoImp="02" Descuento="581.470000" ValorUnitario="1162.930000" Importe="1162.930000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="581.460000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="93.034400" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075310221" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="MG-CH4-RF - MG Add the Chrome Package" ObjetoImp="02" Descuento="581.470000" ValorUnitario="1162.930000" Importe="1162.930000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="581.460000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="93.034400" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="672299530935" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="MG-GY-BK1-FE - MG Clubhouse Closeout" ObjetoImp="02" Descuento="581.470000" ValorUnitario="1162.930000" Importe="1162.930000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="581.460000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="93.034400" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075310238" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="MG-LLB2-RF - MG CHEESY FLIGHT ATTENDANT" ObjetoImp="02" Descuento="581.470000" ValorUnitario="1162.930000" Importe="1162.930000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="581.460000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="93.034400" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="672299865655" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="MG-TL-PK1-RF - MG Kitty Hawkers Ray Blockers" ObjetoImp="02" Descuento="581.470000" ValorUnitario="1162.930000" Importe="1162.930000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="581.460000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="93.034400" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="672299668539" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="MG-TR-BR1-NR - MG Amelia Earhart Ghosted Me" ObjetoImp="02" Descuento="581.470000" ValorUnitario="1162.930000" Importe="1162.930000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="581.460000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="93.034400" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075310139" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG-BK1-NR-CH - OG CHICAGO Marathon" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="705911703636" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG-BK-BK1 - OG A GINGERS SOUL" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="705911703650" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG-BK-TL1 - OG VINCENT´S ABSINTHE NIGHT TERRO" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="705911703599" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG-BL-BL1 - OG FALKORS FEVER DREAM" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="728461226646" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG-LB-GL1 - OG SUNBATHING WITH WIZARDS" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075314243" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG-BR1-NR-1 - OG POTATOES, A MID WEST VEGETABLE" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="728461226684" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG-OR-BL1 - OG DONKEY GOGGLES" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="705911703612" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG-PR-PR1 - OG GARDENING WITH A KRAKEN" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="705911703629" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG-TL-TL1 - OG NESSYS MIDNIGHT ORGY" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="728461226660" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG-WH-BL1 - OG ICED BY YETIS" ObjetoImp="02" Descuento="409.050000" ValorUnitario="818.100000" Importe="818.100000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="409.050000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="65.448000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075310290" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="PHG-BK1-NR - PHG Professor 00G" ObjetoImp="02" Descuento="538.360000" ValorUnitario="1076.720000" Importe="1076.720000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="538.360000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="86.137600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075310313" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="PHG-BR1-NR-FO - PHG Fossil Finding Focals" ObjetoImp="02" Descuento="538.360000" ValorUnitario="1076.720000" Importe="1076.720000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="538.360000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="86.137600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075310344" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="PHG-GB3-RF - PHG Dr. Ray, Sting" ObjetoImp="02" Descuento="538.360000" ValorUnitario="1076.720000" Importe="1076.720000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="538.360000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="86.137600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075314021" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="VRG-AM3-RF - VRG FROM ZERO TO BLISTED" ObjetoImp="02" Descuento="538.360000" ValorUnitario="1076.720000" Importe="1076.720000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="538.360000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="86.137600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="672299993235" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="VRG-GY-RS2-RF - VRG VOIGHT - KAMPFF VISION" ObjetoImp="02" Descuento="538.360000" ValorUnitario="1076.720000" Importe="1076.720000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="538.360000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="86.137600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="672299648319" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="VRG-NYL-CH4-RF - VRG NAEON FLUX CAPACITOR" ObjetoImp="02" Descuento="538.360000" ValorUnitario="1076.720000" Importe="1076.720000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="538.360000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="86.137600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075314014" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="VRG-PR2-RF - VRG BEST DYSTOPIA EVER" ObjetoImp="02" Descuento="538.360000" ValorUnitario="1076.720000" Importe="1076.720000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="538.360000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="86.137600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075311013" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="WG-IB2-RF - WG SCREAM IF YOU HATE GRAVITY" ObjetoImp="02" Descuento="689.230000" ValorUnitario="1378.450000" Importe="1378.450000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="689.220000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="110.276000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075310979" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="WG-RS1-NR - WG EXTREME DUMPSTER DIVING" ObjetoImp="02" Descuento="689.230000" ValorUnitario="1378.450000" Importe="1378.450000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="689.220000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="110.276000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="810075314274" Cantidad="1" ClaveUnidad="H87" Unidad="Pza" Descripcion="WG-YL1-NR - WG THESE SHADES ARE BANNANAS" ObjetoImp="02" Descuento="689.230000" ValorUnitario="1378.450000" Importe="1378.450000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="689.220000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="110.276000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="3310.89">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="3310.89" Base="20692.99" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

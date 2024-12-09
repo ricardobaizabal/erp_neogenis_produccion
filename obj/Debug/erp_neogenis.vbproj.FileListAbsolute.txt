@@ -1,0 +1,147 @@
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\bin\erp_neogenis.dll
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\bin\erp_neogenis.pdb
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\bin\erp_neogenis.xml
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\bin\BouncyCastle.Crypto.dll
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\bin\diFirmaSatNet.dll
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\bin\Formatos.dll
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\bin\Telerik.Web.UI.Skins.dll
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\bin\uCFDsLib.dll
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\bin\uQRCode.dll
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\bin\Formatos.pdb
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\bin\Formatos.xml
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\obj\Debug\erp_neogenis.Resources.resources
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\obj\Debug\erp_neogenis.vbproj.GenerateResource.Cache
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\obj\Debug\erp_neogenis.dll
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\obj\Debug\erp_neogenis.xml
+C:\Users\ACER\Documents\Visual Studio 2010\Projects\erp_neogenis\erp_neogenis\obj\Debug\erp_neogenis.pdb
+C:\Users\German\Documents\Visual Studio 2013\Projects\neogenis\bin\erp_neogenis.dll.config
+C:\Users\German\Documents\Visual Studio 2013\Projects\neogenis\bin\erp_neogenis.dll
+C:\Users\German\Documents\Visual Studio 2013\Projects\neogenis\bin\erp_neogenis.pdb
+C:\Users\German\Documents\Visual Studio 2013\Projects\neogenis\bin\erp_neogenis.xml
+C:\Users\German\Documents\Visual Studio 2013\Projects\neogenis\obj\Debug\erp_neogenis.Resources.resources
+C:\Users\German\Documents\Visual Studio 2013\Projects\neogenis\obj\Debug\erp_neogenis.vbproj.GenerateResource.Cache
+C:\Users\German\Documents\Visual Studio 2013\Projects\neogenis\obj\Debug\erp_neogenis.dll
+C:\Users\German\Documents\Visual Studio 2013\Projects\neogenis\obj\Debug\erp_neogenis.xml
+C:\Users\German\Documents\Visual Studio 2013\Projects\neogenis\obj\Debug\erp_neogenis.pdb
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\obj\Debug\erp_neogenis.vbprojResolveAssemblyReference.cache
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\obj\Debug\erp_neogenis.vbproj.ResolveComReference.cache
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\obj\Debug\erp_neogenis.Resources.resources
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\obj\Debug\erp_neogenis.vbproj.GenerateResource.Cache
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\obj\Debug\erp_neogenis.dll.licenses
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\obj\Debug\erp_neogenis.dll
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\obj\Debug\erp_neogenis.xml
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\obj\Debug\erp_neogenis.pdb
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\obj\Debug\erp_neogenis.formato_cfdi40_natural.resources
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\bin\erp_neogenis.dll.config
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\bin\erp_neogenis.dll
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\bin\erp_neogenis.pdb
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\bin\erp_neogenis.xml
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\bin\Library_Class_Neogenis.dll
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\bin\Newtonsoft.Json.dll
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\bin\Microsoft.AnalysisServices.AdomdClient.dll
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\bin\Formatos.pdb
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\bin\Formatos.xml
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\bin\Library_Class_Neogenis.pdb
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\bin\Library_Class_Neogenis.xml
+C:\Users\DT-ELITEDESK-HP\Desktop\naturalgs\bin\Newtonsoft.Json.xml
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.dll.config
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.dll
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.pdb
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.xml
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.dll
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\bin\Newtonsoft.Json.dll
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\bin\Microsoft.AnalysisServices.AdomdClient.dll
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.pdb
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.xml
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\bin\Newtonsoft.Json.xml
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.ResolveComReference.cache
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.Resources.resources
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.formato_cfdi40_natural.resources
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.GenerateResource.cache
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.dll.licenses
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.CoreCompileInputs.cache
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.CopyComplete
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.dll
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.xml
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.pdb
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2015\Projects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.AssemblyReference.cache
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.dll.config
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.dll
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.pdb
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.xml
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.dll
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\bin\Newtonsoft.Json.dll
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\bin\Microsoft.AnalysisServices.AdomdClient.dll
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.pdb
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.xml
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\bin\Newtonsoft.Json.xml
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.ResolveComReference.cache
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.Resources.resources
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.formato_cfdi40_natural.resources
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.GenerateResource.cache
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.dll.licenses
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.CoreCompileInputs.cache
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.CopyComplete
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.dll
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.xml
+C:\Users\DT-ELITEDESK-HP\Documents\Visual Studio 2019\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.pdb
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.dll.config
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.dll
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.pdb
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.xml
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.dll
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\bin\Newtonsoft.Json.dll
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.pdb
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.xml
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\bin\Newtonsoft.Json.xml
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.AssemblyReference.cache
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.ResolveComReference.cache
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.Resources.resources
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.formato_cfdi40_natural.resources
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.GenerateResource.cache
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.dll.licenses
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.CoreCompileInputs.cache
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.CopyComplete
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.dll
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.xml
+G:\DT - ACTECK\Documents\Visual Studio 2022\Proyects\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.pdb
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.dll.config
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.dll
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.pdb
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.xml
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.dll
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\Newtonsoft.Json.dll
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.pdb
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.xml
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\Newtonsoft.Json.xml
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.ResolveComReference.cache
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.Resources.resources
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.formato_cfdi40_natural.resources
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.GenerateResource.cache
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.dll.licenses
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.CoreCompileInputs.cache
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.dll
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.xml
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.pdb
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.CopyComplete
+G:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.AssemblyReference.cache
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.dll.config
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.dll
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.pdb
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\erp_neogenis.xml
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.dll
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\Newtonsoft.Json.dll
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.pdb
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\Library_Class_Neogenis.xml
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\bin\Newtonsoft.Json.xml
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.ResolveComReference.cache
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.Resources.resources
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.formato_cfdi40_natural.resources
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.GenerateResource.cache
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.dll.licenses
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.CoreCompileInputs.cache
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.dll
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.xml
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.pdb
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.CopyComplete
+D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.AssemblyReference.cache

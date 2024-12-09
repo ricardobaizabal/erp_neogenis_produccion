@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="A" Folio="57184" Fecha="2024-11-22T09:42:41" Sello="N/C4DtRx5PYZgPfoaQJLS6It57yZaAyFOqZzTt0Se7imWSDtz5Qr6Z2l8Q649OShxm8v4s58TU1U5LYernwTofjXRyvjphHyBcYnKFFnZ8v6wBHo2zql9hRVoH055ELNqYM8pt8xQKr5IoZTjLCnj9nLA6k1KYpn0iwW55JQPY2T4PR7ADvqcJYc274tHd0g9N3i/T7ctiyJPE44FlZF/Ta8lsU5KzlrE8J0lQwhw3dPKkrB6uFyuJ3FFlFQWdZuBFMNh58DPivtcdKL6WmNOFyIwd/ox3jbqynP5RNVTLjpxWaTDXoEXiGUfLx4WrXpq/p7eVY6sxUAeuZuAPbqzA==" FormaPago="99" NoCertificado="00001000000505848840" Certificado="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" CondicionesDePago="90 días" SubTotal="487678.48" Descuento="263701.13" Moneda="MXN" Total="259813.78" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="66368" Exportacion="01">
+  <cfdi:Emisor Nombre="NG SUPPLY" Rfc="NSU130606PI2" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="DLI931201MI9" Nombre="DISTRIBUIDORA LIVERPOOL" RegimenFiscalReceptor="601" DomicilioFiscalReceptor="05348" UsoCFDI="G01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165547124" Cantidad="6" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 ALLOY/WHITE/GOLD FUSION" ObjetoImp="02" Descuento="8888.820000" ValorUnitario="2835.340000" Importe="17012.040000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8123.220000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1299.719856" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165547132" Cantidad="9" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 ALLOY/WHITE/GOLD FUSION" ObjetoImp="02" Descuento="13333.210000" ValorUnitario="2835.340000" Importe="25518.060000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="12184.850000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1949.579784" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165547141" Cantidad="11" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 ALLOY/WHITE/GOLD FUSION" ObjetoImp="02" Descuento="16296.130000" ValorUnitario="2835.340000" Importe="31188.740000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="14892.610000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2382.819736" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165547159" Cantidad="11" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 ALLOY/WHITE/GOLD FUSION" ObjetoImp="02" Descuento="16296.130000" ValorUnitario="2835.340000" Importe="31188.740000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="14892.610000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2382.819736" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1104371D084-100" Cantidad="17" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 ALLOY/WHITE/GOLD FUSION" ObjetoImp="02" Descuento="25184.920000" ValorUnitario="2835.340000" Importe="48200.780000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="23015.860000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="3682.539592" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165547175" Cantidad="14" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 ALLOY/WHITE/GOLD FUSION" ObjetoImp="02" Descuento="20740.540000" ValorUnitario="2835.340000" Importe="39694.760000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="18954.220000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="3032.679664" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165547183" Cantidad="9" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 ALLOY/WHITE/GOLD FUSION" ObjetoImp="02" Descuento="13333.210000" ValorUnitario="2835.340000" Importe="25518.060000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="12184.850000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1949.579784" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165547191" Cantidad="5" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 ALLOY/WHITE/GOLD FUSION" ObjetoImp="02" Descuento="7407.350000" ValorUnitario="2835.340000" Importe="14176.700000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6769.350000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1083.099880" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165625249" Cantidad="6" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 BLACK/WHITE" ObjetoImp="02" Descuento="8888.820000" ValorUnitario="2835.340000" Importe="17012.040000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8123.220000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1299.719856" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165625257" Cantidad="11" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 BLACK/WHITE" ObjetoImp="02" Descuento="16296.140000" ValorUnitario="2835.340000" Importe="31188.740000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="14892.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2382.819736" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165625265" Cantidad="11" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 BLACK/WHITE" ObjetoImp="02" Descuento="16296.130000" ValorUnitario="2835.340000" Importe="31188.740000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="14892.610000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2382.819736" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165625273" Cantidad="13" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 BLACK/WHITE" ObjetoImp="02" Descuento="19259.060000" ValorUnitario="2835.340000" Importe="36859.420000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="17600.360000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2816.059688" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165625281" Cantidad="17" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 BLACK/WHITE" ObjetoImp="02" Descuento="29629.320000" ValorUnitario="2835.340000" Importe="48200.780000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="18571.460000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2971.436320" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165625290" Cantidad="16" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 BLACK/WHITE" ObjetoImp="02" Descuento="28147.860000" ValorUnitario="2835.340000" Importe="45365.440000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="17217.580000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2754.816344" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165625303" Cantidad="10" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 BLACK/WHITE" ObjetoImp="02" Descuento="14814.670000" ValorUnitario="2835.340000" Importe="28353.400000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="13538.730000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2166.199760" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="53111901" NoIdentificacion="1165625311" Cantidad="6" ClaveUnidad="PR" Unidad="Par" Descripcion="M ADRENALINE GTS 24 BLACK/WHITE" ObjetoImp="02" Descuento="8888.820000" ValorUnitario="2835.340000" Importe="17012.040000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8123.220000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1299.719856" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="35836.43">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="35836.43" Base="223977.35" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+<cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="9EC2E68B-E226-457E-966E-FA701526F449" FechaTimbrado="2024-11-22T09:42:42" RfcProvCertif="SIF0403229F9" SelloCFD="N/C4DtRx5PYZgPfoaQJLS6It57yZaAyFOqZzTt0Se7imWSDtz5Qr6Z2l8Q649OShxm8v4s58TU1U5LYernwTofjXRyvjphHyBcYnKFFnZ8v6wBHo2zql9hRVoH055ELNqYM8pt8xQKr5IoZTjLCnj9nLA6k1KYpn0iwW55JQPY2T4PR7ADvqcJYc274tHd0g9N3i/T7ctiyJPE44FlZF/Ta8lsU5KzlrE8J0lQwhw3dPKkrB6uFyuJ3FFlFQWdZuBFMNh58DPivtcdKL6WmNOFyIwd/ox3jbqynP5RNVTLjpxWaTDXoEXiGUfLx4WrXpq/p7eVY6sxUAeuZuAPbqzA==" NoCertificadoSAT="00001000000508768672" SelloSAT="S+5schbziAiXva3NuEm5bBE4xBAwQMsyF3lTG4NPvnFVZ4Onk9syjOLGtq9yJlqhzVWDOr74sxEqSk2Sr46mIcIqEx19mtWfDubPAepvez3tQ1Bn4gJCcQSxWuwqvG/xOEzbkVl7ILWr9v5XBqnW0b6y3/hQ+tE2jYMYRsYJTuYMzndBPcKWE9v/P1C8IrR0Lc53WqN9vyHQDxHhrDTnzPsfkkOh6SKYkIFh8ybv4uHf+BuH5vAfWQI4PdRjAKOJsuO7sMu8aWOdayxtLZhZAuDR3OJf3DaG2IcXHU9JmD9HX0/t6wKgMFruzrve2DPuo7kvRr446lC4KxCmaHwdpw==" /></cfdi:Complemento></cfdi:Comprobante>

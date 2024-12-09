@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://www.appfacturainteligente.com/WS-FI" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="https://www.appfacturainteligente.com/WS-FI" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://www.appfacturainteligente.com/WS-FI">
+      <s:element name="TimbrarCFDIPrueba">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cadenaXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TimbrarCFDIPruebaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TimbrarCFDIPruebaResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TimbrarCFD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cadenaXML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="referencia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TimbrarCFDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TimbrarCFDResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelarCFDI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RFCEmisor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listaCFDI" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="certificadoPKCS12_Base64" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passwordPKCS12" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelarCFDIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CancelarCFDIResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmarRecepcion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UUID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmarRecepcionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConfirmarRecepcionResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerXML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UUID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RFCEmisor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerXMLResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerAcuseEnvio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UUID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RFCEmisor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerAcuseEnvioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerAcuseEnvioResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerAcuseCancelacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UUID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RFCEmisor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerAcuseCancelacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerAcuseCancelacionResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passwordActual" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passwordNuevo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambiarPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CambiarPasswordResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarComplementoTimbre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UUID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarComplementoTimbreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarComplementoTimbreResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarTimbrePorReferencia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RFCEmisor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Referencia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarTimbrePorReferenciaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarTimbrePorReferenciaResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarEstadoComprobante">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UUID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarEstadoComprobanteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarEstadoComprobanteResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarCreditos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarCreditosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarCreditosResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeneraCBB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RFCEmisor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Referencia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeneraCBBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GeneraCBBResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TimbrarCFDIPruebaSoapIn">
+    <wsdl:part name="parameters" element="tns:TimbrarCFDIPrueba" />
+  </wsdl:message>
+  <wsdl:message name="TimbrarCFDIPruebaSoapOut">
+    <wsdl:part name="parameters" element="tns:TimbrarCFDIPruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TimbrarCFDSoapIn">
+    <wsdl:part name="parameters" element="tns:TimbrarCFD" />
+  </wsdl:message>
+  <wsdl:message name="TimbrarCFDSoapOut">
+    <wsdl:part name="parameters" element="tns:TimbrarCFDResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelarCFDISoapIn">
+    <wsdl:part name="parameters" element="tns:CancelarCFDI" />
+  </wsdl:message>
+  <wsdl:message name="CancelarCFDISoapOut">
+    <wsdl:part name="parameters" element="tns:CancelarCFDIResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmarRecepcionSoapIn">
+    <wsdl:part name="parameters" element="tns:ConfirmarRecepcion" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmarRecepcionSoapOut">
+    <wsdl:part name="parameters" element="tns:ConfirmarRecepcionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerXML" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerAcuseEnvioSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerAcuseEnvio" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerAcuseEnvioSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerAcuseEnvioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerAcuseCancelacionSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerAcuseCancelacion" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerAcuseCancelacionSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerAcuseCancelacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CambiarPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:CambiarPassword" />
+  </wsdl:message>
+  <wsdl:message name="CambiarPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:CambiarPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarComplementoTimbreSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarComplementoTimbre" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarComplementoTimbreSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarComplementoTimbreResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarTimbrePorReferenciaSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarTimbrePorReferencia" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarTimbrePorReferenciaSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarTimbrePorReferenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarEstadoComprobanteSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarEstadoComprobante" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarEstadoComprobanteSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarEstadoComprobanteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarCreditosSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarCreditos" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarCreditosSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarCreditosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GeneraCBBSoapIn">
+    <wsdl:part name="parameters" element="tns:GeneraCBB" />
+  </wsdl:message>
+  <wsdl:message name="GeneraCBBSoapOut">
+    <wsdl:part name="parameters" element="tns:GeneraCBBResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FI_TFDSoap">
+    <wsdl:operation name="TimbrarCFDIPrueba">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Factura Inteligente - Timbrado de Prueba</wsdl:documentation>
+      <wsdl:input message="tns:TimbrarCFDIPruebaSoapIn" />
+      <wsdl:output message="tns:TimbrarCFDIPruebaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TimbrarCFD">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Factura Inteligente - Timbrar un CFD</wsdl:documentation>
+      <wsdl:input message="tns:TimbrarCFDSoapIn" />
+      <wsdl:output message="tns:TimbrarCFDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelarCFDI">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Factura Inteligente - Servicio para Cancelar CFDIs</wsdl:documentation>
+      <wsdl:input message="tns:CancelarCFDISoapIn" />
+      <wsdl:output message="tns:CancelarCFDISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmarRecepcion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Factura Inteligente - Confirmar recepción del CFDI</wsdl:documentation>
+      <wsdl:input message="tns:ConfirmarRecepcionSoapIn" />
+      <wsdl:output message="tns:ConfirmarRecepcionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerXML">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Factura Inteligente - Obtener XML del CFDI</wsdl:documentation>
+      <wsdl:input message="tns:ObtenerXMLSoapIn" />
+      <wsdl:output message="tns:ObtenerXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerAcuseEnvio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Factura Inteligente - Obtener acuse de envío al SAT</wsdl:documentation>
+      <wsdl:input message="tns:ObtenerAcuseEnvioSoapIn" />
+      <wsdl:output message="tns:ObtenerAcuseEnvioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerAcuseCancelacion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Factura Inteligente - Obtener acuse de cancelación ante el SAT</wsdl:documentation>
+      <wsdl:input message="tns:ObtenerAcuseCancelacionSoapIn" />
+      <wsdl:output message="tns:ObtenerAcuseCancelacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarPassword">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Factura Inteligente - Cambio de Password</wsdl:documentation>
+      <wsdl:input message="tns:CambiarPasswordSoapIn" />
+      <wsdl:output message="tns:CambiarPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarComplementoTimbre">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Factura Inteligente - Consultar datos de timbrado</wsdl:documentation>
+      <wsdl:input message="tns:ConsultarComplementoTimbreSoapIn" />
+      <wsdl:output message="tns:ConsultarComplementoTimbreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTimbrePorReferencia">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Factura Inteligente - Consultar datos de complemento timbre</wsdl:documentation>
+      <wsdl:input message="tns:ConsultarTimbrePorReferenciaSoapIn" />
+      <wsdl:output message="tns:ConsultarTimbrePorReferenciaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEstadoComprobante">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Factura Inteligente - Consultar el estado de un comprobante</wsdl:documentation>
+      <wsdl:input message="tns:ConsultarEstadoComprobanteSoapIn" />
+      <wsdl:output message="tns:ConsultarEstadoComprobanteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCreditos">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Factura Inteligente - Consulta de creditos restantes</wsdl:documentation>
+      <wsdl:input message="tns:ConsultarCreditosSoapIn" />
+      <wsdl:output message="tns:ConsultarCreditosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GeneraCBB">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Factura Inteligente - GeneraCBB</wsdl:documentation>
+      <wsdl:input message="tns:GeneraCBBSoapIn" />
+      <wsdl:output message="tns:GeneraCBBSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FI_TFDSoap" type="tns:FI_TFDSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TimbrarCFDIPrueba">
+      <soap:operation soapAction="https://www.appfacturainteligente.com/WS-FI/TimbrarCFDIPrueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimbrarCFD">
+      <soap:operation soapAction="https://www.appfacturainteligente.com/WS-FI/TimbrarCFD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelarCFDI">
+      <soap:operation soapAction="https://www.appfacturainteligente.com/WS-FI/CancelarCFDI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmarRecepcion">
+      <soap:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ConfirmarRecepcion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerXML">
+      <soap:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ObtenerXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerAcuseEnvio">
+      <soap:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ObtenerAcuseEnvio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerAcuseCancelacion">
+      <soap:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ObtenerAcuseCancelacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarPassword">
+      <soap:operation soapAction="https://www.appfacturainteligente.com/WS-FI/CambiarPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarComplementoTimbre">
+      <soap:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ConsultarComplementoTimbre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTimbrePorReferencia">
+      <soap:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ConsultarTimbrePorReferencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEstadoComprobante">
+      <soap:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ConsultarEstadoComprobante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCreditos">
+      <soap:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ConsultarCreditos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeneraCBB">
+      <soap:operation soapAction="https://www.appfacturainteligente.com/WS-FI/GeneraCBB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FI_TFDSoap12" type="tns:FI_TFDSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TimbrarCFDIPrueba">
+      <soap12:operation soapAction="https://www.appfacturainteligente.com/WS-FI/TimbrarCFDIPrueba" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimbrarCFD">
+      <soap12:operation soapAction="https://www.appfacturainteligente.com/WS-FI/TimbrarCFD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelarCFDI">
+      <soap12:operation soapAction="https://www.appfacturainteligente.com/WS-FI/CancelarCFDI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmarRecepcion">
+      <soap12:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ConfirmarRecepcion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerXML">
+      <soap12:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ObtenerXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerAcuseEnvio">
+      <soap12:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ObtenerAcuseEnvio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerAcuseCancelacion">
+      <soap12:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ObtenerAcuseCancelacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambiarPassword">
+      <soap12:operation soapAction="https://www.appfacturainteligente.com/WS-FI/CambiarPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarComplementoTimbre">
+      <soap12:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ConsultarComplementoTimbre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTimbrePorReferencia">
+      <soap12:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ConsultarTimbrePorReferencia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEstadoComprobante">
+      <soap12:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ConsultarEstadoComprobante" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCreditos">
+      <soap12:operation soapAction="https://www.appfacturainteligente.com/WS-FI/ConsultarCreditos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeneraCBB">
+      <soap12:operation soapAction="https://www.appfacturainteligente.com/WS-FI/GeneraCBB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FI_TFD">
+    <wsdl:port name="FI_TFDSoap" binding="tns:FI_TFDSoap">
+      <soap:address location="http://www.appfacturainteligente.com/WS-FI/WS-TFD.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FI_TFDSoap12" binding="tns:FI_TFDSoap12">
+      <soap12:address location="http://www.appfacturainteligente.com/WS-FI/WS-TFD.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

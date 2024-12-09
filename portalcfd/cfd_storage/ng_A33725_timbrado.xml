@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="A" Folio="33725" Fecha="2023-08-23T09:58:44" Sello="E+eRTphDbMc3c4JKbrQuawI53SB0wRVF0OQ/YuCTpy0NwDg2m778Sup4JFhz3s0X1A+C2JoTON+pZZlQoyYNOuJTNHSZW6kyPYXNY2Ug1J8yMQFddBcsoFnq+NGE/UCz/69El4CQO+VDeRoWJlL4msWi1yivaK6v4f31FCCRPHQebfhqFGjbO+qzankz4jnQZppyF3V/tlACbox16NsJYZ5BgGbfGoYJUmllddyHuZGLMqhySmawQJ07WJMPR/V5MVeFRc6tU6g33sOVIxSbrEvJJQxe+k5hCTzoOX8hcxhjY1YJLjkhWtixm/o4T9IYgt2ukDCdmZIAKLpUX8LfHg==" FormaPago="99" NoCertificado="30001000000500003416" Certificado="MIIFsDCCA5igAwIBAgIUMzAwMDEwMDAwMDA1MDAwMDM0MTYwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWxpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMjMwNTE4MTE0MzUxWhcNMjcwNTE4MTE0MzUxWjCB1zEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gVkFEQTgwMDkyN0RKMzEeMBwGA1UEBRMVIC8gVkFEQTgwMDkyN0hTUlNSTDA1MRMwEQYDVQQLEwpTdWN1cnNhbCAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtmecO6n2GS0zL025gbHGQVxznPDICoXzR2uUngz4DqxVUC/w9cE6FxSiXm2ap8Gcjg7wmcZfm85EBaxCx/0J2u5CqnhzIoGCdhBPuhWQnIh5TLgj/X6uNquwZkKChbNe9aeFirU/JbyN7Egia9oKH9KZUsodiM/pWAH00PCtoKJ9OBcSHMq8Rqa3KKoBcfkg1ZrgueffwRLws9yOcRWLb02sDOPzGIm/jEFicVYt2Hw1qdRE5xmTZ7AGG0UHs+unkGjpCVeJ+BEBn0JPLWVvDKHZAQMj6s5Bku35+d/MyATkpOPsGT/VTnsouxekDfikJD1f7A1ZpJbqDpkJnss3vQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQsFAAOCAgEAFaUgj5PqgvJigNMgtrdXZnbPfVBbukAbW4OGnUhNrA7SRAAfv2BSGk16PI0nBOr7qF2mItmBnjgEwk+DTv8Zr7w5qp7vleC6dIsZFNJoa6ZndrE/f7KO1CYruLXr5gwEkIyGfJ9NwyIagvHHMszzyHiSZIA850fWtbqtythpAliJ2jF35M5pNS+YTkRB+T6L/c6m00ymN3q9lT1rB03YywxrLreRSFZOSrbwWfg34EJbHfbFXpCSVYdJRfiVdvHnewN0r5fUlPtR9stQHyuqewzdkyb5jTTw02D2cUfL57vlPStBj7SEi3uOWvLrsiDnnCIxRMYJ2UA2ktDKHk+zWnsDmaeleSzonv2CHW42yXYPCvWi88oE1DJNYLNkIjua7MxAnkNZbScNw01A6zbLsZ3y8G6eEYnxSTRfwjd8EP4kdiHNJftm7Z4iRU7HOVh79/lRWB+gd171s3d/mI9kte3MRy6V8MMEMCAnMboGpaooYwgAmwclI2XZCczNWXfhaWe0ZS5PmytD/GDpXzkX0oEgY9K/uYo5V77NdZbGAjmyi8cE2B2ogvyaN2XfIInrZPgEffJ4AB7kFA2mwesdLOCh0BLD9itmCve3A1FGR4+stO2ANUoiI3w3Tv2yQSg4bjeDlJ08lXaaFCLW2peEXMXjQUk7fmpb5MNuOUTW6BE=" CondicionesDePago="Contado" SubTotal="91465.20" Moneda="MXN" Total="106099.63" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="66368" Exportacion="01">
+  <cfdi:InformacionGlobal Periodicidad="04" Meses="08" Año="2023" />
+  <cfdi:Emisor Nombre="ESCUELA KEMPER URGATE SA DE CV" Rfc="EKU9003173C9" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="XAXX010101000" Nombre="PUBLICO EN GENERAL" RegimenFiscalReceptor="616" DomicilioFiscalReceptor="66368" UsoCFDI="S01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="MG-AM3-RF" Cantidad="8" ClaveUnidad="H87" Unidad="Pza" Descripcion="MG Call Me Tarmac Daddy" ObjetoImp="02" ValorUnitario="1162.93" Importe="9303.44">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9303.440000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1488.550400" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="MG-CH4-RF" Cantidad="8" ClaveUnidad="H87" Unidad="Pza" Descripcion="MG Add the Chrome Package" ObjetoImp="02" ValorUnitario="1162.93" Importe="9303.44">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9303.440000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1488.550400" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="VRG-AM3-RF" Cantidad="8" ClaveUnidad="H87" Unidad="Pza" Descripcion="VRG FROM ZERO TO BLISTED" ObjetoImp="02" ValorUnitario="1076.72" Importe="8613.76">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8613.760000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1378.201600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="FBFG-RD-CP1-RF" Cantidad="8" ClaveUnidad="H87" Unidad="Pza" Descripcion="FBFG GRIP IT AND SIP IT" ObjetoImp="02" ValorUnitario="1076.72" Importe="8613.76">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8613.760000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1378.201600" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="LFG-LLB2-RF" Cantidad="8" ClaveUnidad="H87" Unidad="Pza" Descripcion="LFG Never the Big Spoon" ObjetoImp="02" ValorUnitario="818.10" Importe="6544.80">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6544.800000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1047.168000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="CG-BK-BL2-RF" Cantidad="10" ClaveUnidad="H87" Unidad="Pza" Descripcion="CG MIDNIGHT RAMBLE AT CIRCLE BAR" ObjetoImp="02" ValorUnitario="818.10" Importe="8181.00">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8181.000000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1308.960000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="CG-CH4-RF" Cantidad="10" ClaveUnidad="H87" Unidad="Pza" Descripcion="CG They Were Out of Black" ObjetoImp="02" ValorUnitario="818.10" Importe="8181.00">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8181.000000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1308.960000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="CG-LTG2-RF" Cantidad="6" ClaveUnidad="H87" Unidad="Pza" Descripcion="CG Thanks, They’re Vintage" ObjetoImp="02" ValorUnitario="818.10" Importe="4908.60">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4908.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="785.376000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="CG-PP1-RF" Cantidad="6" ClaveUnidad="H87" Unidad="Pza" Descripcion="CG BLUEBERRIES MUFFIN ENHACERS" ObjetoImp="02" ValorUnitario="818.10" Importe="4908.60">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4908.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="785.376000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="OG-BK-BK1" Cantidad="10" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG A GINGERS SOUL" ObjetoImp="02" ValorUnitario="818.10" Importe="8181.00">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8181.000000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1308.960000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="OG-BR1-NR-1" Cantidad="6" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG POTATOES, A MID WEST VEGETABLE" ObjetoImp="02" ValorUnitario="818.10" Importe="4908.60">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4908.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="785.376000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="OG-TL-TL1" Cantidad="6" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG NESSYS MIDNIGHT ORGY" ObjetoImp="02" ValorUnitario="818.10" Importe="4908.60">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4908.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="785.376000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="42142905" NoIdentificacion="OG-WH-BL1" Cantidad="6" ClaveUnidad="H87" Unidad="Pza" Descripcion="OG ICED BY YETIS" ObjetoImp="02" ValorUnitario="818.10" Importe="4908.60">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4908.600000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="785.376000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="14634.43">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="14634.43" Base="91465.20" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+<cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="59A6DFAA-E592-4B3C-9AF2-F0C55B8DC8D8" FechaTimbrado="2023-08-23T09:58:46" RfcProvCertif="SPR190613I52" SelloCFD="E+eRTphDbMc3c4JKbrQuawI53SB0wRVF0OQ/YuCTpy0NwDg2m778Sup4JFhz3s0X1A+C2JoTON+pZZlQoyYNOuJTNHSZW6kyPYXNY2Ug1J8yMQFddBcsoFnq+NGE/UCz/69El4CQO+VDeRoWJlL4msWi1yivaK6v4f31FCCRPHQebfhqFGjbO+qzankz4jnQZppyF3V/tlACbox16NsJYZ5BgGbfGoYJUmllddyHuZGLMqhySmawQJ07WJMPR/V5MVeFRc6tU6g33sOVIxSbrEvJJQxe+k5hCTzoOX8hcxhjY1YJLjkhWtixm/o4T9IYgt2ukDCdmZIAKLpUX8LfHg==" NoCertificadoSAT="30001000000500003456" SelloSAT="CjVb7SagXFkZrZ8YVtp5oX4Szk6C0E+LF3x8Ruqja6n8PWIHTwL4x8iCRJBJqkfCzG4A2bsHydeBKCIJuaUpqhZVkTkQ9/mD6q5arSgmRP1yWzmuXpBizqRxvfamOTKgqr4bPsw2/MfzNcCLr8gc5CRblMDwn9GZHeXx3fnweeeADT+Q26B8Dd6wK7GNF1uWXpsy7PsrtJGqgXumBKVHBZew2UCIN2PhvcsJqo8wxEYlmEzWPGRm61gbzMHblSHHQjexIzjpRck93kxGxKoxHTNTqB4Nnx8MFRkAjmVeX0oiafMF8I/fkmunOLylSQMPSvNQFS1UNB8zYn2MvsHs+w==" /></cfdi:Complemento></cfdi:Comprobante>
