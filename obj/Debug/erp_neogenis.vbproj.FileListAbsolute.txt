@@ -145,3 +145,22 @@ D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogen
 D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.pdb
 D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.CopyComplete
 D:\DT - ACTECK\Documents\erp_neogenis(naturalgs_Produccion)\obj\Debug\erp_neogenis.vbproj.AssemblyReference.cache
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\bin\erp_neogenis.dll.config
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\bin\erp_neogenis.dll
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\bin\erp_neogenis.pdb
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\bin\erp_neogenis.xml
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\bin\Library_Class_Neogenis.dll
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\bin\Newtonsoft.Json.dll
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\bin\Library_Class_Neogenis.pdb
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\bin\Library_Class_Neogenis.xml
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\bin\Newtonsoft.Json.xml
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\obj\Debug\erp_neogenis.vbproj.ResolveComReference.cache
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\obj\Debug\erp_neogenis.Resources.resources
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\obj\Debug\erp_neogenis.formato_cfdi40_natural.resources
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\obj\Debug\erp_neogenis.vbproj.GenerateResource.cache
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\obj\Debug\erp_neogenis.dll.licenses
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\obj\Debug\erp_neogenis.vbproj.CoreCompileInputs.cache
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\obj\Debug\erp_neogenis.vbproj.CopyComplete
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\obj\Debug\erp_neogenis.dll
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\obj\Debug\erp_neogenis.xml
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_consigna\obj\Debug\erp_neogenis.pdb

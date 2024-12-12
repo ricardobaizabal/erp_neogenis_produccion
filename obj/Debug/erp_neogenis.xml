@@ -20266,24 +20266,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:erp_neogenis.pedidos._chkAll">
-<summary>
-Control chkAll.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:erp_neogenis.pedidos._chkAllcons">
-<summary>
-Control chkAllcons.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:erp_neogenis.pedidos._pedidosList">
 <summary>
 Control pedidosList.
@@ -20356,9 +20338,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:erp_neogenis.pedidos._btnConsolidado">
+<member name="F:erp_neogenis.pedidos._btnConsigna">
 <summary>
-Control btnConsolidado.
+Control btnConsigna.
 </summary>
 <remarks>
 Campo generado automáticamente.
