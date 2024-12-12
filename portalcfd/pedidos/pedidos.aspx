@@ -37,7 +37,7 @@
         }
     </script>
 
-     <script type="text/javascript">
+<%--     <script type="text/javascript">
          checkedcons = false;
          function checkedAllcons(frm1) {
              var aa = frm1;
@@ -51,7 +51,7 @@
                  aa.elements[i].checkedcons = checkedcons;
              }
          }
-     </script>
+     </script>--%>
 
          
 </asp:Content>
@@ -157,7 +157,7 @@
                         <br />
                     </td>
                 </tr>
-                <tr>
+<%--                <tr>
                     <td align="right" class="item"> 
                         <asp:CheckBox ID="chkAll" runat="server" AutoPostBack="true" Text="Seleccionar Todo"  OnCheckedChanged="chkAll_CheckedChanged" />
                     </td>
@@ -166,7 +166,7 @@
                     <td align="right" class="item"> 
                         <asp:CheckBox ID="chkAllcons" runat="server" AutoPostBack="true" Text="Seleccionar Todo para consolidado"  OnCheckedChanged="chkAllcons_CheckedChanged" />
                     </td>
-                </tr>
+                </tr>--%>
                 <tr>
                     <td align="left" style="vertical-align: top;" class="item">
                         <%--<asp:CheckBox ID="chkAll" runat="server" AutoPostBack="false" Text="Seleccionar todo" />--%>
@@ -329,15 +329,15 @@
                                             <asp:LinkButton ID="lnkFacturar40" runat="server" Text="Facturar" CommandArgument='<%# Eval("id") %>' CommandName="cmdFacturar40"></asp:LinkButton>
                                         </ItemTemplate>
                                     </telerik:GridTemplateColumn>
-                                    <telerik:GridTemplateColumn UniqueName="CheckBoxTemplateColumn" ItemStyle-Width="20" >
+                                    <telerik:GridTemplateColumn UniqueName="CheckBoxTemplateColumn" ItemStyle-Width="20" HeaderText="Regresar">
                                         <ItemTemplate>
-                                            <asp:CheckBox ID="chkcfdid" runat="server" CssClass="item" Checked='<%# IIf(Eval("chkcfdid") Is DBNull.Value, "False", Eval("chkcfdid"))%>' AutoPostBack="True" OnCheckedChanged="ToggleRowSelection" />
+                                            <asp:CheckBox ID="chkcfdid" runat="server" CssClass="item" Checked='<%# IIf(Eval("chkcfdid") Is DBNull.Value, "False", Eval("chkcfdid"))%>' AutoPostBack="True"  OnCheckedChanged="ToggleRowSelection" />
                                         </ItemTemplate>
                                         <ItemStyle HorizontalAlign="Center" />
                                     </telerik:GridTemplateColumn>
-                                    <telerik:GridTemplateColumn UniqueName="CheckBoxTemplateColumn" ItemStyle-Width="20" >
+                                    <telerik:GridTemplateColumn UniqueName="CheckBoxTemplateColumn" ItemStyle-Width="20" HeaderText="Regresar">
                                         <ItemTemplate>
-                                            <asp:CheckBox ID="chkcons" runat="server" CssClass="item" Checked='<%# IIf(Eval("chkcons") Is DBNull.Value, "False", Eval("chkcons"))%>' AutoPostBack="True" OnCheckedChanged="ToggleRowSelection" />
+                                            <asp:CheckBox ID="chkcons" runat="server" CssClass="item" Checked='<%# IIf(Eval("chkcons") Is DBNull.Value, "False", Eval("chkcons"))%>' AutoPostBack="True"  OnCheckedChanged="ToggleRowSelection" />
                                         </ItemTemplate>
                                         <ItemStyle HorizontalAlign="Center" />
                                     </telerik:GridTemplateColumn>
@@ -457,7 +457,7 @@
     <div style="text-align:right;float:inherit;margin-right:5px">
         <asp:Button ID="Button1" runat="server" Text="Descargar Packing List" OnClick="Button1_Click" CssClass="botones"/>
         <asp:Button ID="btnFacturasAutomaticas" runat="server" Text="Facturas Automaticas" CssClass="botones" />
-        <asp:Button ID="btnConsolidado" runat="server" Text="Mandar a consolidado" CssClass="botones" />
+        <asp:Button ID="btnConsigna" runat="server" Text="Mandar a consigna" CssClass="botones" />
         <table align="center" width="95%">
             <tr>
                 <td>

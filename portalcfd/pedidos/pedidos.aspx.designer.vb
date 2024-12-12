@@ -212,24 +212,6 @@ Partial Public Class pedidos
     Protected WithEvents btnExportExcel As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control chkAll.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents chkAll As Global.System.Web.UI.WebControls.CheckBox
-
-    '''<summary>
-    '''Control chkAllcons.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents chkAllcons As Global.System.Web.UI.WebControls.CheckBox
-
-    '''<summary>
     '''Control pedidosList.
     '''</summary>
     '''<remarks>
@@ -302,13 +284,13 @@ Partial Public Class pedidos
     Protected WithEvents btnFacturasAutomaticas As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control btnConsolidado.
+    '''Control btnConsigna.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnConsolidado As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btnConsigna As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Control lblErrores.

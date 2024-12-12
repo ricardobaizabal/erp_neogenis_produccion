@@ -868,10 +868,10 @@ Public Class Factura_Consignacion40
                         System.Net.ServicePointManager.SecurityProtocol = DirectCast(3072, System.Net.SecurityProtocolType) Or DirectCast(768, System.Net.SecurityProtocolType) Or DirectCast(192, System.Net.SecurityProtocolType) Or DirectCast(48, System.Net.SecurityProtocolType)
 
                         'Pruebas
-                        'Dim TimbreSifei As New SIFEIPruebas.SIFEIService()
+                        Dim TimbreSifei As New SIFEIPruebas.SIFEIService()
 
                         'Producción
-                        Dim TimbreSifei As New SIFEI33.SIFEIService()
+                        'Dim TimbreSifei As New SIFEI33.SIFEIService()
                         Call Comprimir()
 
                         'Dim bytes() As Byte

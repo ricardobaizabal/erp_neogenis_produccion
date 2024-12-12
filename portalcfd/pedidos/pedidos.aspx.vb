@@ -13,6 +13,7 @@ Imports System.Security.Cryptography.X509Certificates
 Imports Telerik.Reporting.Processing
 Imports ThoughtWorks.QRCode.Codec
 
+
 ' PRODUCCION
 Public Class pedidos
     Inherits System.Web.UI.Page
@@ -54,8 +55,8 @@ Public Class pedidos
     Private urlcomplemento As Integer = 0
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        chkAll.Attributes.Add("onclick", "checkedAll(" & Me.Form.ClientID.ToString & ");")
-        chkAllcons.Attributes.Add("onclick", "checkedAllcons(" & Me.Form.ClientID.ToString & ");")
+        'chkAll.Attributes.Add("onclick", "checkedAll(" & Me.Form.ClientID.ToString & ");")
+        'chkAllcons.Attributes.Add("onclick", "checkedAllcons(" & Me.Form.ClientID.ToString & ");")
         If Not IsPostBack Then
             If Session("perfilid") <> 1 Then
                 pedidosList.MasterTableView.GetColumn("ColEtapaAbierto").Visible = False
@@ -544,75 +545,140 @@ Public Class pedidos
 #End Region
 
 
-#Region "Mandar a consolidado"
+#Region "Mandar a consigna"
 
-    Private Sub btnConsolidado_Click(sender As Object, e As EventArgs) Handles btnConsolidado.Click
-
+    Private Sub btnConsigna_Click(sender As Object, e As EventArgs) Handles btnConsigna.Click
         Try
-
+            ' Inicializar objetos de control
             Dim ObjData As New DataControl()
-            Dim ObjData2 As New DataControl()
 
-            facAutConsecutivo = ObjData2.RunSQLScalarQuery("exec pPedidos @cmd=42")
-            ObjData2 = Nothing
+            ' Bandera para verificar si se procesaron pedidos
+            Dim pedidosProcesados As Boolean = False
 
+            ' Iterar sobre las filas de la tabla temporal
             For Each rows As DataRow In Session("TmpDetalleComplemento").Rows
-                If CBool(rows("chkcfdid")) = True Then
-
+                If CBool(rows("chkcons")) = True Then
+                    ' Crear conexión y comando SQL
                     Dim conn As New SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("conn").ConnectionString)
-                    Dim cmd As New SqlCommand("exec pPedidos @cmd=16, @pedidoid='" & rows("id") & "'", conn)
+                    Dim cmd As New SqlCommand("exec pConsignaciones @cmd=22, @pedidoid='" & rows("id") & "', @userid='" & Session("userid").ToString & "'", conn)
 
                     Try
                         conn.Open()
 
-                        Dim rs As SqlDataReader
-                        rs = cmd.ExecuteReader()
+                        ' Ejecutar el comando y leer el resultado
+                        Dim rs As SqlDataReader = cmd.ExecuteReader()
+                        If rs.Read() Then
+                            Dim consolidadoid As Integer = Convert.ToInt32(rs("consignacionid"))
+                            Dim pedidoid As Integer = rows("id")
+                            ' Guardar el consolidadoid en una variable de sesión o procesarlo según sea necesario
+                            Session("consolidadoid") = consolidadoid
 
-                        If rs.Read Then
-                            If Convert.ToDecimal(rs("cfdid")) <= 0 Then
-
-
-                                Session("clienteid") = rs("clienteid")
-                                GetCFDAutomatico(rows("id"), rs("clienteid"), rs("sucursalid"), rs("tasaid"), rs("almacenid"), rs("orden_compra").ToString, 4)
-                                'ObjData.RunSQLQuery("EXEC pPedidos @cmd=36, @clienteid='" & Session("clienteid") & "', @cfdid='" & Session("CFD") & "', @pedidoid='" & rows("id") & "'")
-                            Else
-                                '    Response.Redirect("~/portalcfd/Facturar40.aspx?id=" & rs("cfdid").ToString, False)
-                                ' para guardar los errores , crear un nomero de lote para guardar y despues buscar por algun error.
-                                lblErrores.Text = "Intento de factura previemente echo, eliminar y volver a Intentar"
-                                lblErrores.ForeColor = Drawing.Color.Red
-                            End If
+                            GetDetallePedido(consolidadoid, pedidoid)
+                            EliminaPedido(pedidoid)
+                            pedidosProcesados = True
                         End If
 
-                        conn.Close()
-                        conn.Dispose()
-
                     Catch ex As Exception
-                        lblMensaje.Text = "Error: " + ex.Message.ToString()
+                        lblMensaje.Text = "Error: " & ex.Message.ToString()
                     Finally
+                        ' Cerrar y liberar recursos
                         conn.Close()
                         conn.Dispose()
                     End Try
-
-
                 End If
             Next
+
             ObjData = Nothing
 
-            'Call GetCFD()
-
-            'Call AgregaCFDI()
-
-            'If Session("CFD") > 0 Then
-            '    Response.Redirect("~/portalcfd/Facturar40.aspx?id=" & Session("CFD").ToString, False)
-            'End If
+            ' Recargar la página si se procesaron pedidos
+            If pedidosProcesados Then
+                Response.Redirect(Request.RawUrl, False)
+                Context.ApplicationInstance.CompleteRequest()
+            End If
 
         Catch ex As Exception
+            ' Manejo global de excepciones
             Response.Write(ex.Message.ToString())
             Response.End()
-
         End Try
-
     End Sub
+
+    Private Sub EliminaPedido(pedidoid As Integer)
+
+        ' Establecer la conexión con la base de datos
+        Dim conn As New SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("conn").ConnectionString)
+
+        ' Comando para ejecutar el procedimiento almacenado
+        Dim cmd As New SqlCommand("exec pPedidos @cmd=49, @pedidoid=@PedidoId", conn)
+        cmd.Parameters.AddWithValue("@PedidoId", pedidoid)
+
+        Try
+            ' Abrir la conexión
+            conn.Open()
+
+            ' Ejecutar el comando y leer el resultado
+            Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+            If reader.Read() Then
+                ' Asignar el mensaje al Label
+                lblMensaje.Text = reader("Mensaje").ToString()
+            Else
+                lblMensaje.Text = "No se devolvió ningún mensaje."
+            End If
+
+            reader.Close()
+        Catch ex As Exception
+            ' Manejar errores
+            lblMensaje.Text = "Error: " & ex.Message.ToString()
+        Finally
+            ' Cerrar la conexión
+            conn.Close()
+            conn.Dispose()
+        End Try
+    End Sub
+
+    Private Sub GetDetallePedido(consignacionId As Integer, pedidoid As Integer)
+        ' Establecer la conexión con la base de datos
+        Dim conn As New SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("conn").ConnectionString)
+
+        ' Comando para ejecutar el primer procedimiento almacenado pPedidosConceptos
+        Dim cmd As New SqlCommand("exec pPedidosConceptos @cmd=2, @pedidoid=@PedidoId", conn)
+        cmd.Parameters.AddWithValue("@PedidoId", pedidoid)
+
+        Try
+            conn.Open()
+
+            ' Cargar los resultados en un DataTable
+            Dim dt As New DataTable()
+            dt.Load(cmd.ExecuteReader())
+
+            ' Iterar sobre los registros del DataTable
+            For Each row As DataRow In dt.Rows
+                ' Extraer los datos necesarios del DataTable
+                Dim productoId As Integer = Convert.ToInt32(row("productoId"))
+                Dim cantidad As Integer = Convert.ToInt32(row("cantidad"))
+
+                ' Ahora ejecutar el segundo procedimiento pConsignaciones por cada registro obtenido
+                Dim consignacionCmd As New SqlCommand("exec pConsignaciones @cmd=3, @consignacionid=@ConsignacionId, @productoid=@ProductoId, @cantidad=@Cantidad", conn)
+                consignacionCmd.Parameters.AddWithValue("@ConsignacionId", consignacionId)  ' Usar el consignacionId pasado como parámetro
+                consignacionCmd.Parameters.AddWithValue("@ProductoId", productoId)
+                consignacionCmd.Parameters.AddWithValue("@Cantidad", cantidad)
+
+                ' Ejecutar el segundo procedimiento
+                consignacionCmd.ExecuteNonQuery()
+            Next
+
+        Catch ex As Exception
+            lblMensaje.Text = "Error: " & ex.Message.ToString()
+        Finally
+            conn.Close()
+            conn.Dispose()
+        End Try
+    End Sub
+
+
+
+
 
 
 #End Region
