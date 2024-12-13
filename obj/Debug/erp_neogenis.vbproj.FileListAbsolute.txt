@@ -183,3 +183,4 @@ D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_mastercons\obj\Debug\
 D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_mastercons\obj\Debug\erp_neogenis.dll
 D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_mastercons\obj\Debug\erp_neogenis.xml
 D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_mastercons\obj\Debug\erp_neogenis.pdb
+D:\DT - ACTECK\Documents\Visual Studio 2019\GitHub\natural_mastercons\obj\Debug\erp_neogenis.vbproj.AssemblyReference.cache

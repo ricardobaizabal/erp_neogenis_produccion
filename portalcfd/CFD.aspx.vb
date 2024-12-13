@@ -1196,7 +1196,14 @@ Partial Class portalcfd_CFD
 
                 If tipoid = 2 Then
                     reporte.ReportParameters("txtTipoRelacion").Value = "Tipo Relación: " & tiporelacion
-                    reporte.ReportParameters("txtUUIDRelacionado").Value = "UUID Relacionado: " & uuid_relacionado
+                    'reporte.ReportParameters("txtUUIDRelacionado").Value = "UUID Relacionado: " & uuid_relacionado
+                    Dim OBJ As New DataControl
+                    Dim dt As DataSet = OBJ.FillDataSet("exec pCFD @cmd=46, @cfdid='" & cfdid.ToString & "'")
+                    Dim nodoc As Integer = 0
+                    For Each row As DataRow In dt.Tables(0).Rows
+                        nodoc += 1
+                    Next
+                    reporte.ReportParameters("txtUUIDRelacionado").Value = "UUID Relacionado(s): " & nodoc.ToString
                 ElseIf tipoid = 5 Then
                     retencion = FormatNumber((importe * 0.04), 2)
                     reporte.ReportParameters("txtRetencion").Value = FormatCurrency(retencion, 2).ToString
