@@ -204,7 +204,7 @@ Public Class pedidos
                     DirectCast(itm.FindControl("chkcfdid"), WebControls.CheckBox).Visible = False
                 End If
 
-                If chkFacAutomaticas Then
+                If intEstatus < 3 Then
                     DirectCast(itm.FindControl("chkcons"), WebControls.CheckBox).Visible = True
                 Else
                     DirectCast(itm.FindControl("chkcons"), WebControls.CheckBox).Visible = False

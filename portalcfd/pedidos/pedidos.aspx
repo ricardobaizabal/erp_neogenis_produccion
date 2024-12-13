@@ -329,13 +329,13 @@
                                             <asp:LinkButton ID="lnkFacturar40" runat="server" Text="Facturar" CommandArgument='<%# Eval("id") %>' CommandName="cmdFacturar40"></asp:LinkButton>
                                         </ItemTemplate>
                                     </telerik:GridTemplateColumn>
-                                    <telerik:GridTemplateColumn UniqueName="CheckBoxTemplateColumn" ItemStyle-Width="20" HeaderText="Regresar">
+                                    <telerik:GridTemplateColumn UniqueName="CheckBoxTemplateColumn" ItemStyle-Width="20" HeaderText="Fac. Auto.">
                                         <ItemTemplate>
                                             <asp:CheckBox ID="chkcfdid" runat="server" CssClass="item" Checked='<%# IIf(Eval("chkcfdid") Is DBNull.Value, "False", Eval("chkcfdid"))%>' AutoPostBack="True"  OnCheckedChanged="ToggleRowSelection" />
                                         </ItemTemplate>
                                         <ItemStyle HorizontalAlign="Center" />
                                     </telerik:GridTemplateColumn>
-                                    <telerik:GridTemplateColumn UniqueName="CheckBoxTemplateColumn" ItemStyle-Width="20" HeaderText="Regresar">
+                                    <telerik:GridTemplateColumn UniqueName="CheckBoxTemplateColumn" ItemStyle-Width="20" HeaderText="Consignación">
                                         <ItemTemplate>
                                             <asp:CheckBox ID="chkcons" runat="server" CssClass="item" Checked='<%# IIf(Eval("chkcons") Is DBNull.Value, "False", Eval("chkcons"))%>' AutoPostBack="True"  OnCheckedChanged="ToggleRowSelection" />
                                         </ItemTemplate>

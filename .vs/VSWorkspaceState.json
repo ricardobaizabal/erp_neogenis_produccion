@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\portalcfd",
+    "\\portalcfd\\pedidos"
   ],
-  "SelectedNode": "\\erp_neogenis.sln",
+  "SelectedNode": "\\portalcfd\\pedidos\\pedidos.aspx",
   "PreviewInSolutionExplorer": false
 }
