@@ -616,6 +616,520 @@ Partial Class portalcfd_Productos
 
 #End Region
 
+#Region "Carga de CVS"
+    Protected Sub btnCargarExcel_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCargarExcel.Click
+        If fileUploadExcel1.HasFile Then
+            If System.IO.Path.GetExtension(fileUploadExcel1.FileName).ToUpper = ".CSV" Then
+                panelErrores.Visible = False
+
+                Dim nombreArchivo As String = ""
+                nombreArchivo = fileUploadExcel1.PostedFile.FileName.ToString
+
+                For i = 1 To 99999
+                    If Not File.Exists(Server.MapPath("../almacen/cargaCsv/") & nombreArchivo) Then
+                        fileUploadExcel1.SaveAs(Server.MapPath("../almacen/cargaCsv/") & nombreArchivo)
+                        Exit For
+                    Else
+                        nombreArchivo = i.ToString + "_" + fileUploadExcel1.PostedFile.FileName.ToString
+                    End If
+                Next
+
+                Dim registros As Integer
+                Try
+                    registros = System.IO.File.ReadAllLines(Server.MapPath("../almacen/cargaCsv/") & nombreArchivo).Count
+                Catch ex As Exception
+                    registros = 0
+                End Try
+
+                If registros > 0 Then
+                    registros = registros - 1
+                End If
+
+                Dim registros_error As Integer = 0
+                Dim registros_correctos As Integer = 0
+                Dim msgerror As String = ""
+
+                Dim cargaid As Long = 0
+                Dim ObjData As New DataControl
+                cargaid = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=1, @userid='" & Session("userid").ToString & "', @archivo='" & nombreArchivo.ToString & "', @registros='" & registros.ToString & "'")
+                cargaidHidden.Value = cargaid
+
+                If registros = 0 Then
+                    ObjData.RunSQLQuery("exec pCargaProductosCsv @cmd=9, @cargaid='" & cargaid.ToString & "")
+                End If
+
+                Dim progress As RadProgressContext = RadProgressContext.Current
+                progress.SecondaryTotal = registros
+                progress.Speed = "N/A"
+
+                ds = New DataSet
+                ds = ObjData.FillDataSet("exec pCargaProductosCsv @cmd=2")
+
+                Dim dtConceptosDetalle As New DataTable
+
+                If ds.Tables.Count > 0 Then
+                    dtConceptosDetalle = ds.Tables(0)
+
+                End If
+
+                Dim j As Integer = 0
+                Dim line As String = ""
+
+                Dim reader As System.IO.StreamReader = New StreamReader(Server.MapPath("../almacen/cargaCsv/") & nombreArchivo, System.Text.Encoding.Default)
+                Do
+
+                    j += 1
+
+                    line = reader.ReadLine
+
+                    If line = Nothing Then
+                        Exit Do
+                    End If
+
+
+                    'Dim cantidad As Integer = 0
+                    Dim codigoId As String = ""
+                    Dim codigoActivo As Integer = 0
+
+                    Dim codigo As String = ""
+                    Dim upc As String = ""
+                    Dim claveSat As String = ""
+                    Dim unidad As String = ""
+                    Dim descripcion As String = ""
+                    Dim marcaId As Integer = 0
+                    Dim coleccionId As Integer = 0
+                    Dim precioUnit1 As Decimal = 0
+                    Dim precioUnit2 As Decimal = 0
+                    Dim precioUnit3 As Decimal = 0
+                    Dim precioUnit4 As Decimal = 0
+                    Dim precioUnit5 As Decimal = 0
+                    Dim precioUnit6 As Decimal = 0
+
+                    If j > 1 Then
+                        ' CODIGO
+                        Try
+                            codigo = line.Split(",")(0)
+                        Catch ex As Exception
+                            codigo = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            upc = line.Split(",")(1)
+                        Catch ex As Exception
+                            upc = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            claveSat = line.Split(",")(2)
+                        Catch ex As Exception
+                            claveSat = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            unidad = line.Split(",")(3)
+                        Catch ex As Exception
+                            unidad = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            descripcion = line.Split(",")(4)
+                        Catch ex As Exception
+                            descripcion = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            marcaId = line.Split(",")(5)
+                        Catch ex As Exception
+                            marcaId = 0
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            coleccionId = line.Split(",")(6)
+                        Catch ex As Exception
+                            coleccionId = 0
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            precioUnit1 = line.Split(",")(7)
+                        Catch ex As Exception
+                            precioUnit1 = 0
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            precioUnit2 = line.Split(",")(8)
+                        Catch ex As Exception
+                            precioUnit2 = 0
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            precioUnit3 = line.Split(",")(9)
+                        Catch ex As Exception
+                            precioUnit3 = 0
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            precioUnit4 = line.Split(",")(10)
+                        Catch ex As Exception
+                            precioUnit4 = 0
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            precioUnit5 = line.Split(",")(11)
+                        Catch ex As Exception
+                            precioUnit5 = 0
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            precioUnit6 = line.Split(",")(12)
+                        Catch ex As Exception
+                            precioUnit6 = 0
+                        End Try
+
+                        Try
+                            Dim rowCodigo() As DataRow = dtConceptosDetalle.Select("codigo = '" & LTrim(RTrim(codigo)).ToString & "'")
+                            For Each row As DataRow In rowCodigo
+                                codigo = row(0)
+                            Next
+                        Catch ex As Exception
+                            codigo = 0
+                        End Try
+
+                        Try
+                            Dim rowUpc() As DataRow = dtConceptosDetalle.Select("upc = '" & LTrim(RTrim(upc)).ToString & "'")
+                            For Each row As DataRow In rowUpc
+                                upc = row(0)
+                            Next
+                        Catch ex As Exception
+                            upc = 0
+                        End Try
+
+                        Try
+                            Dim rowClaveSat() As DataRow = dtConceptosDetalle.Select("clavesat = '" & LTrim(RTrim(claveSat)).ToString & "'")
+                            For Each row As DataRow In rowClaveSat
+                                claveSat = row(0)
+                            Next
+                        Catch ex As Exception
+                            claveSat = 0
+                        End Try
+
+                        Try
+                            Dim rowUnidad() As DataRow = dtConceptosDetalle.Select("unidad = '" & LTrim(RTrim(unidad)).ToString & "'")
+                            For Each row As DataRow In rowUnidad
+                                rowUnidad = row(0)
+                            Next
+                        Catch ex As Exception
+                            unidad = 0
+                        End Try
+
+                        Try
+                            Dim rowDescripcion() As DataRow = dtConceptosDetalle.Select("descripcion = '" & LTrim(RTrim(descripcion)).ToString & "'")
+                            For Each row As DataRow In rowDescripcion
+                                rowDescripcion = row(0)
+                            Next
+                        Catch ex As Exception
+                            descripcion = 0
+                        End Try
+
+                        Try
+                            Dim rowMarcaId() As DataRow = dtConceptosDetalle.Select("marcaId = '" & LTrim(RTrim(marcaId)).ToString & "'")
+                            For Each row As DataRow In rowMarcaId
+                                rowMarcaId = row(0)
+                            Next
+                        Catch ex As Exception
+                            marcaId = 0
+                        End Try
+
+                        Try
+                            Dim rowColeccionId() As DataRow = dtConceptosDetalle.Select("coleccionid = '" & LTrim(RTrim(coleccionId)).ToString & "'")
+                            For Each row As DataRow In rowColeccionId
+                                rowColeccionId = row(0)
+                            Next
+                        Catch ex As Exception
+                            coleccionId = 0
+                        End Try
+
+                        Try
+                            Dim rowPrecioUnit1() As DataRow = dtConceptosDetalle.Select("precioUnit1 = '" & LTrim(RTrim(precioUnit1)).ToString & "'")
+                            For Each row As DataRow In rowPrecioUnit1
+                                rowPrecioUnit1 = row(0)
+                            Next
+                        Catch ex As Exception
+                            precioUnit1 = 0
+                        End Try
+
+                        Try
+                            Dim rowPrecioUnit2() As DataRow = dtConceptosDetalle.Select("precioUnit2 = '" & LTrim(RTrim(precioUnit2)).ToString & "'")
+                            For Each row As DataRow In rowPrecioUnit2
+                                rowPrecioUnit2 = row(0)
+                            Next
+                        Catch ex As Exception
+                            precioUnit2 = 0
+                        End Try
+
+                        Try
+                            Dim rowPrecioUnit3() As DataRow = dtConceptosDetalle.Select("precioUnit3 = '" & LTrim(RTrim(precioUnit3)).ToString & "'")
+                            For Each row As DataRow In rowPrecioUnit3
+                                rowPrecioUnit3 = row(0)
+                            Next
+                        Catch ex As Exception
+                            precioUnit3 = 0
+                        End Try
+
+                        Try
+                            Dim rowPrecioUnit4() As DataRow = dtConceptosDetalle.Select("precioUnit4 = '" & LTrim(RTrim(precioUnit4)).ToString & "'")
+                            For Each row As DataRow In rowPrecioUnit4
+                                rowPrecioUnit4 = row(0)
+                            Next
+                        Catch ex As Exception
+                            precioUnit4 = 0
+                        End Try
+
+                        Try
+                            Dim rowPrecioUnit5() As DataRow = dtConceptosDetalle.Select("precioUnit5 = '" & LTrim(RTrim(precioUnit5)).ToString & "'")
+                            For Each row As DataRow In rowPrecioUnit5
+                                rowPrecioUnit5 = row(0)
+                            Next
+                        Catch ex As Exception
+                            precioUnit5 = 0
+                        End Try
+
+                        Try
+                            Dim rowPrecioUnit6() As DataRow = dtConceptosDetalle.Select("precioUnit6 = '" & LTrim(RTrim(precioUnit6)).ToString & "'")
+                            For Each row As DataRow In rowPrecioUnit6
+                                rowPrecioUnit6 = row(0)
+                            Next
+                        Catch ex As Exception
+                            precioUnit6 = 0
+                        End Try
+
+                        If codigo.Length > 0 Then
+                            ' Dim productoid As Long
+
+                            codigoActivo = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=14, @codigo='" & codigo & "'")
+
+                            'If codigoNoActivo > 0 Then
+                            '    ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=15, @id='" & codigoNoActivo & "'")
+                            'End If
+
+                            'productoid = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=4, @codigo='" & codigo & "', @cargaid='" & cargaid.ToString & "'")
+                            'codigoActivo = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=13, @codigo='" & codigo & "'")
+
+                            'If productoid > 0 Then
+                            '    Dim p As New ArrayList
+                            '    p.Add(New SqlParameter("@cmd", 7))
+                            '    p.Add(New SqlParameter("@cargaid", cargaid))
+                            '    p.Add(New SqlParameter("@codigo", codigo))
+                            '    p.Add(New SqlParameter("@cantidad", cantidad))
+                            '    p.Add(New SqlParameter("@error", "El código " & codigo & " ya se encuentra registrado."))
+                            '    p.Add(New SqlParameter("@ordenId", Request("id").ToString))
+                            '    ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
+                            '    registros_error = registros_error + 1
+
+                            'ElseIf codigoNoActivo = 0 Then
+                            '    Dim p As New ArrayList
+                            '    p.Add(New SqlParameter("@cmd", 7))
+                            '    p.Add(New SqlParameter("@cargaid", cargaid))
+                            '    p.Add(New SqlParameter("@codigo", codigo))
+                            '    p.Add(New SqlParameter("@cantidad", cantidad))
+                            '    p.Add(New SqlParameter("@error", "El código " & codigo & "Producto no activo."))
+                            '    ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
+                            '    registros_error = registros_error + 1
+
+                            If codigoActivo >= 1 Then
+                                Dim p As New ArrayList
+                                p.Add(New SqlParameter("@cmd", 7))
+                                p.Add(New SqlParameter("@cargaid", cargaid))
+                                p.Add(New SqlParameter("@codigo", codigo))
+                                p.Add(New SqlParameter("@upc", upc))
+                                p.Add(New SqlParameter("@clavesat", claveSat))
+                                p.Add(New SqlParameter("@unidad", unidad))
+                                p.Add(New SqlParameter("@descripcion", descripcion))
+                                p.Add(New SqlParameter("@marcaId", marcaId))
+                                p.Add(New SqlParameter("@coleccionId", coleccionId))
+                                p.Add(New SqlParameter("@precioUnit1", precioUnit1))
+                                p.Add(New SqlParameter("@precioUnit2", precioUnit2))
+                                p.Add(New SqlParameter("@precioUnit3", precioUnit3))
+                                p.Add(New SqlParameter("@precioUnit4", precioUnit4))
+                                p.Add(New SqlParameter("@precioUnit5", precioUnit5))
+                                p.Add(New SqlParameter("@precioUnit6", precioUnit6))
+                                p.Add(New SqlParameter("@error", "El código " & codigo & " ya está registrado."))
+                                ' p.Add(New SqlParameter("@ordenId", Request("id").ToString))
+                                ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
+                                registros_error = registros_error + 1
+
+                            Else
+                                Dim p As New ArrayList
+                                p.Add(New SqlParameter("@cmd", 3))
+                                p.Add(New SqlParameter("@cargaid", cargaid))
+                                p.Add(New SqlParameter("@codigo", codigo))
+                                p.Add(New SqlParameter("@upc", upc))
+                                p.Add(New SqlParameter("@clavesat", claveSat))
+                                p.Add(New SqlParameter("@unidad", unidad))
+                                p.Add(New SqlParameter("@descripcion", descripcion))
+                                p.Add(New SqlParameter("@marcaId", marcaId))
+                                p.Add(New SqlParameter("@coleccionId", coleccionId))
+                                p.Add(New SqlParameter("@precioUnit1", precioUnit1))
+                                p.Add(New SqlParameter("@precioUnit2", precioUnit2))
+                                p.Add(New SqlParameter("@precioUnit3", precioUnit3))
+                                p.Add(New SqlParameter("@precioUnit4", precioUnit4))
+                                p.Add(New SqlParameter("@precioUnit5", precioUnit5))
+                                p.Add(New SqlParameter("@precioUnit6", precioUnit6))
+                                'p.Add(New SqlParameter("@ordenId", Request("id").ToString))
+                                ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
+                                registros_correctos = registros_correctos + 1
+                            End If
+                        Else
+
+                            msgerror = ""
+                            If codigo.Length = 0 Then
+                                msgerror = msgerror & "Código es requerido."
+                            End If
+
+                            'If cantidad = 0 Then
+                            '    msgerror = msgerror & vbCrLf & "Cantidad es requerida."
+                            'End If
+
+                            If codigoId.Length = 0 Then
+                                msgerror = msgerror & vbCrLf & "Codigo no registrado."
+                            End If
+
+                            'If codigoNoActivo = 0 Then
+                            '    msgerror = msgerror & vbCrLf & "Producto no activo."
+                            'End If
+
+                            'If unitario = 0 Then
+                            '    msgerror = msgerror & vbCrLf & "Precio unitario es requerido."
+                            'End If
+                            Dim p As New ArrayList
+                            p.Add(New SqlParameter("@cmd", 7))
+                            p.Add(New SqlParameter("@cargaid", cargaid))
+                            p.Add(New SqlParameter("@codigo", codigo))
+                            p.Add(New SqlParameter("@upc", upc))
+                            p.Add(New SqlParameter("@clavesat", claveSat))
+                            p.Add(New SqlParameter("@unidad", unidad))
+                            p.Add(New SqlParameter("@descripcion", descripcion))
+                            p.Add(New SqlParameter("@marcaId", marcaId))
+                            p.Add(New SqlParameter("@coleccionId", coleccionId))
+                            p.Add(New SqlParameter("@precioUnit1", precioUnit1))
+                            p.Add(New SqlParameter("@precioUnit2", precioUnit2))
+                            p.Add(New SqlParameter("@precioUnit3", precioUnit3))
+                            p.Add(New SqlParameter("@precioUnit4", precioUnit4))
+                            p.Add(New SqlParameter("@precioUnit5", precioUnit5))
+                            p.Add(New SqlParameter("@precioUnit6", precioUnit6))
+                            p.Add(New SqlParameter("@error", msgerror))
+                            'p.Add(New SqlParameter("@ordenId", Request("id").ToString))
+                            ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
+                            registros_error = registros_error + 1
+                        End If
+
+                    End If
+
+                    progress.SecondaryValue = j
+                    progress.SecondaryPercent = Math.Round((j * 100 / registros), 0)
+                    progress.CurrentOperationText = "Registro " & j.ToString()
+
+                    If Not Response.IsClientConnected Then
+                        Exit Do
+                    End If
+
+                    progress.TimeEstimated = (registros - j) * 100
+                    System.Threading.Thread.Sleep(100)
+
+                Loop Until line Is Nothing
+
+                reader.Close()
+
+                If registros_correctos > 0 Then
+                    Dim p As New ArrayList
+                    p.Add(New SqlParameter("@cmd", 8))
+                    p.Add(New SqlParameter("@cargaid", cargaid))
+                    p.Add(New SqlParameter("@registros_correctos", registros_correctos))
+                    ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
+                End If
+
+                If registros_error > 0 Then
+                    Dim p As New ArrayList
+                    p.Add(New SqlParameter("@cmd", 9))
+                    p.Add(New SqlParameter("@cargaid", cargaid))
+                    p.Add(New SqlParameter("@registros_error", registros_error))
+                    ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
+
+                    panelErrores.Visible = True
+                    erroresList.DataSource = ObjData.FillDataSet("exec pCargaProductosCsv @cmd=10, @cargaid='" & cargaid.ToString & "'")
+                    erroresList.DataBind()
+
+                End If
+
+                If registros_correctos = 0 Then
+                    ObjData.RunSQLQuery("exec pCargaProductosCsv @cmd=11, @cargaid='" & cargaid.ToString & "'")
+                End If
+
+                If registros_correctos > 0 And registros_error > 0 Then
+                    rwAlerta.RadAlert("Se cargaron " & registros_correctos.ToString & " productos con éxito.<br>" & registros_error.ToString & " con error, favor de verificar.", 350, 200, "Alerta", "", "")
+                ElseIf registros_correctos > 0 Then
+                    rwAlerta.RadAlert("Se cargaron " & registros_correctos.ToString & " productos con éxito.", 350, 200, "Alerta", "", "")
+                ElseIf registros_error > 0 Then
+                    rwAlerta.RadAlert("Se encontraron " & registros_error.ToString & " productos con error, favor de verificar.", 350, 200, "Alerta", "", "")
+                End If
+
+                ObjData = Nothing
+            Else
+                rwAlerta.RadAlert("Formato CSV no válido.", 350, 200, "Alerta", "", "")
+            End If
+        Else
+            rwAlerta.RadAlert("Selecciona un archivo en formato CSV.", 350, 200, "Alerta", "", "")
+        End If
+
+        panelCSV.Visible = True
+        'btnAgregaConceptos.Visible = True
+        btnAddorderParcial.Enabled = True
+        Dim ObjData2 As New DataControl
+        ds = ObjData2.FillDataSet("exec pCargaProductosCsv @cmd=5, @cargaid='" & cargaidHidden.Value & "'")
+        Dim lineas As Integer = ds.Tables(0).Rows.Count
+        If lineas = 0 Then
+            lineas = 1
+        End If
+        resultslistCSV.PageSize = lineas
+        resultslistCSV.DataSource = ds
+        resultslistCSV.DataBind()
+        ObjData2.RunSQLQuery("exec pCargaProductosCsv @cmd=12")
+
+        ObjData2 = Nothing
+    End Sub
+
+    Private Sub imgDownload_Click(sender As Object, e As ImageClickEventArgs) Handles imgDownload.Click
+        Dim FilePath = Server.MapPath("~/portalcfd/almacen/cargaCsv/") & "FORMATOCARGA.csv"
+
+        If File.Exists(FilePath) Then
+            Dim FileName As String = Path.GetFileName(FilePath)
+            Response.Clear()
+            Response.ContentType = "application/octet-stream"
+            Response.AddHeader("Content-Disposition", "attachment; filename=""" & FileName & """")
+            Response.Flush()
+            Response.WriteFile(FilePath)
+            Response.End()
+        End If
+    End Sub
+    Private Sub erroresList_NeedDataSource(sender As Object, e As GridNeedDataSourceEventArgs) Handles erroresList.NeedDataSource
+        Dim ObjData As New DataControl
+        erroresList.DataSource = ObjData.FillDataSet("exec pCargaProductosCsv @cmd=10, @cargaid='" & cargaidHidden.Value.ToString & "'")
+        ObjData = Nothing
+    End Sub
+
+#End Region
+
 #Region "Carga de CVS Cambio de Precios"
 
     Protected Sub btnCargarExcelCP_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCargarExcelCP.Click
