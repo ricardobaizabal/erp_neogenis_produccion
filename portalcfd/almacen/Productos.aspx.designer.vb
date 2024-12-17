@@ -1121,6 +1121,150 @@ Partial Public Class portalcfd_Productos
     Protected WithEvents ClientCodesList As Global.Telerik.Web.UI.RadGrid
 
     '''<summary>
+    '''Control panelFileUp.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents panelFileUp As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''Control Label5.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control fileUploadExcel1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents fileUploadExcel1 As Global.System.Web.UI.WebControls.FileUpload
+
+    '''<summary>
+    '''Control btnCargarExcel.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnCargarExcel As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control imgDownload.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents imgDownload As Global.System.Web.UI.WebControls.ImageButton
+
+    '''<summary>
+    '''Control Label6.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control btnAddorderParcial.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnAddorderParcial As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control lblMensajeCSV.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblMensajeCSV As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control cargaidHidden.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents cargaidHidden As Global.System.Web.UI.WebControls.HiddenField
+
+    '''<summary>
+    '''Control panelCSV.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents panelCSV As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''Control lblConceptosCarga.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblConceptosCarga As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control resultslistCSV.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents resultslistCSV As Global.Telerik.Web.UI.RadGrid
+
+    '''<summary>
+    '''Control panelErrores.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents panelErrores As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''Control lblListadoProductos.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblListadoProductos As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control erroresList.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents erroresList As Global.Telerik.Web.UI.RadGrid
+
+    '''<summary>
+    '''Control orderParcialIdHidden.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents orderParcialIdHidden As Global.System.Web.UI.WebControls.HiddenField
+
+    '''<summary>
     '''Control panelFileUpCambioPrecio.
     '''</summary>
     '''<remarks>

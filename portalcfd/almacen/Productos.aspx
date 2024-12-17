@@ -692,6 +692,166 @@
         <br />
         <br />
     </asp:Panel>
+
+    <asp:Panel ID="panelFileUp" runat="server">
+        <fieldset>
+            <legend style="padding-right: 6px; color: Black">
+                <asp:Label ID="Label5" runat="server" Font-Bold="true" CssClass="item" Text="Carga de Productos por CSV."></asp:Label>
+            </legend>
+            <table width="100%" cellspacing="3" cellpadding="3" align="right" style="line-height: 25px;">
+                <tr>
+                    <td class="item" style="width: 27%;">
+                        <strong>Seleccione archivo en formato CSV: </strong>
+                    </td>
+                    <td style="width: 35%;">
+                        <asp:FileUpload ID="fileUploadExcel1" runat="server" />
+                    </td>
+                    <td style="width: 10%;">
+                        <asp:Button ID="btnCargarExcel" runat="server" Text="Cargar CSV" />
+                    </td>
+                    <td class="item">
+                        <asp:ImageButton ID="imgDownload" runat="server" ImageUrl="~/portalcfd/images/download.png" />
+                        <span>Formato</span>
+                    </td>
+                    <%--<td class="item">
+                        <asp:Button ID="btnAgregaConceptos" runat="server" CssClass="item" Visible="false" Text="Agregar Productos" />&nbsp;&nbsp;
+                    </td>--%>
+                    <td class="item">
+                        <asp:Label ID="Label6" runat="server" ForeColor="Green" Font-Bold="true"></asp:Label>
+                        <asp:Button ID="btnAddorderParcial" runat="server" Enabled="false" Text="Dar de Alta Productos" BackColor="Green" ForeColor="White" />
+                    </td>
+                    <td colspan="5">
+                        <asp:Label ID="lblMensajeCSV" runat="server" Font-Bold="true" CssClass="item" ForeColor="Red"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <asp:HiddenField ID="cargaidHidden" Value="0" runat="server" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </asp:Panel>
+    <br />
+    <asp:Panel ID="panelCSV" runat="server" Visible="false">
+        <fieldset style="width: 100%">
+            <legend style="padding-right: 6px; color: Black">
+                <asp:Label ID="lblConceptosCarga" runat="server" Font-Bold="true" CssClass="item" Text="Conceptos Carga CSV Correctos"></asp:Label>
+            </legend>
+            <telerik:RadGrid ID="resultslistCSV" runat="server" Width="100%" ShowStatusBar="True"
+                AutoGenerateColumns="False" AllowPaging="True" GridLines="None" Skin="Simple">
+                <PagerStyle Mode="NumericPages"></PagerStyle>
+                <MasterTableView NoMasterRecordsText="No se encontraron registros." Width="100%" DataKeyNames="codigo,upc,descripcion,claveSat,unidad,marcaId,coleccionId,precioUnit1,precioUnit2,precioUnit3,precioUnit4,precioUnit5,precioUnit6" Name="Products" AllowMultiColumnSorting="False">
+                    <Columns>
+                        <telerik:GridBoundColumn DataField="codigo" ItemStyle-Width="100" HeaderText="Código" UniqueName="codigo">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="upc" ItemStyle-Width="100" HeaderText="upc" UniqueName="upc">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="descripcion" ItemStyle-Width="250" HeaderText="Descripción" UniqueName="descripcion">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="claveSat" ItemStyle-Width="100" HeaderText="claveSat" UniqueName="claveSat">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="unidad" ItemStyle-Width="100" HeaderText="unidad" UniqueName="unidad">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="marca" ItemStyle-Width="100" HeaderText="Marca" UniqueName="marca">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="marcaId" ItemStyle-Width="100" HeaderText="MarcaId" UniqueName="marcaId">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="coleccion" ItemStyle-Width="100" HeaderText="Coleccion" UniqueName="coleccionId">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="coleccionId" ItemStyle-Width="100" HeaderText="ColeccionID" UniqueName="coleccionId">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="precioUnit1" ItemStyle-Width="100" HeaderText="precioUnit1" UniqueName="precioUnit1">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="precioUnit2" ItemStyle-Width="100" HeaderText="precioUnit2" UniqueName="precioUnit2">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="precioUnit3" ItemStyle-Width="100" HeaderText="precioUnit3" UniqueName="precioUnit3">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="precioUnit4" ItemStyle-Width="100" HeaderText="precioUnit4" UniqueName="precioUnit4">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="precioUnit5" ItemStyle-Width="100" HeaderText="precioUnit5" UniqueName="precioUnit5">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="precioUnit6" ItemStyle-Width="100" HeaderText="precioUnit6" UniqueName="precioUnit6">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridTemplateColumn AllowFiltering="False" HeaderStyle-HorizontalAlign="Center" Visible="false" UniqueName="Add">
+                            <ItemTemplate>
+                                <asp:ImageButton ID="btnAdd" runat="server" CommandArgument='<%# Eval("codigo") %>'
+                                    CommandName="cmdAdd" ImageUrl="~/portalcfd/images/action_add.gif" />
+                            </ItemTemplate>
+                            <HeaderStyle HorizontalAlign="Center" />
+                            <ItemStyle HorizontalAlign="Center" />
+                        </telerik:GridTemplateColumn>
+                    </Columns>
+                </MasterTableView>
+            </telerik:RadGrid>
+        </fieldset>
+    </asp:Panel>
+    <br />
+    <asp:Panel ID="panelErrores" runat="server" Visible="False">
+        <fieldset style="width: 100%">
+            <legend style="padding-right: 6px; color: Black">
+                <asp:Label ID="lblListadoProductos" runat="server" Font-Bold="true" CssClass="item" Text="Conceptos Carga CSV con Error"></asp:Label>
+            </legend>
+            <table border="0" cellpadding="2" cellspacing="0" align="center" width="100%">
+                <tr>
+                    <td>
+                        <telerik:RadGrid ID="erroresList" runat="server" Width="100%" ShowStatusBar="True" ShowFooter="true"
+                            AutoGenerateColumns="False" AllowPaging="False" PageSize="50" GridLines="None" ExportSettings-ExportOnlyData="True"
+                            Skin="Simple">
+                            <PagerStyle Mode="NumericPages"></PagerStyle>
+                            <ExportSettings IgnorePaging="true" FileName="CargaMasivaProductosError">
+                                <Excel Format="ExcelML" />
+                            </ExportSettings>
+                            <MasterTableView Width="100%" DataKeyNames="id" Name="Productos" AllowMultiColumnSorting="False" NoMasterRecordsText="No se encontraron registros." CommandItemDisplay="Top">
+                                <CommandItemSettings ShowRefreshButton="false" ShowAddNewRecordButton="false" ShowExportToExcelButton="true" ShowExportToPdfButton="false" ExportToExcelText="Exportar a Excel"></CommandItemSettings>
+                                <Columns>
+                                    <telerik:GridBoundColumn DataField="codigo" ItemStyle-Width="100" HeaderText="Código" UniqueName="codigo">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="upc" ItemStyle-Width="100" HeaderText="upc" UniqueName="upc">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="descripcion" ItemStyle-Width="250" HeaderText="Descripción" UniqueName="descripcion">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="claveSat" ItemStyle-Width="100" HeaderText="claveSat" UniqueName="claveSat">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="unidad" ItemStyle-Width="100" HeaderText="unidad" UniqueName="unidad">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="marca" ItemStyle-Width="100" HeaderText="Marca" UniqueName="marca">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="coleccion" ItemStyle-Width="100" HeaderText="Coleccion" UniqueName="coleccionId">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="precioUnit1" ItemStyle-Width="100" HeaderText="precioUnit1" UniqueName="precioUnit1">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="precioUnit2" ItemStyle-Width="100" HeaderText="precioUnit2" UniqueName="precioUnit2">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="precioUnit3" ItemStyle-Width="100" HeaderText="precioUnit3" UniqueName="precioUnit3">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="precioUnit4" ItemStyle-Width="100" HeaderText="precioUnit4" UniqueName="precioUnit4">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="precioUnit5" ItemStyle-Width="100" HeaderText="precioUnit5" UniqueName="precioUnit5">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="precioUnit6" ItemStyle-Width="100" HeaderText="precioUnit6" UniqueName="precioUnit6">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="error" ItemStyle-Width="100" HeaderText="Error" UniqueName="error">
+                                    </telerik:GridBoundColumn>
+                                </Columns>
+                            </MasterTableView>
+                        </telerik:RadGrid>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 15px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <asp:HiddenField ID="orderParcialIdHidden" Value="0" runat="server" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </asp:Panel>
+    <br />
+
+
      <asp:Panel ID="panelFileUpCambioPrecio" runat="server">
         <fieldset>
             <legend style="padding-right: 6px; color: Black">
