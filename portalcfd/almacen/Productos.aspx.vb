@@ -616,6 +616,7 @@ Partial Class portalcfd_Productos
 
 #End Region
 
+    ' TODO: Cargar con store procedure los productos en tabla temporal tblCargaProductoCsvDetalle
 #Region "Carga de CVS"
     Protected Sub btnCargarExcel_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCargarExcel.Click
         If fileUploadExcel1.HasFile Then
@@ -625,6 +626,8 @@ Partial Class portalcfd_Productos
                 Dim nombreArchivo As String = ""
                 nombreArchivo = fileUploadExcel1.PostedFile.FileName.ToString
 
+                ' Si no existe archivo entonces lo creo
+                ' Si ya existe entonces lo agrego consecutivo al principio
                 For i = 1 To 99999
                     If Not File.Exists(Server.MapPath("../almacen/cargaCsv/") & nombreArchivo) Then
                         fileUploadExcel1.SaveAs(Server.MapPath("../almacen/cargaCsv/") & nombreArchivo)
@@ -634,6 +637,7 @@ Partial Class portalcfd_Productos
                     End If
                 Next
 
+                'Leo todas las líneas del csv
                 Dim registros As Integer
                 Try
                     registros = System.IO.File.ReadAllLines(Server.MapPath("../almacen/cargaCsv/") & nombreArchivo).Count
@@ -649,11 +653,13 @@ Partial Class portalcfd_Productos
                 Dim registros_correctos As Integer = 0
                 Dim msgerror As String = ""
 
+                'Ejecuto store procedure de carga de productos, generación de encabezado 
                 Dim cargaid As Long = 0
                 Dim ObjData As New DataControl
                 cargaid = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=1, @userid='" & Session("userid").ToString & "', @archivo='" & nombreArchivo.ToString & "', @registros='" & registros.ToString & "'")
                 cargaidHidden.Value = cargaid
 
+                'actualiza registros erroneos
                 If registros = 0 Then
                     ObjData.RunSQLQuery("exec pCargaProductosCsv @cmd=9, @cargaid='" & cargaid.ToString & "")
                 End If
@@ -662,6 +668,7 @@ Partial Class portalcfd_Productos
                 progress.SecondaryTotal = registros
                 progress.Speed = "N/A"
 
+                'consulto registros de detalle, si es que hay
                 ds = New DataSet
                 ds = ObjData.FillDataSet("exec pCargaProductosCsv @cmd=2")
 
@@ -674,7 +681,7 @@ Partial Class portalcfd_Productos
 
                 Dim j As Integer = 0
                 Dim line As String = ""
-
+                'Itero líneas de csv hasta EOF
                 Dim reader As System.IO.StreamReader = New StreamReader(Server.MapPath("../almacen/cargaCsv/") & nombreArchivo, System.Text.Encoding.Default)
                 Do
 
@@ -705,6 +712,7 @@ Partial Class portalcfd_Productos
                     Dim precioUnit5 As Decimal = 0
                     Dim precioUnit6 As Decimal = 0
 
+                    'skip encabezado
                     If j > 1 Then
                         ' CODIGO
                         Try
@@ -797,6 +805,7 @@ Partial Class portalcfd_Productos
                             precioUnit6 = 0
                         End Try
 
+                        '???
                         Try
                             Dim rowCodigo() As DataRow = dtConceptosDetalle.Select("codigo = '" & LTrim(RTrim(codigo)).ToString & "'")
                             For Each row As DataRow In rowCodigo
@@ -896,6 +905,7 @@ Partial Class portalcfd_Productos
                             precioUnit4 = 0
                         End Try
 
+                        'borrar esto, no se ocupa
                         Try
                             Dim rowPrecioUnit5() As DataRow = dtConceptosDetalle.Select("precioUnit5 = '" & LTrim(RTrim(precioUnit5)).ToString & "'")
                             For Each row As DataRow In rowPrecioUnit5
@@ -905,6 +915,7 @@ Partial Class portalcfd_Productos
                             precioUnit5 = 0
                         End Try
 
+                        'borrar esto, no se ocupa
                         Try
                             Dim rowPrecioUnit6() As DataRow = dtConceptosDetalle.Select("precioUnit6 = '" & LTrim(RTrim(precioUnit6)).ToString & "'")
                             For Each row As DataRow In rowPrecioUnit6
@@ -917,6 +928,7 @@ Partial Class portalcfd_Productos
                         If codigo.Length > 0 Then
                             ' Dim productoid As Long
 
+                            ' Consulto código ya activo
                             codigoActivo = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=14, @codigo='" & codigo & "'")
 
                             'If codigoNoActivo > 0 Then
@@ -948,6 +960,7 @@ Partial Class portalcfd_Productos
                             '    registros_error = registros_error + 1
 
                             If codigoActivo >= 1 Then
+                                ' Marco error
                                 Dim p As New ArrayList
                                 p.Add(New SqlParameter("@cmd", 7))
                                 p.Add(New SqlParameter("@cargaid", cargaid))
@@ -970,6 +983,7 @@ Partial Class portalcfd_Productos
                                 registros_error = registros_error + 1
 
                             Else
+                                ' inserción
                                 Dim p As New ArrayList
                                 p.Add(New SqlParameter("@cmd", 3))
                                 p.Add(New SqlParameter("@cargaid", cargaid))
@@ -992,6 +1006,7 @@ Partial Class portalcfd_Productos
                             End If
                         Else
 
+                            'Agrego error de código es requerido 
                             msgerror = ""
                             If codigo.Length = 0 Then
                                 msgerror = msgerror & "Código es requerido."
