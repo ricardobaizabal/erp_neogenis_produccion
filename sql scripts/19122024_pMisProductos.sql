@@ -757,9 +757,9 @@ BEGIN
 				VALUES(@idproducto, 7)
 			end
 
-			--INSERTA EN TABLA almado en ubi Generik con cantidad 0
-			insert into tblAlmacenado(productId, quantity, datetime)
-			VALUES(@idproducto, 0, getdate())
+			--lcng 19 dic 2024: INSERTA EN TABLA almado en ubi Generik con cantidad 1
+			insert into tblAlmacenado(productId, barcode, quantity, datetime)
+			VALUES(@idproducto, 'MTYPAP04R01N01', 1, getdate())
 
 		end
 			/*	Actualiza Precio por carga de CSV	*/
