@@ -926,30 +926,25 @@ Partial Class portalcfd_Productos
                             tasa = ""
                         End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            claveSat = line.Split(",")(26)
-                        Catch ex As Exception
-                            claveSat = ""
-                        End Try
+                        claveSat = claveProdServ
 
                         ' CODIGO REORDEN
                         Try
-                            marketPlaceLiverpool = line.Split(",")(27)
+                            marketPlaceLiverpool = line.Split(",")(26)
                         Catch ex As Exception
                             marketPlaceLiverpool = ""
                         End Try
 
                         ' CODIGO REORDEN
                         Try
-                            marketPlaceShopify = line.Split(",")(28)
+                            marketPlaceShopify = line.Split(",")(27)
                         Catch ex As Exception
                             marketPlaceShopify = ""
                         End Try
 
                         ' CODIGO REORDEN
                         Try
-                            marketPlaceAcctivity = line.Split(",")(29)
+                            marketPlaceAcctivity = line.Split(",")(28)
                         Catch ex As Exception
                             marketPlaceAcctivity = ""
                         End Try
@@ -1617,7 +1612,8 @@ Partial Class portalcfd_Productos
                 marketPlaceAcctivity = row.GetDataKeyValue("marketPlaceAcctivity")
 
                 'Filtro unidad quito guiòn solo tomo primeras letras
-
+                unidadMedida = Split(unidadMedida, "-")(0)
+                unidadMedida = Trim(unidadMedida)
 
                 If codigo.Length > 0 Then
 
