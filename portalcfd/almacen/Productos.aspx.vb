@@ -616,7 +616,6 @@ Partial Class portalcfd_Productos
 
 #End Region
 
-    ' TODO: Cargar con store procedure los productos en tabla temporal tblCargaProductoCsvDetalle
 #Region "Carga de CVS"
     Protected Sub btnCargarExcel_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCargarExcel.Click
         If fileUploadExcel1.HasFile Then
@@ -684,7 +683,6 @@ Partial Class portalcfd_Productos
                 'Itero líneas de csv hasta EOF
                 Dim reader As System.IO.StreamReader = New StreamReader(Server.MapPath("../almacen/cargaCsv/") & nombreArchivo, System.Text.Encoding.Default)
                 Do
-
                     j += 1
 
                     line = reader.ReadLine
@@ -692,7 +690,6 @@ Partial Class portalcfd_Productos
                     If line = Nothing Then
                         Exit Do
                     End If
-
 
                     'Dim cantidad As Integer = 0
                     Dim codigoId As String = ""
@@ -703,14 +700,47 @@ Partial Class portalcfd_Productos
                     Dim claveSat As String = ""
                     Dim unidad As String = ""
                     Dim descripcion As String = ""
-                    Dim marcaId As Integer = 0
+                    Dim descripcion_corta As String = ""
+                    Dim marca As String = 0
+                    Dim temporada As String = ""
+                    Dim unitario1 As Decimal = 0
+                    Dim unitario2 As Decimal = 0
+                    Dim unitario3 As Decimal = 0
+                    Dim unitario4 As Decimal = 0
+                    Dim modelo_estilo As String = ""
+                    Dim plataforma As String = ""
+                    Dim genero As String = ""
+                    Dim tallaUSA As String = ""
+                    Dim tallaMX As String = ""
+                    Dim color As String = ""
+                    Dim colorMX As String = ""
+                    Dim material As String = ""
+                    Dim peso As String = ""
+                    Dim empaque_alto As String = ""
+                    Dim empaque_largo As String = ""
+                    Dim empaque_ancho As String = ""
+                    Dim unidadMedida As String = ""
+                    Dim moneda As String = ""
+                    Dim claveProdServ As String = ""
+                    Dim tasa As String = ""
+
+                    'Marketplace
+                    Dim marketPlaceLiverpool As String = ""
+                    Dim marketPlaceShopify As String = ""
+                    Dim marketPlaceAcctivity As String = ""
+
+                    'se usa cmd para obtener estos valores
                     Dim coleccionId As Integer = 0
-                    Dim precioUnit1 As Decimal = 0
-                    Dim precioUnit2 As Decimal = 0
-                    Dim precioUnit3 As Decimal = 0
-                    Dim precioUnit4 As Decimal = 0
-                    Dim precioUnit5 As Decimal = 0
-                    Dim precioUnit6 As Decimal = 0
+                    Dim proyectoId As Integer = 0
+                    Dim generoId As Integer = 0
+                    Dim marcaId As Integer = 0
+                    Dim tasaId As Integer = 0
+                    Dim monedaId As Integer = 0
+                    Dim objImpId As Integer = 2
+
+
+
+                    'ID
 
                     'skip encabezado
                     If j > 1 Then
@@ -730,79 +760,198 @@ Partial Class portalcfd_Productos
 
                         ' CODIGO REORDEN
                         Try
-                            claveSat = line.Split(",")(2)
-                        Catch ex As Exception
-                            claveSat = ""
-                        End Try
-
-                        ' CODIGO REORDEN
-                        Try
-                            unidad = line.Split(",")(3)
-                        Catch ex As Exception
-                            unidad = ""
-                        End Try
-
-                        ' CODIGO REORDEN
-                        Try
-                            descripcion = line.Split(",")(4)
+                            descripcion = line.Split(",")(2)
                         Catch ex As Exception
                             descripcion = ""
                         End Try
 
                         ' CODIGO REORDEN
                         Try
-                            marcaId = line.Split(",")(5)
+                            descripcion_corta = line.Split(",")(3)
                         Catch ex As Exception
-                            marcaId = 0
+                            descripcion_corta = ""
                         End Try
 
                         ' CODIGO REORDEN
                         Try
-                            coleccionId = line.Split(",")(6)
+                            marca = line.Split(",")(4)
                         Catch ex As Exception
-                            coleccionId = 0
+                            marca = ""
                         End Try
 
                         ' CODIGO REORDEN
                         Try
-                            precioUnit1 = line.Split(",")(7)
+                            temporada = line.Split(",")(5)
                         Catch ex As Exception
-                            precioUnit1 = 0
+                            temporada = ""
                         End Try
 
                         ' CODIGO REORDEN
                         Try
-                            precioUnit2 = line.Split(",")(8)
+                            unitario1 = line.Split(",")(6)
                         Catch ex As Exception
-                            precioUnit2 = 0
+                            unitario1 = 0
                         End Try
 
                         ' CODIGO REORDEN
                         Try
-                            precioUnit3 = line.Split(",")(9)
+                            unitario2 = line.Split(",")(7)
                         Catch ex As Exception
-                            precioUnit3 = 0
+                            unitario2 = 0
                         End Try
 
                         ' CODIGO REORDEN
                         Try
-                            precioUnit4 = line.Split(",")(10)
+                            unitario3 = line.Split(",")(8)
                         Catch ex As Exception
-                            precioUnit4 = 0
+                            unitario3 = 0
                         End Try
 
                         ' CODIGO REORDEN
                         Try
-                            precioUnit5 = line.Split(",")(11)
+                            unitario4 = line.Split(",")(9)
                         Catch ex As Exception
-                            precioUnit5 = 0
+                            unitario4 = 0
                         End Try
 
                         ' CODIGO REORDEN
                         Try
-                            precioUnit6 = line.Split(",")(12)
+                            modelo_estilo = line.Split(",")(10)
                         Catch ex As Exception
-                            precioUnit6 = 0
+                            modelo_estilo = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            plataforma = line.Split(",")(11)
+                        Catch ex As Exception
+                            plataforma = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            genero = line.Split(",")(12)
+                        Catch ex As Exception
+                            genero = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            tallaUSA = line.Split(",")(13)
+                        Catch ex As Exception
+                            tallaUSA = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            tallaMX = line.Split(",")(14)
+                        Catch ex As Exception
+                            tallaMX = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            color = line.Split(",")(15)
+                        Catch ex As Exception
+                            color = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            colorMX = line.Split(",")(16)
+                        Catch ex As Exception
+                            colorMX = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            material = line.Split(",")(17)
+                        Catch ex As Exception
+                            material = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            peso = line.Split(",")(18)
+                        Catch ex As Exception
+                            peso = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            empaque_alto = line.Split(",")(19)
+                        Catch ex As Exception
+                            empaque_alto = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            empaque_largo = line.Split(",")(20)
+                        Catch ex As Exception
+                            empaque_largo = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            empaque_ancho = line.Split(",")(21)
+                        Catch ex As Exception
+                            empaque_ancho = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            unidadMedida = line.Split(",")(22)
+                        Catch ex As Exception
+                            unidadMedida = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            claveProdServ = line.Split(",")(23)
+                        Catch ex As Exception
+                            claveProdServ = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            moneda = line.Split(",")(24)
+                        Catch ex As Exception
+                            moneda = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            tasa = line.Split(",")(25)
+                        Catch ex As Exception
+                            tasa = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            claveSat = line.Split(",")(26)
+                        Catch ex As Exception
+                            claveSat = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            marketPlaceLiverpool = line.Split(",")(27)
+                        Catch ex As Exception
+                            marketPlaceLiverpool = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            marketPlaceShopify = line.Split(",")(28)
+                        Catch ex As Exception
+                            marketPlaceShopify = ""
+                        End Try
+
+                        ' CODIGO REORDEN
+                        Try
+                            marketPlaceAcctivity = line.Split(",")(29)
+                        Catch ex As Exception
+                            marketPlaceAcctivity = ""
                         End Try
 
                         '???
@@ -825,7 +974,7 @@ Partial Class portalcfd_Productos
                         End Try
 
                         Try
-                            Dim rowClaveSat() As DataRow = dtConceptosDetalle.Select("clavesat = '" & LTrim(RTrim(claveSat)).ToString & "'")
+                            Dim rowClaveSat() As DataRow = dtConceptosDetalle.Select("claveSat = '" & LTrim(RTrim(claveSat)).ToString & "'")
                             For Each row As DataRow In rowClaveSat
                                 claveSat = row(0)
                             Next
@@ -836,7 +985,7 @@ Partial Class portalcfd_Productos
                         Try
                             Dim rowUnidad() As DataRow = dtConceptosDetalle.Select("unidad = '" & LTrim(RTrim(unidad)).ToString & "'")
                             For Each row As DataRow In rowUnidad
-                                rowUnidad = row(0)
+                                unidad = row(0)
                             Next
                         Catch ex As Exception
                             unidad = 0
@@ -845,85 +994,253 @@ Partial Class portalcfd_Productos
                         Try
                             Dim rowDescripcion() As DataRow = dtConceptosDetalle.Select("descripcion = '" & LTrim(RTrim(descripcion)).ToString & "'")
                             For Each row As DataRow In rowDescripcion
-                                rowDescripcion = row(0)
+                                descripcion = row(0)
                             Next
                         Catch ex As Exception
                             descripcion = 0
                         End Try
 
                         Try
-                            Dim rowMarcaId() As DataRow = dtConceptosDetalle.Select("marcaId = '" & LTrim(RTrim(marcaId)).ToString & "'")
-                            For Each row As DataRow In rowMarcaId
-                                rowMarcaId = row(0)
+                            Dim rowDescripcion_corta() As DataRow = dtConceptosDetalle.Select("descripcion_corta = '" & LTrim(RTrim(descripcion_corta)).ToString & "'")
+                            For Each row As DataRow In rowDescripcion_corta
+                                descripcion_corta = row(0)
                             Next
                         Catch ex As Exception
-                            marcaId = 0
+                            descripcion_corta = 0
                         End Try
 
                         Try
-                            Dim rowColeccionId() As DataRow = dtConceptosDetalle.Select("coleccionid = '" & LTrim(RTrim(coleccionId)).ToString & "'")
-                            For Each row As DataRow In rowColeccionId
-                                rowColeccionId = row(0)
+                            Dim rowMarca() As DataRow = dtConceptosDetalle.Select("marca = '" & LTrim(RTrim(marca)).ToString & "'")
+                            For Each row As DataRow In rowMarca
+                                marca = row(0)
                             Next
                         Catch ex As Exception
-                            coleccionId = 0
+                            marca = 0
                         End Try
 
                         Try
-                            Dim rowPrecioUnit1() As DataRow = dtConceptosDetalle.Select("precioUnit1 = '" & LTrim(RTrim(precioUnit1)).ToString & "'")
-                            For Each row As DataRow In rowPrecioUnit1
-                                rowPrecioUnit1 = row(0)
+                            Dim rowTemporada() As DataRow = dtConceptosDetalle.Select("temporada = '" & LTrim(RTrim(temporada)).ToString & "'")
+                            For Each row As DataRow In rowTemporada
+                                temporada = row(0)
                             Next
                         Catch ex As Exception
-                            precioUnit1 = 0
+                            temporada = 0
                         End Try
 
                         Try
-                            Dim rowPrecioUnit2() As DataRow = dtConceptosDetalle.Select("precioUnit2 = '" & LTrim(RTrim(precioUnit2)).ToString & "'")
-                            For Each row As DataRow In rowPrecioUnit2
-                                rowPrecioUnit2 = row(0)
+                            Dim rowUnitario1() As DataRow = dtConceptosDetalle.Select("unitario1 = '" & LTrim(RTrim(unitario1)).ToString & "'")
+                            For Each row As DataRow In rowUnitario1
+                                unitario1 = row(0)
                             Next
                         Catch ex As Exception
-                            precioUnit2 = 0
+                            unitario1 = 0
                         End Try
 
                         Try
-                            Dim rowPrecioUnit3() As DataRow = dtConceptosDetalle.Select("precioUnit3 = '" & LTrim(RTrim(precioUnit3)).ToString & "'")
-                            For Each row As DataRow In rowPrecioUnit3
-                                rowPrecioUnit3 = row(0)
+                            Dim rowUnitario2() As DataRow = dtConceptosDetalle.Select("unitario2 = '" & LTrim(RTrim(unitario2)).ToString & "'")
+                            For Each row As DataRow In rowUnitario2
+                                unitario2 = row(0)
                             Next
                         Catch ex As Exception
-                            precioUnit3 = 0
+                            unitario2 = 0
                         End Try
 
                         Try
-                            Dim rowPrecioUnit4() As DataRow = dtConceptosDetalle.Select("precioUnit4 = '" & LTrim(RTrim(precioUnit4)).ToString & "'")
-                            For Each row As DataRow In rowPrecioUnit4
-                                rowPrecioUnit4 = row(0)
+                            Dim rowUnitario3() As DataRow = dtConceptosDetalle.Select("unitario3 = '" & LTrim(RTrim(unitario3)).ToString & "'")
+                            For Each row As DataRow In rowUnitario3
+                                unitario3 = row(0)
                             Next
                         Catch ex As Exception
-                            precioUnit4 = 0
+                            unitario3 = 0
                         End Try
 
-                        'borrar esto, no se ocupa
                         Try
-                            Dim rowPrecioUnit5() As DataRow = dtConceptosDetalle.Select("precioUnit5 = '" & LTrim(RTrim(precioUnit5)).ToString & "'")
-                            For Each row As DataRow In rowPrecioUnit5
-                                rowPrecioUnit5 = row(0)
+                            Dim rowUnitario4() As DataRow = dtConceptosDetalle.Select("unitario4 = '" & LTrim(RTrim(unitario4)).ToString & "'")
+                            For Each row As DataRow In rowUnitario4
+                                unitario4 = row(0)
                             Next
                         Catch ex As Exception
-                            precioUnit5 = 0
+                            unitario4 = 0
                         End Try
 
-                        'borrar esto, no se ocupa
                         Try
-                            Dim rowPrecioUnit6() As DataRow = dtConceptosDetalle.Select("precioUnit6 = '" & LTrim(RTrim(precioUnit6)).ToString & "'")
-                            For Each row As DataRow In rowPrecioUnit6
-                                rowPrecioUnit6 = row(0)
+                            Dim rowModelo_estilo() As DataRow = dtConceptosDetalle.Select("modelo_estilo = '" & LTrim(RTrim(modelo_estilo)).ToString & "'")
+                            For Each row As DataRow In rowModelo_estilo
+                                modelo_estilo = row(0)
                             Next
                         Catch ex As Exception
-                            precioUnit6 = 0
+                            modelo_estilo = 0
                         End Try
+
+                        Try
+                            Dim rowPlataforma() As DataRow = dtConceptosDetalle.Select("plataforma = '" & LTrim(RTrim(plataforma)).ToString & "'")
+                            For Each row As DataRow In rowPlataforma
+                                plataforma = row(0)
+                            Next
+                        Catch ex As Exception
+                            plataforma = 0
+                        End Try
+
+                        Try
+                            Dim rowGenero() As DataRow = dtConceptosDetalle.Select("genero = '" & LTrim(RTrim(genero)).ToString & "'")
+                            For Each row As DataRow In rowGenero
+                                genero = row(0)
+                            Next
+                        Catch ex As Exception
+                            genero = 0
+                        End Try
+
+                        Try
+                            Dim rowTallaUSA() As DataRow = dtConceptosDetalle.Select("tallaUSA = '" & LTrim(RTrim(tallaUSA)).ToString & "'")
+                            For Each row As DataRow In rowTallaUSA
+                                tallaUSA = row(0)
+                            Next
+                        Catch ex As Exception
+                            tallaUSA = 0
+                        End Try
+
+                        Try
+                            Dim rowTallaMX() As DataRow = dtConceptosDetalle.Select("tallaMX = '" & LTrim(RTrim(tallaMX)).ToString & "'")
+                            For Each row As DataRow In rowTallaMX
+                                tallaMX = row(0)
+                            Next
+                        Catch ex As Exception
+                            tallaMX = 0
+                        End Try
+
+                        Try
+                            Dim rowColor() As DataRow = dtConceptosDetalle.Select("color = '" & LTrim(RTrim(color)).ToString & "'")
+                            For Each row As DataRow In rowColor
+                                color = row(0)
+                            Next
+                        Catch ex As Exception
+                            color = 0
+                        End Try
+
+                        Try
+                            Dim rowColorMX() As DataRow = dtConceptosDetalle.Select("colorMX = '" & LTrim(RTrim(colorMX)).ToString & "'")
+                            For Each row As DataRow In rowColorMX
+                                colorMX = row(0)
+                            Next
+                        Catch ex As Exception
+                            colorMX = 0
+                        End Try
+
+                        Try
+                            Dim rowMaterial() As DataRow = dtConceptosDetalle.Select("material = '" & LTrim(RTrim(material)).ToString & "'")
+                            For Each row As DataRow In rowMaterial
+                                material = row(0)
+                            Next
+                        Catch ex As Exception
+                            material = 0
+                        End Try
+
+                        Try
+                            Dim rowPeso() As DataRow = dtConceptosDetalle.Select("peso = '" & LTrim(RTrim(peso)).ToString & "'")
+                            For Each row As DataRow In rowPeso
+                                peso = row(0)
+                            Next
+                        Catch ex As Exception
+                            peso = 0
+                        End Try
+
+                        Try
+                            Dim rowEmpaque_alto() As DataRow = dtConceptosDetalle.Select("empaque_alto = '" & LTrim(RTrim(empaque_alto)).ToString & "'")
+                            For Each row As DataRow In rowEmpaque_alto
+                                empaque_alto = row(0)
+                            Next
+                        Catch ex As Exception
+                            empaque_alto = 0
+                        End Try
+
+                        Try
+                            Dim rowEmpaque_largo() As DataRow = dtConceptosDetalle.Select("empaque_largo = '" & LTrim(RTrim(empaque_largo)).ToString & "'")
+                            For Each row As DataRow In rowEmpaque_largo
+                                empaque_largo = row(0)
+                            Next
+                        Catch ex As Exception
+                            empaque_largo = 0
+                        End Try
+
+                        Try
+                            Dim rowEmpaque_ancho() As DataRow = dtConceptosDetalle.Select("empaque_ancho = '" & LTrim(RTrim(empaque_ancho)).ToString & "'")
+                            For Each row As DataRow In rowEmpaque_ancho
+                                empaque_ancho = row(0)
+                            Next
+                        Catch ex As Exception
+                            empaque_ancho = 0
+                        End Try
+
+                        Try
+                            Dim rowUnidadMedida() As DataRow = dtConceptosDetalle.Select("unidadMedida = '" & LTrim(RTrim(unidadMedida)).ToString & "'")
+                            For Each row As DataRow In rowUnidadMedida
+                                unidadMedida = row(0)
+                            Next
+                        Catch ex As Exception
+                            unidadMedida = 0
+                        End Try
+
+                        Try
+                            Dim rowMoneda() As DataRow = dtConceptosDetalle.Select("moneda = '" & LTrim(RTrim(moneda)).ToString & "'")
+                            For Each row As DataRow In rowMoneda
+                                moneda = row(0)
+                            Next
+                        Catch ex As Exception
+                            moneda = 0
+                        End Try
+
+                        Try
+                            Dim rowClaveProdServ() As DataRow = dtConceptosDetalle.Select("claveProdServ = '" & LTrim(RTrim(claveProdServ)).ToString & "'")
+                            For Each row As DataRow In rowClaveProdServ
+                                claveProdServ = row(0)
+                            Next
+                        Catch ex As Exception
+                            claveProdServ = 0
+                        End Try
+
+                        Try
+                            Dim rowTasa() As DataRow = dtConceptosDetalle.Select("tasa = '" & LTrim(RTrim(tasa)).ToString & "'")
+                            For Each row As DataRow In rowTasa
+                                tasa = row(0)
+                            Next
+                        Catch ex As Exception
+                            tasa = 0
+                        End Try
+
+                        Try
+                            Dim rowMarketPlaceLiverpool() As DataRow = dtConceptosDetalle.Select("marketPlaceLiverpool = '" & LTrim(RTrim(marketPlaceLiverpool)).ToString & "'")
+                            For Each row As DataRow In rowMarketPlaceLiverpool
+                                marketPlaceLiverpool = row(0)
+                            Next
+                        Catch ex As Exception
+                            marketPlaceLiverpool = 0
+                        End Try
+
+                        Try
+                            Dim rowMarketPlaceShopify() As DataRow = dtConceptosDetalle.Select("marketPlaceShopify = '" & LTrim(RTrim(marketPlaceShopify)).ToString & "'")
+                            For Each row As DataRow In rowMarketPlaceShopify
+                                marketPlaceShopify = row(0)
+                            Next
+                        Catch ex As Exception
+                            marketPlaceShopify = 0
+                        End Try
+
+                        Try
+                            Dim rowMarketPlaceAcctivity() As DataRow = dtConceptosDetalle.Select("marketPlaceAcctivity = '" & LTrim(RTrim(marketPlaceAcctivity)).ToString & "'")
+                            For Each row As DataRow In rowMarketPlaceAcctivity
+                                marketPlaceAcctivity = row(0)
+                            Next
+                        Catch ex As Exception
+                            marketPlaceAcctivity = 0
+                        End Try
+
+                        'validaciones
+                        proyectoId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=16, @marca='" & marca & "'")
+                        coleccionId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=17, @temporada='" & temporada & "'")
+                        monedaId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=18, @moneda='" & moneda & "'")
+                        generoId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=19, @genero='" & genero & "'")
+                        tasaId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=20, @tasa='" & tasa & "'")
+
 
                         If codigo.Length > 0 Then
                             ' Dim productoid As Long
@@ -964,19 +1281,43 @@ Partial Class portalcfd_Productos
                                 Dim p As New ArrayList
                                 p.Add(New SqlParameter("@cmd", 7))
                                 p.Add(New SqlParameter("@cargaid", cargaid))
+
                                 p.Add(New SqlParameter("@codigo", codigo))
                                 p.Add(New SqlParameter("@upc", upc))
-                                p.Add(New SqlParameter("@clavesat", claveSat))
                                 p.Add(New SqlParameter("@unidad", unidad))
                                 p.Add(New SqlParameter("@descripcion", descripcion))
-                                p.Add(New SqlParameter("@marcaId", marcaId))
+                                p.Add(New SqlParameter("@descripcion_corta", descripcion_corta))
+                                p.Add(New SqlParameter("@marca", marca))
+                                p.Add(New SqlParameter("@temporada", temporada))
                                 p.Add(New SqlParameter("@coleccionId", coleccionId))
-                                p.Add(New SqlParameter("@precioUnit1", precioUnit1))
-                                p.Add(New SqlParameter("@precioUnit2", precioUnit2))
-                                p.Add(New SqlParameter("@precioUnit3", precioUnit3))
-                                p.Add(New SqlParameter("@precioUnit4", precioUnit4))
-                                p.Add(New SqlParameter("@precioUnit5", precioUnit5))
-                                p.Add(New SqlParameter("@precioUnit6", precioUnit6))
+                                p.Add(New SqlParameter("@unitario1", unitario1))
+                                p.Add(New SqlParameter("@unitario2", unitario2))
+                                p.Add(New SqlParameter("@unitario3", unitario3))
+                                p.Add(New SqlParameter("@unitario4", unitario4))
+                                p.Add(New SqlParameter("@modelo_estilo", modelo_estilo))
+                                p.Add(New SqlParameter("@plataforma", plataforma))
+                                p.Add(New SqlParameter("@genero", genero))
+                                p.Add(New SqlParameter("@tallaUSA", tallaUSA))
+                                p.Add(New SqlParameter("@tallaMX", tallaMX))
+                                p.Add(New SqlParameter("@color", color))
+                                p.Add(New SqlParameter("@colorMX", colorMX))
+                                p.Add(New SqlParameter("@material", material))
+                                p.Add(New SqlParameter("@peso", peso))
+                                p.Add(New SqlParameter("@empaque_alto", empaque_alto))
+                                p.Add(New SqlParameter("@empaque_largo", empaque_largo))
+                                p.Add(New SqlParameter("@empaque_ancho", empaque_ancho))
+                                p.Add(New SqlParameter("@unidadMedida", unidadMedida))
+                                p.Add(New SqlParameter("@claveProdServ", claveProdServ))
+                                p.Add(New SqlParameter("@moneda", moneda))
+                                p.Add(New SqlParameter("@tasa", tasa))
+                                p.Add(New SqlParameter("@claveSat", claveSat))
+
+
+                                p.Add(New SqlParameter("@marketPlaceLiverpool", Trim(marketPlaceLiverpool)))
+                                p.Add(New SqlParameter("@marketPlaceShopify", Trim(marketPlaceShopify)))
+                                p.Add(New SqlParameter("@marketPlaceAcctivity", Trim(marketPlaceAcctivity)))
+
+
                                 p.Add(New SqlParameter("@error", "El código " & codigo & " ya está registrado."))
                                 ' p.Add(New SqlParameter("@ordenId", Request("id").ToString))
                                 ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
@@ -987,19 +1328,41 @@ Partial Class portalcfd_Productos
                                 Dim p As New ArrayList
                                 p.Add(New SqlParameter("@cmd", 3))
                                 p.Add(New SqlParameter("@cargaid", cargaid))
+
                                 p.Add(New SqlParameter("@codigo", codigo))
                                 p.Add(New SqlParameter("@upc", upc))
-                                p.Add(New SqlParameter("@clavesat", claveSat))
                                 p.Add(New SqlParameter("@unidad", unidad))
                                 p.Add(New SqlParameter("@descripcion", descripcion))
-                                p.Add(New SqlParameter("@marcaId", marcaId))
+                                p.Add(New SqlParameter("@descripcion_corta", descripcion_corta))
+                                p.Add(New SqlParameter("@marca", marca))
+                                p.Add(New SqlParameter("@temporada", temporada))
                                 p.Add(New SqlParameter("@coleccionId", coleccionId))
-                                p.Add(New SqlParameter("@precioUnit1", precioUnit1))
-                                p.Add(New SqlParameter("@precioUnit2", precioUnit2))
-                                p.Add(New SqlParameter("@precioUnit3", precioUnit3))
-                                p.Add(New SqlParameter("@precioUnit4", precioUnit4))
-                                p.Add(New SqlParameter("@precioUnit5", precioUnit5))
-                                p.Add(New SqlParameter("@precioUnit6", precioUnit6))
+                                p.Add(New SqlParameter("@unitario1", unitario1))
+                                p.Add(New SqlParameter("@unitario2", unitario2))
+                                p.Add(New SqlParameter("@unitario3", unitario3))
+                                p.Add(New SqlParameter("@unitario4", unitario4))
+                                p.Add(New SqlParameter("@modelo_estilo", modelo_estilo))
+                                p.Add(New SqlParameter("@plataforma", plataforma))
+                                p.Add(New SqlParameter("@genero", genero))
+                                p.Add(New SqlParameter("@tallaUSA", tallaUSA))
+                                p.Add(New SqlParameter("@tallaMX", tallaMX))
+                                p.Add(New SqlParameter("@color", color))
+                                p.Add(New SqlParameter("@colorMX", colorMX))
+                                p.Add(New SqlParameter("@material", material))
+                                p.Add(New SqlParameter("@peso", peso))
+                                p.Add(New SqlParameter("@empaque_alto", empaque_alto))
+                                p.Add(New SqlParameter("@empaque_largo", empaque_largo))
+                                p.Add(New SqlParameter("@empaque_ancho", empaque_ancho))
+                                p.Add(New SqlParameter("@unidadMedida", unidadMedida))
+                                p.Add(New SqlParameter("@claveProdServ", claveProdServ))
+                                p.Add(New SqlParameter("@moneda", moneda))
+                                p.Add(New SqlParameter("@tasa", tasa))
+                                p.Add(New SqlParameter("@claveSat", claveSat))
+
+                                p.Add(New SqlParameter("@marketPlaceLiverpool", Trim(marketPlaceLiverpool)))
+                                p.Add(New SqlParameter("@marketPlaceShopify", Trim(marketPlaceShopify)))
+                                p.Add(New SqlParameter("@marketPlaceAcctivity", Trim(marketPlaceAcctivity)))
+
                                 'p.Add(New SqlParameter("@ordenId", Request("id").ToString))
                                 ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
                                 registros_correctos = registros_correctos + 1
@@ -1030,19 +1393,41 @@ Partial Class portalcfd_Productos
                             Dim p As New ArrayList
                             p.Add(New SqlParameter("@cmd", 7))
                             p.Add(New SqlParameter("@cargaid", cargaid))
+
                             p.Add(New SqlParameter("@codigo", codigo))
                             p.Add(New SqlParameter("@upc", upc))
-                            p.Add(New SqlParameter("@clavesat", claveSat))
                             p.Add(New SqlParameter("@unidad", unidad))
                             p.Add(New SqlParameter("@descripcion", descripcion))
-                            p.Add(New SqlParameter("@marcaId", marcaId))
+                            p.Add(New SqlParameter("@descripcion_corta", descripcion_corta))
+                            p.Add(New SqlParameter("@marca", marca))
+                            p.Add(New SqlParameter("@temporada", temporada))
                             p.Add(New SqlParameter("@coleccionId", coleccionId))
-                            p.Add(New SqlParameter("@precioUnit1", precioUnit1))
-                            p.Add(New SqlParameter("@precioUnit2", precioUnit2))
-                            p.Add(New SqlParameter("@precioUnit3", precioUnit3))
-                            p.Add(New SqlParameter("@precioUnit4", precioUnit4))
-                            p.Add(New SqlParameter("@precioUnit5", precioUnit5))
-                            p.Add(New SqlParameter("@precioUnit6", precioUnit6))
+                            p.Add(New SqlParameter("@unitario1", unitario1))
+                            p.Add(New SqlParameter("@unitario2", unitario2))
+                            p.Add(New SqlParameter("@unitario3", unitario3))
+                            p.Add(New SqlParameter("@unitario4", unitario4))
+                            p.Add(New SqlParameter("@modelo_estilo", modelo_estilo))
+                            p.Add(New SqlParameter("@plataforma", plataforma))
+                            p.Add(New SqlParameter("@genero", genero))
+                            p.Add(New SqlParameter("@tallaUSA", tallaUSA))
+                            p.Add(New SqlParameter("@tallaMX", tallaMX))
+                            p.Add(New SqlParameter("@color", color))
+                            p.Add(New SqlParameter("@colorMX", colorMX))
+                            p.Add(New SqlParameter("@material", material))
+                            p.Add(New SqlParameter("@peso", peso))
+                            p.Add(New SqlParameter("@empaque_alto", empaque_alto))
+                            p.Add(New SqlParameter("@empaque_largo", empaque_largo))
+                            p.Add(New SqlParameter("@empaque_ancho", empaque_ancho))
+                            p.Add(New SqlParameter("@unidadMedida", unidadMedida))
+                            p.Add(New SqlParameter("@claveProdServ", claveProdServ))
+                            p.Add(New SqlParameter("@moneda", moneda))
+                            p.Add(New SqlParameter("@tasa", tasa))
+                            p.Add(New SqlParameter("@claveSat", claveSat))
+
+                            p.Add(New SqlParameter("@marketPlaceLiverpool", Trim(marketPlaceLiverpool)))
+                            p.Add(New SqlParameter("@marketPlaceShopify", Trim(marketPlaceShopify)))
+                            p.Add(New SqlParameter("@marketPlaceAcctivity", Trim(marketPlaceAcctivity)))
+
                             p.Add(New SqlParameter("@error", msgerror))
                             'p.Add(New SqlParameter("@ordenId", Request("id").ToString))
                             ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
@@ -1142,7 +1527,179 @@ Partial Class portalcfd_Productos
         erroresList.DataSource = ObjData.FillDataSet("exec pCargaProductosCsv @cmd=10, @cargaid='" & cargaidHidden.Value.ToString & "'")
         ObjData = Nothing
     End Sub
+    Protected Sub btnAddorderParcial_Click(sender As Object, e As EventArgs) Handles btnAddorderParcial.Click
 
+        Try
+            Dim ObjData2 As New DataControl
+
+            '
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")
+            Thread.CurrentThread.CurrentUICulture = New CultureInfo("en-US")
+            '
+
+
+            Dim ObjData As New DataControl
+            Dim codigo As String = ""
+            Dim upc As String = ""
+            Dim descripcion As String = ""
+            Dim descripcion_corta As String = ""
+            Dim marca As String = ""
+            Dim temporada As String = ""
+            Dim unitario1 As Double = 0.00
+            Dim unitario2 As Double = 0.00
+            Dim unitario3 As Double = 0.00
+            Dim unitario4 As Double = 0.00
+            Dim modelo_estilo As String = ""
+            Dim plataforma As String = ""
+            Dim genero As String = ""
+            Dim tallaUSA As String = ""
+            Dim tallaMX As String = ""
+            Dim color As String = ""
+            Dim colorMX As String = ""
+            Dim material As String = ""
+            Dim peso As String = ""
+            Dim empaque_alto As String = ""
+            Dim empaque_largo As String = ""
+            Dim empaque_ancho As String = ""
+            Dim unidadMedida As String = ""
+            Dim claveProdServ As String = ""
+            Dim moneda As String = ""
+            Dim tasa As String = ""
+            Dim claveSat As String = ""
+            Dim proyectoId As Integer = 0
+            Dim coleccionId As Integer = 0
+            Dim monedaId As Integer = 0
+            Dim tasaId As Integer = 0
+            Dim generoId As Integer = 0
+            Dim objImpId As Integer = 0
+            Dim marketPlaceLiverpool As String = ""
+            Dim marketPlaceShopify As String = ""
+            Dim marketPlaceAcctivity As String = ""
+
+            For Each row As GridDataItem In resultslistCSV.MasterTableView.Items
+
+                'conceptoId = row.GetDataKeyValue("id")
+                codigo = row.GetDataKeyValue("codigo")
+                upc = row.GetDataKeyValue("upc")
+                descripcion = row.GetDataKeyValue("descripcion")
+                descripcion_corta = row.GetDataKeyValue("descripcion_corta")
+                marca = row.GetDataKeyValue("marca")
+                temporada = row.GetDataKeyValue("temporada")
+                unitario1 = row.GetDataKeyValue("unitario1")
+                unitario2 = row.GetDataKeyValue("unitario2")
+                unitario3 = row.GetDataKeyValue("unitario3")
+                unitario4 = row.GetDataKeyValue("unitario4")
+                modelo_estilo = row.GetDataKeyValue("modelo_estilo")
+                plataforma = row.GetDataKeyValue("plataforma")
+                genero = row.GetDataKeyValue("genero")
+                tallaUSA = row.GetDataKeyValue("tallaUSA")
+                tallaMX = row.GetDataKeyValue("tallaMX")
+                color = row.GetDataKeyValue("color")
+                colorMX = row.GetDataKeyValue("colorMX")
+                material = row.GetDataKeyValue("material")
+                peso = row.GetDataKeyValue("peso")
+                empaque_alto = row.GetDataKeyValue("empaque_alto")
+                empaque_largo = row.GetDataKeyValue("empaque_largo")
+                empaque_ancho = row.GetDataKeyValue("empaque_ancho")
+                unidadMedida = row.GetDataKeyValue("unidadMedida")
+                claveProdServ = row.GetDataKeyValue("claveProdServ")
+                moneda = row.GetDataKeyValue("moneda")
+                tasa = row.GetDataKeyValue("tasa")
+                claveSat = row.GetDataKeyValue("claveSat")
+                proyectoId = row.GetDataKeyValue("proyectoId")
+                coleccionId = row.GetDataKeyValue("coleccionId")
+                monedaId = row.GetDataKeyValue("monedaId")
+                tasaId = row.GetDataKeyValue("tasaId")
+                generoId = row.GetDataKeyValue("generoId")
+                objImpId = row.GetDataKeyValue("objImpId")
+                marketPlaceLiverpool = row.GetDataKeyValue("marketPlaceLiverpool")
+                marketPlaceShopify = row.GetDataKeyValue("marketPlaceShopify")
+                marketPlaceAcctivity = row.GetDataKeyValue("marketPlaceAcctivity")
+
+                'Filtro unidad quito guiòn solo tomo primeras letras
+
+
+                If codigo.Length > 0 Then
+
+                    Dim p As New ArrayList
+                    p.Add(New SqlParameter("@cmd", 19))
+                    p.Add(New SqlParameter("@codigo", codigo.ToString))
+                    p.Add(New SqlParameter("@upc", upc.ToString))
+                    p.Add(New SqlParameter("@descripcion", descripcion.ToString))
+                    p.Add(New SqlParameter("@descripcion_corta", descripcion_corta.ToString))
+                    p.Add(New SqlParameter("@claveunidad", unidadMedida.ToString))
+
+                    p.Add(New SqlParameter("@genero", genero.ToString))
+                    p.Add(New SqlParameter("@generoId", generoId.ToString))
+
+                    p.Add(New SqlParameter("@unitario", unitario1.ToString))
+                    p.Add(New SqlParameter("@unitario2", unitario2.ToString))
+                    p.Add(New SqlParameter("@unitario3", unitario3.ToString))
+                    p.Add(New SqlParameter("@unitario4", unitario4.ToString))
+
+                    p.Add(New SqlParameter("@tasaId", tasaId.ToString))
+                    p.Add(New SqlParameter("@monedaId", monedaId.ToString))
+
+                    p.Add(New SqlParameter("@coleccionId", coleccionId.ToString))
+                    p.Add(New SqlParameter("@proyectoId", proyectoId.ToString))
+
+                    p.Add(New SqlParameter("@claveprodserv", claveProdServ.ToString))
+
+
+                    p.Add(New SqlParameter("@objImpId", objImpId.ToString))
+
+                    p.Add(New SqlParameter("@modeloEstilo", modelo_estilo.ToString))
+
+                    p.Add(New SqlParameter("@plataforma", plataforma.ToString))
+
+                    'p.Add(New SqlParameter("@temporada", temporada.ToString))
+                    p.Add(New SqlParameter("@tallaUSA", tallaUSA.ToString))
+                    p.Add(New SqlParameter("@tallaMX", tallaMX.ToString))
+                    p.Add(New SqlParameter("@color", color.ToString))
+                    p.Add(New SqlParameter("@colorMX", colorMX.ToString))
+                    p.Add(New SqlParameter("@material", material.ToString))
+                    p.Add(New SqlParameter("@peso", peso.ToString))
+                    p.Add(New SqlParameter("@empaqueAlto", empaque_alto.ToString))
+                    p.Add(New SqlParameter("@empaqueLargo", empaque_largo.ToString))
+                    p.Add(New SqlParameter("@empaqueAncho", empaque_ancho.ToString))
+
+                    'p.Add(New SqlParameter("@unidadMedida", unidadMedida.ToString))
+                    'p.Add(New SqlParameter("@moneda", moneda.ToString))
+                    'p.Add(New SqlParameter("@tasa", tasa.ToString))
+                    'p.Add(New SqlParameter("@claveSat", claveSat.ToString))
+
+                    p.Add(New SqlParameter("@marketPlaceLiverpool", marketPlaceLiverpool.ToString))
+                    p.Add(New SqlParameter("@marketPlaceShopify", marketPlaceShopify.ToString))
+                    p.Add(New SqlParameter("@marketPlaceAcctivity", marketPlaceAcctivity.ToString))
+
+                    ObjData.ExecuteNonQueryWithParams("pMisProductos", p)
+                    lblMensajeCSV.Text = "Poductos Guardados."
+                End If
+
+            Next        '
+
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-MX")
+            Thread.CurrentThread.CurrentUICulture = New CultureInfo("es-MX")
+            '
+
+            '
+
+            'Call CargaConceptos()
+            'Call CargaListaOrdenesParciales()
+            panelCSV.Visible = False
+            panelErrores.Visible = False
+
+            resultslistCSV.DataSource = Nothing
+            resultslistCSV.DataBind()
+            erroresList.DataSource = Nothing
+            erroresList.DataBind()
+
+        Catch ex As Exception
+            lblMensajeCSV.Text = "Error: " & ex.Message.ToString
+        Finally
+        End Try
+
+    End Sub
 #End Region
 
 #Region "Carga de CVS Cambio de Precios"

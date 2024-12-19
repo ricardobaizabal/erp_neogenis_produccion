@@ -50,6 +50,25 @@ CREATE TABLE [dbo].[tblCargaProductoCsvDetalle](
 ) ON [PRIMARY]
 GO
 
+ALTER TABLE tblCargaProductoCsvDetalle ADD moneda varchar(50)
+ALTER TABLE tblCargaProductoCsvDetalle ADD tasa varchar(50)
+ALTER TABLE tblCargaProductoCsvDetalle ADD claveSat varchar(50)
+
+--estos campos se llenan bajo las aguas
+ALTER TABLE tblCargaProductoCsvDetalle ADD marcaId int 
+ALTER TABLE tblCargaProductoCsvDetalle ADD coleccionId int 
+ALTER TABLE tblCargaProductoCsvDetalle ADD proyectoId int 
+ALTER TABLE tblCargaProductoCsvDetalle ADD generoId int 
+ALTER TABLE tblCargaProductoCsvDetalle ADD tasaId int 
+ALTER TABLE tblCargaProductoCsvDetalle ADD monedaId int 
+ALTER TABLE tblCargaProductoCsvDetalle ADD objImpId int 
+
+--marketplaces
+ALTER TABLE tblCargaProductoCsvDetalle ADD marketPlaceLiverpool varchar(2)  
+ALTER TABLE tblCargaProductoCsvDetalle ADD marketPlaceShopify varchar(2)  
+ALTER TABLE tblCargaProductoCsvDetalle ADD marketPlaceAcctivity varchar(2)  
+--ALTER TABLE tblCargaProductoCsvDetalle ADD marketPlaceDeporprive bit
+--ALTER TABLE tblCargaProductoCsvDetalle ADD marketPlaceMarti bit
 
 --
 CREATE TABLE [dbo].[tblCargaProductoCsvDetalleError](
@@ -82,3 +101,28 @@ CREATE TABLE [dbo].[tblCargaProductoCsvDetalleError](
 	[error] [varchar](max) NULL
 ) ON [PRIMARY]
 GO
+
+
+ALTER TABLE tblCargaProductoCsvDetalleError ADD moneda varchar(50)
+ALTER TABLE tblCargaProductoCsvDetalleError ADD tasa varchar(50)
+ALTER TABLE tblCargaProductoCsvDetalleError ADD claveSat varchar(50)
+
+ALTER TABLE tblCargaProductoCsvDetalleError ADD marcaId int 
+ALTER TABLE tblCargaProductoCsvDetalleError ADD coleccionId int 
+ALTER TABLE tblCargaProductoCsvDetalleError ADD proyectoId int 
+ALTER TABLE tblCargaProductoCsvDetalleError ADD generoId int 
+ALTER TABLE tblCargaProductoCsvDetalleError ADD tasaId int 
+ALTER TABLE tblCargaProductoCsvDetalleError ADD monedaId int 
+ALTER TABLE tblCargaProductoCsvDetalleError ADD objImpId int 
+
+
+ALTER TABLE tblCargaProductoCsvDetalleError ADD marketPlaceLiverpool varchar(2)  
+ALTER TABLE tblCargaProductoCsvDetalleError ADD marketPlaceShopify varchar(2)  
+ALTER TABLE tblCargaProductoCsvDetalleError ADD marketPlaceAcctivity varchar(2) 
+--ALTER TABLE tblCargaProductoCsvDetalleError ADD marketPlaceDeporprive bit
+--ALTER TABLE tblCargaProductoCsvDetalleError ADD marketPlaceMarti bit
+
+--rollback por si acaso
+--DROP TABLE tblCargaProductoCsvDetalle
+--DROP TABLE tblCargaProductoCsvDetalleError
+--DROP TABLE tblCargaProductoCsv

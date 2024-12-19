@@ -741,38 +741,84 @@
             <telerik:RadGrid ID="resultslistCSV" runat="server" Width="100%" ShowStatusBar="True"
                 AutoGenerateColumns="False" AllowPaging="True" GridLines="None" Skin="Simple">
                 <PagerStyle Mode="NumericPages"></PagerStyle>
-                <MasterTableView NoMasterRecordsText="No se encontraron registros." Width="100%" DataKeyNames="codigo,upc,descripcion,claveSat,unidad,marcaId,coleccionId,precioUnit1,precioUnit2,precioUnit3,precioUnit4,precioUnit5,precioUnit6" Name="Products" AllowMultiColumnSorting="False">
+                <MasterTableView NoMasterRecordsText="No se encontraron registros." Width="100%" DataKeyNames="codigo,upc,descripcion,descripcion_corta,marca,temporada,unitario1,unitario2,unitario3,unitario4,modelo_estilo,plataforma,genero,tallaUSA,tallaMX,color,colorMX,material,peso,empaque_alto,empaque_largo,empaque_ancho,unidadMedida, moneda, claveProdServ,tasa,claveSat,proyectoId,coleccionId,monedaId,tasaId,generoId, objImpId, marketPlaceLiverpool, marketPlaceShopify, marketPlaceAcctivity" Name="Products" AllowMultiColumnSorting="False">
                     <Columns>
-                        <telerik:GridBoundColumn DataField="codigo" ItemStyle-Width="100" HeaderText="Código" UniqueName="codigo">
+                        <telerik:GridBoundColumn DataField="codigo" ItemStyle-Width="100" HeaderText="codigo" UniqueName="codigo">
                         </telerik:GridBoundColumn>
                         <telerik:GridBoundColumn DataField="upc" ItemStyle-Width="100" HeaderText="upc" UniqueName="upc">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="descripcion" ItemStyle-Width="250" HeaderText="Descripción" UniqueName="descripcion">
+                        <telerik:GridBoundColumn DataField="descripcion" ItemStyle-Width="100" HeaderText="descripcion" UniqueName="descripcion">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="descripcion_corta" ItemStyle-Width="100" HeaderText="descripcion_corta" UniqueName="descripcion_corta">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="marca" ItemStyle-Width="100" HeaderText="marca" UniqueName="marca">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="temporada" ItemStyle-Width="100" HeaderText="temporada" UniqueName="temporada">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="unitario1" ItemStyle-Width="100" HeaderText="unitario1" UniqueName="unitario1">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="unitario2" ItemStyle-Width="100" HeaderText="unitario2" UniqueName="unitario2">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="unitario3" ItemStyle-Width="100" HeaderText="unitario3" UniqueName="unitario3">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="unitario4" ItemStyle-Width="100" HeaderText="unitario4" UniqueName="unitario4">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="modelo_estilo" ItemStyle-Width="100" HeaderText="modelo_estilo" UniqueName="modelo_estilo">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="plataforma" ItemStyle-Width="100" HeaderText="plataforma" UniqueName="plataforma">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="genero" ItemStyle-Width="100" HeaderText="genero" UniqueName="genero">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="tallaUSA" ItemStyle-Width="100" HeaderText="tallaUSA" UniqueName="tallaUSA">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="tallaMX" ItemStyle-Width="100" HeaderText="tallaMX" UniqueName="tallaMX">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="color" ItemStyle-Width="100" HeaderText="color" UniqueName="color">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="colorMX" ItemStyle-Width="100" HeaderText="colorMX" UniqueName="colorMX">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="material" ItemStyle-Width="100" HeaderText="material" UniqueName="material">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="peso" ItemStyle-Width="100" HeaderText="peso" UniqueName="peso">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="empaque_alto" ItemStyle-Width="100" HeaderText="empaque_alto" UniqueName="empaque_alto">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="empaque_largo" ItemStyle-Width="100" HeaderText="empaque_largo" UniqueName="empaque_largo">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="empaque_ancho" ItemStyle-Width="100" HeaderText="empaque_ancho" UniqueName="empaque_ancho">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="unidadMedida" ItemStyle-Width="100" HeaderText="unidadMedida" UniqueName="unidadMedida">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="claveProdServ" ItemStyle-Width="100" HeaderText="claveProdServ" UniqueName="claveProdServ">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="moneda" ItemStyle-Width="100" HeaderText="moneda" UniqueName="moneda">
+                        </telerik:GridBoundColumn>
+                        <telerik:GridBoundColumn DataField="tasa" ItemStyle-Width="100" HeaderText="tasa" UniqueName="tasa">
                         </telerik:GridBoundColumn>
                         <telerik:GridBoundColumn DataField="claveSat" ItemStyle-Width="100" HeaderText="claveSat" UniqueName="claveSat">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="unidad" ItemStyle-Width="100" HeaderText="unidad" UniqueName="unidad">
+                        <telerik:GridBoundColumn DataField="proyectoId" ItemStyle-Width="100" HeaderText="proyectoId" UniqueName="proyectoId">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="marca" ItemStyle-Width="100" HeaderText="Marca" UniqueName="marca">
+                        <telerik:GridBoundColumn DataField="coleccionId" ItemStyle-Width="100" HeaderText="coleccionId" UniqueName="coleccionId">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="marcaId" ItemStyle-Width="100" HeaderText="MarcaId" UniqueName="marcaId">
+                        <telerik:GridBoundColumn DataField="monedaId" ItemStyle-Width="100" HeaderText="monedaId" UniqueName="monedaId">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="coleccion" ItemStyle-Width="100" HeaderText="Coleccion" UniqueName="coleccionId">
+                        <telerik:GridBoundColumn DataField="tasaId" ItemStyle-Width="100" HeaderText="tasaId" UniqueName="tasaId">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="coleccionId" ItemStyle-Width="100" HeaderText="ColeccionID" UniqueName="coleccionId">
+                        <telerik:GridBoundColumn DataField="generoId" ItemStyle-Width="100" HeaderText="generoId" UniqueName="generoId">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="precioUnit1" ItemStyle-Width="100" HeaderText="precioUnit1" UniqueName="precioUnit1">
+                        <telerik:GridBoundColumn DataField="objImpId" ItemStyle-Width="100" HeaderText="objImpId" UniqueName="objImpId">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="precioUnit2" ItemStyle-Width="100" HeaderText="precioUnit2" UniqueName="precioUnit2">
+                        
+                        <telerik:GridBoundColumn DataField="marketPlaceLiverpool" ItemStyle-Width="100" HeaderText="marketPlaceLiverpool" UniqueName="marketPlaceLiverpool">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="precioUnit3" ItemStyle-Width="100" HeaderText="precioUnit3" UniqueName="precioUnit3">
+                        
+                        <telerik:GridBoundColumn DataField="marketPlaceShopify" ItemStyle-Width="100" HeaderText="marketPlaceShopify" UniqueName="marketPlaceShopify">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="precioUnit4" ItemStyle-Width="100" HeaderText="precioUnit4" UniqueName="precioUnit4">
+                        
+                        <telerik:GridBoundColumn DataField="marketPlaceAcctivity" ItemStyle-Width="100" HeaderText="marketPlaceAcctivity" UniqueName="marketPlaceAcctivity">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="precioUnit5" ItemStyle-Width="100" HeaderText="precioUnit5" UniqueName="precioUnit5">
-                        </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="precioUnit6" ItemStyle-Width="100" HeaderText="precioUnit6" UniqueName="precioUnit6">
-                        </telerik:GridBoundColumn>
+
                         <telerik:GridTemplateColumn AllowFiltering="False" HeaderStyle-HorizontalAlign="Center" Visible="false" UniqueName="Add">
                             <ItemTemplate>
                                 <asp:ImageButton ID="btnAdd" runat="server" CommandArgument='<%# Eval("codigo") %>'
@@ -805,32 +851,82 @@
                             <MasterTableView Width="100%" DataKeyNames="id" Name="Productos" AllowMultiColumnSorting="False" NoMasterRecordsText="No se encontraron registros." CommandItemDisplay="Top">
                                 <CommandItemSettings ShowRefreshButton="false" ShowAddNewRecordButton="false" ShowExportToExcelButton="true" ShowExportToPdfButton="false" ExportToExcelText="Exportar a Excel"></CommandItemSettings>
                                 <Columns>
-                                    <telerik:GridBoundColumn DataField="codigo" ItemStyle-Width="100" HeaderText="Código" UniqueName="codigo">
+                                    <telerik:GridBoundColumn DataField="codigo" ItemStyle-Width="100" HeaderText="codigo" UniqueName="codigo">
                                     </telerik:GridBoundColumn>
                                     <telerik:GridBoundColumn DataField="upc" ItemStyle-Width="100" HeaderText="upc" UniqueName="upc">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="descripcion" ItemStyle-Width="250" HeaderText="Descripción" UniqueName="descripcion">
+                                    <telerik:GridBoundColumn DataField="descripcion" ItemStyle-Width="100" HeaderText="descripcion" UniqueName="descripcion">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="descripcion_corta" ItemStyle-Width="100" HeaderText="descripcion_corta" UniqueName="descripcion_corta">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="marca" ItemStyle-Width="100" HeaderText="marca" UniqueName="marca">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="temporada" ItemStyle-Width="100" HeaderText="temporada" UniqueName="temporada">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="unitario1" ItemStyle-Width="100" HeaderText="unitario1" UniqueName="unitario1">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="unitario2" ItemStyle-Width="100" HeaderText="unitario2" UniqueName="unitario2">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="unitario3" ItemStyle-Width="100" HeaderText="unitario3" UniqueName="unitario3">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="unitario4" ItemStyle-Width="100" HeaderText="unitario4" UniqueName="unitario4">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="modelo_estilo" ItemStyle-Width="100" HeaderText="modelo_estilo" UniqueName="modelo_estilo">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="plataforma" ItemStyle-Width="100" HeaderText="plataforma" UniqueName="plataforma">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="genero" ItemStyle-Width="100" HeaderText="genero" UniqueName="genero">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="tallaUSA" ItemStyle-Width="100" HeaderText="tallaUSA" UniqueName="tallaUSA">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="tallaMX" ItemStyle-Width="100" HeaderText="tallaMX" UniqueName="tallaMX">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="color" ItemStyle-Width="100" HeaderText="color" UniqueName="color">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="colorMX" ItemStyle-Width="100" HeaderText="colorMX" UniqueName="colorMX">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="material" ItemStyle-Width="100" HeaderText="material" UniqueName="material">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="peso" ItemStyle-Width="100" HeaderText="peso" UniqueName="peso">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="empaque_alto" ItemStyle-Width="100" HeaderText="empaque_alto" UniqueName="empaque_alto">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="empaque_largo" ItemStyle-Width="100" HeaderText="empaque_largo" UniqueName="empaque_largo">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="empaque_ancho" ItemStyle-Width="100" HeaderText="empaque_ancho" UniqueName="empaque_ancho">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="unidadMedida" ItemStyle-Width="100" HeaderText="unidadMedida" UniqueName="unidadMedida">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="claveProdServ" ItemStyle-Width="100" HeaderText="claveProdServ" UniqueName="claveProdServ">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="moneda" ItemStyle-Width="100" HeaderText="moneda" UniqueName="moneda">
+                                    </telerik:GridBoundColumn>
+                                    <telerik:GridBoundColumn DataField="tasa" ItemStyle-Width="100" HeaderText="tasa" UniqueName="tasa">
                                     </telerik:GridBoundColumn>
                                     <telerik:GridBoundColumn DataField="claveSat" ItemStyle-Width="100" HeaderText="claveSat" UniqueName="claveSat">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="unidad" ItemStyle-Width="100" HeaderText="unidad" UniqueName="unidad">
+                                    <telerik:GridBoundColumn DataField="proyectoId" ItemStyle-Width="100" HeaderText="proyectoId" UniqueName="proyectoId">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="marca" ItemStyle-Width="100" HeaderText="Marca" UniqueName="marca">
+                                    <telerik:GridBoundColumn DataField="coleccionId" ItemStyle-Width="100" HeaderText="coleccionId" UniqueName="coleccionId">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="coleccion" ItemStyle-Width="100" HeaderText="Coleccion" UniqueName="coleccionId">
+                                    <telerik:GridBoundColumn DataField="monedaId" ItemStyle-Width="100" HeaderText="monedaId" UniqueName="monedaId">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="precioUnit1" ItemStyle-Width="100" HeaderText="precioUnit1" UniqueName="precioUnit1">
+                                    <telerik:GridBoundColumn DataField="tasaId" ItemStyle-Width="100" HeaderText="tasaId" UniqueName="tasaId">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="precioUnit2" ItemStyle-Width="100" HeaderText="precioUnit2" UniqueName="precioUnit2">
+                                    <telerik:GridBoundColumn DataField="generoId" ItemStyle-Width="100" HeaderText="generoId" UniqueName="generoId">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="precioUnit3" ItemStyle-Width="100" HeaderText="precioUnit3" UniqueName="precioUnit3">
+                                    <telerik:GridBoundColumn DataField="objImpId" ItemStyle-Width="100" HeaderText="objImpId" UniqueName="objImpId">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="precioUnit4" ItemStyle-Width="100" HeaderText="precioUnit4" UniqueName="precioUnit4">
+
+                                    <telerik:GridBoundColumn DataField="marketPlaceLiverpool" ItemStyle-Width="100" HeaderText="marketPlaceLiverpool" UniqueName="marketPlaceLiverpool">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="precioUnit5" ItemStyle-Width="100" HeaderText="precioUnit5" UniqueName="precioUnit5">
+                        
+                                    <telerik:GridBoundColumn DataField="marketPlaceShopify" ItemStyle-Width="100" HeaderText="marketPlaceShopify" UniqueName="marketPlaceShopify">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="precioUnit6" ItemStyle-Width="100" HeaderText="precioUnit6" UniqueName="precioUnit6">
+                        
+                                    <telerik:GridBoundColumn DataField="marketPlaceAcctivity" ItemStyle-Width="100" HeaderText="marketPlaceAcctivity" UniqueName="marketPlaceAcctivity">
                                     </telerik:GridBoundColumn>
+
                                     <telerik:GridBoundColumn DataField="error" ItemStyle-Width="100" HeaderText="Error" UniqueName="error">
                                     </telerik:GridBoundColumn>
                                 </Columns>
