@@ -795,19 +795,19 @@
                         </telerik:GridBoundColumn>
                         <telerik:GridBoundColumn DataField="tasa" ItemStyle-Width="100" HeaderText="tasa" UniqueName="tasa">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="claveSat" ItemStyle-Width="100" HeaderText="claveSat" UniqueName="claveSat">
+                        <telerik:GridBoundColumn DataField="claveSat" ItemStyle-Width="100" HeaderText="claveSat" UniqueName="claveSat" Visible="false">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="proyectoId" ItemStyle-Width="100" HeaderText="proyectoId" UniqueName="proyectoId">
+                        <telerik:GridBoundColumn DataField="proyectoId" ItemStyle-Width="100" HeaderText="proyectoId" UniqueName="proyectoId" Visible="false">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="coleccionId" ItemStyle-Width="100" HeaderText="coleccionId" UniqueName="coleccionId">
+                        <telerik:GridBoundColumn DataField="coleccionId" ItemStyle-Width="100" HeaderText="coleccionId" UniqueName="coleccionId" Visible="false">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="monedaId" ItemStyle-Width="100" HeaderText="monedaId" UniqueName="monedaId">
+                        <telerik:GridBoundColumn DataField="monedaId" ItemStyle-Width="100" HeaderText="monedaId" UniqueName="monedaId" Visible="false">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="tasaId" ItemStyle-Width="100" HeaderText="tasaId" UniqueName="tasaId">
+                        <telerik:GridBoundColumn DataField="tasaId" ItemStyle-Width="100" HeaderText="tasaId" UniqueName="tasaId" Visible="false">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="generoId" ItemStyle-Width="100" HeaderText="generoId" UniqueName="generoId">
+                        <telerik:GridBoundColumn DataField="generoId" ItemStyle-Width="100" HeaderText="generoId" UniqueName="generoId" Visible="false">
                         </telerik:GridBoundColumn>
-                        <telerik:GridBoundColumn DataField="objImpId" ItemStyle-Width="100" HeaderText="objImpId" UniqueName="objImpId">
+                        <telerik:GridBoundColumn DataField="objImpId" ItemStyle-Width="100" HeaderText="objImpId" UniqueName="objImpId" Visible="false">
                         </telerik:GridBoundColumn>
                         
                         <telerik:GridBoundColumn DataField="marketPlaceLiverpool" ItemStyle-Width="100" HeaderText="marketPlaceLiverpool" UniqueName="marketPlaceLiverpool">
@@ -905,17 +905,17 @@
                                     </telerik:GridBoundColumn>
                                     <telerik:GridBoundColumn DataField="claveSat" ItemStyle-Width="100" HeaderText="claveSat" UniqueName="claveSat">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="proyectoId" ItemStyle-Width="100" HeaderText="proyectoId" UniqueName="proyectoId">
+                                    <telerik:GridBoundColumn DataField="proyectoId" ItemStyle-Width="100" HeaderText="proyectoId" UniqueName="proyectoId" Visible="false">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="coleccionId" ItemStyle-Width="100" HeaderText="coleccionId" UniqueName="coleccionId">
+                                    <telerik:GridBoundColumn DataField="coleccionId" ItemStyle-Width="100" HeaderText="coleccionId" UniqueName="coleccionId" Visible="false">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="monedaId" ItemStyle-Width="100" HeaderText="monedaId" UniqueName="monedaId">
+                                    <telerik:GridBoundColumn DataField="monedaId" ItemStyle-Width="100" HeaderText="monedaId" UniqueName="monedaId" Visible="false">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="tasaId" ItemStyle-Width="100" HeaderText="tasaId" UniqueName="tasaId">
+                                    <telerik:GridBoundColumn DataField="tasaId" ItemStyle-Width="100" HeaderText="tasaId" UniqueName="tasaId" Visible="false">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="generoId" ItemStyle-Width="100" HeaderText="generoId" UniqueName="generoId">
+                                    <telerik:GridBoundColumn DataField="generoId" ItemStyle-Width="100" HeaderText="generoId" UniqueName="generoId" Visible="false">
                                     </telerik:GridBoundColumn>
-                                    <telerik:GridBoundColumn DataField="objImpId" ItemStyle-Width="100" HeaderText="objImpId" UniqueName="objImpId">
+                                    <telerik:GridBoundColumn DataField="objImpId" ItemStyle-Width="100" HeaderText="objImpId" UniqueName="objImpId" Visible="false">
                                     </telerik:GridBoundColumn>
 
                                     <telerik:GridBoundColumn DataField="marketPlaceLiverpool" ItemStyle-Width="100" HeaderText="marketPlaceLiverpool" UniqueName="marketPlaceLiverpool">
