@@ -950,284 +950,284 @@ Partial Class portalcfd_Productos
                         End Try
 
                         '???
-                        Try
-                            Dim rowCodigo() As DataRow = dtConceptosDetalle.Select("codigo = '" & LTrim(RTrim(codigo)).ToString & "'")
-                            For Each row As DataRow In rowCodigo
-                                codigo = row(0)
-                            Next
-                        Catch ex As Exception
-                            codigo = 0
-                        End Try
+                        'Try
+                        '    Dim rowCodigo() As DataRow = dtConceptosDetalle.Select("codigo = '" & LTrim(RTrim(codigo)).ToString & "'")
+                        '    For Each row As DataRow In rowCodigo
+                        '        codigo = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    codigo = 0
+                        'End Try
 
-                        Try
-                            Dim rowUpc() As DataRow = dtConceptosDetalle.Select("upc = '" & LTrim(RTrim(upc)).ToString & "'")
-                            For Each row As DataRow In rowUpc
-                                upc = row(0)
-                            Next
-                        Catch ex As Exception
-                            upc = 0
-                        End Try
+                        'Try
+                        '    Dim rowUpc() As DataRow = dtConceptosDetalle.Select("upc = '" & LTrim(RTrim(upc)).ToString & "'")
+                        '    For Each row As DataRow In rowUpc
+                        '        upc = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    upc = 0
+                        'End Try
 
-                        Try
-                            Dim rowClaveSat() As DataRow = dtConceptosDetalle.Select("claveSat = '" & LTrim(RTrim(claveSat)).ToString & "'")
-                            For Each row As DataRow In rowClaveSat
-                                claveSat = row(0)
-                            Next
-                        Catch ex As Exception
-                            claveSat = 0
-                        End Try
+                        'Try
+                        '    Dim rowClaveSat() As DataRow = dtConceptosDetalle.Select("claveSat = '" & LTrim(RTrim(claveSat)).ToString & "'")
+                        '    For Each row As DataRow In rowClaveSat
+                        '        claveSat = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    claveSat = 0
+                        'End Try
 
-                        Try
-                            Dim rowUnidad() As DataRow = dtConceptosDetalle.Select("unidad = '" & LTrim(RTrim(unidad)).ToString & "'")
-                            For Each row As DataRow In rowUnidad
-                                unidad = row(0)
-                            Next
-                        Catch ex As Exception
-                            unidad = 0
-                        End Try
+                        'Try
+                        '    Dim rowUnidad() As DataRow = dtConceptosDetalle.Select("unidad = '" & LTrim(RTrim(unidad)).ToString & "'")
+                        '    For Each row As DataRow In rowUnidad
+                        '        unidad = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    unidad = 0
+                        'End Try
 
-                        Try
-                            Dim rowDescripcion() As DataRow = dtConceptosDetalle.Select("descripcion = '" & LTrim(RTrim(descripcion)).ToString & "'")
-                            For Each row As DataRow In rowDescripcion
-                                descripcion = row(0)
-                            Next
-                        Catch ex As Exception
-                            descripcion = 0
-                        End Try
+                        'Try
+                        '    Dim rowDescripcion() As DataRow = dtConceptosDetalle.Select("descripcion = '" & LTrim(RTrim(descripcion)).ToString & "'")
+                        '    For Each row As DataRow In rowDescripcion
+                        '        descripcion = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    descripcion = 0
+                        'End Try
 
-                        Try
-                            Dim rowDescripcion_corta() As DataRow = dtConceptosDetalle.Select("descripcion_corta = '" & LTrim(RTrim(descripcion_corta)).ToString & "'")
-                            For Each row As DataRow In rowDescripcion_corta
-                                descripcion_corta = row(0)
-                            Next
-                        Catch ex As Exception
-                            descripcion_corta = 0
-                        End Try
+                        'Try
+                        '    Dim rowDescripcion_corta() As DataRow = dtConceptosDetalle.Select("descripcion_corta = '" & LTrim(RTrim(descripcion_corta)).ToString & "'")
+                        '    For Each row As DataRow In rowDescripcion_corta
+                        '        descripcion_corta = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    descripcion_corta = 0
+                        'End Try
 
-                        Try
-                            Dim rowMarca() As DataRow = dtConceptosDetalle.Select("marca = '" & LTrim(RTrim(marca)).ToString & "'")
-                            For Each row As DataRow In rowMarca
-                                marca = row(0)
-                            Next
-                        Catch ex As Exception
-                            marca = 0
-                        End Try
+                        'Try
+                        '    Dim rowMarca() As DataRow = dtConceptosDetalle.Select("marca = '" & LTrim(RTrim(marca)).ToString & "'")
+                        '    For Each row As DataRow In rowMarca
+                        '        marca = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    marca = 0
+                        'End Try
 
-                        Try
-                            Dim rowTemporada() As DataRow = dtConceptosDetalle.Select("temporada = '" & LTrim(RTrim(temporada)).ToString & "'")
-                            For Each row As DataRow In rowTemporada
-                                temporada = row(0)
-                            Next
-                        Catch ex As Exception
-                            temporada = 0
-                        End Try
+                        'Try
+                        '    Dim rowTemporada() As DataRow = dtConceptosDetalle.Select("temporada = '" & LTrim(RTrim(temporada)).ToString & "'")
+                        '    For Each row As DataRow In rowTemporada
+                        '        temporada = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    temporada = 0
+                        'End Try
 
-                        Try
-                            Dim rowUnitario1() As DataRow = dtConceptosDetalle.Select("unitario1 = '" & LTrim(RTrim(unitario1)).ToString & "'")
-                            For Each row As DataRow In rowUnitario1
-                                unitario1 = row(0)
-                            Next
-                        Catch ex As Exception
-                            unitario1 = 0
-                        End Try
+                        'Try
+                        '    Dim rowUnitario1() As DataRow = dtConceptosDetalle.Select("unitario1 = '" & LTrim(RTrim(unitario1)).ToString & "'")
+                        '    For Each row As DataRow In rowUnitario1
+                        '        unitario1 = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    unitario1 = 0
+                        'End Try
 
-                        Try
-                            Dim rowUnitario2() As DataRow = dtConceptosDetalle.Select("unitario2 = '" & LTrim(RTrim(unitario2)).ToString & "'")
-                            For Each row As DataRow In rowUnitario2
-                                unitario2 = row(0)
-                            Next
-                        Catch ex As Exception
-                            unitario2 = 0
-                        End Try
+                        'Try
+                        '    Dim rowUnitario2() As DataRow = dtConceptosDetalle.Select("unitario2 = '" & LTrim(RTrim(unitario2)).ToString & "'")
+                        '    For Each row As DataRow In rowUnitario2
+                        '        unitario2 = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    unitario2 = 0
+                        'End Try
 
-                        Try
-                            Dim rowUnitario3() As DataRow = dtConceptosDetalle.Select("unitario3 = '" & LTrim(RTrim(unitario3)).ToString & "'")
-                            For Each row As DataRow In rowUnitario3
-                                unitario3 = row(0)
-                            Next
-                        Catch ex As Exception
-                            unitario3 = 0
-                        End Try
+                        'Try
+                        '    Dim rowUnitario3() As DataRow = dtConceptosDetalle.Select("unitario3 = '" & LTrim(RTrim(unitario3)).ToString & "'")
+                        '    For Each row As DataRow In rowUnitario3
+                        '        unitario3 = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    unitario3 = 0
+                        'End Try
 
-                        Try
-                            Dim rowUnitario4() As DataRow = dtConceptosDetalle.Select("unitario4 = '" & LTrim(RTrim(unitario4)).ToString & "'")
-                            For Each row As DataRow In rowUnitario4
-                                unitario4 = row(0)
-                            Next
-                        Catch ex As Exception
-                            unitario4 = 0
-                        End Try
+                        'Try
+                        '    Dim rowUnitario4() As DataRow = dtConceptosDetalle.Select("unitario4 = '" & LTrim(RTrim(unitario4)).ToString & "'")
+                        '    For Each row As DataRow In rowUnitario4
+                        '        unitario4 = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    unitario4 = 0
+                        'End Try
 
-                        Try
-                            Dim rowModelo_estilo() As DataRow = dtConceptosDetalle.Select("modelo_estilo = '" & LTrim(RTrim(modelo_estilo)).ToString & "'")
-                            For Each row As DataRow In rowModelo_estilo
-                                modelo_estilo = row(0)
-                            Next
-                        Catch ex As Exception
-                            modelo_estilo = 0
-                        End Try
+                        'Try
+                        '    Dim rowModelo_estilo() As DataRow = dtConceptosDetalle.Select("modelo_estilo = '" & LTrim(RTrim(modelo_estilo)).ToString & "'")
+                        '    For Each row As DataRow In rowModelo_estilo
+                        '        modelo_estilo = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    modelo_estilo = 0
+                        'End Try
 
-                        Try
-                            Dim rowPlataforma() As DataRow = dtConceptosDetalle.Select("plataforma = '" & LTrim(RTrim(plataforma)).ToString & "'")
-                            For Each row As DataRow In rowPlataforma
-                                plataforma = row(0)
-                            Next
-                        Catch ex As Exception
-                            plataforma = 0
-                        End Try
+                        'Try
+                        '    Dim rowPlataforma() As DataRow = dtConceptosDetalle.Select("plataforma = '" & LTrim(RTrim(plataforma)).ToString & "'")
+                        '    For Each row As DataRow In rowPlataforma
+                        '        plataforma = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    plataforma = 0
+                        'End Try
 
-                        Try
-                            Dim rowGenero() As DataRow = dtConceptosDetalle.Select("genero = '" & LTrim(RTrim(genero)).ToString & "'")
-                            For Each row As DataRow In rowGenero
-                                genero = row(0)
-                            Next
-                        Catch ex As Exception
-                            genero = 0
-                        End Try
+                        'Try
+                        '    Dim rowGenero() As DataRow = dtConceptosDetalle.Select("genero = '" & LTrim(RTrim(genero)).ToString & "'")
+                        '    For Each row As DataRow In rowGenero
+                        '        genero = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    genero = 0
+                        'End Try
 
-                        Try
-                            Dim rowTallaUSA() As DataRow = dtConceptosDetalle.Select("tallaUSA = '" & LTrim(RTrim(tallaUSA)).ToString & "'")
-                            For Each row As DataRow In rowTallaUSA
-                                tallaUSA = row(0)
-                            Next
-                        Catch ex As Exception
-                            tallaUSA = 0
-                        End Try
+                        'Try
+                        '    Dim rowTallaUSA() As DataRow = dtConceptosDetalle.Select("tallaUSA = '" & LTrim(RTrim(tallaUSA)).ToString & "'")
+                        '    For Each row As DataRow In rowTallaUSA
+                        '        tallaUSA = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    tallaUSA = 0
+                        'End Try
 
-                        Try
-                            Dim rowTallaMX() As DataRow = dtConceptosDetalle.Select("tallaMX = '" & LTrim(RTrim(tallaMX)).ToString & "'")
-                            For Each row As DataRow In rowTallaMX
-                                tallaMX = row(0)
-                            Next
-                        Catch ex As Exception
-                            tallaMX = 0
-                        End Try
+                        'Try
+                        '    Dim rowTallaMX() As DataRow = dtConceptosDetalle.Select("tallaMX = '" & LTrim(RTrim(tallaMX)).ToString & "'")
+                        '    For Each row As DataRow In rowTallaMX
+                        '        tallaMX = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    tallaMX = 0
+                        'End Try
 
-                        Try
-                            Dim rowColor() As DataRow = dtConceptosDetalle.Select("color = '" & LTrim(RTrim(color)).ToString & "'")
-                            For Each row As DataRow In rowColor
-                                color = row(0)
-                            Next
-                        Catch ex As Exception
-                            color = 0
-                        End Try
+                        'Try
+                        '    Dim rowColor() As DataRow = dtConceptosDetalle.Select("color = '" & LTrim(RTrim(color)).ToString & "'")
+                        '    For Each row As DataRow In rowColor
+                        '        color = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    color = 0
+                        'End Try
 
-                        Try
-                            Dim rowColorMX() As DataRow = dtConceptosDetalle.Select("colorMX = '" & LTrim(RTrim(colorMX)).ToString & "'")
-                            For Each row As DataRow In rowColorMX
-                                colorMX = row(0)
-                            Next
-                        Catch ex As Exception
-                            colorMX = 0
-                        End Try
+                        'Try
+                        '    Dim rowColorMX() As DataRow = dtConceptosDetalle.Select("colorMX = '" & LTrim(RTrim(colorMX)).ToString & "'")
+                        '    For Each row As DataRow In rowColorMX
+                        '        colorMX = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    colorMX = 0
+                        'End Try
 
-                        Try
-                            Dim rowMaterial() As DataRow = dtConceptosDetalle.Select("material = '" & LTrim(RTrim(material)).ToString & "'")
-                            For Each row As DataRow In rowMaterial
-                                material = row(0)
-                            Next
-                        Catch ex As Exception
-                            material = 0
-                        End Try
+                        'Try
+                        '    Dim rowMaterial() As DataRow = dtConceptosDetalle.Select("material = '" & LTrim(RTrim(material)).ToString & "'")
+                        '    For Each row As DataRow In rowMaterial
+                        '        material = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    material = 0
+                        'End Try
 
-                        Try
-                            Dim rowPeso() As DataRow = dtConceptosDetalle.Select("peso = '" & LTrim(RTrim(peso)).ToString & "'")
-                            For Each row As DataRow In rowPeso
-                                peso = row(0)
-                            Next
-                        Catch ex As Exception
-                            peso = 0
-                        End Try
+                        'Try
+                        '    Dim rowPeso() As DataRow = dtConceptosDetalle.Select("peso = '" & LTrim(RTrim(peso)).ToString & "'")
+                        '    For Each row As DataRow In rowPeso
+                        '        peso = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    peso = 0
+                        'End Try
 
-                        Try
-                            Dim rowEmpaque_alto() As DataRow = dtConceptosDetalle.Select("empaque_alto = '" & LTrim(RTrim(empaque_alto)).ToString & "'")
-                            For Each row As DataRow In rowEmpaque_alto
-                                empaque_alto = row(0)
-                            Next
-                        Catch ex As Exception
-                            empaque_alto = 0
-                        End Try
+                        'Try
+                        '    Dim rowEmpaque_alto() As DataRow = dtConceptosDetalle.Select("empaque_alto = '" & LTrim(RTrim(empaque_alto)).ToString & "'")
+                        '    For Each row As DataRow In rowEmpaque_alto
+                        '        empaque_alto = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    empaque_alto = 0
+                        'End Try
 
-                        Try
-                            Dim rowEmpaque_largo() As DataRow = dtConceptosDetalle.Select("empaque_largo = '" & LTrim(RTrim(empaque_largo)).ToString & "'")
-                            For Each row As DataRow In rowEmpaque_largo
-                                empaque_largo = row(0)
-                            Next
-                        Catch ex As Exception
-                            empaque_largo = 0
-                        End Try
+                        'Try
+                        '    Dim rowEmpaque_largo() As DataRow = dtConceptosDetalle.Select("empaque_largo = '" & LTrim(RTrim(empaque_largo)).ToString & "'")
+                        '    For Each row As DataRow In rowEmpaque_largo
+                        '        empaque_largo = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    empaque_largo = 0
+                        'End Try
 
-                        Try
-                            Dim rowEmpaque_ancho() As DataRow = dtConceptosDetalle.Select("empaque_ancho = '" & LTrim(RTrim(empaque_ancho)).ToString & "'")
-                            For Each row As DataRow In rowEmpaque_ancho
-                                empaque_ancho = row(0)
-                            Next
-                        Catch ex As Exception
-                            empaque_ancho = 0
-                        End Try
+                        'Try
+                        '    Dim rowEmpaque_ancho() As DataRow = dtConceptosDetalle.Select("empaque_ancho = '" & LTrim(RTrim(empaque_ancho)).ToString & "'")
+                        '    For Each row As DataRow In rowEmpaque_ancho
+                        '        empaque_ancho = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    empaque_ancho = 0
+                        'End Try
 
-                        Try
-                            Dim rowUnidadMedida() As DataRow = dtConceptosDetalle.Select("unidadMedida = '" & LTrim(RTrim(unidadMedida)).ToString & "'")
-                            For Each row As DataRow In rowUnidadMedida
-                                unidadMedida = row(0)
-                            Next
-                        Catch ex As Exception
-                            unidadMedida = 0
-                        End Try
+                        'Try
+                        '    Dim rowUnidadMedida() As DataRow = dtConceptosDetalle.Select("unidadMedida = '" & LTrim(RTrim(unidadMedida)).ToString & "'")
+                        '    For Each row As DataRow In rowUnidadMedida
+                        '        unidadMedida = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    unidadMedida = 0
+                        'End Try
 
-                        Try
-                            Dim rowMoneda() As DataRow = dtConceptosDetalle.Select("moneda = '" & LTrim(RTrim(moneda)).ToString & "'")
-                            For Each row As DataRow In rowMoneda
-                                moneda = row(0)
-                            Next
-                        Catch ex As Exception
-                            moneda = 0
-                        End Try
+                        'Try
+                        '    Dim rowMoneda() As DataRow = dtConceptosDetalle.Select("moneda = '" & LTrim(RTrim(moneda)).ToString & "'")
+                        '    For Each row As DataRow In rowMoneda
+                        '        moneda = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    moneda = 0
+                        'End Try
 
-                        Try
-                            Dim rowClaveProdServ() As DataRow = dtConceptosDetalle.Select("claveProdServ = '" & LTrim(RTrim(claveProdServ)).ToString & "'")
-                            For Each row As DataRow In rowClaveProdServ
-                                claveProdServ = row(0)
-                            Next
-                        Catch ex As Exception
-                            claveProdServ = 0
-                        End Try
+                        'Try
+                        '    Dim rowClaveProdServ() As DataRow = dtConceptosDetalle.Select("claveProdServ = '" & LTrim(RTrim(claveProdServ)).ToString & "'")
+                        '    For Each row As DataRow In rowClaveProdServ
+                        '        claveProdServ = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    claveProdServ = 0
+                        'End Try
 
-                        Try
-                            Dim rowTasa() As DataRow = dtConceptosDetalle.Select("tasa = '" & LTrim(RTrim(tasa)).ToString & "'")
-                            For Each row As DataRow In rowTasa
-                                tasa = row(0)
-                            Next
-                        Catch ex As Exception
-                            tasa = 0
-                        End Try
+                        'Try
+                        '    Dim rowTasa() As DataRow = dtConceptosDetalle.Select("tasa = '" & LTrim(RTrim(tasa)).ToString & "'")
+                        '    For Each row As DataRow In rowTasa
+                        '        tasa = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    tasa = 0
+                        'End Try
 
-                        Try
-                            Dim rowMarketPlaceLiverpool() As DataRow = dtConceptosDetalle.Select("marketPlaceLiverpool = '" & LTrim(RTrim(marketPlaceLiverpool)).ToString & "'")
-                            For Each row As DataRow In rowMarketPlaceLiverpool
-                                marketPlaceLiverpool = row(0)
-                            Next
-                        Catch ex As Exception
-                            marketPlaceLiverpool = 0
-                        End Try
+                        'Try
+                        '    Dim rowMarketPlaceLiverpool() As DataRow = dtConceptosDetalle.Select("marketPlaceLiverpool = '" & LTrim(RTrim(marketPlaceLiverpool)).ToString & "'")
+                        '    For Each row As DataRow In rowMarketPlaceLiverpool
+                        '        marketPlaceLiverpool = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    marketPlaceLiverpool = 0
+                        'End Try
 
-                        Try
-                            Dim rowMarketPlaceShopify() As DataRow = dtConceptosDetalle.Select("marketPlaceShopify = '" & LTrim(RTrim(marketPlaceShopify)).ToString & "'")
-                            For Each row As DataRow In rowMarketPlaceShopify
-                                marketPlaceShopify = row(0)
-                            Next
-                        Catch ex As Exception
-                            marketPlaceShopify = 0
-                        End Try
+                        'Try
+                        '    Dim rowMarketPlaceShopify() As DataRow = dtConceptosDetalle.Select("marketPlaceShopify = '" & LTrim(RTrim(marketPlaceShopify)).ToString & "'")
+                        '    For Each row As DataRow In rowMarketPlaceShopify
+                        '        marketPlaceShopify = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    marketPlaceShopify = 0
+                        'End Try
 
-                        Try
-                            Dim rowMarketPlaceAcctivity() As DataRow = dtConceptosDetalle.Select("marketPlaceAcctivity = '" & LTrim(RTrim(marketPlaceAcctivity)).ToString & "'")
-                            For Each row As DataRow In rowMarketPlaceAcctivity
-                                marketPlaceAcctivity = row(0)
-                            Next
-                        Catch ex As Exception
-                            marketPlaceAcctivity = 0
-                        End Try
+                        'Try
+                        '    Dim rowMarketPlaceAcctivity() As DataRow = dtConceptosDetalle.Select("marketPlaceAcctivity = '" & LTrim(RTrim(marketPlaceAcctivity)).ToString & "'")
+                        '    For Each row As DataRow In rowMarketPlaceAcctivity
+                        '        marketPlaceAcctivity = row(0)
+                        '    Next
+                        'Catch ex As Exception
+                        '    marketPlaceAcctivity = 0
+                        'End Try
 
                         'validaciones
                         proyectoId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=16, @marca='" & marca & "'")
@@ -1238,11 +1238,13 @@ Partial Class portalcfd_Productos
 
                         'lcng: reviso que el peso sea nùmero
                         Dim pesoError As Boolean = False
-                        Try
-                            Dim tryPesoParsed = Double.Parse(peso)
-                        Catch ex As Exception
-                            pesoError = True
-                        End Try
+                        If peso.Trim.Length > 0 Then
+                            Try
+                                Dim tryPesoParsed = Double.Parse(peso)
+                            Catch ex As Exception
+                                pesoError = True
+                            End Try
+                        End If
 
 
                         If codigo.Length > 0 Then
