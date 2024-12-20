@@ -1236,6 +1236,14 @@ Partial Class portalcfd_Productos
                         generoId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=19, @genero='" & genero & "'")
                         tasaId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=20, @tasa='" & tasa & "'")
 
+                        'lcng: reviso que el peso sea nùmero
+                        Dim pesoError As Boolean = False
+                        Try
+                            Dim tryPesoParsed = Double.Parse(peso)
+                        Catch ex As Exception
+                            pesoError = True
+                        End Try
+
 
                         If codigo.Length > 0 Then
                             ' Dim productoid As Long
@@ -1271,7 +1279,7 @@ Partial Class portalcfd_Productos
                             '    ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
                             '    registros_error = registros_error + 1
 
-                            If codigoActivo >= 1 Then
+                            If codigoActivo >= 1 Or pesoError Then
                                 ' Marco error
                                 Dim p As New ArrayList
                                 p.Add(New SqlParameter("@cmd", 7))
@@ -1312,8 +1320,13 @@ Partial Class portalcfd_Productos
                                 p.Add(New SqlParameter("@marketPlaceShopify", Trim(marketPlaceShopify)))
                                 p.Add(New SqlParameter("@marketPlaceAcctivity", Trim(marketPlaceAcctivity)))
 
+                                If codigoActivo >= 1 Then
+                                    p.Add(New SqlParameter("@error", "El código " & codigo & " ya está registrado."))
+                                End If
 
-                                p.Add(New SqlParameter("@error", "El código " & codigo & " ya está registrado."))
+                                If pesoError Then
+                                    p.Add(New SqlParameter("@error", "Se capturó " & peso & " en la columna peso kg."))
+                                End If
                                 ' p.Add(New SqlParameter("@ordenId", Request("id").ToString))
                                 ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
                                 registros_error = registros_error + 1
