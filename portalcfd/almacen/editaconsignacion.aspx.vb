@@ -292,7 +292,52 @@ Public Class editaconsignacion
                 Dim txtCantidad As Telerik.Web.UI.RadNumericTextBox = DirectCast(dataItem.FindControl("txtCantidad"), Telerik.Web.UI.RadNumericTextBox)
                 If Convert.ToDecimal(txtCantidad.Text) > 0 Then
                     Dim productoid As String = dataItem.GetDataKeyValue("productoid").ToString()
-                    
+
+                    lblMensajeFacturar.Text = ""
+                    DataControl.RunSQLQuery("exec pRegresaInventarioConsignacionCliente @productoid='" & productoid.ToString & "', @userid='" & Session("userid").ToString & "', @consignacionid='" & Request("id") & "', @cantidad='" & txtCantidad.Text.ToString & "'")
+                End If
+            Next
+            DataControl = Nothing
+            '
+            '   Actualiza estatus de consignación
+            '
+            Call ActualizaEstatusConsignacion()
+            '
+            Response.Redirect("~/portalcfd/almacen/editaconsignacion.aspx?id=" & Request("id").ToString)
+            '
+        Else
+            lblMensajeFacturar.Text = "Proporcione la cantidad que desea regresar"
+        End If
+    End Sub
+    'TODO: Adecuar este còdigo para que regresa consigna a pedidos
+    'soy el mandaloriano
+    Private Sub btnRegresarPedidos_Click(sender As Object, e As EventArgs) Handles btnRegresarPedidos.Click
+        Dim listErrores As New List(Of String)
+        Dim message As String = ""
+        Dim validaRegresar As Integer = 0
+        'valido que no este facturado ni en parcial
+
+        For Each dataItem As Telerik.Web.UI.GridDataItem In productsList.MasterTableView.Items
+            Dim disponible As String = dataItem.GetDataKeyValue("disponible").ToString()
+            Dim txtCantidad As Telerik.Web.UI.RadNumericTextBox = DirectCast(dataItem.FindControl("txtCantidad"), Telerik.Web.UI.RadNumericTextBox) '' --Cantidad Solicitada
+            If Convert.ToDecimal(txtCantidad.Text) > 0 Then
+                validaRegresar = validaRegresar + 1
+                If Convert.ToDecimal(disponible) < Convert.ToDecimal(txtCantidad.Text) Then
+                    listErrores.Add("*La cantidad solicitada (" & txtCantidad.Text & ") es mayor a la disponibilidad (" & disponible & ") para este producto. Para poder FACTURAR proporcione la cantidad correcta.")
+                    message = String.Join(Environment.NewLine, listErrores.ToArray())
+                    lblMensajeFacturar.Text = message
+                    Return
+                End If
+            End If
+        Next
+
+        If validaRegresar > 0 Then
+            Dim DataControl As New DataControl
+            For Each dataItem As Telerik.Web.UI.GridDataItem In productsList.MasterTableView.Items
+                Dim txtCantidad As Telerik.Web.UI.RadNumericTextBox = DirectCast(dataItem.FindControl("txtCantidad"), Telerik.Web.UI.RadNumericTextBox)
+                If Convert.ToDecimal(txtCantidad.Text) > 0 Then
+                    Dim productoid As String = dataItem.GetDataKeyValue("productoid").ToString()
+
                     lblMensajeFacturar.Text = ""
                     DataControl.RunSQLQuery("exec pRegresaInventarioConsignacionCliente @productoid='" & productoid.ToString & "', @userid='" & Session("userid").ToString & "', @consignacionid='" & Request("id") & "', @cantidad='" & txtCantidad.Text.ToString & "'")
                 End If

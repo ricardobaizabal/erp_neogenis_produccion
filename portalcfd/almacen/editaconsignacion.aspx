@@ -225,8 +225,10 @@
         <%--<asp:Button ID="btnProcesar" runat="server" CausesValidation="false" Text="Procesar consignación" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--%>
         <asp:Button ID="btnFacturar" runat="server" Text="Facturar" CausesValidation="false" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnRegresarInventario" runat="server" Text="Regresar a Natural" CausesValidation="false" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnRegresarPedidos" runat="server" Text="Regresar a Pedido" CssClass="botones" CausesValidation="false" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnImprimir" runat="server" Text="Imprimir" CssClass="botones" CausesValidation="false" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnRegresar" runat="server" Text="Regresar" CausesValidation="false" /><br />
+        <%--  --%>
         <br />
         <asp:Label ID="lblMensajeFacturar" runat="server" ForeColor="Red" CssClass="item"></asp:Label>
         <br />
