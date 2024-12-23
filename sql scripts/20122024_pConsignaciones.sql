@@ -732,25 +732,28 @@ BEGIN
 	if @cmd=23
 	begin
 		--en cuestion de urgencia, obtengo el pedido usando comentario de consignacion
-		declare @pedidotxt varchar(30)
-		SET @pedidotxt = (SELECT TOP 1 TRIM(LTRIM(REPLACE(cast(comentario as varchar), 'Pedido', ''))) FROM tblConsignacion WHERE id = @consignacionid)
-		if @pedidotxt != ''
-		begin
-			SET @pedidoid = CAST(@pedidotxt as bigint)
+		--declare @pedidotxt varchar(30)
+		--SET @pedidotxt = (SELECT TOP 1 TRIM(LTRIM(REPLACE(cast(comentario as varchar), 'Pedido', ''))) FROM tblConsignacion WHERE id = @consignacionid)
+		--if @pedidotxt != ''
+		--begin
+			--SET @pedidoid = CAST(@pedidotxt as bigint)
 			--ok, procedo a cambiar registro de pedido, cierro consignacion, EVITO DELETE CRUDO
 			--dejo en cerrado por lo revisado con Lilieth.
-			UPDATE tblConsignacion SET estatusid = 3, comentario = comentario + ' CERRADO REGRESO PEDIDO' WHERE id = @consignacionid 
+			UPDATE tblConsignacion SET estatusid = 3, comentario = CONCAT(comentario, CAST(' CERRADO REGRESO PEDIDO' AS TEXT)) WHERE id = @consignacionid 
 
-			--todo: registro en kardex, done at cmd 24
-
-		end
+		--end
 	end
 
 	if @cmd=24 
 		/*	Regresa item del lote de consignacion	*/
 		begin
 			/*	Actualiza existencia tblConsignacionDetalle  */
-			update tblConsignacionDetalle set cantidad = isnull(cantidad,0) - @cantidad, existencia = isnull(existencia,0) - @cantidad where consignacionid=@consignacionid and productoid=@productoid
+			update tblConsignacionDetalle 
+			set 
+				cantidad = isnull(cantidad,0) - @cantidad, 
+				existencia = isnull(existencia,0) - @cantidad,
+				regresado = isnull(regresado,0) + @cantidad
+			where consignacionid=@consignacionid and productoid=@productoid
 
 			select @almacenid = isnull(almacenid,0) from tblConsignacion where id = @consignacionid
 
@@ -761,7 +764,7 @@ BEGIN
 				select @tmpExistencia = isnull(monterrey,0) from tblMisProductos where id=@productoid
 				/*	Agrega registro a la tabla de movimientos	*/
 				insert into tblMovimientos ( tipoid, productoid, codigo, descripcion, cantidad, existencia, userid, comentario, almacenid )
-				select  14, @productoid, codigo, descripcion, @cantidad, isnull(@tmpExistencia,0), @userid, 'Entrada por consignación ' + convert(varchar(10),@consignacionid), @almacenid  from tblMisProductos where id=@productoid
+				select  6, @productoid, codigo, descripcion, @cantidad, isnull(@tmpExistencia,0), @userid, 'Entrada por consignación ' + convert(varchar(10),@consignacionid), @almacenid  from tblMisProductos where id=@productoid
 			end
 			else if @almacenid=2
 			begin
@@ -769,7 +772,7 @@ BEGIN
 				select @tmpExistencia = isnull(mexico,0) from tblMisProductos where id=@productoid
 				/*	Agrega registro a la tabla de movimientos	*/
 				insert into tblMovimientos ( tipoid, productoid, codigo, descripcion, cantidad, existencia, userid, comentario, almacenid )
-				select  14, @productoid, codigo, descripcion, @cantidad, isnull(@tmpExistencia,0), @userid, 'Entrada por consignación ' + convert(varchar(10),@consignacionid), @almacenid  from tblMisProductos where id=@productoid
+				select  6, @productoid, codigo, descripcion, @cantidad, isnull(@tmpExistencia,0), @userid, 'Entrada por consignación ' + convert(varchar(10),@consignacionid), @almacenid  from tblMisProductos where id=@productoid
 			end	
 			else if @almacenid=3
 			begin
@@ -777,7 +780,7 @@ BEGIN
 				select @tmpExistencia = isnull(guadalajara,0) from tblMisProductos where id=@productoid
 				/*	Agrega registro a la tabla de movimientos	*/
 				insert into tblMovimientos ( tipoid, productoid, codigo, descripcion, cantidad, existencia, userid, comentario, almacenid )
-				select  14, @productoid, codigo, descripcion, @cantidad, isnull(@tmpExistencia,0), @userid, 'Entrada por consignación ' + convert(varchar(10),@consignacionid), @almacenid  from tblMisProductos where id=@productoid
+				select  6, @productoid, codigo, descripcion, @cantidad, isnull(@tmpExistencia,0), @userid, 'Entrada por consignación ' + convert(varchar(10),@consignacionid), @almacenid  from tblMisProductos where id=@productoid
 			end
 			else if @almacenid=4
 			begin
@@ -785,7 +788,7 @@ BEGIN
 				select @tmpExistencia = isnull(mermas,0) from tblMisProductos where id=@productoid
 				/*	Agrega registro a la tabla de movimientos	*/
 				insert into tblMovimientos ( tipoid, productoid, codigo, descripcion, cantidad, existencia, userid, comentario, almacenid )
-				select  14, @productoid, codigo, descripcion, @cantidad, isnull(@tmpExistencia,0), @userid, 'Entrada por consignación ' + convert(varchar(10),@consignacionid), @almacenid  from tblMisProductos where id=@productoid
+				select  6, @productoid, codigo, descripcion, @cantidad, isnull(@tmpExistencia,0), @userid, 'Entrada por consignación ' + convert(varchar(10),@consignacionid), @almacenid  from tblMisProductos where id=@productoid
 			end
 			else if @almacenid=5
 			begin
@@ -794,11 +797,11 @@ BEGIN
 				update TOP (1) tblAlmacenado set quantity =isnull(quantity,0)-isnull(@cantidad,0), dateTime = GETDATE() where productId=@productoid AND quantity > 0 
 				/*	Agrega registro a la tabla de movimientos	*/
 				insert into tblMovimientos ( tipoid, productoid, codigo, descripcion, cantidad, existencia, userid, comentario, almacenid )
-				select  14, @productoid, codigo, descripcion, @cantidad, isnull(@tmpExistencia,0), @userid, 'Entrada por consignación ' + convert(varchar(10),@consignacionid), @almacenid  from tblMisProductos where id=@productoid
+				select  6, @productoid, codigo, descripcion, @cantidad, isnull(@tmpExistencia,0), @userid, 'Entrada por consignación ' + convert(varchar(10),@consignacionid), @almacenid  from tblMisProductos where id=@productoid
 			end
 			/*	Marca el lote como procesado	*/
 	
-			update tblConsignacion set estatusid=2 where id=@consignacionid
+			--update tblConsignacion set estatusid=2 where id=@consignacionid
 
 
 		end
