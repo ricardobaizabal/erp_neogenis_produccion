@@ -731,17 +731,8 @@ BEGIN
 	/* Regreso consignacion a pedido desde consigna */
 	if @cmd=23
 	begin
-		--en cuestion de urgencia, obtengo el pedido usando comentario de consignacion
-		--declare @pedidotxt varchar(30)
-		--SET @pedidotxt = (SELECT TOP 1 TRIM(LTRIM(REPLACE(cast(comentario as varchar), 'Pedido', ''))) FROM tblConsignacion WHERE id = @consignacionid)
-		--if @pedidotxt != ''
-		--begin
-			--SET @pedidoid = CAST(@pedidotxt as bigint)
-			--ok, procedo a cambiar registro de pedido, cierro consignacion, EVITO DELETE CRUDO
-			--dejo en cerrado por lo revisado con Lilieth.
-			UPDATE tblConsignacion SET estatusid = 3, comentario = CONCAT(comentario, CAST(' CERRADO REGRESO PEDIDO' AS TEXT)) WHERE id = @consignacionid 
-
-		--end
+		--dejo en cerrada consignación por lo revisado con Lilieth
+		UPDATE tblConsignacion SET estatusid = 3, comentario = CONCAT(comentario, CAST(' CERRADO REGRESO ' AS TEXT)) WHERE id = @consignacionid 
 	end
 
 	if @cmd=24 
@@ -800,7 +791,7 @@ BEGIN
 				select  6, @productoid, codigo, descripcion, @cantidad, isnull(@tmpExistencia,0), @userid, 'Entrada por consignación ' + convert(varchar(10),@consignacionid), @almacenid  from tblMisProductos where id=@productoid
 			end
 			/*	Marca el lote como procesado	*/
-	
+			--Se cierra desde cmd 23
 			--update tblConsignacion set estatusid=2 where id=@consignacionid
 
 

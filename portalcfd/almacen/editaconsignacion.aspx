@@ -9,6 +9,9 @@
             if (eventTarget == "<%= btnRegresarInventario.UniqueID%>") {
                 return confirm('Va a regresar al inventario de Natural GS los productos seleccionados, ¿Desea continuar?');
             }
+            if (eventTarget == "<%= btnRegresarPedidos.UniqueID%>") {
+                return confirm('Va a regresar al inventario de Natural GS la consignación, ¿Desea continuar?');
+            }
             if ((arguments.get_eventTarget().indexOf("btnFacturar") > -1) || (arguments.get_eventTarget().indexOf("btnImprimir") > -1) || (arguments.get_eventTarget().indexOf("btnRegresar") > -1) || (arguments.get_eventTarget().indexOf("productsList") > -1)) {
                 arguments.set_enableAjax(false);
             }
@@ -225,7 +228,7 @@
         <%--<asp:Button ID="btnProcesar" runat="server" CausesValidation="false" Text="Procesar consignación" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--%>
         <asp:Button ID="btnFacturar" runat="server" Text="Facturar" CausesValidation="false" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnRegresarInventario" runat="server" Text="Regresar a Natural" CausesValidation="false" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnRegresarPedidos" runat="server" Text="Regresar a Pedido" CssClass="botones" CausesValidation="false" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnRegresarPedidos" runat="server" Text="Regresar todo a Natural" CssClass="botones" CausesValidation="false" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnImprimir" runat="server" Text="Imprimir" CssClass="botones" CausesValidation="false" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnRegresar" runat="server" Text="Regresar" CausesValidation="false" /><br />
         <%--  --%>

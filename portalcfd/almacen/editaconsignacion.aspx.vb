@@ -16,6 +16,7 @@ Public Class editaconsignacion
             If Session("perfilid") = 3 Or Session("perfilid") = 5 Then
                 btnFacturar.Enabled = False
                 btnRegresarInventario.Enabled = False
+                btnRegresarPedidos.Enabled = False
                 btnImprimir.Enabled = False
             End If
         End If
@@ -44,6 +45,7 @@ Public Class editaconsignacion
                     btnFacturar.Enabled = False
                     btnFacturar.ToolTip = "Esta consignación no ha sido procesada"
                     btnRegresarInventario.ToolTip = "Esta consignación no ha sido procesada"
+                    btnRegresarPedidos.ToolTip = "Esta consignación no ha sido procesada"
                     productsList.Columns(productsList.Columns.Count - 2).Visible = False
                 ElseIf rs("estatusid") = 2 Then
                     'btnProcesar.Enabled = False
@@ -55,6 +57,7 @@ Public Class editaconsignacion
                 ElseIf rs("estatusid") = 3 Then
                     btnRegresarInventario.Enabled = False
                     btnFacturar.Enabled = False
+                    btnRegresarPedidos.Enabled = False
                     'btnProcesar.Enabled = False
                     'btnProcesar.ToolTip = "Esta consignación ya ha sido cerrada"
                     productsList.Columns(productsList.Columns.Count - 1).Visible = False
@@ -62,7 +65,10 @@ Public Class editaconsignacion
                     btnSearch.Enabled = False
                     btnSearch.ToolTip = "Esta consignación ya ha sido cerrada"
                 End If
-                '
+                ' lcng: no habilitar si no es de pedido 
+                If Not lblComentario.Text.Contains("Pedido") Then
+                    btnRegresarPedidos.Enabled = False
+                End If
             End If
         Catch ex As Exception
             '
@@ -309,50 +315,106 @@ Public Class editaconsignacion
             lblMensajeFacturar.Text = "Proporcione la cantidad que desea regresar"
         End If
     End Sub
-    'TODO: Adecuar este còdigo para que regresa consigna a pedidos
-    'soy el mandaloriano
+    'lcng 23 Diciembre 2024: regresa consigna a pedidos
     Private Sub btnRegresarPedidos_Click(sender As Object, e As EventArgs) Handles btnRegresarPedidos.Click
         Dim listErrores As New List(Of String)
         Dim message As String = ""
         Dim validaRegresar As Integer = 0
-        'valido que no este facturado ni en parcial
 
-        For Each dataItem As Telerik.Web.UI.GridDataItem In productsList.MasterTableView.Items
-            Dim disponible As String = dataItem.GetDataKeyValue("disponible").ToString()
-            Dim txtCantidad As Telerik.Web.UI.RadNumericTextBox = DirectCast(dataItem.FindControl("txtCantidad"), Telerik.Web.UI.RadNumericTextBox) '' --Cantidad Solicitada
-            If Convert.ToDecimal(txtCantidad.Text) > 0 Then
-                validaRegresar = validaRegresar + 1
-                If Convert.ToDecimal(disponible) < Convert.ToDecimal(txtCantidad.Text) Then
-                    listErrores.Add("*La cantidad solicitada (" & txtCantidad.Text & ") es mayor a la disponibilidad (" & disponible & ") para este producto. Para poder FACTURAR proporcione la cantidad correcta.")
-                    message = String.Join(Environment.NewLine, listErrores.ToArray())
-                    lblMensajeFacturar.Text = message
-                    Return
-                End If
-            End If
-        Next
+        Dim conn As New SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("conn").ConnectionString)
+        Dim DataControl As New DataControl
+        Dim consignacionid As String = Request("id").ToString()
+        Dim pedidoid As String = ""
+        Dim comentario As String = ""
 
-        If validaRegresar > 0 Then
-            Dim DataControl As New DataControl
+        Dim ds As DataSet = New DataSet
+
+        Dim cmd As New SqlCommand("EXEC pConsignaciones @cmd=2, @consignacionid='" & Request("id").ToString() & "'", conn)
+        conn.Open()
+        Dim rs As SqlDataReader
+        rs = cmd.ExecuteReader()
+
+        If rs.Read Then
+            comentario = rs("comentario")
+        End If
+        rs.Close()
+        conn.Close()
+
+        ' valido que consigna provenga desde un pedido
+        If comentario.Contains("Pedido") Then
+            ' criterio de validaciòn, las columnas de todas las partidas de la consignaciòn deben de tener 
+            ' 'facturado' y 'regresado' en 0.
+            ' Iterar sobre los registros del DataTable
+            Dim esConsignacionParcial As Boolean = False
+
             For Each dataItem As Telerik.Web.UI.GridDataItem In productsList.MasterTableView.Items
-                Dim txtCantidad As Telerik.Web.UI.RadNumericTextBox = DirectCast(dataItem.FindControl("txtCantidad"), Telerik.Web.UI.RadNumericTextBox)
-                If Convert.ToDecimal(txtCantidad.Text) > 0 Then
-                    Dim productoid As String = dataItem.GetDataKeyValue("productoid").ToString()
-
-                    lblMensajeFacturar.Text = ""
-                    DataControl.RunSQLQuery("exec pRegresaInventarioConsignacionCliente @productoid='" & productoid.ToString & "', @userid='" & Session("userid").ToString & "', @consignacionid='" & Request("id") & "', @cantidad='" & txtCantidad.Text.ToString & "'")
+                Dim facturado As Long = 0
+                Dim regresado As Long = 0
+                Double.TryParse(dataItem.Cells(9).Text, facturado)
+                Double.TryParse(dataItem.Cells(10).Text, regresado)
+                If facturado <> 0 Or regresado <> 0 Then
+                    esConsignacionParcial = True
+                    Exit For
                 End If
             Next
-            DataControl = Nothing
-            '
-            '   Actualiza estatus de consignación
-            '
-            Call ActualizaEstatusConsignacion()
-            '
-            Response.Redirect("~/portalcfd/almacen/editaconsignacion.aspx?id=" & Request("id").ToString)
-            '
-        Else
-            lblMensajeFacturar.Text = "Proporcione la cantidad que desea regresar"
+
+            If esConsignacionParcial = False Then
+                ' obtener id de pedido desde la descripciòn...
+                pedidoid = comentario.Replace("Pedido", "").Trim()
+
+                ' ejecuto procedure consigna para cerrar consigna, cmd 23
+                DataControl.RunSQLQuery("exec pConsignaciones @cmd=23, @consignacionid='" & consignacionid & "'")
+
+                ' ejecuto procedure pedido para reactivar pedido (cmd 50).
+                DataControl.RunSQLQuery("exec pPedidos @cmd=50, @pedidoid='" & pedidoid & "'")
+
+                ' ejecuto procedure pedido conceptos para obtener conceptos de pedido cmd 2 
+                cmd = New SqlCommand("exec pPedidosConceptos @cmd=2, @pedidoid=@PedidoId", conn)
+                cmd.Parameters.AddWithValue("@PedidoId", pedidoid)
+
+                Try
+                    conn.Open()
+
+                    ' Cargar los resultados en un DataTable
+                    Dim dt As New DataTable()
+                    dt.Load(cmd.ExecuteReader())
+
+                    For Each row As DataRow In dt.Rows
+                        ' Extraer los datos necesarios del DataTable
+                        Dim productoId As Integer = Convert.ToInt32(row("productoId"))
+                        Dim cantidad As Integer = Convert.ToInt32(row("cantidad"))
+
+                        ' Ahora ejecutar el procedimiento veinticuatro pConsignaciones por cada registro obtenido
+                        Dim consignacionCmd As New SqlCommand("exec pConsignaciones @cmd=24, @consignacionid=@ConsignacionId, @productoid=@ProductoId, @cantidad=@Cantidad", conn)
+                        consignacionCmd.Parameters.AddWithValue("@ConsignacionId", consignacionid)  ' Usar el consignacionId pasado como parámetro
+                        consignacionCmd.Parameters.AddWithValue("@ProductoId", productoId)
+                        consignacionCmd.Parameters.AddWithValue("@Cantidad", cantidad)
+
+                        ' Ejecutar el procedimiento
+                        consignacionCmd.ExecuteNonQuery()
+                    Next
+                Catch ex As Exception
+                    lblMensaje.Text = "Error: " & ex.Message.ToString()
+                Finally
+                    conn.Close()
+                    conn.Dispose()
+                End Try
+
+            Else
+                'print message
+                listErrores.Add("*Para regresar, la consignación no debe haberse facturado ni regresado parcial a pedidos.")
+                message = String.Join(Environment.NewLine, listErrores.ToArray())
+                lblMensajeFacturar.Text = message
+                Return
+            End If
         End If
+
+        conn.Close()
+        conn.Dispose()
+        conn = Nothing
+        DataControl = Nothing
+        '
+        Response.Redirect("~/portalcfd/almacen/editaconsignacion.aspx?id=" & Request("id").ToString)
     End Sub
 
     Private Sub ActualizaEstatusConsignacion()
