@@ -950,6 +950,7 @@ Partial Class portalcfd_Productos
                         End Try
 
                         '???
+                        'lcng: comentarizado para que pasara carga brooks 2025
                         'Try
                         '    Dim rowCodigo() As DataRow = dtConceptosDetalle.Select("codigo = '" & LTrim(RTrim(codigo)).ToString & "'")
                         '    For Each row As DataRow In rowCodigo
