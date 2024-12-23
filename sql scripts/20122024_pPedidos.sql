@@ -2001,7 +2001,7 @@ END
     where id = @pedidoid;
 
     -- Guarda el número de filas afectadas
-    declare @rowsAffectedPedidos int = @@ROWCOUNT;
+    SET @rowsAffectedPedidos = @@ROWCOUNT;
 
     -- Actualiza los conceptos del pedido
     update tblPedidosConceptos
@@ -2009,7 +2009,7 @@ END
     where pedidoid = @pedidoid;
 
     -- Guarda el número de filas afectadas
-    declare @rowsAffectedConceptos int = @@ROWCOUNT;
+    SET @rowsAffectedConceptos = @@ROWCOUNT;
 
     -- Verifica si ambas operaciones afectaron filas
     if @rowsAffectedPedidos > 0 and @rowsAffectedConceptos > 0
