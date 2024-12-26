@@ -262,7 +262,10 @@ Partial Class portalcfd_almacen_InventarioCiclico
     'End Sub
     Protected Sub btnSearch_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnSearch.Click
         Dim ObjData As New DataControl
-        ds = ObjData.FillDataSet("exec pInventario @cmd=14, @marca='" & cmbMarca.SelectedValue.ToString & "', @ubicacion='" & txtUbicacion.Text & "'")
+        Dim filtroUbicacion As String = Trim(txtUbicacion.Text)
+        Dim filtroSku As String = Trim(txtSku.Text)
+        'lcng: Se usa cmd 11 por ajuste de corrección de filtros ubicación y sku
+        ds = ObjData.FillDataSet("exec pInventario @cmd=11, @marca='" & cmbMarca.SelectedValue.ToString & "', @ubicacion='" & filtroUbicacion & "', @sku='" & filtroSku & "'")
         productslist.DataSource = ds
         productslist.DataBind()
         ObjData = Nothing

@@ -49,6 +49,13 @@
                         <asp:TextBox ID="txtUbicacion" runat="server" Width="92%" CssClass="box"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
+                    <td align="right">
+                        <span class="item">SKU:</span>
+                    </td>
+                    <td align="left" style="width: 20%;">
+                        <asp:TextBox ID="txtSku" runat="server" Width="92%" CssClass="box"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
                     <td style="width: 20%;"></td>
                     <td align="left">
                         <asp:Button ID="btnSearch" runat="server" CssClass="boton" Text="Buscar" />&nbsp;&nbsp;&nbsp;
