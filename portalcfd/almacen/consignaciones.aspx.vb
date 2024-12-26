@@ -11,13 +11,14 @@ Public Class consignaciones
             Call CargaListado()
             Dim ObjCat As New DataControl
             ObjCat.Catalogo(estatusid, "select id, nombre from tblConsignacionEstatus order by nombre", 0)
+            ObjCat.Catalogo(proyectoid, "select id, nombre from tblProyecto order by nombre", 0)
             ObjCat = Nothing
         End If
     End Sub
 
     Private Sub CargaListado()
         Dim ObjData As New DataControl
-        consignacionList.DataSource = ObjData.FillDataSet("exec pConsignaciones @cmd=5, @estatusid='" & estatusid.SelectedValue.ToString & "'")
+        consignacionList.DataSource = ObjData.FillDataSet("exec pConsignaciones @cmd=5, @estatusid='" & estatusid.SelectedValue.ToString & "', @proyectoid='" & proyectoid.SelectedValue & "'")
         consignacionList.MasterTableView.NoDetailRecordsText = "No se encontraron registros para mostrar."
         consignacionList.DataBind()
         ObjData = Nothing

@@ -19,7 +19,8 @@
             <td style="height: 5px">&nbsp;</td>
             <tr>
                 <td class="item">
-                    <strong>Estatus:</strong>&nbsp;&nbsp;<asp:DropDownList id="estatusid" runat="server"></asp:DropDownList>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong>Estatus:</strong>&nbsp;&nbsp;<asp:DropDownList id="estatusid" runat="server"></asp:DropDownList>&nbsp;&nbsp;&nbsp;&nbsp;   
+                    <strong>Marca:</strong>&nbsp;&nbsp;<asp:DropDownList id="proyectoid" runat="server"></asp:DropDownList>&nbsp;&nbsp;&nbsp;&nbsp;   
                     <asp:Button ID="btnSearch" runat="server" Text="Consultar" /><br />
                 </td>
             </tr>

@@ -50,6 +50,15 @@ Partial Public Class consignaciones
     Protected WithEvents estatusid As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
+    '''proyectoid control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents proyectoid As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
     '''btnSearch control.
     '''</summary>
     '''<remarks>
