@@ -1231,11 +1231,18 @@ Partial Class portalcfd_Productos
                         'End Try
 
                         'validaciones
-                        proyectoId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=16, @marca='" & marca & "'")
-                        coleccionId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=17, @temporada='" & temporada & "'")
-                        monedaId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=18, @moneda='" & moneda & "'")
-                        generoId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=19, @genero='" & genero & "'")
-                        tasaId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=20, @tasa='" & tasa & "'")
+                        Try
+
+                            proyectoId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=16, @marca='" & marca & "'")
+                            coleccionId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=17, @temporada='" & temporada & "'")
+                            monedaId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=18, @moneda='" & moneda & "'")
+                            generoId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=19, @genero='" & genero & "'")
+                            tasaId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=20, @tasa='" & tasa & "'")
+                        Catch ex As Exception
+
+                            rwAlerta.RadAlert("Formato CSV no válido. Favor de verificar formato descargado", 350, 200, "Alerta", "", "")
+                            Exit Do
+                        End Try
 
                         'lcng: reviso que el peso sea nùmero
                         Dim pesoError As Boolean = False
