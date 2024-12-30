@@ -1582,184 +1582,250 @@ Partial Class portalcfd_Productos
                     If j > 1 Then
                         If formatoBrooks2024 Then
 
+                            Dim fieldTxt As String = ""
+                            Dim parsedLine = line
+                            Dim fieldNo As Integer = -1
+                            Dim iteratingLine As Boolean = True
+                            Dim delimitingComma As Boolean = True
+                            Dim flgReadNextLine As Boolean = False
+                            Dim fieldsCsv(40) As String
+                            Dim whileCount As Integer = 0
+                            Dim has_err As Boolean = False
+                            While iteratingLine
+                                fieldNo = -1
+                                Array.Clear(fieldsCsv, 0, fieldsCsv.Length)
+                                Dim charCount As Integer = 0
+                                'campo con salto de linea...
+                                If flgReadNextLine Then
+                                    registros = registros - 1 'csv leyó líneas de más, se ajusta cantidad mostrada
+                                    line = reader.ReadLine()
+                                    parsedLine = parsedLine + " " + line
+                                    flgReadNextLine = False
+                                End If
+
+                                'Iterating field
+                                For Each ch As Char In parsedLine
+                                    'field was read
+                                    If ch = "," And delimitingComma Then
+                                        fieldNo = fieldNo + 1
+                                        fieldTxt = Trim(fieldTxt)
+                                        'concatenate to fields array
+                                        fieldsCsv(fieldNo) = fieldTxt
+                                        fieldTxt = ""
+
+                                        Continue For
+                                    ElseIf ch = """" Then
+                                        delimitingComma = Not delimitingComma
+                                        Continue For
+                                    End If
+                                    fieldTxt = fieldTxt + ch
+                                Next
+
+                                'last field
+                                fieldNo = fieldNo + 1
+                                fieldTxt = Trim(fieldTxt)
+                                'concatenate to fields array
+                                fieldsCsv(fieldNo) = fieldTxt
+                                fieldTxt = ""
+
+                                'some fields missing, append next line
+                                If fieldNo < 27 Then
+                                    flgReadNextLine = True
+                                    Continue While
+                                End If
+
+                                iteratingLine = False
+                                'some while prevention
+                                whileCount = whileCount + 1
+                                If whileCount > 100 Then
+                                    has_err = True
+                                    iteratingLine = False
+                                End If
+                            End While
+
+                            If has_err Then
+                                rwAlerta.RadAlert("Problema al leer archivo csv, favor de verificar formato descargado.", 350, 200, "Alerta", "", "")
+                                Return
+                            End If
+
                             ' CODIGO
                             Try
-                                codigo = line.Split(",")(0)
+                                codigo = fieldsCsv(0)
                             Catch ex As Exception
                                 codigo = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                upc = line.Split(",")(1)
+                                upc = fieldsCsv(1)
                             Catch ex As Exception
                                 upc = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                descripcion = line.Split(",")(2)
+                                descripcion = fieldsCsv(2)
                             Catch ex As Exception
                                 descripcion = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                descripcion_corta = line.Split(",")(3)
+                                descripcion_corta = fieldsCsv(3)
                             Catch ex As Exception
                                 descripcion_corta = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                marca = line.Split(",")(4)
+                                marca = fieldsCsv(4)
                             Catch ex As Exception
                                 marca = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                temporada = line.Split(",")(5)
+                                temporada = fieldsCsv(5)
                             Catch ex As Exception
                                 temporada = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                unitario1 = line.Split(",")(6)
+                                unitario1 = Decimal.Parse(fieldsCsv(6).Replace(",", "").Replace(" ", "").Replace("$", ""))
                             Catch ex As Exception
                                 unitario1 = 0
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                unitario2 = line.Split(",")(7)
+                                unitario2 = Decimal.Parse(fieldsCsv(7).Replace(",", "").Replace(" ", "").Replace("$", ""))
                             Catch ex As Exception
                                 unitario2 = 0
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                unitario3 = line.Split(",")(8)
+                                unitario3 = Decimal.Parse(fieldsCsv(8).Replace(",", "").Replace(" ", "").Replace("$", ""))
                             Catch ex As Exception
                                 unitario3 = 0
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                unitario4 = line.Split(",")(9)
+                                unitario4 = Decimal.Parse(fieldsCsv(9).Replace(",", "").Replace(" ", "").Replace("$", ""))
                             Catch ex As Exception
                                 unitario4 = 0
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                modelo_estilo = line.Split(",")(10)
+                                modelo_estilo = fieldsCsv(10)
                             Catch ex As Exception
                                 modelo_estilo = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                plataforma = line.Split(",")(11)
+                                plataforma = fieldsCsv(11)
                             Catch ex As Exception
                                 plataforma = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                genero = line.Split(",")(12)
+                                genero = fieldsCsv(12)
                             Catch ex As Exception
                                 genero = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                tallaUSA = line.Split(",")(13)
+                                tallaUSA = fieldsCsv(13)
                             Catch ex As Exception
                                 tallaUSA = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                tallaMX = line.Split(",")(14)
+                                tallaMX = fieldsCsv(14)
                             Catch ex As Exception
                                 tallaMX = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                color = line.Split(",")(15)
+                                color = fieldsCsv(15)
                             Catch ex As Exception
                                 color = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                colorMX = line.Split(",")(16)
+                                colorMX = fieldsCsv(16)
                             Catch ex As Exception
                                 colorMX = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                material = line.Split(",")(17)
+                                material = fieldsCsv(17)
                             Catch ex As Exception
                                 material = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                peso = line.Split(",")(18)
+                                peso = fieldsCsv(18)
                             Catch ex As Exception
                                 peso = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                empaque_alto = line.Split(",")(19)
+                                empaque_alto = fieldsCsv(19)
                             Catch ex As Exception
                                 empaque_alto = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                empaque_largo = line.Split(",")(20)
+                                empaque_largo = fieldsCsv(20)
                             Catch ex As Exception
                                 empaque_largo = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                empaque_ancho = line.Split(",")(21)
+                                empaque_ancho = fieldsCsv(21)
                             Catch ex As Exception
                                 empaque_ancho = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                unidadMedida = line.Split(",")(22)
+                                unidadMedida = fieldsCsv(22)
                             Catch ex As Exception
                                 unidadMedida = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                claveProdServ = line.Split(",")(23)
+                                claveProdServ = fieldsCsv(23)
                             Catch ex As Exception
                                 claveProdServ = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                moneda = line.Split(",")(24)
+                                moneda = fieldsCsv(24)
                             Catch ex As Exception
                                 moneda = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                tasa = line.Split(",")(25)
+                                tasa = fieldsCsv(25)
                             Catch ex As Exception
                                 tasa = ""
                             End Try
@@ -1768,21 +1834,21 @@ Partial Class portalcfd_Productos
 
                             ' CODIGO REORDEN
                             Try
-                                marketPlaceLiverpool = line.Split(",")(26)
+                                marketPlaceLiverpool = fieldsCsv(26)
                             Catch ex As Exception
                                 marketPlaceLiverpool = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                marketPlaceShopify = line.Split(",")(27)
+                                marketPlaceShopify = fieldsCsv(27)
                             Catch ex As Exception
                                 marketPlaceShopify = ""
                             End Try
 
                             ' CODIGO REORDEN
                             Try
-                                marketPlaceAcctivity = line.Split(",")(28)
+                                marketPlaceAcctivity = fieldsCsv(28)
                             Catch ex As Exception
                                 marketPlaceAcctivity = ""
                             End Try
