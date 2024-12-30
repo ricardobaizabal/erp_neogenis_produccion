@@ -2450,6 +2450,11 @@ Partial Class portalcfd_Productos
                             End Try
                         End If
 
+                        Dim upcError As Boolean = False
+                        If upc.Contains("E+11") Then
+                            upcError = True
+                        End If
+
 
                         If codigo.Length > 0 Then
                             ' Dim productoid As Long
@@ -2485,7 +2490,7 @@ Partial Class portalcfd_Productos
                             '    ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
                             '    registros_error = registros_error + 1
 
-                            If codigoActivo >= 1 Or pesoError Then
+                            If codigoActivo >= 1 Or pesoError Or upcError Then
                                 ' Marco error
                                 Dim p As New ArrayList
                                 p.Add(New SqlParameter("@cmd", 7))
@@ -2528,10 +2533,12 @@ Partial Class portalcfd_Productos
 
                                 If codigoActivo >= 1 Then
                                     p.Add(New SqlParameter("@error", "El código " & codigo & " ya está registrado."))
-                                End If
 
-                                If pesoError Then
+                                ElseIf pesoError Then
                                     p.Add(New SqlParameter("@error", "Se capturó " & peso & " en la columna peso kg."))
+
+                                ElseIf upcError Then
+                                    p.Add(New SqlParameter("@error", "Se capturó información inválida en upc."))
                                 End If
                                 ' p.Add(New SqlParameter("@ordenId", Request("id").ToString))
                                 ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
