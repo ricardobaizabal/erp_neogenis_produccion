@@ -7,6 +7,7 @@ Imports System.IO
 Imports System.Linq
 
 
+
 Partial Class portalcfd_Productos
     Inherits System.Web.UI.Page
     Private ds As DataSet
@@ -680,8 +681,756 @@ Partial Class portalcfd_Productos
 
                 Dim j As Integer = 0
                 Dim line As String = ""
+                Dim fields As String() = Nothing
+                Dim formatoLegacy As Boolean = False
+                Dim formatoBrooks2024 As Boolean = False
                 'Itero líneas de csv hasta EOF
                 Dim reader As System.IO.StreamReader = New StreamReader(Server.MapPath("../almacen/cargaCsv/") & nombreArchivo, System.Text.Encoding.Default)
+                'Using reader As New Microsoft.VisualBasic.FileIO.TextFieldParser(Server.MapPath("../almacen/cargaCsv/") & nombreArchivo)
+                '    reader.TextFieldType = FileIO.FieldType.Delimited
+                '    reader.SetDelimiters(",")
+                '    While Not reader.EndOfData
+                '        j += 1
+
+                '        'line = reader.ReadLine
+
+                '        'If line = Nothing Then
+                '        '    Exit While
+                '        'End If
+
+                '        'Dim cantidad As Integer = 0
+                '        Dim codigoId As String = ""
+                '        Dim codigoActivo As Integer = 0
+
+                '        Dim codigo As String = ""
+                '        Dim upc As String = ""
+                '        Dim claveSat As String = ""
+                '        Dim unidad As String = ""
+                '        Dim descripcion As String = ""
+                '        Dim descripcion_corta As String = ""
+                '        Dim marca As String = 0
+                '        Dim temporada As String = ""
+                '        Dim unitario1 As Decimal = 0
+                '        Dim unitario2 As Decimal = 0
+                '        Dim unitario3 As Decimal = 0
+                '        Dim unitario4 As Decimal = 0
+                '        Dim modelo_estilo As String = ""
+                '        Dim plataforma As String = ""
+                '        Dim genero As String = ""
+                '        Dim tallaUSA As String = ""
+                '        Dim tallaMX As String = ""
+                '        Dim color As String = ""
+                '        Dim colorMX As String = ""
+                '        Dim material As String = ""
+                '        Dim peso As String = ""
+                '        Dim empaque_alto As String = ""
+                '        Dim empaque_largo As String = ""
+                '        Dim empaque_ancho As String = ""
+                '        Dim unidadMedida As String = ""
+                '        Dim moneda As String = ""
+                '        Dim claveProdServ As String = ""
+                '        Dim tasa As String = ""
+
+                '        'Marketplace
+                '        Dim marketPlaceLiverpool As String = ""
+                '        Dim marketPlaceShopify As String = ""
+                '        Dim marketPlaceAcctivity As String = ""
+
+                '        'se usa cmd para obtener estos valores
+                '        Dim coleccionId As Integer = 0
+                '        Dim proyectoId As Integer = 0
+                '        Dim generoId As Integer = 0
+                '        Dim marcaId As Integer = 0
+                '        Dim tasaId As Integer = 0
+                '        Dim monedaId As Integer = 0
+                '        Dim objImpId As Integer = 2
+
+
+
+                '        'ID
+                '        'valido tipo de formato
+                '        If j = 1 Then
+                '            line = reader.ReadLine
+                '            'formato legacy
+                '            If Trim(line.Split(",")(0)) = "Código-Sku" And
+                '            Trim(line.Split(",")(1)) = "UPC" And
+                '            Trim(line.Split(",")(2)) = "Descripción" And
+                '            Trim(line.Split(",")(3)) = "Descripción" And
+                '            Trim(line.Split(",")(4)) = "Corta" And
+                '            Trim(line.Split(",")(5)) = "Marca" And
+                '            Trim(line.Split(",")(6)) = "Temporada" And
+                '            Trim(line.Split(",")(7)) = "Precio Unit. 1" And
+                '            Trim(line.Split(",")(8)) = "Precio Unit. 2" And
+                '            Trim(line.Split(",")(9)) = "Precio Unit. 3" And
+                '            Trim(line.Split(",")(10)) = "Precio Unit. 4" And
+                '            Trim(line.Split(",")(11)) = "Costo Estándar" And
+                '            Trim(line.Split(",")(12)) = "Costo Promedio" And
+                '            Trim(line.Split(",")(13)) = "Matriz" And
+                '            Trim(line.Split(",")(14)) = "En proceso" And
+                '            Trim(line.Split(",")(15)) = "En consignación" And
+                '            Trim(line.Split(",")(16)) = "Disponibles" And
+                '            Trim(line.Split(",")(17)) = "Modelo-Estilo" And
+                '            Trim(line.Split(",")(18)) = "Plataforma" And
+                '            Trim(line.Split(",")(19)) = "Género" And
+                '            Trim(line.Split(",")(20)) = "Talla USA" And
+                '            Trim(line.Split(",")(21)) = "Talla MX" And
+                '            Trim(line.Split(",")(22)) = "Color" And
+                '            Trim(line.Split(",")(23)) = "Color Mx" And
+                '            Trim(line.Split(",")(24)) = "Material" And
+                '            Trim(line.Split(",")(25)) = "Peso" And
+                '            Trim(line.Split(",")(26)) = "Empaque alto" And
+                '            Trim(line.Split(",")(27)) = "Empaque largo" And
+                '            Trim(line.Split(",")(28)) = "Empaque ancho" And
+                '            Trim(line.Split(",")(29)) = "Unidad Medida" And
+                '            Trim(line.Split(",")(30)) = "Clave Producto" And
+                '            Trim(line.Split(",")(31)) = "Moneda" And
+                '            Trim(line.Split(",")(32)) = "Tasa" Then
+                '                formatoLegacy = True
+                '            End If
+                '            'formato nuevo 2024
+                '            If Trim(line.Split(",")(0)) = "codigo_sku" And
+                '            Trim(line.Split(",")(1)) = "upc" And
+                '            Trim(line.Split(",")(2)) = "descripcion" And
+                '            Trim(line.Split(",")(3)) = "descripcion_corta" And
+                '            Trim(line.Split(",")(4)) = "marca" And
+                '            Trim(line.Split(",")(5)) = "temporada" And
+                '            Trim(line.Split(",")(6)) = "unitario1" And
+                '            Trim(line.Split(",")(7)) = "unitario2" And
+                '            Trim(line.Split(",")(8)) = "unitario3" And
+                '            Trim(line.Split(",")(9)) = "unitario4" And
+                '            Trim(line.Split(",")(10)) = "modelo_estilo" And
+                '            Trim(line.Split(",")(11)) = "plataforma" And
+                '            Trim(line.Split(",")(12)) = "genero" And
+                '            Trim(line.Split(",")(13)) = "tallaUSA" And
+                '            Trim(line.Split(",")(14)) = "tallaMX" And
+                '            Trim(line.Split(",")(15)) = "color" And
+                '            Trim(line.Split(",")(16)) = "colorMX" And
+                '            Trim(line.Split(",")(17)) = "material" And
+                '            Trim(line.Split(",")(18)) = "peso" And
+                '            Trim(line.Split(",")(19)) = "empaque_alto" And
+                '            Trim(line.Split(",")(20)) = "empaque_largo" And
+                '            Trim(line.Split(",")(21)) = "empaque_ancho" And
+                '            Trim(line.Split(",")(22)) = "unidadMedida" And
+                '            Trim(line.Split(",")(23)) = "claveProducto" And
+                '            Trim(line.Split(",")(24)) = "moneda" And
+                '            Trim(line.Split(",")(25)) = "tasa %" And
+                '            Trim(line.Split(",")(26)) = "market_place_liverpool" And
+                '            Trim(line.Split(",")(27)) = "market_place_shopify" And
+                '            Trim(line.Split(",")(28)) = "market_place_acctivity" Then
+                '                formatoBrooks2024 = True
+                '            End If
+
+                '            If formatoLegacy = False And formatoBrooks2024 = False Then
+                '                rwAlerta.RadAlert("Formato CSV no válido.", 350, 200, "Alerta", "", "")
+                '                Exit While
+                '            End If
+                '        End If
+
+                '        'skip encabezado
+                '        If j > 1 Then
+                '            If formatoBrooks2024 Then
+
+                '                ' CODIGO
+                '                Try
+                '                    codigo = line.Split(",")(0)
+                '                Catch ex As Exception
+                '                    codigo = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    upc = line.Split(",")(1)
+                '                Catch ex As Exception
+                '                    upc = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    descripcion = line.Split(",")(2)
+                '                Catch ex As Exception
+                '                    descripcion = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    descripcion_corta = line.Split(",")(3)
+                '                Catch ex As Exception
+                '                    descripcion_corta = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    marca = line.Split(",")(4)
+                '                Catch ex As Exception
+                '                    marca = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    temporada = line.Split(",")(5)
+                '                Catch ex As Exception
+                '                    temporada = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    unitario1 = line.Split(",")(6)
+                '                Catch ex As Exception
+                '                    unitario1 = 0
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    unitario2 = line.Split(",")(7)
+                '                Catch ex As Exception
+                '                    unitario2 = 0
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    unitario3 = line.Split(",")(8)
+                '                Catch ex As Exception
+                '                    unitario3 = 0
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    unitario4 = line.Split(",")(9)
+                '                Catch ex As Exception
+                '                    unitario4 = 0
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    modelo_estilo = line.Split(",")(10)
+                '                Catch ex As Exception
+                '                    modelo_estilo = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    plataforma = line.Split(",")(11)
+                '                Catch ex As Exception
+                '                    plataforma = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    genero = line.Split(",")(12)
+                '                Catch ex As Exception
+                '                    genero = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    tallaUSA = line.Split(",")(13)
+                '                Catch ex As Exception
+                '                    tallaUSA = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    tallaMX = line.Split(",")(14)
+                '                Catch ex As Exception
+                '                    tallaMX = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    color = line.Split(",")(15)
+                '                Catch ex As Exception
+                '                    color = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    colorMX = line.Split(",")(16)
+                '                Catch ex As Exception
+                '                    colorMX = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    material = line.Split(",")(17)
+                '                Catch ex As Exception
+                '                    material = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    peso = line.Split(",")(18)
+                '                Catch ex As Exception
+                '                    peso = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    empaque_alto = line.Split(",")(19)
+                '                Catch ex As Exception
+                '                    empaque_alto = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    empaque_largo = line.Split(",")(20)
+                '                Catch ex As Exception
+                '                    empaque_largo = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    empaque_ancho = line.Split(",")(21)
+                '                Catch ex As Exception
+                '                    empaque_ancho = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    unidadMedida = line.Split(",")(22)
+                '                Catch ex As Exception
+                '                    unidadMedida = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    claveProdServ = line.Split(",")(23)
+                '                Catch ex As Exception
+                '                    claveProdServ = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    moneda = line.Split(",")(24)
+                '                Catch ex As Exception
+                '                    moneda = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    tasa = line.Split(",")(25)
+                '                Catch ex As Exception
+                '                    tasa = ""
+                '                End Try
+
+                '                claveSat = claveProdServ
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    marketPlaceLiverpool = line.Split(",")(26)
+                '                Catch ex As Exception
+                '                    marketPlaceLiverpool = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    marketPlaceShopify = line.Split(",")(27)
+                '                Catch ex As Exception
+                '                    marketPlaceShopify = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    marketPlaceAcctivity = line.Split(",")(28)
+                '                Catch ex As Exception
+                '                    marketPlaceAcctivity = ""
+                '                End Try
+                '            ElseIf formatoLegacy Then
+                '                fields = reader.ReadFields()
+
+                '                ' CODIGO
+                '                Try
+                '                    codigo = line.Split(",")(0)
+                '                Catch ex As Exception
+                '                    codigo = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    upc = line.Split(",")(1)
+                '                Catch ex As Exception
+                '                    upc = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    descripcion = line.Split(",")(2)
+                '                Catch ex As Exception
+                '                    descripcion = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    descripcion_corta = line.Split(",")(3)
+                '                Catch ex As Exception
+                '                    descripcion_corta = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    marca = line.Split(",")(4)
+                '                Catch ex As Exception
+                '                    marca = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    temporada = line.Split(",")(5)
+                '                Catch ex As Exception
+                '                    temporada = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    unitario1 = line.Split(",")(6)
+                '                Catch ex As Exception
+                '                    unitario1 = 0
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    unitario2 = line.Split(",")(7)
+                '                Catch ex As Exception
+                '                    unitario2 = 0
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    unitario3 = line.Split(",")(8)
+                '                Catch ex As Exception
+                '                    unitario3 = 0
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    unitario4 = line.Split(",")(9)
+                '                Catch ex As Exception
+                '                    unitario4 = 0
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    modelo_estilo = line.Split(",")(16)
+                '                Catch ex As Exception
+                '                    modelo_estilo = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    plataforma = line.Split(",")(17)
+                '                Catch ex As Exception
+                '                    plataforma = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    genero = line.Split(",")(18)
+                '                Catch ex As Exception
+                '                    genero = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    tallaUSA = line.Split(",")(19)
+                '                Catch ex As Exception
+                '                    tallaUSA = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    tallaMX = line.Split(",")(20)
+                '                Catch ex As Exception
+                '                    tallaMX = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    color = line.Split(",")(21)
+                '                Catch ex As Exception
+                '                    color = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    colorMX = line.Split(",")(22)
+                '                Catch ex As Exception
+                '                    colorMX = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    material = line.Split(",")(23)
+                '                Catch ex As Exception
+                '                    material = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    peso = line.Split(",")(24)
+                '                Catch ex As Exception
+                '                    peso = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    empaque_alto = line.Split(",")(25)
+                '                Catch ex As Exception
+                '                    empaque_alto = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    empaque_largo = line.Split(",")(26)
+                '                Catch ex As Exception
+                '                    empaque_largo = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    empaque_ancho = line.Split(",")(27)
+                '                Catch ex As Exception
+                '                    empaque_ancho = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    unidadMedida = line.Split(",")(28)
+                '                Catch ex As Exception
+                '                    unidadMedida = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    claveProdServ = line.Split(",")(29)
+                '                Catch ex As Exception
+                '                    claveProdServ = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    moneda = line.Split(",")(30)
+                '                Catch ex As Exception
+                '                    moneda = ""
+                '                End Try
+
+                '                ' CODIGO REORDEN
+                '                Try
+                '                    tasa = line.Split(",")(31)
+                '                Catch ex As Exception
+                '                    tasa = ""
+                '                End Try
+
+                '                claveSat = claveProdServ
+
+                '            ElseIf formatoLegacy Then
+                '                'Changes made to load broken csv
+
+
+                '            End If
+                '            '???
+
+
+                '            'validaciones
+                '            proyectoId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=16, @marca='" & marca & "'")
+                '            coleccionId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=17, @temporada='" & temporada & "'")
+                '            monedaId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=18, @moneda='" & moneda & "'")
+                '            generoId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=19, @genero='" & genero & "'")
+                '            tasaId = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=20, @tasa='" & tasa & "'")
+
+                '            'lcng: reviso que el peso sea nùmero
+                '            Dim pesoError As Boolean = False
+                '            If peso.Trim.Length > 0 Then
+                '                Try
+                '                    Dim tryPesoParsed = Double.Parse(peso)
+                '                Catch ex As Exception
+                '                    pesoError = True
+                '                End Try
+                '            End If
+
+
+                '            If codigo.Length > 0 Then
+                '                ' Dim productoid As Long
+
+                '                ' Consulto código ya activo
+                '                codigoActivo = ObjData.RunSQLScalarQuery("exec pCargaProductosCsv @cmd=14, @codigo='" & codigo & "'")
+
+                '                If codigoActivo >= 1 Or pesoError Then
+                '                    ' Marco error
+                '                    Dim p As New ArrayList
+                '                    p.Add(New SqlParameter("@cmd", 7))
+                '                    p.Add(New SqlParameter("@cargaid", cargaid))
+
+                '                    p.Add(New SqlParameter("@codigo", codigo))
+                '                    p.Add(New SqlParameter("@upc", upc))
+                '                    p.Add(New SqlParameter("@unidad", unidad))
+                '                    p.Add(New SqlParameter("@descripcion", descripcion))
+                '                    p.Add(New SqlParameter("@descripcion_corta", descripcion_corta))
+                '                    p.Add(New SqlParameter("@marca", marca))
+                '                    p.Add(New SqlParameter("@temporada", temporada))
+                '                    p.Add(New SqlParameter("@coleccionId", coleccionId))
+                '                    p.Add(New SqlParameter("@unitario1", unitario1))
+                '                    p.Add(New SqlParameter("@unitario2", unitario2))
+                '                    p.Add(New SqlParameter("@unitario3", unitario3))
+                '                    p.Add(New SqlParameter("@unitario4", unitario4))
+                '                    p.Add(New SqlParameter("@modelo_estilo", modelo_estilo))
+                '                    p.Add(New SqlParameter("@plataforma", plataforma))
+                '                    p.Add(New SqlParameter("@genero", genero))
+                '                    p.Add(New SqlParameter("@tallaUSA", tallaUSA))
+                '                    p.Add(New SqlParameter("@tallaMX", tallaMX))
+                '                    p.Add(New SqlParameter("@color", color))
+                '                    p.Add(New SqlParameter("@colorMX", colorMX))
+                '                    p.Add(New SqlParameter("@material", material))
+                '                    p.Add(New SqlParameter("@peso", peso))
+                '                    p.Add(New SqlParameter("@empaque_alto", empaque_alto))
+                '                    p.Add(New SqlParameter("@empaque_largo", empaque_largo))
+                '                    p.Add(New SqlParameter("@empaque_ancho", empaque_ancho))
+                '                    p.Add(New SqlParameter("@unidadMedida", unidadMedida))
+                '                    p.Add(New SqlParameter("@claveProdServ", claveProdServ))
+                '                    p.Add(New SqlParameter("@moneda", moneda))
+                '                    p.Add(New SqlParameter("@tasa", tasa))
+                '                    p.Add(New SqlParameter("@claveSat", claveSat))
+
+
+                '                    p.Add(New SqlParameter("@marketPlaceLiverpool", Trim(marketPlaceLiverpool)))
+                '                    p.Add(New SqlParameter("@marketPlaceShopify", Trim(marketPlaceShopify)))
+                '                    p.Add(New SqlParameter("@marketPlaceAcctivity", Trim(marketPlaceAcctivity)))
+
+                '                    If codigoActivo >= 1 Then
+                '                        p.Add(New SqlParameter("@error", "El código " & codigo & " ya está registrado."))
+                '                    End If
+
+                '                    If pesoError Then
+                '                        p.Add(New SqlParameter("@error", "Se capturó " & peso & " en la columna peso kg."))
+                '                    End If
+                '                    ' p.Add(New SqlParameter("@ordenId", Request("id").ToString))
+                '                    ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
+                '                    registros_error = registros_error + 1
+
+                '                Else
+                '                    ' inserción
+                '                    Dim p As New ArrayList
+                '                    p.Add(New SqlParameter("@cmd", 3))
+                '                    p.Add(New SqlParameter("@cargaid", cargaid))
+
+                '                    p.Add(New SqlParameter("@codigo", codigo))
+                '                    p.Add(New SqlParameter("@upc", upc))
+                '                    p.Add(New SqlParameter("@unidad", unidad))
+                '                    p.Add(New SqlParameter("@descripcion", descripcion))
+                '                    p.Add(New SqlParameter("@descripcion_corta", descripcion_corta))
+                '                    p.Add(New SqlParameter("@marca", marca))
+                '                    p.Add(New SqlParameter("@temporada", temporada))
+                '                    p.Add(New SqlParameter("@coleccionId", coleccionId))
+                '                    p.Add(New SqlParameter("@unitario1", unitario1))
+                '                    p.Add(New SqlParameter("@unitario2", unitario2))
+                '                    p.Add(New SqlParameter("@unitario3", unitario3))
+                '                    p.Add(New SqlParameter("@unitario4", unitario4))
+                '                    p.Add(New SqlParameter("@modelo_estilo", modelo_estilo))
+                '                    p.Add(New SqlParameter("@plataforma", plataforma))
+                '                    p.Add(New SqlParameter("@genero", genero))
+                '                    p.Add(New SqlParameter("@tallaUSA", tallaUSA))
+                '                    p.Add(New SqlParameter("@tallaMX", tallaMX))
+                '                    p.Add(New SqlParameter("@color", color))
+                '                    p.Add(New SqlParameter("@colorMX", colorMX))
+                '                    p.Add(New SqlParameter("@material", material))
+                '                    p.Add(New SqlParameter("@peso", peso))
+                '                    p.Add(New SqlParameter("@empaque_alto", empaque_alto))
+                '                    p.Add(New SqlParameter("@empaque_largo", empaque_largo))
+                '                    p.Add(New SqlParameter("@empaque_ancho", empaque_ancho))
+                '                    p.Add(New SqlParameter("@unidadMedida", unidadMedida))
+                '                    p.Add(New SqlParameter("@claveProdServ", claveProdServ))
+                '                    p.Add(New SqlParameter("@moneda", moneda))
+                '                    p.Add(New SqlParameter("@tasa", tasa))
+                '                    p.Add(New SqlParameter("@claveSat", claveSat))
+
+                '                    p.Add(New SqlParameter("@marketPlaceLiverpool", Trim(marketPlaceLiverpool)))
+                '                    p.Add(New SqlParameter("@marketPlaceShopify", Trim(marketPlaceShopify)))
+                '                    p.Add(New SqlParameter("@marketPlaceAcctivity", Trim(marketPlaceAcctivity)))
+
+                '                    'p.Add(New SqlParameter("@ordenId", Request("id").ToString))
+                '                    ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
+                '                    registros_correctos = registros_correctos + 1
+                '                End If
+                '            Else
+
+                '                'Agrego error de código es requerido 
+                '                msgerror = ""
+                '                If codigo.Length = 0 Then
+                '                    msgerror = msgerror & "Código es requerido."
+                '                End If
+
+                '                'If cantidad = 0 Then
+                '                '    msgerror = msgerror & vbCrLf & "Cantidad es requerida."
+                '                'End If
+
+                '                If codigoId.Length = 0 Then
+                '                    msgerror = msgerror & vbCrLf & "Codigo no registrado."
+                '                End If
+
+                '                'If codigoNoActivo = 0 Then
+                '                '    msgerror = msgerror & vbCrLf & "Producto no activo."
+                '                'End If
+
+                '                'If unitario = 0 Then
+                '                '    msgerror = msgerror & vbCrLf & "Precio unitario es requerido."
+                '                'End If
+                '                Dim p As New ArrayList
+                '                p.Add(New SqlParameter("@cmd", 7))
+                '                p.Add(New SqlParameter("@cargaid", cargaid))
+
+                '                p.Add(New SqlParameter("@codigo", codigo))
+                '                p.Add(New SqlParameter("@upc", upc))
+                '                p.Add(New SqlParameter("@unidad", unidad))
+                '                p.Add(New SqlParameter("@descripcion", descripcion))
+                '                p.Add(New SqlParameter("@descripcion_corta", descripcion_corta))
+                '                p.Add(New SqlParameter("@marca", marca))
+                '                p.Add(New SqlParameter("@temporada", temporada))
+                '                p.Add(New SqlParameter("@coleccionId", coleccionId))
+                '                p.Add(New SqlParameter("@unitario1", unitario1))
+                '                p.Add(New SqlParameter("@unitario2", unitario2))
+                '                p.Add(New SqlParameter("@unitario3", unitario3))
+                '                p.Add(New SqlParameter("@unitario4", unitario4))
+                '                p.Add(New SqlParameter("@modelo_estilo", modelo_estilo))
+                '                p.Add(New SqlParameter("@plataforma", plataforma))
+                '                p.Add(New SqlParameter("@genero", genero))
+                '                p.Add(New SqlParameter("@tallaUSA", tallaUSA))
+                '                p.Add(New SqlParameter("@tallaMX", tallaMX))
+                '                p.Add(New SqlParameter("@color", color))
+                '                p.Add(New SqlParameter("@colorMX", colorMX))
+                '                p.Add(New SqlParameter("@material", material))
+                '                p.Add(New SqlParameter("@peso", peso))
+                '                p.Add(New SqlParameter("@empaque_alto", empaque_alto))
+                '                p.Add(New SqlParameter("@empaque_largo", empaque_largo))
+                '                p.Add(New SqlParameter("@empaque_ancho", empaque_ancho))
+                '                p.Add(New SqlParameter("@unidadMedida", unidadMedida))
+                '                p.Add(New SqlParameter("@claveProdServ", claveProdServ))
+                '                p.Add(New SqlParameter("@moneda", moneda))
+                '                p.Add(New SqlParameter("@tasa", tasa))
+                '                p.Add(New SqlParameter("@claveSat", claveSat))
+
+                '                p.Add(New SqlParameter("@marketPlaceLiverpool", Trim(marketPlaceLiverpool)))
+                '                p.Add(New SqlParameter("@marketPlaceShopify", Trim(marketPlaceShopify)))
+                '                p.Add(New SqlParameter("@marketPlaceAcctivity", Trim(marketPlaceAcctivity)))
+
+                '                p.Add(New SqlParameter("@error", msgerror))
+                '                'p.Add(New SqlParameter("@ordenId", Request("id").ToString))
+                '                ObjData.ExecuteNonQueryWithParams("pCargaProductosCsv", p)
+                '                registros_error = registros_error + 1
+                '            End If
+
+                '        End If
+
+                '        progress.SecondaryValue = j
+                '        progress.SecondaryPercent = Math.Round((j * 100 / registros), 0)
+                '        progress.CurrentOperationText = "Registro " & j.ToString()
+
+                '        If Not Response.IsClientConnected Then
+                '            Exit While
+                '        End If
+
+                '        progress.TimeEstimated = (registros - j) * 100
+                '        System.Threading.Thread.Sleep(100)
+
+                '    End While
+                'End Using
                 Do
                     j += 1
 
@@ -741,216 +1490,595 @@ Partial Class portalcfd_Productos
 
 
                     'ID
+                    'valido tipo de formato
+                    If j = 1 Then
+                        'valido que exista información de market place 
+
+                        'lcng
+                        'If Not line.ToUpper.Contains("MARKET_PLACE") Then
+                        '    rwAlerta.RadAlert("Formato no contiene relación de market place. Revisar formato descargado", 350, 200, "Alerta", "", "")
+                        '    Exit Do
+                        'End If
+                        'formato legacy
+                        If line.Split(",").Length > 31 Then
+
+                            If Trim(line.Split(",")(0)) = "Código-Sku" And
+                            Trim(line.Split(",")(1)) = "UPC" And
+                            Trim(line.Split(",")(2)) = "Descripción" And
+                            Trim(line.Split(",")(3)) = "Descripción Corta" And
+                            Trim(line.Split(",")(4)) = "Marca" And
+                            Trim(line.Split(",")(5)) = "Temporada" And
+                            Trim(line.Split(",")(6)) = "Precio Unit. 1" And
+                            Trim(line.Split(",")(7)) = "Precio Unit. 2" And
+                            Trim(line.Split(",")(8)) = "Precio Unit. 3" And
+                            Trim(line.Split(",")(9)) = "Precio Unit. 4" And
+                            Trim(line.Split(",")(10)) = "Costo Estándar" And
+                            Trim(line.Split(",")(11)) = "Costo Promedio" And
+                            Trim(line.Split(",")(12)) = "Matriz" And
+                            Trim(line.Split(",")(13)) = "En proceso" And
+                            Trim(line.Split(",")(14)) = "En consignación" And
+                            Trim(line.Split(",")(15)) = "Disponibles" And
+                            Trim(line.Split(",")(16)) = "Modelo-Estilo" And
+                            Trim(line.Split(",")(17)) = "Plataforma" And
+                            Trim(line.Split(",")(18)) = "Género" And
+                            Trim(line.Split(",")(19)) = "Talla USA" And
+                            Trim(line.Split(",")(20)) = "Talla MX" And
+                            Trim(line.Split(",")(21)) = "Color" And
+                            Trim(line.Split(",")(22)) = "Color Mx" And
+                            Trim(line.Split(",")(23)) = "Material" And
+                            Trim(line.Split(",")(24)) = "Peso" And
+                            Trim(line.Split(",")(25)) = "Empaque alto" And
+                            Trim(line.Split(",")(26)) = "Empaque largo" And
+                            Trim(line.Split(",")(27)) = "Empaque ancho" And
+                            Trim(line.Split(",")(28)) = "Unidad Medida" And
+                            Trim(line.Split(",")(29)) = "Clave Producto" And
+                            Trim(line.Split(",")(30)) = "Moneda" And
+                            Trim(line.Split(",")(31)) = "Tasa" Then
+                                formatoLegacy = True
+                            End If
+
+                            'formato nuevo 2024
+                        ElseIf line.Split(",").Length > 28 Then
+                            If Trim(line.Split(",")(0)) = "codigo_sku" And
+                                Trim(line.Split(",")(1)) = "upc" And
+                                Trim(line.Split(",")(2)) = "descripcion" And
+                                Trim(line.Split(",")(3)) = "descripcion_corta" And
+                                Trim(line.Split(",")(4)) = "marca" And
+                                Trim(line.Split(",")(5)) = "temporada" And
+                                Trim(line.Split(",")(6)) = "unitario1" And
+                                Trim(line.Split(",")(7)) = "unitario2" And
+                                Trim(line.Split(",")(8)) = "unitario3" And
+                                Trim(line.Split(",")(9)) = "unitario4" And
+                                Trim(line.Split(",")(10)) = "modelo_estilo" And
+                                Trim(line.Split(",")(11)) = "plataforma" And
+                                Trim(line.Split(",")(12)) = "genero" And
+                                Trim(line.Split(",")(13)) = "tallaUSA" And
+                                Trim(line.Split(",")(14)) = "tallaMX" And
+                                Trim(line.Split(",")(15)) = "color" And
+                                Trim(line.Split(",")(16)) = "colorMX" And
+                                Trim(line.Split(",")(17)) = "material" And
+                                Trim(line.Split(",")(18)) = "peso" And
+                                Trim(line.Split(",")(19)) = "empaque_alto" And
+                                Trim(line.Split(",")(20)) = "empaque_largo" And
+                                Trim(line.Split(",")(21)) = "empaque_ancho" And
+                                Trim(line.Split(",")(22)) = "unidadMedida" And
+                                Trim(line.Split(",")(23)) = "claveProducto" And
+                                Trim(line.Split(",")(24)) = "moneda" And
+                                Trim(line.Split(",")(25)) = "tasa %" And
+                                Trim(line.Split(",")(26)) = "market_place_liverpool" And
+                                Trim(line.Split(",")(27)) = "market_place_shopify" And
+                                Trim(line.Split(",")(28)) = "market_place_acctivity" Then
+                                formatoBrooks2024 = True
+                            End If
+                        End If
+                    End If
+
+                    If formatoLegacy = False And formatoBrooks2024 = False Then
+                        rwAlerta.RadAlert("Formato CSV no válido. Revisar formato descargado", 350, 200, "Alerta", "", "")
+                        Exit Do
+                    End If
 
                     'skip encabezado
                     If j > 1 Then
-                        ' CODIGO
-                        Try
-                            codigo = line.Split(",")(0)
-                        Catch ex As Exception
-                            codigo = ""
-                        End Try
+                        If formatoBrooks2024 Then
 
-                        ' CODIGO REORDEN
-                        Try
-                            upc = line.Split(",")(1)
-                        Catch ex As Exception
-                            upc = ""
-                        End Try
+                            ' CODIGO
+                            Try
+                                codigo = line.Split(",")(0)
+                            Catch ex As Exception
+                                codigo = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            descripcion = line.Split(",")(2)
-                        Catch ex As Exception
-                            descripcion = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                upc = line.Split(",")(1)
+                            Catch ex As Exception
+                                upc = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            descripcion_corta = line.Split(",")(3)
-                        Catch ex As Exception
-                            descripcion_corta = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                descripcion = line.Split(",")(2)
+                            Catch ex As Exception
+                                descripcion = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            marca = line.Split(",")(4)
-                        Catch ex As Exception
-                            marca = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                descripcion_corta = line.Split(",")(3)
+                            Catch ex As Exception
+                                descripcion_corta = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            temporada = line.Split(",")(5)
-                        Catch ex As Exception
-                            temporada = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                marca = line.Split(",")(4)
+                            Catch ex As Exception
+                                marca = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            unitario1 = line.Split(",")(6)
-                        Catch ex As Exception
-                            unitario1 = 0
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                temporada = line.Split(",")(5)
+                            Catch ex As Exception
+                                temporada = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            unitario2 = line.Split(",")(7)
-                        Catch ex As Exception
-                            unitario2 = 0
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                unitario1 = line.Split(",")(6)
+                            Catch ex As Exception
+                                unitario1 = 0
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            unitario3 = line.Split(",")(8)
-                        Catch ex As Exception
-                            unitario3 = 0
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                unitario2 = line.Split(",")(7)
+                            Catch ex As Exception
+                                unitario2 = 0
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            unitario4 = line.Split(",")(9)
-                        Catch ex As Exception
-                            unitario4 = 0
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                unitario3 = line.Split(",")(8)
+                            Catch ex As Exception
+                                unitario3 = 0
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            modelo_estilo = line.Split(",")(10)
-                        Catch ex As Exception
-                            modelo_estilo = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                unitario4 = line.Split(",")(9)
+                            Catch ex As Exception
+                                unitario4 = 0
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            plataforma = line.Split(",")(11)
-                        Catch ex As Exception
-                            plataforma = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                modelo_estilo = line.Split(",")(10)
+                            Catch ex As Exception
+                                modelo_estilo = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            genero = line.Split(",")(12)
-                        Catch ex As Exception
-                            genero = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                plataforma = line.Split(",")(11)
+                            Catch ex As Exception
+                                plataforma = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            tallaUSA = line.Split(",")(13)
-                        Catch ex As Exception
-                            tallaUSA = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                genero = line.Split(",")(12)
+                            Catch ex As Exception
+                                genero = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            tallaMX = line.Split(",")(14)
-                        Catch ex As Exception
-                            tallaMX = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                tallaUSA = line.Split(",")(13)
+                            Catch ex As Exception
+                                tallaUSA = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            color = line.Split(",")(15)
-                        Catch ex As Exception
-                            color = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                tallaMX = line.Split(",")(14)
+                            Catch ex As Exception
+                                tallaMX = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            colorMX = line.Split(",")(16)
-                        Catch ex As Exception
-                            colorMX = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                color = line.Split(",")(15)
+                            Catch ex As Exception
+                                color = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            material = line.Split(",")(17)
-                        Catch ex As Exception
-                            material = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                colorMX = line.Split(",")(16)
+                            Catch ex As Exception
+                                colorMX = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            peso = line.Split(",")(18)
-                        Catch ex As Exception
-                            peso = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                material = line.Split(",")(17)
+                            Catch ex As Exception
+                                material = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            empaque_alto = line.Split(",")(19)
-                        Catch ex As Exception
-                            empaque_alto = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                peso = line.Split(",")(18)
+                            Catch ex As Exception
+                                peso = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            empaque_largo = line.Split(",")(20)
-                        Catch ex As Exception
-                            empaque_largo = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                empaque_alto = line.Split(",")(19)
+                            Catch ex As Exception
+                                empaque_alto = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            empaque_ancho = line.Split(",")(21)
-                        Catch ex As Exception
-                            empaque_ancho = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                empaque_largo = line.Split(",")(20)
+                            Catch ex As Exception
+                                empaque_largo = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            unidadMedida = line.Split(",")(22)
-                        Catch ex As Exception
-                            unidadMedida = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                empaque_ancho = line.Split(",")(21)
+                            Catch ex As Exception
+                                empaque_ancho = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            claveProdServ = line.Split(",")(23)
-                        Catch ex As Exception
-                            claveProdServ = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                unidadMedida = line.Split(",")(22)
+                            Catch ex As Exception
+                                unidadMedida = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            moneda = line.Split(",")(24)
-                        Catch ex As Exception
-                            moneda = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                claveProdServ = line.Split(",")(23)
+                            Catch ex As Exception
+                                claveProdServ = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            tasa = line.Split(",")(25)
-                        Catch ex As Exception
-                            tasa = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                moneda = line.Split(",")(24)
+                            Catch ex As Exception
+                                moneda = ""
+                            End Try
 
-                        claveSat = claveProdServ
+                            ' CODIGO REORDEN
+                            Try
+                                tasa = line.Split(",")(25)
+                            Catch ex As Exception
+                                tasa = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            marketPlaceLiverpool = line.Split(",")(26)
-                        Catch ex As Exception
-                            marketPlaceLiverpool = ""
-                        End Try
+                            claveSat = claveProdServ
 
-                        ' CODIGO REORDEN
-                        Try
-                            marketPlaceShopify = line.Split(",")(27)
-                        Catch ex As Exception
-                            marketPlaceShopify = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                marketPlaceLiverpool = line.Split(",")(26)
+                            Catch ex As Exception
+                                marketPlaceLiverpool = ""
+                            End Try
 
-                        ' CODIGO REORDEN
-                        Try
-                            marketPlaceAcctivity = line.Split(",")(28)
-                        Catch ex As Exception
-                            marketPlaceAcctivity = ""
-                        End Try
+                            ' CODIGO REORDEN
+                            Try
+                                marketPlaceShopify = line.Split(",")(27)
+                            Catch ex As Exception
+                                marketPlaceShopify = ""
+                            End Try
 
+                            ' CODIGO REORDEN
+                            Try
+                                marketPlaceAcctivity = line.Split(",")(28)
+                            Catch ex As Exception
+                                marketPlaceAcctivity = ""
+                            End Try
+                        ElseIf formatoLegacy Then
+
+                            'lcng
+                            'Changes made to load regular csv
+
+                            'set fieldNo to -1
+                            'set fieldTxt to "" 
+                            'check fields integrity
+                            'iterate line character by character until , get reached
+                            'check if read not start with " , if so read until closed comma.  Ignore , as field delimiter
+                            'if line ends before tasa fieldNo, then exit, append next line to current and try again
+                            'if character is , and is not in comma then do something with fieldTxt, repeat next field
+                            'if field "tasa" is read  then read next line, repeat proccess
+
+
+                            Dim fieldTxt As String = ""
+                            Dim parsedLine = line
+                            Dim fieldNo As Integer = -1
+                            Dim iteratingLine As Boolean = True
+                            Dim delimitingComma As Boolean = True
+                            Dim flgReadNextLine As Boolean = False
+                            Dim fieldsCsv(40) As String
+                            Dim whileCount As Integer = 0
+                            Dim has_err As Boolean = False
+                            While iteratingLine
+                                fieldNo = -1
+                                Array.Clear(fieldsCsv, 0, fieldsCsv.Length)
+                                Dim charCount As Integer = 0
+                                'campo con salto de linea...
+                                If flgReadNextLine Then
+                                    registros = registros - 1 'csv leyó líneas de más, se ajusta cantidad mostrada
+                                    line = reader.ReadLine()
+                                    parsedLine = parsedLine + " " + line
+                                    flgReadNextLine = False
+                                End If
+
+                                'Iterating field
+                                For Each ch As Char In parsedLine
+                                    'field was read
+                                    If ch = "," And delimitingComma Then
+                                        fieldNo = fieldNo + 1
+                                        fieldTxt = Trim(fieldTxt)
+                                        'concatenate to fields array
+                                        fieldsCsv(fieldNo) = fieldTxt
+                                        fieldTxt = ""
+
+                                        Continue For
+                                    ElseIf ch = """" Then
+                                        delimitingComma = Not delimitingComma
+                                        Continue For
+                                    End If
+                                    fieldTxt = fieldTxt + ch
+                                Next
+
+                                'last field
+                                fieldNo = fieldNo + 1
+                                fieldTxt = Trim(fieldTxt)
+                                'concatenate to fields array
+                                fieldsCsv(fieldNo) = fieldTxt
+                                fieldTxt = ""
+
+                                'some fields missing, append next line
+                                If fieldNo < 30 Then
+                                    flgReadNextLine = True
+                                    Continue While
+                                End If
+
+                                iteratingLine = False
+                                'some while prevention
+                                whileCount = whileCount + 1
+                                If whileCount > 100 Then
+                                    has_err = True
+                                    iteratingLine = False
+                                End If
+                            End While
+
+                            If has_err Then
+                                rwAlerta.RadAlert("Problema al leer archivo csv, favor de verificar formato descargado.", 350, 200, "Alerta", "", "")
+                                Return
+                            End If
+
+                            'begin field read
+
+                            ' CODIGO
+                            Try
+                                codigo = fieldsCsv(0)
+                            Catch ex As Exception
+                                codigo = ""
+                            End Try
+
+                            ' UPC 
+                            Try
+                                upc = fieldsCsv(1)
+                            Catch ex As Exception
+                                upc = ""
+                            End Try
+
+                            ' DESCRIPCION 
+                            Try
+                                descripcion = fieldsCsv(2)
+                            Catch ex As Exception
+                                descripcion = ""
+                            End Try
+
+                            ' DESCRIPCION_CORTA 
+                            Try
+                                descripcion_corta = fieldsCsv(3)
+                            Catch ex As Exception
+                                descripcion_corta = ""
+                            End Try
+
+                            ' MARCA 
+                            Try
+                                marca = fieldsCsv(4)
+                            Catch ex As Exception
+                                marca = ""
+                            End Try
+
+                            ' TEMPORADA 
+                            Try
+                                temporada = fieldsCsv(5)
+                            Catch ex As Exception
+                                temporada = ""
+                            End Try
+
+                            ' UNITARIO1 
+                            Try
+                                unitario1 = Decimal.Parse(fieldsCsv(6).Replace(",", "").Replace(" ", "").Replace("$", ""))
+                            Catch ex As Exception
+                                unitario1 = 0
+                            End Try
+
+                            ' UNITARIO2 
+                            Try
+                                unitario2 = Decimal.Parse(fieldsCsv(7).Replace(",", "").Replace(" ", "").Replace("$", ""))
+                            Catch ex As Exception
+                                unitario2 = 0
+                            End Try
+
+                            ' UNITARIO3 
+                            Try
+                                unitario3 = Decimal.Parse(fieldsCsv(8).Replace(",", "").Replace(" ", "").Replace("$", ""))
+                            Catch ex As Exception
+                                unitario3 = 0
+                            End Try
+
+                            ' UNITARIO4 
+                            Try
+                                unitario4 = Decimal.Parse(fieldsCsv(9).Replace(",", "").Replace(" ", "").Replace("$", ""))
+                            Catch ex As Exception
+                                unitario4 = 0
+                            End Try
+
+                            ' MODELO_ESTILO 
+                            Try
+                                modelo_estilo = fieldsCsv(16)
+                            Catch ex As Exception
+                                modelo_estilo = ""
+                            End Try
+
+                            ' PLATAFORMA 
+                            Try
+                                plataforma = fieldsCsv(17)
+                            Catch ex As Exception
+                                plataforma = ""
+                            End Try
+
+                            ' GENERO 
+                            Try
+                                genero = fieldsCsv(18)
+                            Catch ex As Exception
+                                genero = ""
+                            End Try
+
+                            ' TALLAUSA 
+                            Try
+                                tallaUSA = fieldsCsv(19)
+                            Catch ex As Exception
+                                tallaUSA = ""
+                            End Try
+
+                            ' TALLAMX 
+                            Try
+                                tallaMX = fieldsCsv(20)
+                            Catch ex As Exception
+                                tallaMX = ""
+                            End Try
+
+                            ' COLOR 
+                            Try
+                                color = fieldsCsv(21)
+                            Catch ex As Exception
+                                color = ""
+                            End Try
+
+                            ' COLORMX 
+                            Try
+                                colorMX = fieldsCsv(22)
+                            Catch ex As Exception
+                                colorMX = ""
+                            End Try
+
+                            ' MATERIAL 
+                            Try
+                                material = fieldsCsv(23)
+                            Catch ex As Exception
+                                material = ""
+                            End Try
+
+                            ' PESO 
+                            Try
+                                peso = fieldsCsv(24)
+                            Catch ex As Exception
+                                peso = ""
+                            End Try
+
+                            ' EMPAQUE_ALTO 
+                            Try
+                                empaque_alto = fieldsCsv(25)
+                            Catch ex As Exception
+                                empaque_alto = ""
+                            End Try
+
+                            ' EMPAQUE_LARGO 
+                            Try
+                                empaque_largo = fieldsCsv(26)
+                            Catch ex As Exception
+                                empaque_largo = ""
+                            End Try
+
+                            ' EMPAQUE_ANCHO 
+                            Try
+                                empaque_ancho = fieldsCsv(27)
+                            Catch ex As Exception
+                                empaque_ancho = ""
+                            End Try
+
+                            ' UNIDADMEDIDA 
+                            Try
+                                unidadMedida = fieldsCsv(28)
+                            Catch ex As Exception
+                                unidadMedida = ""
+                            End Try
+
+                            ' CLAVEPRODSERV 
+                            Try
+                                claveProdServ = fieldsCsv(29)
+                            Catch ex As Exception
+                                claveProdServ = ""
+                            End Try
+
+                            ' MONEDA 
+                            Try
+                                moneda = fieldsCsv(30)
+                            Catch ex As Exception
+                                moneda = ""
+                            End Try
+
+                            ' TASA 
+                            Try
+                                tasa = fieldsCsv(31)
+                            Catch ex As Exception
+                                tasa = ""
+                            End Try
+
+                            claveSat = claveProdServ
+
+                            marketPlaceLiverpool = "no"
+                            marketPlaceShopify = "no"
+                            marketPlaceAcctivity = "no"
+                            ' MARKETPLACELIVERPOOL 
+                            'Try
+                            '     marketPlaceLiverpool = fieldsCsv(26)
+                            ' Catch ex As Exception
+                            '     marketPlaceLiverpool = ""
+                            ' End Try
+
+                            ' ' MARKETPLACESHOPIFY 
+                            ' Try
+                            '     marketPlaceShopify = fieldsCsv(27)
+                            ' Catch ex As Exception
+                            '     marketPlaceShopify = ""
+                            ' End Try
+
+                            ' ' MARKETPLACEACCTIVITY 
+                            ' Try
+                            '     marketPlaceAcctivity = fieldsCsv(28)
+                            ' Catch ex As Exception
+                            '     marketPlaceAcctivity = ""
+                            ' End Try
+                            'end field read 
+                        End If
                         '???
-                        'lcng: comentarizado para que pasara carga brooks 2025
                         'Try
                         '    Dim rowCodigo() As DataRow = dtConceptosDetalle.Select("codigo = '" & LTrim(RTrim(codigo)).ToString & "'")
                         '    For Each row As DataRow In rowCodigo
@@ -1243,6 +2371,8 @@ Partial Class portalcfd_Productos
                             rwAlerta.RadAlert("Formato CSV no válido. Favor de verificar formato descargado", 350, 200, "Alerta", "", "")
                             Exit Do
                         End Try
+
+
 
                         'lcng: reviso que el peso sea nùmero
                         Dim pesoError As Boolean = False
